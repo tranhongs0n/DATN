@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Portal - Embed Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a73e8;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+        .hero {
+            padding: 100px 50px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .content {
+            padding: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        footer {
+            padding: 50px;
+            background-color: #1a1a1a;
+            color: #888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Thuyloi University</div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Tuyển sinh</a>
+            <a href="#">Đào tạo</a>
+            <a href="#">Nghiên cứu</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Khám phá tương lai tại TLU</h1>
+        <p>Hành trình chinh phục tri thức và kiến tạo sự nghiệp bắt đầu từ đây. Tham gia cộng đồng sinh viên năng động và sáng tạo nhất.</p>
+    </div>
+
+    <div class="content">
+        <h2>Thông báo Tuyển sinh 2024</h2>
+        <p>Trường Đại học Thủy lợi thông báo tuyển sinh hệ chính quy năm 2024 với nhiều phương thức xét tuyển linh hoạt. Sinh viên có cơ hội học tập trong môi trường hiện đại với đội ngũ giảng viên giàu kinh nghiệm.</p>
+        
+        <h3>Các ngành đào tạo trọng điểm:</h3>
+        <ul>
+            <li>Công nghệ thông tin</li>
+            <li>Kỹ thuật xây dựng</li>
+            <li>Kinh tế & Quản lý</li>
+            <li>Kỹ thuật điện, điện tử</li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2024 Thuyloi University. All rights reserved.
+    </footer>
+
+    <!-- EMBED THE CHAT WIDGET HERE -->
+    <script src="/js/bubble.js" data-api="http://localhost:7860"></script>
+
+</body>
+</html>
