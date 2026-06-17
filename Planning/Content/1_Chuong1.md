@@ -1,0 +1,28 @@
+# CHƯƠNG 1: CƠ SỞ LÝ THUYẾT VÀ CÔNG NGHỆ ÁP DỤNG
+
+## 1.1. Tổng quan về trợ lý ảo và bài toán hỏi đáp
+Trợ lý ảo, hay thường được gọi là Chatbot, là một chương trình máy tính được thiết kế nhằm mục đích mô phỏng lại các cuộc trò chuyện tự nhiên của con người. Trong những giai đoạn đầu phát triển, Chatbot chủ yếu hoạt động dựa trên các bộ quy tắc định sẵn. Phương pháp này yêu cầu các nhà phát triển phải xây dựng thủ công những kịch bản hội thoại dựa trên các từ khóa cụ thể. Hạn chế lớn nhất của cách tiếp cận này là sự cứng nhắc, hệ thống thường xuyên rơi vào trạng thái bế tắc nếu người dùng sử dụng ngôn từ nằm ngoài kịch bản dự kiến.
+
+Sự phát triển vượt bậc của lĩnh vực NLP đã mang lại lời giải hoàn chỉnh cho bài toán hỏi đáp. Bài toán hỏi đáp hiện đại tập trung vào việc xây dựng các hệ thống có khả năng tự động đọc hiểu câu hỏi của người dùng và trích xuất hoặc sinh ra câu trả lời phù hợp từ một nguồn dữ liệu có sẵn. Sự chuyển dịch từ hệ thống dựa trên quy tắc sang hệ thống thông minh có khả năng thấu hiểu ngữ nghĩa đã giúp nâng tầm trải nghiệm tương tác. Đây chính là tiền đề quan trọng để ứng dụng Chatbot vào các công việc đòi hỏi sự linh hoạt cao như tư vấn tuyển sinh, nơi mỗi học sinh có một cách đặt câu hỏi khác nhau.
+
+## 1.2. Giới thiệu về LLM
+LLM đánh dấu một bước đột phá quan trọng trong tiến trình phát triển của AI. Đây là những hệ thống được huấn luyện trên khối lượng dữ liệu văn bản khổng lồ với quy mô lên tới hàng trăm tỷ tham số. Quá trình huấn luyện đồ sộ này giúp mô hình không chỉ nắm vững cấu trúc ngữ pháp phức tạp mà còn thấu hiểu được ngữ cảnh, sắc thái biểu cảm và tích lũy một lượng kiến thức đa lĩnh vực phong phú.
+
+Kiến trúc nền tảng làm nên sức mạnh của các LLM chính là Transformer. Kiến trúc này ứng dụng cơ chế tự chú ý, cho phép mô hình xử lý hiệu quả các chuỗi văn bản dài và nhận diện được mối liên hệ giữa các từ ngữ dù chúng nằm cách xa nhau. Nhờ vậy, LLM thể hiện hiệu năng vượt trội trong các tác vụ như tóm tắt văn bản, dịch máy và sinh câu trả lời tự động. 
+
+Mặc dù sở hữu năng lực xử lý ngôn ngữ ấn tượng, các LLM vẫn vấp phải một số rào cản chí mạng khi áp dụng vào môi trường doanh nghiệp hay giáo dục. Hạn chế lớn nhất là hiện tượng ảo giác, khi mô hình tự tạo ra các thông tin sai lệch một cách rất tự tin. Bên cạnh đó, kiến thức của LLM bị đóng băng tại thời điểm huấn luyện, khiến chúng không thể cập nhật các thông tin tuyển sinh mới nhất của nhà trường nếu không có sự can thiệp từ các công nghệ bổ trợ.
+
+## 1.3. Kỹ thuật RAG
+RAG là một phương pháp tiên tiến kết hợp giữa năng lực truy xuất thông tin truyền thống và khả năng sinh văn bản của các LLM. Cơ chế hoạt động của RAG bắt đầu bằng việc chuyển đổi câu hỏi của người dùng thành các vector số học. Hệ thống sau đó tiến hành tìm kiếm các đoạn thông tin có ý nghĩa tương đồng nhất trong một CSTT đã được xây dựng từ trước. Các đoạn thông tin trích xuất này được đóng gói cùng với câu hỏi gốc và gửi đến LLM. Nhờ có ngữ cảnh cụ thể cung cấp từ CSTT, mô hình có thể tổng hợp và sinh ra câu trả lời chính xác, bám sát với thực tế mà không cần phải ghi nhớ mọi dữ liệu trong quá trình huấn luyện.
+
+So sánh với phương pháp tinh chỉnh mô hình truyền thống, RAG thể hiện những ưu điểm vượt trội. Việc tinh chỉnh đòi hỏi nguồn tài nguyên máy tính khổng lồ, thời gian kéo dài và tốn kém chi phí mỗi khi cần cập nhật kiến thức mới. Trái lại, với RAG, việc cập nhật kiến thức chỉ đơn giản là bổ sung tài liệu mới vào CSTT mà không cần can thiệp vào tham số gốc của mô hình. Hơn nữa, RAG cho phép hệ thống truy xuất ngược nguồn gốc của thông tin, giúp người quản trị dễ dàng kiểm chứng độ tin cậy của câu trả lời, một yếu tố cực kỳ quan trọng đối với các hệ thống tư vấn giáo dục.
+
+## 1.4. Cơ sở dữ liệu dạng vector và kỹ thuật nhúng
+Để hệ thống RAG có thể tìm kiếm thông tin theo ngữ nghĩa thay vì chỉ khớp từ khóa đơn thuần, các tài liệu văn bản cần được biến đổi thành dạng số học thông qua kỹ thuật nhúng. Kỹ thuật này sử dụng các mạng nơ-ron sâu để chuyển đổi văn bản thành các vector đa chiều, trong đó những văn bản có ý nghĩa tương đồng sẽ nằm gần nhau trong không gian vector. Nhờ vậy, ngay cả khi người dùng sử dụng các từ đồng nghĩa hoặc cấu trúc câu khác biệt, hệ thống vẫn có thể tìm ra tài liệu liên quan nhất.
+
+Toàn bộ các vector nhúng này sẽ được lưu trữ và quản lý bởi các DB dạng vector. Khác với các hệ quản trị cơ sở dữ liệu quan hệ truyền thống chỉ hỗ trợ truy vấn theo cấu trúc bảng biểu, DB dạng vector được thiết kế đặc thù để thực hiện các phép tính khoảng cách hình học giữa các vector với tốc độ cực nhanh. Khả năng truy vấn ngữ nghĩa ở độ trễ thấp chính là chìa khóa giúp hệ thống trợ lý ảo phản hồi tức thời các câu hỏi phức tạp của học sinh và phụ huynh.
+
+## 1.5. Các công nghệ sử dụng trong đề tài
+Việc hiện thực hóa một hệ thống RAG đòi hỏi sự kết hợp chặt chẽ của nhiều công nghệ hiện đại. Đóng vai trò hạt nhân trong việc kết nối các thành phần là LangChain, một bộ khung phát triển phần mềm được thiết kế riêng cho việc xây dựng ứng dụng dựa trên các LLM. LangChain cung cấp các công cụ mạnh mẽ để quản lý chuỗi truy vấn, chia nhỏ tài liệu văn bản và tích hợp linh hoạt với nhiều nền tảng AI khác nhau.
+
+Phục vụ cho khâu lưu trữ và truy xuất, đề tài ứng dụng công nghệ ChromaDB, đây là DB dạng vector mã nguồn mở có hiệu năng cao và dễ dàng triển khai cục bộ. Trong vai trò bộ não ngôn ngữ, đề tài tận dụng sức mạnh sinh văn bản của nền tảng Gemini thông qua API, kết hợp cùng các mô hình nhúng mã nguồn mở nhằm tối ưu hóa chi phí mà vẫn đảm bảo được khả năng xử lý ngôn ngữ tiếng Việt tự nhiên. Sự giao thoa của các nền tảng này tạo nên một kiến trúc hệ thống vững chắc, đáp ứng trọn vẹn các yêu cầu khắt khe trong tư vấn tuyển sinh đại học.
