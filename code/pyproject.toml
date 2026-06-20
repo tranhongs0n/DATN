@@ -1,0 +1,30 @@
+[project]
+name = "datn-tlu-rag"
+version = "0.1.0"
+description = "A Multimodal RAG system for TLU admission information"
+authors = [
+    {name = "Trần Hồng Sơn"}
+]
+dependencies = [
+    "google-genai",
+    "langchain",
+    "langchain-community",
+    "langchain-text-splitters",
+    "chromadb",
+    "langchain-chroma",
+    "python-dotenv",
+    "beautifulsoup4",
+    "requests",
+    "docx2txt",
+    "pypdf",
+    "fastapi",
+    "uvicorn",
+    "python-multipart",
+    "python-docx",
+    "pydantic-settings",
+    "pyyaml"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

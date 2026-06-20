@@ -1,0 +1,1201 @@
+question_id,category,context_precision,context_recall,faithfulness,answer_relevancy,latency_ms
+Q0001,Nhom 1: Co ban,0.81,0.67,0.84,0.87,3021
+Q0002,Nhom 4: Ngoai pham vi,0.87,0.66,0.92,0.98,2838
+Q0003,Nhom 5: Da bac dao tao,0.91,0.7,0.86,0.96,3057
+Q0004,Nhom 4: Ngoai pham vi,0.92,0.77,0.87,0.86,3608
+Q0005,Nhom 3: Dieu kien cheo,0.93,0.93,0.88,0.76,892
+Q0006,Nhom 5: Da bac dao tao,0.92,0.87,0.9,0.8,931
+Q0007,Nhom 2: Ngon ngu thuc te,0.77,0.81,0.95,0.96,1264
+Q0008,Nhom 5: Da bac dao tao,0.73,0.74,0.92,0.87,2337
+Q0009,Nhom 2: Ngon ngu thuc te,0.81,0.87,0.91,0.79,3242
+Q0010,Nhom 5: Da bac dao tao,0.73,0.85,0.97,0.88,905
+Q0011,Nhom 3: Dieu kien cheo,0.73,0.65,0.85,0.82,1995
+Q0012,Nhom 3: Dieu kien cheo,0.96,0.66,0.97,0.93,1823
+Q0013,Nhom 4: Ngoai pham vi,0.8,0.86,0.94,0.84,1823
+Q0014,Nhom 1: Co ban,0.74,0.91,0.82,0.84,3748
+Q0015,Nhom 1: Co ban,0.95,0.92,0.93,0.89,1555
+Q0016,Nhom 5: Da bac dao tao,0.75,0.67,0.81,0.92,1499
+Q0017,Nhom 5: Da bac dao tao,0.9,0.9,0.98,0.77,2946
+Q0018,Nhom 4: Ngoai pham vi,0.97,0.67,0.97,0.81,3938
+Q0019,Nhom 5: Da bac dao tao,0.74,0.73,0.82,0.95,3028
+Q0020,Nhom 3: Dieu kien cheo,0.77,0.78,0.85,0.77,2299
+Q0021,Nhom 4: Ngoai pham vi,0.92,0.81,0.87,0.81,1878
+Q0022,Nhom 4: Ngoai pham vi,0.77,0.79,0.95,0.78,3998
+Q0023,Nhom 1: Co ban,0.85,0.92,0.99,0.81,3595
+Q0024,Nhom 4: Ngoai pham vi,0.84,0.95,0.82,0.89,2585
+Q0025,Nhom 5: Da bac dao tao,0.99,0.86,0.85,0.92,1424
+Q0026,Nhom 5: Da bac dao tao,0.93,0.92,0.81,0.9,3489
+Q0027,Nhom 4: Ngoai pham vi,0.98,0.83,0.82,0.81,937
+Q0028,Nhom 4: Ngoai pham vi,0.86,0.71,0.81,0.87,2955
+Q0029,Nhom 5: Da bac dao tao,0.97,0.82,0.85,0.91,1216
+Q0030,Nhom 2: Ngon ngu thuc te,0.76,0.76,0.83,0.85,3139
+Q0031,Nhom 3: Dieu kien cheo,0.85,0.7,0.95,0.86,2838
+Q0032,Nhom 2: Ngon ngu thuc te,0.84,0.82,0.96,0.75,1574
+Q0033,Nhom 5: Da bac dao tao,0.79,0.65,0.96,0.97,2217
+Q0034,Nhom 3: Dieu kien cheo,0.94,0.66,0.98,0.97,1718
+Q0035,Nhom 2: Ngon ngu thuc te,0.82,0.65,0.83,0.8,4055
+Q0036,Nhom 4: Ngoai pham vi,0.94,0.91,0.87,0.86,4206
+Q0037,Nhom 2: Ngon ngu thuc te,0.82,0.83,0.98,0.77,3527
+Q0038,Nhom 3: Dieu kien cheo,0.76,0.83,0.89,0.93,3031
+Q0039,Nhom 1: Co ban,0.84,0.72,0.91,0.92,2376
+Q0040,Nhom 2: Ngon ngu thuc te,0.88,0.66,0.88,0.81,3453
+Q0041,Nhom 3: Dieu kien cheo,0.87,0.76,0.88,0.91,3243
+Q0042,Nhom 1: Co ban,0.9,0.71,0.86,0.83,979
+Q0043,Nhom 4: Ngoai pham vi,0.98,0.72,0.89,0.92,4021
+Q0044,Nhom 2: Ngon ngu thuc te,0.94,0.88,0.8,0.77,2820
+Q0045,Nhom 5: Da bac dao tao,0.82,0.72,0.83,0.82,1042
+Q0046,Nhom 1: Co ban,0.86,0.83,0.97,0.84,2010
+Q0047,Nhom 3: Dieu kien cheo,0.95,0.82,0.8,0.97,1610
+Q0048,Nhom 2: Ngon ngu thuc te,0.97,0.73,0.89,0.83,2890
+Q0049,Nhom 2: Ngon ngu thuc te,0.89,0.82,0.91,0.87,1993
+Q0050,Nhom 5: Da bac dao tao,0.81,0.89,0.87,0.95,4123
+Q0051,Nhom 5: Da bac dao tao,0.98,0.7,0.88,0.82,3728
+Q0052,Nhom 2: Ngon ngu thuc te,0.97,0.67,0.99,0.83,3218
+Q0053,Nhom 3: Dieu kien cheo,0.76,0.75,0.89,0.95,1797
+Q0054,Nhom 4: Ngoai pham vi,0.87,0.97,0.98,0.8,4384
+Q0055,Nhom 1: Co ban,0.95,0.93,0.84,0.97,1509
+Q0056,Nhom 4: Ngoai pham vi,0.87,0.75,0.87,0.75,3404
+Q0057,Nhom 4: Ngoai pham vi,0.92,0.69,0.86,0.96,2822
+Q0058,Nhom 2: Ngon ngu thuc te,0.87,0.74,0.94,0.86,2057
+Q0059,Nhom 2: Ngon ngu thuc te,0.93,0.79,0.82,0.89,4338
+Q0060,Nhom 2: Ngon ngu thuc te,0.93,0.74,0.95,0.97,2559
+Q0061,Nhom 4: Ngoai pham vi,0.95,0.85,0.89,0.77,3613
+Q0062,Nhom 3: Dieu kien cheo,0.91,0.96,0.83,0.97,2075
+Q0063,Nhom 4: Ngoai pham vi,0.92,0.96,0.97,0.78,927
+Q0064,Nhom 4: Ngoai pham vi,0.86,0.75,0.93,0.79,1032
+Q0065,Nhom 2: Ngon ngu thuc te,0.96,0.71,0.83,0.82,2660
+Q0066,Nhom 2: Ngon ngu thuc te,0.98,0.89,0.84,0.86,4138
+Q0067,Nhom 5: Da bac dao tao,0.73,0.96,0.91,0.91,2320
+Q0068,Nhom 4: Ngoai pham vi,0.95,0.68,0.82,0.92,995
+Q0069,Nhom 3: Dieu kien cheo,0.77,0.85,0.85,0.82,800
+Q0070,Nhom 4: Ngoai pham vi,0.91,0.66,0.86,0.84,4097
+Q0071,Nhom 1: Co ban,0.83,0.65,0.85,0.77,3114
+Q0072,Nhom 3: Dieu kien cheo,0.88,0.9,0.94,0.77,1790
+Q0073,Nhom 3: Dieu kien cheo,0.84,0.75,0.83,0.8,2468
+Q0074,Nhom 1: Co ban,0.71,0.76,0.87,0.89,3038
+Q0075,Nhom 3: Dieu kien cheo,0.8,0.84,0.86,0.95,4452
+Q0076,Nhom 5: Da bac dao tao,0.86,0.94,0.95,0.92,3887
+Q0077,Nhom 2: Ngon ngu thuc te,0.7,0.69,0.97,0.91,2041
+Q0078,Nhom 1: Co ban,0.95,0.73,0.84,0.87,3953
+Q0079,Nhom 2: Ngon ngu thuc te,0.85,0.71,0.91,0.9,2071
+Q0080,Nhom 4: Ngoai pham vi,0.89,0.77,0.9,0.84,1006
+Q0081,Nhom 3: Dieu kien cheo,0.84,0.76,0.8,0.87,3192
+Q0082,Nhom 3: Dieu kien cheo,0.96,0.79,0.84,0.91,4468
+Q0083,Nhom 1: Co ban,0.89,0.84,0.9,0.97,3486
+Q0084,Nhom 3: Dieu kien cheo,0.71,0.85,0.96,0.85,2023
+Q0085,Nhom 2: Ngon ngu thuc te,0.77,0.78,0.98,0.76,3192
+Q0086,Nhom 5: Da bac dao tao,0.8,0.98,0.84,0.76,1337
+Q0087,Nhom 1: Co ban,0.71,0.86,0.84,0.82,3543
+Q0088,Nhom 4: Ngoai pham vi,0.85,0.93,0.94,0.94,3689
+Q0089,Nhom 1: Co ban,0.96,0.83,0.82,0.91,3302
+Q0090,Nhom 5: Da bac dao tao,0.75,0.92,0.89,0.84,2398
+Q0091,Nhom 4: Ngoai pham vi,0.72,0.76,0.97,0.81,1980
+Q0092,Nhom 3: Dieu kien cheo,0.93,0.98,0.81,0.81,1374
+Q0093,Nhom 2: Ngon ngu thuc te,0.87,0.94,0.81,0.87,3048
+Q0094,Nhom 3: Dieu kien cheo,0.93,0.67,0.85,0.87,1772
+Q0095,Nhom 1: Co ban,0.95,0.95,0.97,0.78,1190
+Q0096,Nhom 3: Dieu kien cheo,0.78,0.69,0.9,0.75,2923
+Q0097,Nhom 2: Ngon ngu thuc te,0.71,0.7,0.84,0.96,1360
+Q0098,Nhom 4: Ngoai pham vi,0.98,0.94,0.93,0.89,3888
+Q0099,Nhom 5: Da bac dao tao,0.71,0.9,0.9,0.84,1377
+Q0100,Nhom 1: Co ban,0.83,0.91,0.87,0.9,1759
+Q0101,Nhom 4: Ngoai pham vi,0.75,0.74,0.94,0.77,3828
+Q0102,Nhom 2: Ngon ngu thuc te,0.98,0.8,0.91,0.82,2224
+Q0103,Nhom 2: Ngon ngu thuc te,0.9,0.67,0.89,0.86,2833
+Q0104,Nhom 4: Ngoai pham vi,0.71,0.76,0.95,0.96,3947
+Q0105,Nhom 3: Dieu kien cheo,0.72,0.7,0.97,0.95,1324
+Q0106,Nhom 2: Ngon ngu thuc te,0.75,0.85,0.82,0.76,1248
+Q0107,Nhom 3: Dieu kien cheo,0.89,0.9,0.86,0.95,3501
+Q0108,Nhom 3: Dieu kien cheo,0.88,0.81,0.88,0.83,4301
+Q0109,Nhom 3: Dieu kien cheo,0.71,0.79,0.86,0.76,3540
+Q0110,Nhom 3: Dieu kien cheo,0.9,0.97,0.89,0.83,2299
+Q0111,Nhom 4: Ngoai pham vi,0.94,0.79,0.86,0.87,1006
+Q0112,Nhom 1: Co ban,0.84,0.7,0.98,0.92,3582
+Q0113,Nhom 1: Co ban,0.74,0.67,0.94,0.85,2447
+Q0114,Nhom 5: Da bac dao tao,0.83,0.68,0.92,0.85,3513
+Q0115,Nhom 4: Ngoai pham vi,0.9,0.78,0.85,0.77,2433
+Q0116,Nhom 1: Co ban,0.73,0.7,0.82,0.76,2432
+Q0117,Nhom 5: Da bac dao tao,0.97,0.68,0.95,0.84,3090
+Q0118,Nhom 3: Dieu kien cheo,0.98,0.79,0.95,0.76,1015
+Q0119,Nhom 5: Da bac dao tao,0.92,0.9,0.89,0.8,2928
+Q0120,Nhom 4: Ngoai pham vi,0.78,0.72,0.85,0.84,2946
+Q0121,Nhom 4: Ngoai pham vi,0.74,0.8,0.85,0.76,1758
+Q0122,Nhom 2: Ngon ngu thuc te,0.75,0.76,0.88,0.86,2893
+Q0123,Nhom 2: Ngon ngu thuc te,0.9,0.87,0.98,0.78,1335
+Q0124,Nhom 1: Co ban,0.78,0.86,0.92,0.94,3851
+Q0125,Nhom 5: Da bac dao tao,0.94,0.87,0.98,0.96,4280
+Q0126,Nhom 4: Ngoai pham vi,0.72,0.74,0.93,0.87,3988
+Q0127,Nhom 5: Da bac dao tao,0.82,0.96,0.87,0.9,1856
+Q0128,Nhom 3: Dieu kien cheo,0.98,0.67,0.99,0.75,3104
+Q0129,Nhom 5: Da bac dao tao,0.85,0.96,0.84,0.92,2453
+Q0130,Nhom 5: Da bac dao tao,0.72,0.78,0.92,0.77,1126
+Q0131,Nhom 5: Da bac dao tao,0.8,0.67,0.84,0.91,2979
+Q0132,Nhom 5: Da bac dao tao,0.85,0.69,0.96,0.91,3342
+Q0133,Nhom 2: Ngon ngu thuc te,0.84,0.9,0.89,0.77,1160
+Q0134,Nhom 4: Ngoai pham vi,0.87,0.95,0.93,0.75,2147
+Q0135,Nhom 3: Dieu kien cheo,0.87,0.73,0.89,0.79,1918
+Q0136,Nhom 5: Da bac dao tao,0.76,0.68,0.93,0.84,3319
+Q0137,Nhom 5: Da bac dao tao,0.92,0.88,0.92,0.83,3239
+Q0138,Nhom 5: Da bac dao tao,0.71,0.67,0.97,0.91,1264
+Q0139,Nhom 2: Ngon ngu thuc te,0.8,0.86,0.97,0.86,3285
+Q0140,Nhom 5: Da bac dao tao,0.86,0.68,0.97,0.96,4421
+Q0141,Nhom 1: Co ban,0.96,0.96,0.82,0.97,901
+Q0142,Nhom 1: Co ban,0.93,0.77,0.98,0.83,3536
+Q0143,Nhom 3: Dieu kien cheo,0.98,0.9,0.91,0.85,3474
+Q0144,Nhom 2: Ngon ngu thuc te,0.82,0.77,0.91,0.97,3023
+Q0145,Nhom 4: Ngoai pham vi,0.8,0.93,0.88,0.78,1943
+Q0146,Nhom 3: Dieu kien cheo,0.9,0.87,0.81,0.85,933
+Q0147,Nhom 3: Dieu kien cheo,0.74,0.94,0.83,0.75,1454
+Q0148,Nhom 2: Ngon ngu thuc te,0.93,0.69,0.83,0.93,4150
+Q0149,Nhom 4: Ngoai pham vi,0.87,0.73,0.89,0.86,3119
+Q0150,Nhom 4: Ngoai pham vi,0.91,0.67,0.95,0.87,3511
+Q0151,Nhom 4: Ngoai pham vi,0.97,0.67,0.81,0.85,4436
+Q0152,Nhom 4: Ngoai pham vi,0.71,0.86,0.93,0.9,2318
+Q0153,Nhom 4: Ngoai pham vi,0.91,0.81,0.81,0.88,1737
+Q0154,Nhom 2: Ngon ngu thuc te,0.86,0.76,0.93,0.8,3767
+Q0155,Nhom 2: Ngon ngu thuc te,0.95,0.83,0.81,0.8,2658
+Q0156,Nhom 5: Da bac dao tao,0.91,0.68,0.86,0.95,1299
+Q0157,Nhom 5: Da bac dao tao,0.91,0.85,0.91,0.86,854
+Q0158,Nhom 5: Da bac dao tao,0.85,0.73,0.93,0.9,1569
+Q0159,Nhom 1: Co ban,0.76,0.85,0.94,0.88,2859
+Q0160,Nhom 4: Ngoai pham vi,0.73,0.68,0.92,0.78,925
+Q0161,Nhom 1: Co ban,0.7,0.65,0.97,0.92,2948
+Q0162,Nhom 1: Co ban,0.8,0.95,0.85,0.92,1895
+Q0163,Nhom 4: Ngoai pham vi,0.83,0.69,0.89,0.84,2057
+Q0164,Nhom 1: Co ban,0.78,0.87,0.93,0.81,1786
+Q0165,Nhom 3: Dieu kien cheo,0.84,0.89,0.95,0.76,2434
+Q0166,Nhom 2: Ngon ngu thuc te,0.73,0.78,0.98,0.95,1118
+Q0167,Nhom 1: Co ban,0.9,0.85,0.99,0.92,2550
+Q0168,Nhom 2: Ngon ngu thuc te,0.98,0.8,0.93,0.95,2357
+Q0169,Nhom 2: Ngon ngu thuc te,0.89,0.77,0.83,0.78,4199
+Q0170,Nhom 3: Dieu kien cheo,0.78,0.96,0.83,0.83,1168
+Q0171,Nhom 3: Dieu kien cheo,0.92,0.67,0.92,0.93,1867
+Q0172,Nhom 2: Ngon ngu thuc te,0.9,0.96,0.83,0.87,2692
+Q0173,Nhom 5: Da bac dao tao,0.83,0.82,0.98,0.77,4372
+Q0174,Nhom 3: Dieu kien cheo,0.97,0.7,0.98,0.9,4162
+Q0175,Nhom 2: Ngon ngu thuc te,0.97,0.7,0.88,0.91,1922
+Q0176,Nhom 2: Ngon ngu thuc te,0.83,0.74,0.86,0.92,2657
+Q0177,Nhom 5: Da bac dao tao,0.83,0.86,0.84,0.82,2627
+Q0178,Nhom 1: Co ban,0.72,0.7,0.96,0.96,3159
+Q0179,Nhom 2: Ngon ngu thuc te,0.87,0.65,0.89,0.82,4110
+Q0180,Nhom 5: Da bac dao tao,0.92,0.66,0.83,0.86,1615
+Q0181,Nhom 3: Dieu kien cheo,0.79,0.96,0.87,0.91,3090
+Q0182,Nhom 5: Da bac dao tao,0.9,0.89,0.87,0.89,3930
+Q0183,Nhom 2: Ngon ngu thuc te,0.87,0.9,0.93,0.8,3800
+Q0184,Nhom 1: Co ban,0.76,0.72,0.82,0.79,4215
+Q0185,Nhom 4: Ngoai pham vi,0.79,0.88,0.91,0.81,1746
+Q0186,Nhom 1: Co ban,0.93,0.73,0.86,0.91,3988
+Q0187,Nhom 2: Ngon ngu thuc te,0.84,0.8,0.92,0.82,2696
+Q0188,Nhom 3: Dieu kien cheo,0.99,0.7,0.95,0.89,2097
+Q0189,Nhom 3: Dieu kien cheo,0.74,0.68,0.91,0.94,2233
+Q0190,Nhom 3: Dieu kien cheo,0.89,0.74,0.92,0.95,2918
+Q0191,Nhom 4: Ngoai pham vi,0.79,0.8,0.86,0.86,4039
+Q0192,Nhom 3: Dieu kien cheo,0.7,0.89,0.94,0.95,3111
+Q0193,Nhom 1: Co ban,0.8,0.72,0.81,0.8,2554
+Q0194,Nhom 3: Dieu kien cheo,0.88,0.74,0.89,0.76,2740
+Q0195,Nhom 4: Ngoai pham vi,0.95,0.68,0.89,0.84,1114
+Q0196,Nhom 2: Ngon ngu thuc te,0.8,0.66,0.85,0.88,986
+Q0197,Nhom 1: Co ban,0.75,0.84,0.94,0.76,1905
+Q0198,Nhom 5: Da bac dao tao,0.8,0.89,0.96,0.86,3203
+Q0199,Nhom 1: Co ban,0.74,0.78,0.8,0.9,3192
+Q0200,Nhom 3: Dieu kien cheo,0.71,0.85,0.87,0.87,1147
+Q0201,Nhom 4: Ngoai pham vi,0.9,0.8,0.83,0.86,3183
+Q0202,Nhom 1: Co ban,0.85,0.66,0.89,0.82,3731
+Q0203,Nhom 5: Da bac dao tao,0.96,0.79,0.92,0.82,2282
+Q0204,Nhom 5: Da bac dao tao,0.72,0.66,0.95,0.81,3633
+Q0205,Nhom 3: Dieu kien cheo,0.97,0.93,0.86,0.83,805
+Q0206,Nhom 3: Dieu kien cheo,0.94,0.76,0.92,0.9,2568
+Q0207,Nhom 1: Co ban,0.89,0.72,0.93,0.77,3340
+Q0208,Nhom 3: Dieu kien cheo,0.75,0.77,0.92,0.91,4090
+Q0209,Nhom 3: Dieu kien cheo,0.81,0.83,0.83,0.9,1957
+Q0210,Nhom 3: Dieu kien cheo,0.76,0.79,0.93,0.81,2271
+Q0211,Nhom 2: Ngon ngu thuc te,0.98,0.68,0.94,0.9,1528
+Q0212,Nhom 4: Ngoai pham vi,0.9,0.7,0.82,0.89,957
+Q0213,Nhom 5: Da bac dao tao,0.85,0.9,0.84,0.96,2829
+Q0214,Nhom 2: Ngon ngu thuc te,0.96,0.76,0.89,0.97,4341
+Q0215,Nhom 3: Dieu kien cheo,0.93,0.94,0.82,0.75,4261
+Q0216,Nhom 5: Da bac dao tao,0.89,0.68,0.99,0.91,2552
+Q0217,Nhom 5: Da bac dao tao,0.76,0.95,0.98,0.94,2824
+Q0218,Nhom 3: Dieu kien cheo,0.89,0.91,0.86,0.77,3815
+Q0219,Nhom 2: Ngon ngu thuc te,0.91,0.96,0.93,0.82,3677
+Q0220,Nhom 2: Ngon ngu thuc te,0.71,0.74,0.92,0.97,3517
+Q0221,Nhom 4: Ngoai pham vi,0.88,0.88,0.9,0.81,1065
+Q0222,Nhom 2: Ngon ngu thuc te,0.97,0.83,0.85,0.9,3288
+Q0223,Nhom 4: Ngoai pham vi,0.95,0.68,0.93,0.76,2823
+Q0224,Nhom 1: Co ban,0.87,0.84,0.91,0.93,3486
+Q0225,Nhom 2: Ngon ngu thuc te,0.92,0.9,0.84,0.93,3990
+Q0226,Nhom 3: Dieu kien cheo,0.86,0.67,0.88,0.9,3392
+Q0227,Nhom 2: Ngon ngu thuc te,0.82,0.78,0.83,0.85,2908
+Q0228,Nhom 1: Co ban,0.74,0.81,0.84,0.97,2720
+Q0229,Nhom 1: Co ban,0.77,0.77,0.86,0.92,2634
+Q0230,Nhom 3: Dieu kien cheo,0.92,0.78,0.96,0.79,2051
+Q0231,Nhom 2: Ngon ngu thuc te,0.89,0.66,0.92,0.92,4015
+Q0232,Nhom 4: Ngoai pham vi,0.82,0.91,0.91,0.81,3133
+Q0233,Nhom 1: Co ban,0.7,0.94,0.84,0.97,3148
+Q0234,Nhom 4: Ngoai pham vi,0.73,0.92,0.86,0.84,1468
+Q0235,Nhom 4: Ngoai pham vi,0.92,0.77,0.94,0.77,925
+Q0236,Nhom 5: Da bac dao tao,0.91,0.75,0.85,0.88,3464
+Q0237,Nhom 2: Ngon ngu thuc te,0.88,0.66,0.98,0.95,3868
+Q0238,Nhom 1: Co ban,0.77,0.74,0.94,0.85,1229
+Q0239,Nhom 3: Dieu kien cheo,0.71,0.88,0.86,0.79,806
+Q0240,Nhom 1: Co ban,0.8,0.83,0.84,0.9,1323
+Q0241,Nhom 3: Dieu kien cheo,0.93,0.83,0.88,0.96,2787
+Q0242,Nhom 1: Co ban,0.79,0.75,0.84,0.86,1405
+Q0243,Nhom 1: Co ban,0.94,0.81,0.92,0.79,1561
+Q0244,Nhom 1: Co ban,0.79,0.76,0.93,0.92,2567
+Q0245,Nhom 4: Ngoai pham vi,0.83,0.87,0.88,0.97,3058
+Q0246,Nhom 4: Ngoai pham vi,0.97,0.86,0.95,0.78,3758
+Q0247,Nhom 3: Dieu kien cheo,0.83,0.88,0.88,0.81,3880
+Q0248,Nhom 1: Co ban,0.89,0.94,0.84,0.81,3291
+Q0249,Nhom 5: Da bac dao tao,0.76,0.86,0.85,0.8,2475
+Q0250,Nhom 3: Dieu kien cheo,0.93,0.66,0.84,0.84,3444
+Q0251,Nhom 3: Dieu kien cheo,0.85,0.73,0.86,0.92,3603
+Q0252,Nhom 4: Ngoai pham vi,0.96,0.71,0.94,0.8,4492
+Q0253,Nhom 4: Ngoai pham vi,0.85,0.73,0.96,0.79,2848
+Q0254,Nhom 2: Ngon ngu thuc te,0.87,0.86,0.87,0.82,1291
+Q0255,Nhom 4: Ngoai pham vi,0.84,0.73,0.98,0.76,2818
+Q0256,Nhom 4: Ngoai pham vi,0.81,0.86,0.83,0.86,2183
+Q0257,Nhom 5: Da bac dao tao,0.83,0.81,0.98,0.8,1548
+Q0258,Nhom 4: Ngoai pham vi,0.74,0.78,0.82,0.96,2579
+Q0259,Nhom 2: Ngon ngu thuc te,0.95,0.66,0.81,0.91,3145
+Q0260,Nhom 1: Co ban,0.99,0.91,0.98,0.77,4449
+Q0261,Nhom 2: Ngon ngu thuc te,0.96,0.74,0.92,0.75,2471
+Q0262,Nhom 4: Ngoai pham vi,0.74,0.85,0.9,0.96,2615
+Q0263,Nhom 5: Da bac dao tao,0.74,0.95,0.81,0.97,4438
+Q0264,Nhom 2: Ngon ngu thuc te,0.96,0.97,0.85,0.9,3732
+Q0265,Nhom 5: Da bac dao tao,0.82,0.93,0.94,0.76,3926
+Q0266,Nhom 5: Da bac dao tao,0.78,0.9,0.84,0.76,4434
+Q0267,Nhom 1: Co ban,0.98,0.68,0.98,0.86,2258
+Q0268,Nhom 5: Da bac dao tao,0.92,0.73,0.84,0.93,2869
+Q0269,Nhom 3: Dieu kien cheo,0.75,0.8,0.82,0.84,1593
+Q0270,Nhom 5: Da bac dao tao,0.93,0.78,0.95,0.88,3555
+Q0271,Nhom 3: Dieu kien cheo,0.98,0.86,0.92,0.88,1390
+Q0272,Nhom 2: Ngon ngu thuc te,0.82,0.7,0.93,0.89,1767
+Q0273,Nhom 2: Ngon ngu thuc te,0.87,0.97,0.84,0.93,3939
+Q0274,Nhom 4: Ngoai pham vi,0.72,0.66,0.94,0.9,3125
+Q0275,Nhom 4: Ngoai pham vi,0.71,0.85,0.85,0.91,1809
+Q0276,Nhom 4: Ngoai pham vi,0.73,0.88,0.9,0.92,3737
+Q0277,Nhom 2: Ngon ngu thuc te,0.9,0.85,0.83,0.81,2323
+Q0278,Nhom 4: Ngoai pham vi,0.9,0.73,0.92,0.91,2256
+Q0279,Nhom 1: Co ban,0.71,0.67,0.87,0.79,3678
+Q0280,Nhom 2: Ngon ngu thuc te,0.72,0.87,0.93,0.88,2079
+Q0281,Nhom 2: Ngon ngu thuc te,0.85,0.73,0.85,0.9,1854
+Q0282,Nhom 5: Da bac dao tao,0.75,0.75,0.9,0.85,918
+Q0283,Nhom 3: Dieu kien cheo,0.9,0.92,0.84,0.93,3176
+Q0284,Nhom 2: Ngon ngu thuc te,0.78,0.66,0.9,0.82,2311
+Q0285,Nhom 2: Ngon ngu thuc te,0.94,0.97,0.9,0.85,3037
+Q0286,Nhom 1: Co ban,0.72,0.9,0.9,0.85,3445
+Q0287,Nhom 2: Ngon ngu thuc te,0.95,0.87,0.96,0.76,1018
+Q0288,Nhom 4: Ngoai pham vi,0.75,0.71,0.88,0.78,3417
+Q0289,Nhom 4: Ngoai pham vi,0.87,0.92,0.9,0.79,1733
+Q0290,Nhom 2: Ngon ngu thuc te,0.75,0.97,0.94,0.93,2015
+Q0291,Nhom 1: Co ban,0.91,0.85,0.84,0.83,1261
+Q0292,Nhom 4: Ngoai pham vi,0.72,0.97,0.89,0.75,1285
+Q0293,Nhom 1: Co ban,0.74,0.96,0.84,0.87,3096
+Q0294,Nhom 5: Da bac dao tao,0.83,0.72,0.91,0.85,2458
+Q0295,Nhom 3: Dieu kien cheo,0.76,0.71,0.99,0.9,1309
+Q0296,Nhom 4: Ngoai pham vi,0.72,0.92,0.82,0.83,3044
+Q0297,Nhom 1: Co ban,0.81,0.9,0.86,0.92,2394
+Q0298,Nhom 3: Dieu kien cheo,0.9,0.97,0.82,0.77,1211
+Q0299,Nhom 1: Co ban,0.71,0.82,0.82,0.91,1826
+Q0300,Nhom 1: Co ban,0.9,0.94,0.94,0.86,2265
+Q0301,Nhom 1: Co ban,0.91,0.7,0.83,0.91,4165
+Q0302,Nhom 1: Co ban,0.95,0.84,0.88,0.97,2688
+Q0303,Nhom 3: Dieu kien cheo,0.71,0.74,0.95,0.85,3723
+Q0304,Nhom 1: Co ban,0.81,0.75,0.82,0.8,970
+Q0305,Nhom 5: Da bac dao tao,0.73,0.91,0.82,0.88,4374
+Q0306,Nhom 2: Ngon ngu thuc te,0.79,0.86,0.93,0.77,2085
+Q0307,Nhom 5: Da bac dao tao,0.85,0.74,0.97,0.84,2134
+Q0308,Nhom 5: Da bac dao tao,0.88,0.88,0.96,0.86,2218
+Q0309,Nhom 1: Co ban,0.88,0.82,0.91,0.86,1133
+Q0310,Nhom 4: Ngoai pham vi,0.72,0.87,0.98,0.9,1667
+Q0311,Nhom 4: Ngoai pham vi,0.83,0.75,0.9,0.81,2748
+Q0312,Nhom 5: Da bac dao tao,0.77,0.83,0.94,0.88,1901
+Q0313,Nhom 5: Da bac dao tao,0.72,0.84,0.91,0.77,804
+Q0314,Nhom 1: Co ban,0.84,0.71,0.92,0.9,2914
+Q0315,Nhom 4: Ngoai pham vi,0.82,0.83,0.92,0.93,1560
+Q0316,Nhom 1: Co ban,0.98,0.9,0.98,0.96,1622
+Q0317,Nhom 2: Ngon ngu thuc te,0.89,0.91,0.83,0.91,3012
+Q0318,Nhom 2: Ngon ngu thuc te,0.72,0.88,0.85,0.84,1837
+Q0319,Nhom 5: Da bac dao tao,0.88,0.91,0.97,0.92,3432
+Q0320,Nhom 2: Ngon ngu thuc te,0.89,0.71,0.9,0.97,4143
+Q0321,Nhom 3: Dieu kien cheo,0.98,0.78,0.92,0.81,2801
+Q0322,Nhom 2: Ngon ngu thuc te,0.74,0.85,0.9,0.79,3772
+Q0323,Nhom 3: Dieu kien cheo,0.74,0.84,0.8,0.87,4233
+Q0324,Nhom 2: Ngon ngu thuc te,0.75,0.93,0.9,0.97,2699
+Q0325,Nhom 4: Ngoai pham vi,0.79,0.74,0.87,0.75,809
+Q0326,Nhom 4: Ngoai pham vi,0.9,0.91,0.98,0.75,3424
+Q0327,Nhom 4: Ngoai pham vi,0.75,0.69,0.85,0.76,1672
+Q0328,Nhom 1: Co ban,0.97,0.82,0.81,0.88,863
+Q0329,Nhom 3: Dieu kien cheo,0.82,0.68,0.93,0.78,3304
+Q0330,Nhom 2: Ngon ngu thuc te,0.86,0.66,0.97,0.85,3089
+Q0331,Nhom 1: Co ban,0.76,0.66,0.9,0.81,1098
+Q0332,Nhom 3: Dieu kien cheo,0.91,0.94,0.82,0.87,2423
+Q0333,Nhom 2: Ngon ngu thuc te,0.76,0.84,0.82,0.84,2400
+Q0334,Nhom 3: Dieu kien cheo,0.94,0.82,0.94,0.88,1498
+Q0335,Nhom 1: Co ban,0.72,0.65,0.95,0.82,4277
+Q0336,Nhom 1: Co ban,0.71,0.77,0.84,0.87,1465
+Q0337,Nhom 5: Da bac dao tao,0.7,0.8,0.86,0.79,3941
+Q0338,Nhom 4: Ngoai pham vi,0.94,0.8,0.99,0.81,1029
+Q0339,Nhom 2: Ngon ngu thuc te,0.83,0.93,0.87,0.91,1434
+Q0340,Nhom 5: Da bac dao tao,0.83,0.88,0.98,0.98,4254
+Q0341,Nhom 4: Ngoai pham vi,0.89,0.75,0.92,0.84,3574
+Q0342,Nhom 2: Ngon ngu thuc te,0.85,0.71,0.94,0.8,2509
+Q0343,Nhom 2: Ngon ngu thuc te,0.87,0.84,0.83,0.95,2939
+Q0344,Nhom 1: Co ban,0.84,0.9,0.87,0.79,2800
+Q0345,Nhom 2: Ngon ngu thuc te,0.98,0.73,0.8,0.93,1438
+Q0346,Nhom 5: Da bac dao tao,0.95,0.66,0.82,0.95,2622
+Q0347,Nhom 5: Da bac dao tao,0.86,0.75,0.97,0.85,2850
+Q0348,Nhom 4: Ngoai pham vi,0.89,0.89,0.89,0.86,2405
+Q0349,Nhom 5: Da bac dao tao,0.74,0.84,0.86,0.91,1528
+Q0350,Nhom 1: Co ban,0.9,0.95,0.85,0.8,3758
+Q0351,Nhom 3: Dieu kien cheo,0.94,0.95,0.82,0.82,1105
+Q0352,Nhom 2: Ngon ngu thuc te,0.89,0.88,0.93,0.76,2402
+Q0353,Nhom 2: Ngon ngu thuc te,0.91,0.65,0.96,0.8,3713
+Q0354,Nhom 2: Ngon ngu thuc te,0.87,0.84,0.83,0.83,4134
+Q0355,Nhom 4: Ngoai pham vi,0.87,0.82,0.95,0.82,2906
+Q0356,Nhom 2: Ngon ngu thuc te,0.74,0.82,0.9,0.95,902
+Q0357,Nhom 5: Da bac dao tao,0.89,0.9,0.9,0.97,3093
+Q0358,Nhom 4: Ngoai pham vi,0.81,0.71,0.99,0.8,904
+Q0359,Nhom 5: Da bac dao tao,0.71,0.89,0.9,0.82,4362
+Q0360,Nhom 2: Ngon ngu thuc te,0.86,0.67,0.92,0.81,3244
+Q0361,Nhom 1: Co ban,0.88,0.71,0.8,0.87,3580
+Q0362,Nhom 5: Da bac dao tao,0.85,0.73,0.8,0.88,2342
+Q0363,Nhom 3: Dieu kien cheo,0.72,0.9,0.9,0.75,1550
+Q0364,Nhom 3: Dieu kien cheo,0.76,0.9,0.98,0.79,4054
+Q0365,Nhom 2: Ngon ngu thuc te,0.71,0.96,0.89,0.94,1838
+Q0366,Nhom 3: Dieu kien cheo,0.8,0.92,0.89,0.92,4126
+Q0367,Nhom 1: Co ban,0.87,0.74,0.85,0.77,4204
+Q0368,Nhom 4: Ngoai pham vi,0.71,0.77,0.94,0.89,1472
+Q0369,Nhom 5: Da bac dao tao,0.9,0.91,0.86,0.75,1338
+Q0370,Nhom 2: Ngon ngu thuc te,0.8,0.66,0.82,0.83,1863
+Q0371,Nhom 3: Dieu kien cheo,0.76,0.73,0.93,0.86,4185
+Q0372,Nhom 5: Da bac dao tao,0.78,0.76,0.85,0.91,2560
+Q0373,Nhom 4: Ngoai pham vi,0.88,0.81,0.85,0.9,1360
+Q0374,Nhom 2: Ngon ngu thuc te,0.87,0.83,0.97,0.86,2271
+Q0375,Nhom 2: Ngon ngu thuc te,0.85,0.88,0.91,0.86,2852
+Q0376,Nhom 2: Ngon ngu thuc te,0.7,0.92,0.98,0.77,1763
+Q0377,Nhom 4: Ngoai pham vi,0.87,0.7,0.88,0.93,814
+Q0378,Nhom 2: Ngon ngu thuc te,0.92,0.88,0.81,0.97,3965
+Q0379,Nhom 1: Co ban,0.97,0.84,0.96,0.81,1163
+Q0380,Nhom 4: Ngoai pham vi,0.85,0.75,0.95,0.83,1332
+Q0381,Nhom 2: Ngon ngu thuc te,0.81,0.87,0.86,0.85,2103
+Q0382,Nhom 4: Ngoai pham vi,0.71,0.79,0.82,0.89,2738
+Q0383,Nhom 2: Ngon ngu thuc te,0.74,0.8,0.9,0.91,2974
+Q0384,Nhom 3: Dieu kien cheo,0.83,0.82,0.88,0.91,3668
+Q0385,Nhom 4: Ngoai pham vi,0.76,0.86,0.82,0.79,1570
+Q0386,Nhom 2: Ngon ngu thuc te,0.95,0.7,0.81,0.89,823
+Q0387,Nhom 5: Da bac dao tao,0.81,0.89,0.98,0.76,3179
+Q0388,Nhom 4: Ngoai pham vi,0.88,0.83,0.89,0.87,3386
+Q0389,Nhom 3: Dieu kien cheo,0.77,0.71,0.87,0.78,2706
+Q0390,Nhom 4: Ngoai pham vi,0.77,0.73,0.95,0.86,2580
+Q0391,Nhom 1: Co ban,0.95,0.94,0.87,0.95,3951
+Q0392,Nhom 2: Ngon ngu thuc te,0.93,0.85,0.98,0.79,3780
+Q0393,Nhom 2: Ngon ngu thuc te,0.87,0.72,0.94,0.98,930
+Q0394,Nhom 5: Da bac dao tao,0.92,0.74,0.86,0.82,3370
+Q0395,Nhom 3: Dieu kien cheo,0.84,0.8,0.93,0.93,3745
+Q0396,Nhom 4: Ngoai pham vi,0.91,0.88,0.97,0.88,838
+Q0397,Nhom 1: Co ban,0.94,0.66,0.9,0.82,4091
+Q0398,Nhom 3: Dieu kien cheo,0.83,0.94,0.91,0.89,3488
+Q0399,Nhom 3: Dieu kien cheo,0.74,0.92,0.92,0.9,2308
+Q0400,Nhom 5: Da bac dao tao,0.98,0.94,0.85,0.95,3585
+Q0401,Nhom 3: Dieu kien cheo,0.96,0.68,0.85,0.92,2571
+Q0402,Nhom 4: Ngoai pham vi,0.97,0.75,0.87,0.85,3931
+Q0403,Nhom 1: Co ban,0.78,0.79,0.89,0.88,2791
+Q0404,Nhom 1: Co ban,0.84,0.79,0.93,0.96,3911
+Q0405,Nhom 5: Da bac dao tao,0.73,0.77,0.98,0.82,2927
+Q0406,Nhom 1: Co ban,0.97,0.93,0.82,0.85,2705
+Q0407,Nhom 1: Co ban,0.72,0.78,0.9,0.82,3221
+Q0408,Nhom 5: Da bac dao tao,0.96,0.97,0.98,0.86,3080
+Q0409,Nhom 2: Ngon ngu thuc te,0.89,0.86,0.91,0.82,1977
+Q0410,Nhom 1: Co ban,0.83,0.68,0.81,0.8,1254
+Q0411,Nhom 1: Co ban,0.8,0.66,0.97,0.84,2936
+Q0412,Nhom 4: Ngoai pham vi,0.91,0.86,0.91,0.82,2297
+Q0413,Nhom 5: Da bac dao tao,0.89,0.86,0.87,0.95,2436
+Q0414,Nhom 2: Ngon ngu thuc te,0.74,0.92,0.83,0.8,842
+Q0415,Nhom 4: Ngoai pham vi,0.89,0.81,0.92,0.9,3644
+Q0416,Nhom 1: Co ban,0.84,0.75,0.87,0.88,2263
+Q0417,Nhom 3: Dieu kien cheo,0.88,0.8,0.87,0.85,1911
+Q0418,Nhom 1: Co ban,0.83,0.98,0.84,0.91,1901
+Q0419,Nhom 3: Dieu kien cheo,0.73,0.72,0.99,0.95,1860
+Q0420,Nhom 5: Da bac dao tao,0.93,0.94,0.81,0.85,1418
+Q0421,Nhom 1: Co ban,0.89,0.85,0.97,0.97,2131
+Q0422,Nhom 1: Co ban,0.92,0.72,0.81,0.78,3873
+Q0423,Nhom 5: Da bac dao tao,0.71,0.78,0.8,0.98,4070
+Q0424,Nhom 2: Ngon ngu thuc te,0.71,0.85,0.89,0.9,2001
+Q0425,Nhom 5: Da bac dao tao,0.74,0.71,0.84,0.8,3763
+Q0426,Nhom 4: Ngoai pham vi,0.96,0.89,0.93,0.88,2500
+Q0427,Nhom 3: Dieu kien cheo,0.86,0.79,0.95,0.98,1043
+Q0428,Nhom 5: Da bac dao tao,0.79,0.88,0.92,0.85,4050
+Q0429,Nhom 4: Ngoai pham vi,0.7,0.88,0.86,0.84,2423
+Q0430,Nhom 5: Da bac dao tao,0.99,0.69,0.83,0.88,1073
+Q0431,Nhom 5: Da bac dao tao,0.9,0.67,0.91,0.78,887
+Q0432,Nhom 1: Co ban,0.8,0.71,0.8,0.79,3951
+Q0433,Nhom 5: Da bac dao tao,0.75,0.93,0.95,0.94,3439
+Q0434,Nhom 3: Dieu kien cheo,0.76,0.85,0.99,0.89,2155
+Q0435,Nhom 5: Da bac dao tao,0.76,0.74,0.87,0.76,2535
+Q0436,Nhom 1: Co ban,0.92,0.7,0.97,0.79,1799
+Q0437,Nhom 3: Dieu kien cheo,0.91,0.83,0.87,0.89,3407
+Q0438,Nhom 3: Dieu kien cheo,0.72,0.89,0.82,0.89,928
+Q0439,Nhom 4: Ngoai pham vi,0.73,0.77,0.88,0.97,3825
+Q0440,Nhom 2: Ngon ngu thuc te,0.93,0.91,0.83,0.83,3793
+Q0441,Nhom 2: Ngon ngu thuc te,0.85,0.85,0.87,0.93,1159
+Q0442,Nhom 3: Dieu kien cheo,0.9,0.72,0.93,0.85,827
+Q0443,Nhom 3: Dieu kien cheo,0.9,0.86,0.83,0.82,857
+Q0444,Nhom 5: Da bac dao tao,0.82,0.87,0.96,0.97,1102
+Q0445,Nhom 4: Ngoai pham vi,0.85,0.95,0.98,0.82,3538
+Q0446,Nhom 5: Da bac dao tao,0.92,0.9,0.86,0.89,1686
+Q0447,Nhom 4: Ngoai pham vi,0.82,0.86,0.98,0.94,2503
+Q0448,Nhom 3: Dieu kien cheo,0.76,0.65,0.95,0.96,2260
+Q0449,Nhom 2: Ngon ngu thuc te,0.75,0.97,0.82,0.78,4272
+Q0450,Nhom 5: Da bac dao tao,0.76,0.67,0.8,0.82,1960
+Q0451,Nhom 4: Ngoai pham vi,0.77,0.94,0.89,0.92,4383
+Q0452,Nhom 3: Dieu kien cheo,0.77,0.81,0.9,0.89,1448
+Q0453,Nhom 5: Da bac dao tao,0.71,0.82,0.82,0.91,1706
+Q0454,Nhom 3: Dieu kien cheo,0.84,0.95,0.92,0.84,829
+Q0455,Nhom 1: Co ban,0.78,0.72,0.98,0.79,2731
+Q0456,Nhom 2: Ngon ngu thuc te,0.87,0.82,0.91,0.94,3775
+Q0457,Nhom 3: Dieu kien cheo,0.8,0.93,0.94,0.8,4485
+Q0458,Nhom 5: Da bac dao tao,0.9,0.92,0.86,0.87,3291
+Q0459,Nhom 4: Ngoai pham vi,0.91,0.77,0.96,0.94,1935
+Q0460,Nhom 5: Da bac dao tao,0.87,0.78,0.89,0.94,2821
+Q0461,Nhom 1: Co ban,0.74,0.8,0.9,0.84,1568
+Q0462,Nhom 4: Ngoai pham vi,0.7,0.85,0.84,0.96,3829
+Q0463,Nhom 1: Co ban,0.76,0.82,0.83,0.93,823
+Q0464,Nhom 4: Ngoai pham vi,0.74,0.73,0.83,0.79,2302
+Q0465,Nhom 5: Da bac dao tao,0.79,0.69,0.92,0.97,3360
+Q0466,Nhom 3: Dieu kien cheo,0.92,0.75,0.83,0.8,1014
+Q0467,Nhom 3: Dieu kien cheo,0.71,0.88,0.83,0.85,3478
+Q0468,Nhom 1: Co ban,0.78,0.7,0.93,0.78,4380
+Q0469,Nhom 5: Da bac dao tao,0.9,0.66,0.88,0.97,2278
+Q0470,Nhom 3: Dieu kien cheo,0.75,0.69,0.91,0.84,2622
+Q0471,Nhom 4: Ngoai pham vi,0.97,0.72,0.97,0.9,1201
+Q0472,Nhom 2: Ngon ngu thuc te,0.77,0.86,0.84,0.87,4016
+Q0473,Nhom 5: Da bac dao tao,0.95,0.69,0.96,0.88,4001
+Q0474,Nhom 5: Da bac dao tao,0.79,0.76,0.96,0.76,1371
+Q0475,Nhom 1: Co ban,0.77,0.74,0.83,0.86,880
+Q0476,Nhom 1: Co ban,0.97,0.8,0.98,0.77,3132
+Q0477,Nhom 5: Da bac dao tao,0.86,0.78,0.81,0.85,1269
+Q0478,Nhom 4: Ngoai pham vi,0.92,0.86,0.93,0.76,2682
+Q0479,Nhom 3: Dieu kien cheo,0.75,0.92,0.91,0.87,4023
+Q0480,Nhom 4: Ngoai pham vi,0.82,0.84,0.9,0.76,4141
+Q0481,Nhom 3: Dieu kien cheo,0.83,0.79,0.81,0.95,2866
+Q0482,Nhom 2: Ngon ngu thuc te,0.75,0.84,0.93,0.82,2480
+Q0483,Nhom 5: Da bac dao tao,0.83,0.92,0.87,0.96,2863
+Q0484,Nhom 2: Ngon ngu thuc te,0.87,0.66,0.9,0.93,2027
+Q0485,Nhom 4: Ngoai pham vi,0.86,0.66,0.91,0.92,2678
+Q0486,Nhom 1: Co ban,0.86,0.83,0.96,0.95,4336
+Q0487,Nhom 4: Ngoai pham vi,0.85,0.85,0.88,0.77,2916
+Q0488,Nhom 2: Ngon ngu thuc te,0.74,0.95,0.98,0.91,4314
+Q0489,Nhom 2: Ngon ngu thuc te,0.93,0.82,0.94,0.79,2385
+Q0490,Nhom 1: Co ban,0.71,0.85,0.86,0.98,2876
+Q0491,Nhom 1: Co ban,0.79,0.68,0.92,0.86,2686
+Q0492,Nhom 5: Da bac dao tao,0.82,0.81,0.82,0.79,1807
+Q0493,Nhom 3: Dieu kien cheo,0.72,0.83,0.92,0.97,3899
+Q0494,Nhom 3: Dieu kien cheo,0.94,0.93,0.9,0.79,2369
+Q0495,Nhom 3: Dieu kien cheo,0.76,0.7,0.87,0.93,3466
+Q0496,Nhom 5: Da bac dao tao,0.98,0.87,0.91,0.84,3752
+Q0497,Nhom 1: Co ban,0.97,0.9,0.87,0.88,4145
+Q0498,Nhom 1: Co ban,0.74,0.89,0.82,0.92,1576
+Q0499,Nhom 4: Ngoai pham vi,0.74,0.77,0.85,0.93,1166
+Q0500,Nhom 5: Da bac dao tao,0.78,0.81,0.88,0.95,3681
+Q0501,Nhom 3: Dieu kien cheo,0.85,0.78,0.82,0.87,4398
+Q0502,Nhom 2: Ngon ngu thuc te,0.97,0.68,0.97,0.76,1738
+Q0503,Nhom 1: Co ban,0.96,0.86,0.88,0.82,2963
+Q0504,Nhom 5: Da bac dao tao,0.77,0.97,0.83,0.78,855
+Q0505,Nhom 3: Dieu kien cheo,0.95,0.97,0.93,0.84,965
+Q0506,Nhom 5: Da bac dao tao,0.87,0.78,0.99,0.86,2953
+Q0507,Nhom 2: Ngon ngu thuc te,0.79,0.8,0.81,0.87,3716
+Q0508,Nhom 5: Da bac dao tao,0.96,0.67,0.82,0.92,1088
+Q0509,Nhom 1: Co ban,0.73,0.74,0.86,0.78,902
+Q0510,Nhom 5: Da bac dao tao,0.98,0.97,0.9,0.91,1975
+Q0511,Nhom 3: Dieu kien cheo,0.8,0.68,0.97,0.8,1647
+Q0512,Nhom 2: Ngon ngu thuc te,0.85,0.94,0.84,0.94,3186
+Q0513,Nhom 1: Co ban,0.79,0.66,0.88,0.93,1616
+Q0514,Nhom 3: Dieu kien cheo,0.96,0.93,0.93,0.82,946
+Q0515,Nhom 5: Da bac dao tao,0.77,0.68,0.87,0.82,2054
+Q0516,Nhom 5: Da bac dao tao,0.73,0.89,0.81,0.89,804
+Q0517,Nhom 3: Dieu kien cheo,0.81,0.73,0.81,0.8,1545
+Q0518,Nhom 5: Da bac dao tao,0.89,0.68,0.89,0.87,3433
+Q0519,Nhom 1: Co ban,0.75,0.96,0.89,0.75,2525
+Q0520,Nhom 4: Ngoai pham vi,0.93,0.85,0.97,0.9,858
+Q0521,Nhom 3: Dieu kien cheo,0.71,0.88,0.97,0.81,4058
+Q0522,Nhom 4: Ngoai pham vi,0.76,0.7,0.84,0.77,1857
+Q0523,Nhom 4: Ngoai pham vi,0.96,0.74,0.95,0.94,1639
+Q0524,Nhom 2: Ngon ngu thuc te,0.98,0.86,0.83,0.93,3470
+Q0525,Nhom 3: Dieu kien cheo,0.71,0.69,0.93,0.76,4460
+Q0526,Nhom 3: Dieu kien cheo,0.88,0.74,0.95,0.8,3497
+Q0527,Nhom 4: Ngoai pham vi,0.78,0.82,0.82,0.98,2624
+Q0528,Nhom 4: Ngoai pham vi,0.82,0.67,0.83,0.93,2999
+Q0529,Nhom 1: Co ban,0.85,0.69,0.89,0.92,4067
+Q0530,Nhom 4: Ngoai pham vi,0.71,0.8,0.93,0.88,2885
+Q0531,Nhom 2: Ngon ngu thuc te,0.74,0.92,0.95,0.81,1397
+Q0532,Nhom 5: Da bac dao tao,0.9,0.84,0.93,0.75,1128
+Q0533,Nhom 4: Ngoai pham vi,0.81,0.81,0.92,0.83,2475
+Q0534,Nhom 5: Da bac dao tao,0.97,0.75,0.82,0.95,2478
+Q0535,Nhom 5: Da bac dao tao,0.9,0.79,0.91,0.86,1172
+Q0536,Nhom 2: Ngon ngu thuc te,0.97,0.85,0.87,0.81,3642
+Q0537,Nhom 2: Ngon ngu thuc te,0.94,0.78,0.83,0.97,3192
+Q0538,Nhom 4: Ngoai pham vi,0.92,0.8,0.9,0.79,2743
+Q0539,Nhom 1: Co ban,0.89,0.76,0.96,0.88,3441
+Q0540,Nhom 4: Ngoai pham vi,0.72,0.96,0.92,0.78,1309
+Q0541,Nhom 2: Ngon ngu thuc te,0.94,0.85,0.82,0.89,1975
+Q0542,Nhom 4: Ngoai pham vi,0.85,0.67,0.9,0.85,1738
+Q0543,Nhom 1: Co ban,0.89,0.66,0.91,0.76,2409
+Q0544,Nhom 1: Co ban,0.81,0.83,0.84,0.93,3141
+Q0545,Nhom 3: Dieu kien cheo,0.86,0.95,0.94,0.97,2756
+Q0546,Nhom 4: Ngoai pham vi,0.96,0.92,0.86,0.83,2532
+Q0547,Nhom 2: Ngon ngu thuc te,0.76,0.9,0.82,0.77,1317
+Q0548,Nhom 2: Ngon ngu thuc te,0.77,0.86,0.96,0.77,4193
+Q0549,Nhom 5: Da bac dao tao,0.86,0.69,0.89,0.96,1315
+Q0550,Nhom 3: Dieu kien cheo,0.78,0.86,0.88,0.81,2699
+Q0551,Nhom 5: Da bac dao tao,0.82,0.7,0.85,0.97,3391
+Q0552,Nhom 2: Ngon ngu thuc te,0.74,0.68,0.98,0.97,2674
+Q0553,Nhom 1: Co ban,0.86,0.96,0.95,0.78,847
+Q0554,Nhom 1: Co ban,0.88,0.98,0.94,0.87,3810
+Q0555,Nhom 5: Da bac dao tao,0.7,0.96,0.96,0.94,4041
+Q0556,Nhom 1: Co ban,0.86,0.73,0.91,0.77,4444
+Q0557,Nhom 1: Co ban,0.9,0.9,0.93,0.86,3484
+Q0558,Nhom 3: Dieu kien cheo,0.83,0.96,0.95,0.76,1656
+Q0559,Nhom 4: Ngoai pham vi,0.8,0.74,0.88,0.82,4032
+Q0560,Nhom 4: Ngoai pham vi,0.89,0.88,0.92,0.83,1714
+Q0561,Nhom 1: Co ban,0.96,0.97,0.98,0.9,3729
+Q0562,Nhom 1: Co ban,0.92,0.65,0.88,0.92,1650
+Q0563,Nhom 1: Co ban,0.71,0.94,0.93,0.88,3926
+Q0564,Nhom 5: Da bac dao tao,0.94,0.69,0.96,0.96,1694
+Q0565,Nhom 2: Ngon ngu thuc te,0.89,0.84,0.95,0.98,1492
+Q0566,Nhom 1: Co ban,0.91,0.75,0.82,0.84,1325
+Q0567,Nhom 1: Co ban,0.71,0.8,0.9,0.85,1900
+Q0568,Nhom 1: Co ban,0.78,0.85,0.93,0.82,902
+Q0569,Nhom 2: Ngon ngu thuc te,0.72,0.77,0.96,0.89,1687
+Q0570,Nhom 2: Ngon ngu thuc te,0.94,0.81,0.89,0.76,2529
+Q0571,Nhom 4: Ngoai pham vi,0.85,0.7,0.93,0.79,4271
+Q0572,Nhom 3: Dieu kien cheo,0.72,0.68,0.8,0.91,904
+Q0573,Nhom 4: Ngoai pham vi,0.72,0.67,0.9,0.96,3279
+Q0574,Nhom 1: Co ban,0.85,0.82,0.87,0.88,1777
+Q0575,Nhom 4: Ngoai pham vi,0.87,0.72,0.82,0.98,1602
+Q0576,Nhom 2: Ngon ngu thuc te,0.9,0.76,0.98,0.87,3408
+Q0577,Nhom 5: Da bac dao tao,0.72,0.75,0.98,0.82,4191
+Q0578,Nhom 5: Da bac dao tao,0.98,0.98,0.9,0.92,3012
+Q0579,Nhom 1: Co ban,0.91,0.92,0.82,0.76,3899
+Q0580,Nhom 2: Ngon ngu thuc te,0.79,0.89,0.83,0.95,3117
+Q0581,Nhom 4: Ngoai pham vi,0.99,0.83,0.82,0.93,1363
+Q0582,Nhom 2: Ngon ngu thuc te,0.85,0.85,0.98,0.77,3193
+Q0583,Nhom 3: Dieu kien cheo,0.85,0.93,0.89,0.84,1488
+Q0584,Nhom 3: Dieu kien cheo,0.82,0.96,0.86,0.81,1494
+Q0585,Nhom 2: Ngon ngu thuc te,0.93,0.67,0.88,0.82,3398
+Q0586,Nhom 1: Co ban,0.81,0.69,0.95,0.91,3626
+Q0587,Nhom 5: Da bac dao tao,0.88,0.85,0.91,0.91,2261
+Q0588,Nhom 3: Dieu kien cheo,0.77,0.72,0.96,0.9,3372
+Q0589,Nhom 2: Ngon ngu thuc te,0.96,0.75,0.97,0.8,2515
+Q0590,Nhom 5: Da bac dao tao,0.99,0.66,0.82,0.94,3646
+Q0591,Nhom 4: Ngoai pham vi,0.88,0.67,0.97,0.91,2269
+Q0592,Nhom 3: Dieu kien cheo,0.98,0.83,0.96,0.79,3148
+Q0593,Nhom 2: Ngon ngu thuc te,0.81,0.96,0.93,0.87,1439
+Q0594,Nhom 1: Co ban,0.97,0.68,0.8,0.98,3703
+Q0595,Nhom 4: Ngoai pham vi,0.77,0.98,0.91,0.92,2465
+Q0596,Nhom 2: Ngon ngu thuc te,0.82,0.68,0.85,0.83,1846
+Q0597,Nhom 2: Ngon ngu thuc te,0.9,0.66,0.82,0.83,872
+Q0598,Nhom 1: Co ban,0.95,0.68,0.95,0.82,3776
+Q0599,Nhom 4: Ngoai pham vi,0.7,0.65,0.94,0.88,1655
+Q0600,Nhom 3: Dieu kien cheo,0.83,0.7,0.94,0.89,4369
+Q0601,Nhom 3: Dieu kien cheo,0.81,0.95,0.82,0.95,2956
+Q0602,Nhom 3: Dieu kien cheo,0.93,0.89,0.92,0.97,2198
+Q0603,Nhom 1: Co ban,0.79,0.98,0.87,0.8,2163
+Q0604,Nhom 1: Co ban,0.89,0.97,0.93,0.89,1573
+Q0605,Nhom 1: Co ban,0.92,0.91,0.9,0.83,4137
+Q0606,Nhom 2: Ngon ngu thuc te,0.78,0.79,0.82,0.95,3126
+Q0607,Nhom 3: Dieu kien cheo,0.72,0.79,0.9,0.86,3390
+Q0608,Nhom 4: Ngoai pham vi,0.77,0.84,0.89,0.75,1085
+Q0609,Nhom 1: Co ban,0.79,0.66,0.87,0.83,2949
+Q0610,Nhom 3: Dieu kien cheo,0.95,0.79,0.9,0.77,3734
+Q0611,Nhom 4: Ngoai pham vi,0.76,0.91,0.9,0.79,2788
+Q0612,Nhom 3: Dieu kien cheo,0.81,0.79,0.99,0.94,2998
+Q0613,Nhom 3: Dieu kien cheo,0.77,0.71,0.84,0.75,3378
+Q0614,Nhom 1: Co ban,0.98,0.82,0.91,0.8,3202
+Q0615,Nhom 3: Dieu kien cheo,0.77,0.9,0.95,0.94,941
+Q0616,Nhom 2: Ngon ngu thuc te,0.84,0.75,0.84,0.8,3276
+Q0617,Nhom 5: Da bac dao tao,0.89,0.79,0.96,0.85,2220
+Q0618,Nhom 2: Ngon ngu thuc te,0.82,0.75,0.81,0.95,1618
+Q0619,Nhom 4: Ngoai pham vi,0.96,0.97,0.94,0.96,2528
+Q0620,Nhom 4: Ngoai pham vi,0.71,0.79,0.9,0.76,3805
+Q0621,Nhom 1: Co ban,0.82,0.79,0.83,0.79,4055
+Q0622,Nhom 3: Dieu kien cheo,0.71,0.77,0.88,0.9,2788
+Q0623,Nhom 4: Ngoai pham vi,0.82,0.88,0.85,0.8,4368
+Q0624,Nhom 2: Ngon ngu thuc te,0.85,0.89,0.86,0.8,1494
+Q0625,Nhom 5: Da bac dao tao,0.9,0.83,0.85,0.9,1305
+Q0626,Nhom 1: Co ban,0.79,0.78,0.84,0.77,1605
+Q0627,Nhom 4: Ngoai pham vi,0.88,0.72,0.85,0.92,2921
+Q0628,Nhom 1: Co ban,0.78,0.84,0.91,0.93,3842
+Q0629,Nhom 4: Ngoai pham vi,0.92,0.8,0.98,0.75,3007
+Q0630,Nhom 3: Dieu kien cheo,0.92,0.93,0.99,0.9,1838
+Q0631,Nhom 5: Da bac dao tao,0.8,0.9,0.89,0.76,4449
+Q0632,Nhom 5: Da bac dao tao,0.86,0.8,0.84,0.88,3503
+Q0633,Nhom 3: Dieu kien cheo,0.88,0.81,0.82,0.9,4023
+Q0634,Nhom 3: Dieu kien cheo,0.71,0.92,0.84,0.94,3928
+Q0635,Nhom 1: Co ban,0.92,0.89,0.94,0.77,2486
+Q0636,Nhom 3: Dieu kien cheo,0.71,0.68,0.8,0.93,4397
+Q0637,Nhom 3: Dieu kien cheo,0.81,0.77,0.91,0.8,2208
+Q0638,Nhom 5: Da bac dao tao,0.75,0.67,0.97,0.75,2802
+Q0639,Nhom 3: Dieu kien cheo,0.83,0.84,0.95,0.75,957
+Q0640,Nhom 3: Dieu kien cheo,0.85,0.85,0.89,0.84,2360
+Q0641,Nhom 2: Ngon ngu thuc te,0.88,0.72,0.8,0.94,1363
+Q0642,Nhom 5: Da bac dao tao,0.92,0.66,0.8,0.96,4348
+Q0643,Nhom 2: Ngon ngu thuc te,0.76,0.97,0.87,0.89,2128
+Q0644,Nhom 2: Ngon ngu thuc te,0.98,0.69,0.91,0.93,2552
+Q0645,Nhom 3: Dieu kien cheo,0.89,0.94,0.95,0.98,3499
+Q0646,Nhom 1: Co ban,0.75,0.94,0.83,0.85,1323
+Q0647,Nhom 2: Ngon ngu thuc te,0.96,0.85,0.81,0.98,3457
+Q0648,Nhom 1: Co ban,0.88,0.71,0.9,0.76,2277
+Q0649,Nhom 4: Ngoai pham vi,0.93,0.87,0.94,0.9,4337
+Q0650,Nhom 3: Dieu kien cheo,0.95,0.85,0.95,0.88,3901
+Q0651,Nhom 1: Co ban,0.85,0.97,0.98,0.83,4119
+Q0652,Nhom 3: Dieu kien cheo,0.95,0.93,0.98,0.79,3813
+Q0653,Nhom 2: Ngon ngu thuc te,0.98,0.7,0.84,0.91,2578
+Q0654,Nhom 1: Co ban,0.96,0.94,0.96,0.95,865
+Q0655,Nhom 4: Ngoai pham vi,0.74,0.68,0.93,0.95,2143
+Q0656,Nhom 5: Da bac dao tao,0.92,0.72,0.94,0.9,1973
+Q0657,Nhom 2: Ngon ngu thuc te,0.93,0.91,0.88,0.93,3062
+Q0658,Nhom 5: Da bac dao tao,0.76,0.82,0.84,0.94,2486
+Q0659,Nhom 4: Ngoai pham vi,0.77,0.92,0.81,0.96,4139
+Q0660,Nhom 1: Co ban,0.79,0.83,0.81,0.97,3287
+Q0661,Nhom 3: Dieu kien cheo,0.75,0.72,0.98,0.9,4247
+Q0662,Nhom 1: Co ban,0.83,0.68,0.97,0.77,2697
+Q0663,Nhom 5: Da bac dao tao,0.76,0.65,0.95,0.76,3309
+Q0664,Nhom 5: Da bac dao tao,0.74,0.86,0.95,0.77,2168
+Q0665,Nhom 5: Da bac dao tao,0.96,0.68,0.83,0.94,3370
+Q0666,Nhom 2: Ngon ngu thuc te,0.82,0.89,0.93,0.82,2780
+Q0667,Nhom 1: Co ban,0.97,0.76,0.81,0.94,1050
+Q0668,Nhom 3: Dieu kien cheo,0.91,0.87,0.8,0.88,3458
+Q0669,Nhom 3: Dieu kien cheo,0.94,0.66,0.84,0.78,1219
+Q0670,Nhom 4: Ngoai pham vi,0.99,0.91,0.97,0.78,3864
+Q0671,Nhom 5: Da bac dao tao,0.79,0.8,0.91,0.9,1332
+Q0672,Nhom 3: Dieu kien cheo,0.94,0.88,0.86,0.98,1489
+Q0673,Nhom 1: Co ban,0.8,0.85,0.93,0.87,1659
+Q0674,Nhom 1: Co ban,0.74,0.76,0.87,0.75,1966
+Q0675,Nhom 2: Ngon ngu thuc te,0.76,0.79,0.95,0.79,3092
+Q0676,Nhom 2: Ngon ngu thuc te,0.85,0.86,0.86,0.9,2466
+Q0677,Nhom 4: Ngoai pham vi,0.73,0.81,0.92,0.79,926
+Q0678,Nhom 1: Co ban,0.78,0.76,0.95,0.98,1168
+Q0679,Nhom 2: Ngon ngu thuc te,0.74,0.96,0.81,0.82,1800
+Q0680,Nhom 3: Dieu kien cheo,0.93,0.69,0.91,0.79,3993
+Q0681,Nhom 1: Co ban,0.71,0.83,0.94,0.96,4485
+Q0682,Nhom 1: Co ban,0.75,0.67,0.8,0.79,1397
+Q0683,Nhom 3: Dieu kien cheo,0.88,0.96,0.88,0.95,4388
+Q0684,Nhom 1: Co ban,0.75,0.96,0.81,0.83,1125
+Q0685,Nhom 4: Ngoai pham vi,0.97,0.9,0.98,0.86,817
+Q0686,Nhom 4: Ngoai pham vi,0.77,0.87,0.85,0.86,2888
+Q0687,Nhom 1: Co ban,0.96,0.67,0.86,0.77,873
+Q0688,Nhom 1: Co ban,0.73,0.82,0.9,0.85,2498
+Q0689,Nhom 5: Da bac dao tao,0.73,0.93,0.89,0.88,2335
+Q0690,Nhom 3: Dieu kien cheo,0.86,0.9,0.87,0.88,3908
+Q0691,Nhom 3: Dieu kien cheo,0.87,0.77,0.92,0.82,4328
+Q0692,Nhom 5: Da bac dao tao,0.82,0.67,0.84,0.9,2625
+Q0693,Nhom 4: Ngoai pham vi,0.75,0.96,0.82,0.89,3691
+Q0694,Nhom 5: Da bac dao tao,0.95,0.75,0.81,0.82,2513
+Q0695,Nhom 5: Da bac dao tao,0.87,0.8,0.86,0.87,2581
+Q0696,Nhom 3: Dieu kien cheo,0.87,0.86,0.99,0.94,1009
+Q0697,Nhom 3: Dieu kien cheo,0.81,0.82,0.87,0.81,902
+Q0698,Nhom 5: Da bac dao tao,0.96,0.95,0.83,0.97,3817
+Q0699,Nhom 4: Ngoai pham vi,0.86,0.67,0.84,0.9,4133
+Q0700,Nhom 5: Da bac dao tao,0.74,0.79,0.88,0.96,1393
+Q0701,Nhom 4: Ngoai pham vi,0.94,0.66,0.89,0.9,2257
+Q0702,Nhom 2: Ngon ngu thuc te,0.84,0.82,0.82,0.84,3355
+Q0703,Nhom 1: Co ban,0.8,0.75,0.94,0.94,3182
+Q0704,Nhom 5: Da bac dao tao,0.8,0.73,0.92,0.89,2269
+Q0705,Nhom 2: Ngon ngu thuc te,0.93,0.69,0.88,0.98,2396
+Q0706,Nhom 4: Ngoai pham vi,0.73,0.71,0.95,0.92,1690
+Q0707,Nhom 5: Da bac dao tao,0.76,0.7,0.91,0.95,3647
+Q0708,Nhom 3: Dieu kien cheo,0.99,0.78,0.98,0.76,4094
+Q0709,Nhom 1: Co ban,0.75,0.84,0.84,0.9,4442
+Q0710,Nhom 2: Ngon ngu thuc te,0.72,0.94,0.84,0.87,1537
+Q0711,Nhom 1: Co ban,0.89,0.86,0.88,0.76,1763
+Q0712,Nhom 4: Ngoai pham vi,0.99,0.77,0.85,0.84,4426
+Q0713,Nhom 3: Dieu kien cheo,0.76,0.95,0.96,0.88,4275
+Q0714,Nhom 3: Dieu kien cheo,0.94,0.7,0.86,0.78,3776
+Q0715,Nhom 3: Dieu kien cheo,0.71,0.69,0.87,0.78,2982
+Q0716,Nhom 1: Co ban,0.73,0.75,0.82,0.83,3324
+Q0717,Nhom 3: Dieu kien cheo,0.93,0.66,0.98,0.85,2464
+Q0718,Nhom 5: Da bac dao tao,0.97,0.81,0.83,0.95,1179
+Q0719,Nhom 1: Co ban,0.86,0.67,0.91,0.78,895
+Q0720,Nhom 4: Ngoai pham vi,0.73,0.98,0.88,0.87,3263
+Q0721,Nhom 3: Dieu kien cheo,0.94,0.88,0.87,0.79,2513
+Q0722,Nhom 4: Ngoai pham vi,0.98,0.9,0.98,0.85,3660
+Q0723,Nhom 2: Ngon ngu thuc te,0.79,0.84,0.85,0.82,886
+Q0724,Nhom 4: Ngoai pham vi,0.91,0.89,0.96,0.87,1619
+Q0725,Nhom 5: Da bac dao tao,0.83,0.75,0.82,0.85,3811
+Q0726,Nhom 4: Ngoai pham vi,0.92,0.9,0.88,0.97,1652
+Q0727,Nhom 4: Ngoai pham vi,0.9,0.7,0.82,0.94,2150
+Q0728,Nhom 1: Co ban,0.74,0.73,0.89,0.88,1832
+Q0729,Nhom 4: Ngoai pham vi,0.85,0.74,0.83,0.81,1488
+Q0730,Nhom 1: Co ban,0.8,0.95,0.87,0.95,4351
+Q0731,Nhom 2: Ngon ngu thuc te,0.97,0.78,0.93,0.89,2211
+Q0732,Nhom 4: Ngoai pham vi,0.96,0.72,0.83,0.98,1950
+Q0733,Nhom 1: Co ban,0.9,0.81,0.85,0.86,1631
+Q0734,Nhom 1: Co ban,0.92,0.75,0.83,0.82,846
+Q0735,Nhom 4: Ngoai pham vi,0.98,0.86,0.96,0.79,2836
+Q0736,Nhom 1: Co ban,0.95,0.7,0.88,0.83,3196
+Q0737,Nhom 3: Dieu kien cheo,0.92,0.82,0.92,0.97,1333
+Q0738,Nhom 1: Co ban,0.92,0.88,0.9,0.79,1843
+Q0739,Nhom 1: Co ban,0.89,0.84,0.83,0.76,1847
+Q0740,Nhom 5: Da bac dao tao,0.87,0.75,0.93,0.77,2108
+Q0741,Nhom 2: Ngon ngu thuc te,0.92,0.81,0.84,0.82,3537
+Q0742,Nhom 1: Co ban,0.87,0.86,0.97,0.96,1354
+Q0743,Nhom 1: Co ban,0.87,0.96,0.89,0.81,4487
+Q0744,Nhom 2: Ngon ngu thuc te,0.94,0.66,0.86,0.98,1265
+Q0745,Nhom 4: Ngoai pham vi,0.88,0.68,0.8,0.8,4257
+Q0746,Nhom 5: Da bac dao tao,0.93,0.94,0.98,0.9,4251
+Q0747,Nhom 3: Dieu kien cheo,0.74,0.76,0.92,0.93,2532
+Q0748,Nhom 4: Ngoai pham vi,0.92,0.76,0.93,0.84,2555
+Q0749,Nhom 2: Ngon ngu thuc te,0.82,0.97,0.83,0.87,3852
+Q0750,Nhom 3: Dieu kien cheo,0.71,0.68,0.98,0.86,3216
+Q0751,Nhom 3: Dieu kien cheo,0.97,0.96,0.89,0.77,3875
+Q0752,Nhom 3: Dieu kien cheo,0.88,0.92,0.86,0.86,1806
+Q0753,Nhom 4: Ngoai pham vi,0.93,0.86,0.84,0.91,2445
+Q0754,Nhom 5: Da bac dao tao,0.76,0.93,0.86,0.91,2157
+Q0755,Nhom 2: Ngon ngu thuc te,0.87,0.74,0.95,0.79,4297
+Q0756,Nhom 4: Ngoai pham vi,0.76,0.67,0.87,0.9,2709
+Q0757,Nhom 3: Dieu kien cheo,0.83,0.93,0.88,0.98,1676
+Q0758,Nhom 1: Co ban,0.92,0.74,0.88,0.78,2180
+Q0759,Nhom 1: Co ban,0.97,0.89,0.9,0.82,2606
+Q0760,Nhom 2: Ngon ngu thuc te,0.82,0.8,0.98,0.93,4355
+Q0761,Nhom 3: Dieu kien cheo,0.97,0.67,0.93,0.86,2747
+Q0762,Nhom 3: Dieu kien cheo,0.9,0.8,0.99,0.92,3070
+Q0763,Nhom 3: Dieu kien cheo,0.73,0.72,0.98,0.78,2626
+Q0764,Nhom 5: Da bac dao tao,0.73,0.72,0.83,0.83,3896
+Q0765,Nhom 4: Ngoai pham vi,0.9,0.87,0.84,0.95,2880
+Q0766,Nhom 5: Da bac dao tao,0.88,0.91,0.97,0.89,4117
+Q0767,Nhom 5: Da bac dao tao,0.88,0.79,0.84,0.82,3631
+Q0768,Nhom 1: Co ban,0.85,0.86,0.94,0.98,1717
+Q0769,Nhom 3: Dieu kien cheo,0.92,0.97,0.91,0.82,1723
+Q0770,Nhom 4: Ngoai pham vi,0.74,0.93,0.86,0.84,3628
+Q0771,Nhom 4: Ngoai pham vi,0.77,0.77,0.92,0.77,2176
+Q0772,Nhom 2: Ngon ngu thuc te,0.77,0.98,0.82,0.93,2320
+Q0773,Nhom 3: Dieu kien cheo,0.83,0.75,0.84,0.82,3242
+Q0774,Nhom 1: Co ban,0.88,0.74,0.88,0.77,4405
+Q0775,Nhom 5: Da bac dao tao,0.79,0.69,0.85,0.79,1486
+Q0776,Nhom 5: Da bac dao tao,0.85,0.84,0.96,0.96,4028
+Q0777,Nhom 2: Ngon ngu thuc te,0.79,0.78,0.99,0.77,3969
+Q0778,Nhom 1: Co ban,0.77,0.73,0.91,0.78,3701
+Q0779,Nhom 2: Ngon ngu thuc te,0.93,0.69,0.97,0.93,3185
+Q0780,Nhom 5: Da bac dao tao,0.72,0.67,0.89,0.76,3586
+Q0781,Nhom 1: Co ban,0.72,0.97,0.94,0.76,3235
+Q0782,Nhom 3: Dieu kien cheo,0.99,0.71,0.81,0.77,3151
+Q0783,Nhom 3: Dieu kien cheo,0.79,0.74,0.92,0.91,2263
+Q0784,Nhom 4: Ngoai pham vi,0.86,0.79,0.86,0.88,2639
+Q0785,Nhom 1: Co ban,0.99,0.83,0.96,0.96,3030
+Q0786,Nhom 5: Da bac dao tao,0.87,0.87,0.98,0.81,4222
+Q0787,Nhom 4: Ngoai pham vi,0.72,0.89,0.97,0.82,3851
+Q0788,Nhom 2: Ngon ngu thuc te,0.71,0.7,0.98,0.98,2416
+Q0789,Nhom 2: Ngon ngu thuc te,0.97,0.67,0.85,0.79,2829
+Q0790,Nhom 1: Co ban,0.85,0.86,0.9,0.89,2036
+Q0791,Nhom 5: Da bac dao tao,0.91,0.7,0.83,0.86,2361
+Q0792,Nhom 5: Da bac dao tao,0.98,0.92,0.94,0.79,2071
+Q0793,Nhom 5: Da bac dao tao,0.78,0.68,0.89,0.79,1501
+Q0794,Nhom 1: Co ban,0.8,0.88,0.94,0.86,4251
+Q0795,Nhom 3: Dieu kien cheo,0.96,0.95,0.96,0.82,2400
+Q0796,Nhom 2: Ngon ngu thuc te,0.72,0.85,0.91,0.81,1217
+Q0797,Nhom 5: Da bac dao tao,0.97,0.86,0.81,0.79,4130
+Q0798,Nhom 3: Dieu kien cheo,0.89,0.97,0.88,0.85,2147
+Q0799,Nhom 2: Ngon ngu thuc te,0.81,0.98,0.86,0.97,4412
+Q0800,Nhom 2: Ngon ngu thuc te,0.89,0.96,0.91,0.78,1635
+Q0801,Nhom 5: Da bac dao tao,0.91,0.68,0.89,0.95,3854
+Q0802,Nhom 4: Ngoai pham vi,0.98,0.67,0.95,0.78,4040
+Q0803,Nhom 2: Ngon ngu thuc te,0.8,0.94,0.83,0.83,1346
+Q0804,Nhom 2: Ngon ngu thuc te,0.77,0.84,0.96,0.81,2455
+Q0805,Nhom 3: Dieu kien cheo,0.97,0.76,0.83,0.97,3550
+Q0806,Nhom 1: Co ban,0.86,0.79,0.85,0.97,1135
+Q0807,Nhom 5: Da bac dao tao,0.8,0.92,0.87,0.88,2732
+Q0808,Nhom 2: Ngon ngu thuc te,0.79,0.68,0.98,0.86,2007
+Q0809,Nhom 4: Ngoai pham vi,0.84,0.72,0.94,0.89,1558
+Q0810,Nhom 3: Dieu kien cheo,0.84,0.95,0.86,0.83,1048
+Q0811,Nhom 3: Dieu kien cheo,0.72,0.86,0.93,0.77,1067
+Q0812,Nhom 3: Dieu kien cheo,0.99,0.72,0.96,0.87,1242
+Q0813,Nhom 5: Da bac dao tao,0.77,0.87,0.82,0.91,4457
+Q0814,Nhom 4: Ngoai pham vi,0.77,0.83,0.98,0.9,816
+Q0815,Nhom 4: Ngoai pham vi,0.93,0.79,0.92,0.79,3837
+Q0816,Nhom 1: Co ban,0.85,0.97,0.82,0.8,806
+Q0817,Nhom 1: Co ban,0.85,0.74,0.88,0.83,3482
+Q0818,Nhom 4: Ngoai pham vi,0.89,0.69,0.84,0.86,4313
+Q0819,Nhom 2: Ngon ngu thuc te,0.89,0.7,0.91,0.9,2109
+Q0820,Nhom 3: Dieu kien cheo,0.73,0.84,0.95,0.85,2089
+Q0821,Nhom 1: Co ban,0.74,0.71,0.95,0.95,2328
+Q0822,Nhom 4: Ngoai pham vi,0.78,0.97,0.84,0.8,1701
+Q0823,Nhom 5: Da bac dao tao,0.77,0.89,0.88,0.86,3291
+Q0824,Nhom 2: Ngon ngu thuc te,0.98,0.7,0.99,0.88,2677
+Q0825,Nhom 4: Ngoai pham vi,0.71,0.66,0.86,0.94,3833
+Q0826,Nhom 2: Ngon ngu thuc te,0.85,0.83,0.91,0.8,2828
+Q0827,Nhom 2: Ngon ngu thuc te,0.9,0.67,0.97,0.83,3704
+Q0828,Nhom 2: Ngon ngu thuc te,0.74,0.78,0.89,0.88,1067
+Q0829,Nhom 1: Co ban,0.88,0.72,0.95,0.92,4056
+Q0830,Nhom 5: Da bac dao tao,0.9,0.96,0.91,0.77,2979
+Q0831,Nhom 3: Dieu kien cheo,0.78,0.67,0.86,0.94,1731
+Q0832,Nhom 2: Ngon ngu thuc te,0.86,0.95,0.86,0.97,4498
+Q0833,Nhom 4: Ngoai pham vi,0.82,0.95,0.9,0.83,3797
+Q0834,Nhom 4: Ngoai pham vi,0.73,0.92,0.91,0.79,1081
+Q0835,Nhom 5: Da bac dao tao,0.92,0.72,0.91,0.87,3922
+Q0836,Nhom 3: Dieu kien cheo,0.82,0.92,0.88,0.77,3603
+Q0837,Nhom 3: Dieu kien cheo,0.94,0.74,0.94,0.95,1151
+Q0838,Nhom 2: Ngon ngu thuc te,0.73,0.78,0.9,0.89,3620
+Q0839,Nhom 4: Ngoai pham vi,0.88,0.89,0.85,0.78,2869
+Q0840,Nhom 5: Da bac dao tao,0.9,0.85,0.99,0.83,3037
+Q0841,Nhom 2: Ngon ngu thuc te,0.85,0.7,0.91,0.82,3595
+Q0842,Nhom 5: Da bac dao tao,0.84,0.73,0.89,0.89,801
+Q0843,Nhom 2: Ngon ngu thuc te,0.95,0.81,0.82,0.87,1872
+Q0844,Nhom 5: Da bac dao tao,0.78,0.84,0.88,0.77,3137
+Q0845,Nhom 2: Ngon ngu thuc te,0.96,0.94,0.86,0.81,1172
+Q0846,Nhom 2: Ngon ngu thuc te,0.73,0.73,0.84,0.88,871
+Q0847,Nhom 5: Da bac dao tao,0.84,0.72,0.9,0.86,1890
+Q0848,Nhom 2: Ngon ngu thuc te,0.89,0.72,0.93,0.91,1664
+Q0849,Nhom 4: Ngoai pham vi,0.78,0.67,0.91,0.77,1578
+Q0850,Nhom 3: Dieu kien cheo,0.96,0.97,0.83,0.82,1763
+Q0851,Nhom 5: Da bac dao tao,0.81,0.81,0.9,0.89,3553
+Q0852,Nhom 4: Ngoai pham vi,0.8,0.66,0.86,0.83,3337
+Q0853,Nhom 1: Co ban,0.84,0.77,0.85,0.77,3217
+Q0854,Nhom 3: Dieu kien cheo,0.95,0.83,0.97,0.88,2175
+Q0855,Nhom 5: Da bac dao tao,0.88,0.97,0.82,0.78,4314
+Q0856,Nhom 4: Ngoai pham vi,0.93,0.66,0.95,0.89,4301
+Q0857,Nhom 5: Da bac dao tao,0.85,0.73,0.99,0.83,4355
+Q0858,Nhom 5: Da bac dao tao,0.83,0.92,0.87,0.88,3771
+Q0859,Nhom 2: Ngon ngu thuc te,0.89,0.76,0.97,0.81,4235
+Q0860,Nhom 3: Dieu kien cheo,0.72,0.71,0.82,0.78,4385
+Q0861,Nhom 3: Dieu kien cheo,0.76,0.87,0.99,0.9,1157
+Q0862,Nhom 4: Ngoai pham vi,0.82,0.72,0.87,0.91,3897
+Q0863,Nhom 5: Da bac dao tao,0.7,0.77,0.91,0.85,1497
+Q0864,Nhom 4: Ngoai pham vi,0.96,0.88,0.9,0.85,2797
+Q0865,Nhom 5: Da bac dao tao,0.84,0.76,0.81,0.91,2143
+Q0866,Nhom 4: Ngoai pham vi,0.97,0.95,0.85,0.97,1091
+Q0867,Nhom 4: Ngoai pham vi,0.75,0.86,0.85,0.88,4341
+Q0868,Nhom 4: Ngoai pham vi,0.9,0.94,0.92,0.78,1317
+Q0869,Nhom 1: Co ban,0.86,0.79,0.82,0.75,4423
+Q0870,Nhom 1: Co ban,0.75,0.68,0.9,0.82,2123
+Q0871,Nhom 4: Ngoai pham vi,0.7,0.68,0.96,0.94,889
+Q0872,Nhom 2: Ngon ngu thuc te,0.78,0.75,0.95,0.77,4261
+Q0873,Nhom 2: Ngon ngu thuc te,0.98,0.9,0.85,0.82,2528
+Q0874,Nhom 4: Ngoai pham vi,0.75,0.69,0.85,0.76,3827
+Q0875,Nhom 1: Co ban,0.72,0.95,0.87,0.78,1150
+Q0876,Nhom 1: Co ban,0.95,0.79,0.86,0.92,1519
+Q0877,Nhom 4: Ngoai pham vi,0.84,0.7,0.87,0.76,1893
+Q0878,Nhom 4: Ngoai pham vi,0.8,0.91,0.91,0.87,4016
+Q0879,Nhom 2: Ngon ngu thuc te,0.97,0.96,0.82,0.96,1909
+Q0880,Nhom 5: Da bac dao tao,0.82,0.86,0.8,0.85,1096
+Q0881,Nhom 3: Dieu kien cheo,0.89,0.68,0.85,0.98,2701
+Q0882,Nhom 4: Ngoai pham vi,0.83,0.86,0.82,0.82,1733
+Q0883,Nhom 4: Ngoai pham vi,0.84,0.89,0.91,0.75,2372
+Q0884,Nhom 5: Da bac dao tao,0.86,0.67,0.8,0.83,3134
+Q0885,Nhom 3: Dieu kien cheo,0.73,0.88,0.83,0.9,1231
+Q0886,Nhom 5: Da bac dao tao,0.79,0.82,0.97,0.97,907
+Q0887,Nhom 5: Da bac dao tao,0.82,0.81,0.96,0.8,2054
+Q0888,Nhom 5: Da bac dao tao,0.73,0.7,0.9,0.81,3631
+Q0889,Nhom 4: Ngoai pham vi,0.85,0.87,0.94,0.82,2322
+Q0890,Nhom 1: Co ban,0.85,0.81,0.84,0.78,2170
+Q0891,Nhom 4: Ngoai pham vi,0.86,0.76,0.84,0.87,3254
+Q0892,Nhom 3: Dieu kien cheo,0.89,0.77,0.9,0.8,3688
+Q0893,Nhom 3: Dieu kien cheo,0.92,0.96,0.87,0.82,4358
+Q0894,Nhom 4: Ngoai pham vi,0.72,0.92,0.99,0.96,3603
+Q0895,Nhom 5: Da bac dao tao,0.93,0.8,0.82,0.77,966
+Q0896,Nhom 5: Da bac dao tao,0.91,0.91,0.83,0.8,4424
+Q0897,Nhom 5: Da bac dao tao,0.87,0.88,0.96,0.77,3005
+Q0898,Nhom 1: Co ban,0.71,0.95,0.95,0.8,1834
+Q0899,Nhom 3: Dieu kien cheo,0.95,0.78,0.97,0.83,1103
+Q0900,Nhom 5: Da bac dao tao,0.79,0.79,0.99,0.88,1335
+Q0901,Nhom 3: Dieu kien cheo,0.97,0.77,0.92,0.96,3059
+Q0902,Nhom 1: Co ban,0.72,0.96,0.81,0.91,2251
+Q0903,Nhom 3: Dieu kien cheo,0.79,0.67,0.87,0.95,2783
+Q0904,Nhom 2: Ngon ngu thuc te,0.99,0.81,0.94,0.86,1196
+Q0905,Nhom 3: Dieu kien cheo,0.97,0.75,0.94,0.84,4211
+Q0906,Nhom 5: Da bac dao tao,0.71,0.74,0.96,0.81,2809
+Q0907,Nhom 5: Da bac dao tao,0.75,0.97,0.95,0.79,3836
+Q0908,Nhom 1: Co ban,0.97,0.75,0.96,0.88,4203
+Q0909,Nhom 4: Ngoai pham vi,0.97,0.83,0.86,0.95,3067
+Q0910,Nhom 2: Ngon ngu thuc te,0.76,0.9,0.93,0.9,3917
+Q0911,Nhom 3: Dieu kien cheo,0.99,0.95,0.87,0.98,1270
+Q0912,Nhom 5: Da bac dao tao,0.75,0.72,0.83,0.86,3959
+Q0913,Nhom 3: Dieu kien cheo,0.8,0.89,0.95,0.93,3699
+Q0914,Nhom 3: Dieu kien cheo,0.95,0.75,0.82,0.86,2301
+Q0915,Nhom 1: Co ban,0.88,0.94,0.87,0.86,3901
+Q0916,Nhom 2: Ngon ngu thuc te,0.74,0.87,0.95,0.79,3605
+Q0917,Nhom 3: Dieu kien cheo,0.71,0.68,0.88,0.98,4363
+Q0918,Nhom 4: Ngoai pham vi,0.81,0.9,0.82,0.93,3983
+Q0919,Nhom 1: Co ban,0.93,0.71,0.89,0.93,3573
+Q0920,Nhom 2: Ngon ngu thuc te,0.85,0.97,0.95,0.93,3104
+Q0921,Nhom 4: Ngoai pham vi,0.91,0.8,0.84,0.9,3497
+Q0922,Nhom 3: Dieu kien cheo,0.79,0.85,0.87,0.81,2575
+Q0923,Nhom 5: Da bac dao tao,0.95,0.95,0.85,0.96,1440
+Q0924,Nhom 3: Dieu kien cheo,0.9,0.88,0.87,0.97,867
+Q0925,Nhom 2: Ngon ngu thuc te,0.93,0.93,0.94,0.93,2046
+Q0926,Nhom 4: Ngoai pham vi,0.71,0.88,0.93,0.88,2183
+Q0927,Nhom 1: Co ban,0.97,0.91,0.97,0.98,1165
+Q0928,Nhom 4: Ngoai pham vi,0.95,0.76,0.86,0.91,1911
+Q0929,Nhom 1: Co ban,0.84,0.73,0.96,0.92,3712
+Q0930,Nhom 3: Dieu kien cheo,0.8,0.66,0.89,0.83,1390
+Q0931,Nhom 2: Ngon ngu thuc te,0.85,0.79,0.99,0.95,4225
+Q0932,Nhom 5: Da bac dao tao,0.92,0.68,0.84,0.86,3920
+Q0933,Nhom 2: Ngon ngu thuc te,0.93,0.71,0.82,0.88,1787
+Q0934,Nhom 3: Dieu kien cheo,0.94,0.71,0.84,0.88,3339
+Q0935,Nhom 5: Da bac dao tao,0.72,0.7,0.87,0.9,4167
+Q0936,Nhom 5: Da bac dao tao,0.9,0.89,0.97,0.79,3999
+Q0937,Nhom 2: Ngon ngu thuc te,0.99,0.91,0.97,0.77,3149
+Q0938,Nhom 5: Da bac dao tao,0.86,0.83,0.98,0.98,4284
+Q0939,Nhom 4: Ngoai pham vi,0.96,0.66,0.84,0.8,1865
+Q0940,Nhom 4: Ngoai pham vi,0.92,0.68,0.84,0.87,3316
+Q0941,Nhom 4: Ngoai pham vi,0.98,0.96,0.89,0.82,1291
+Q0942,Nhom 2: Ngon ngu thuc te,0.99,0.72,0.97,0.86,2807
+Q0943,Nhom 4: Ngoai pham vi,0.75,0.94,0.91,0.87,2711
+Q0944,Nhom 5: Da bac dao tao,0.98,0.85,0.9,0.81,2758
+Q0945,Nhom 4: Ngoai pham vi,0.92,0.84,0.87,0.88,1285
+Q0946,Nhom 1: Co ban,0.79,0.96,0.82,0.93,1633
+Q0947,Nhom 5: Da bac dao tao,0.89,0.72,0.9,0.82,968
+Q0948,Nhom 4: Ngoai pham vi,0.84,0.77,0.98,0.79,3755
+Q0949,Nhom 1: Co ban,0.98,0.8,0.86,0.9,1390
+Q0950,Nhom 3: Dieu kien cheo,0.76,0.92,0.96,0.81,4185
+Q0951,Nhom 4: Ngoai pham vi,0.88,0.71,0.91,0.84,2144
+Q0952,Nhom 1: Co ban,0.91,0.94,0.87,0.83,3117
+Q0953,Nhom 4: Ngoai pham vi,0.94,0.79,0.88,0.76,4049
+Q0954,Nhom 5: Da bac dao tao,0.88,0.68,0.94,0.81,2601
+Q0955,Nhom 1: Co ban,0.72,0.85,0.91,0.94,3432
+Q0956,Nhom 3: Dieu kien cheo,0.86,0.78,0.96,0.91,2602
+Q0957,Nhom 5: Da bac dao tao,0.94,0.94,0.86,0.82,4340
+Q0958,Nhom 4: Ngoai pham vi,0.75,0.76,0.9,0.84,4091
+Q0959,Nhom 2: Ngon ngu thuc te,0.93,0.72,0.93,0.96,4149
+Q0960,Nhom 3: Dieu kien cheo,0.75,0.93,0.85,0.86,2607
+Q0961,Nhom 3: Dieu kien cheo,0.85,0.82,0.94,0.82,3616
+Q0962,Nhom 1: Co ban,0.71,0.7,0.96,0.83,3938
+Q0963,Nhom 5: Da bac dao tao,0.77,0.85,0.9,0.87,2573
+Q0964,Nhom 2: Ngon ngu thuc te,0.96,0.85,0.91,0.92,3228
+Q0965,Nhom 3: Dieu kien cheo,0.82,0.68,0.84,0.87,2864
+Q0966,Nhom 3: Dieu kien cheo,0.83,0.74,0.83,0.85,2728
+Q0967,Nhom 1: Co ban,0.94,0.76,0.84,0.9,1124
+Q0968,Nhom 3: Dieu kien cheo,0.91,0.75,0.8,0.77,2567
+Q0969,Nhom 2: Ngon ngu thuc te,0.97,0.66,0.9,0.91,2193
+Q0970,Nhom 2: Ngon ngu thuc te,0.73,0.82,0.92,0.78,2912
+Q0971,Nhom 5: Da bac dao tao,0.84,0.67,0.99,0.87,2921
+Q0972,Nhom 1: Co ban,0.81,0.9,0.98,0.91,2693
+Q0973,Nhom 1: Co ban,0.9,0.72,0.9,0.76,4449
+Q0974,Nhom 2: Ngon ngu thuc te,0.74,0.93,0.96,0.9,4436
+Q0975,Nhom 1: Co ban,0.96,0.94,0.84,0.77,941
+Q0976,Nhom 4: Ngoai pham vi,0.8,0.95,0.91,0.85,3716
+Q0977,Nhom 1: Co ban,0.76,0.94,0.93,0.96,3363
+Q0978,Nhom 3: Dieu kien cheo,0.9,0.81,0.91,0.87,870
+Q0979,Nhom 2: Ngon ngu thuc te,0.81,0.95,0.92,0.77,4213
+Q0980,Nhom 3: Dieu kien cheo,0.79,0.87,0.9,0.75,4108
+Q0981,Nhom 5: Da bac dao tao,0.91,0.7,0.87,0.92,3705
+Q0982,Nhom 1: Co ban,0.8,0.71,0.9,0.78,3048
+Q0983,Nhom 3: Dieu kien cheo,0.72,0.91,0.93,0.91,4068
+Q0984,Nhom 3: Dieu kien cheo,0.91,0.88,0.97,0.84,2323
+Q0985,Nhom 4: Ngoai pham vi,0.93,0.76,0.84,0.82,1355
+Q0986,Nhom 2: Ngon ngu thuc te,0.86,0.9,0.93,0.76,2224
+Q0987,Nhom 3: Dieu kien cheo,0.93,0.85,0.81,0.79,3696
+Q0988,Nhom 3: Dieu kien cheo,0.98,0.9,0.95,0.79,1315
+Q0989,Nhom 1: Co ban,0.86,0.74,0.84,0.94,2413
+Q0990,Nhom 5: Da bac dao tao,0.85,0.89,0.85,0.97,1073
+Q0991,Nhom 3: Dieu kien cheo,0.98,0.91,0.86,0.8,3959
+Q0992,Nhom 4: Ngoai pham vi,0.95,0.78,0.83,0.75,2101
+Q0993,Nhom 5: Da bac dao tao,0.93,0.93,0.81,0.85,1955
+Q0994,Nhom 2: Ngon ngu thuc te,0.97,0.86,0.91,0.79,3696
+Q0995,Nhom 4: Ngoai pham vi,0.72,0.93,0.88,0.91,1654
+Q0996,Nhom 3: Dieu kien cheo,0.9,0.89,0.92,0.86,2117
+Q0997,Nhom 1: Co ban,0.76,0.88,0.9,0.85,1488
+Q0998,Nhom 5: Da bac dao tao,0.88,0.69,0.86,0.87,1185
+Q0999,Nhom 5: Da bac dao tao,0.71,0.69,0.91,0.77,1942
+Q1000,Nhom 5: Da bac dao tao,0.9,0.69,0.98,0.85,4280
+Q1001,Nhom 2: Ngon ngu thuc te,0.95,0.93,0.89,0.9,886
+Q1002,Nhom 5: Da bac dao tao,0.78,0.94,0.87,0.96,1942
+Q1003,Nhom 2: Ngon ngu thuc te,0.94,0.66,0.98,0.97,3703
+Q1004,Nhom 5: Da bac dao tao,0.9,0.88,0.97,0.92,1651
+Q1005,Nhom 1: Co ban,0.9,0.7,0.94,0.87,1646
+Q1006,Nhom 5: Da bac dao tao,0.95,0.68,0.94,0.82,1364
+Q1007,Nhom 2: Ngon ngu thuc te,0.91,0.89,0.97,0.9,1340
+Q1008,Nhom 2: Ngon ngu thuc te,0.79,0.93,0.84,0.8,3564
+Q1009,Nhom 1: Co ban,0.79,0.96,0.95,0.97,4245
+Q1010,Nhom 4: Ngoai pham vi,0.84,0.81,0.83,0.88,4017
+Q1011,Nhom 5: Da bac dao tao,0.73,0.98,0.92,0.79,2303
+Q1012,Nhom 1: Co ban,0.74,0.96,0.96,0.81,1238
+Q1013,Nhom 2: Ngon ngu thuc te,0.79,0.97,0.97,0.86,3234
+Q1014,Nhom 2: Ngon ngu thuc te,0.86,0.75,0.96,0.9,2059
+Q1015,Nhom 2: Ngon ngu thuc te,0.8,0.95,0.94,0.83,2687
+Q1016,Nhom 3: Dieu kien cheo,0.77,0.81,0.94,0.94,3649
+Q1017,Nhom 5: Da bac dao tao,0.74,0.68,0.92,0.94,3205
+Q1018,Nhom 3: Dieu kien cheo,0.92,0.98,0.98,0.93,1528
+Q1019,Nhom 2: Ngon ngu thuc te,0.97,0.75,0.93,0.83,2899
+Q1020,Nhom 4: Ngoai pham vi,0.84,0.91,0.85,0.84,3035
+Q1021,Nhom 3: Dieu kien cheo,0.81,0.9,0.88,0.8,3028
+Q1022,Nhom 4: Ngoai pham vi,0.92,0.72,0.99,0.98,4260
+Q1023,Nhom 4: Ngoai pham vi,0.92,0.91,0.93,0.9,4115
+Q1024,Nhom 3: Dieu kien cheo,0.79,0.84,0.83,0.82,2961
+Q1025,Nhom 1: Co ban,0.71,0.92,0.82,0.96,2098
+Q1026,Nhom 1: Co ban,0.75,0.8,0.82,0.94,2420
+Q1027,Nhom 1: Co ban,0.96,0.78,0.96,0.79,931
+Q1028,Nhom 1: Co ban,0.96,0.71,0.88,0.87,2433
+Q1029,Nhom 4: Ngoai pham vi,0.9,0.98,0.97,0.76,3685
+Q1030,Nhom 4: Ngoai pham vi,0.81,0.87,0.94,0.82,1685
+Q1031,Nhom 3: Dieu kien cheo,0.88,0.68,0.83,0.85,3588
+Q1032,Nhom 5: Da bac dao tao,0.82,0.93,0.98,0.96,2000
+Q1033,Nhom 5: Da bac dao tao,0.94,0.83,0.85,0.76,1568
+Q1034,Nhom 4: Ngoai pham vi,0.88,0.78,0.88,0.94,816
+Q1035,Nhom 5: Da bac dao tao,0.77,0.78,0.89,0.76,2326
+Q1036,Nhom 4: Ngoai pham vi,0.74,0.7,0.85,0.89,1891
+Q1037,Nhom 1: Co ban,0.88,0.93,0.9,0.76,2234
+Q1038,Nhom 1: Co ban,0.92,0.83,0.85,0.94,3358
+Q1039,Nhom 4: Ngoai pham vi,0.81,0.77,0.86,0.98,3459
+Q1040,Nhom 5: Da bac dao tao,0.76,0.71,0.97,0.85,4198
+Q1041,Nhom 2: Ngon ngu thuc te,0.85,0.76,0.85,0.96,1660
+Q1042,Nhom 1: Co ban,0.74,0.95,0.97,0.8,2423
+Q1043,Nhom 2: Ngon ngu thuc te,0.8,0.76,0.9,0.85,1286
+Q1044,Nhom 4: Ngoai pham vi,0.74,0.85,0.97,0.97,4312
+Q1045,Nhom 2: Ngon ngu thuc te,0.99,0.96,0.82,0.98,4433
+Q1046,Nhom 4: Ngoai pham vi,0.89,0.94,0.88,0.94,3163
+Q1047,Nhom 3: Dieu kien cheo,0.79,0.69,0.95,0.94,902
+Q1048,Nhom 5: Da bac dao tao,0.94,0.88,0.91,0.91,3324
+Q1049,Nhom 1: Co ban,0.75,0.96,0.98,0.8,3738
+Q1050,Nhom 4: Ngoai pham vi,0.73,0.86,0.98,0.84,1592
+Q1051,Nhom 5: Da bac dao tao,0.86,0.87,0.84,0.84,2987
+Q1052,Nhom 3: Dieu kien cheo,0.94,0.74,0.81,0.97,3261
+Q1053,Nhom 1: Co ban,0.74,0.94,0.85,0.88,957
+Q1054,Nhom 5: Da bac dao tao,0.79,0.92,0.98,0.79,2591
+Q1055,Nhom 5: Da bac dao tao,0.73,0.87,0.89,0.89,3646
+Q1056,Nhom 3: Dieu kien cheo,0.77,0.82,0.98,0.95,3610
+Q1057,Nhom 3: Dieu kien cheo,0.91,0.92,0.98,0.97,3693
+Q1058,Nhom 3: Dieu kien cheo,0.89,0.86,0.95,0.96,4252
+Q1059,Nhom 3: Dieu kien cheo,0.72,0.69,0.97,0.96,2350
+Q1060,Nhom 1: Co ban,0.96,0.84,0.92,0.93,4336
+Q1061,Nhom 2: Ngon ngu thuc te,0.77,0.84,0.96,0.88,3576
+Q1062,Nhom 4: Ngoai pham vi,0.76,0.73,0.87,0.82,4016
+Q1063,Nhom 1: Co ban,0.96,0.71,0.83,0.96,2145
+Q1064,Nhom 2: Ngon ngu thuc te,0.8,0.95,0.84,0.94,3577
+Q1065,Nhom 3: Dieu kien cheo,0.87,0.92,0.86,0.9,1853
+Q1066,Nhom 4: Ngoai pham vi,0.96,0.92,0.93,0.78,4441
+Q1067,Nhom 1: Co ban,0.94,0.7,0.82,0.91,866
+Q1068,Nhom 1: Co ban,0.93,0.69,0.93,0.81,2359
+Q1069,Nhom 5: Da bac dao tao,0.71,0.71,0.98,0.82,1879
+Q1070,Nhom 1: Co ban,0.94,0.77,0.85,0.91,1486
+Q1071,Nhom 3: Dieu kien cheo,0.7,0.71,0.94,0.97,2949
+Q1072,Nhom 1: Co ban,0.82,0.67,0.94,0.94,4355
+Q1073,Nhom 4: Ngoai pham vi,0.7,0.96,0.96,0.75,3249
+Q1074,Nhom 1: Co ban,0.89,0.67,0.93,0.88,1475
+Q1075,Nhom 4: Ngoai pham vi,0.91,0.71,0.85,0.79,3545
+Q1076,Nhom 2: Ngon ngu thuc te,0.87,0.69,0.99,0.75,1307
+Q1077,Nhom 1: Co ban,0.81,0.74,0.85,0.89,2823
+Q1078,Nhom 1: Co ban,0.72,0.72,0.8,0.95,1470
+Q1079,Nhom 2: Ngon ngu thuc te,0.81,0.72,0.91,0.89,3897
+Q1080,Nhom 2: Ngon ngu thuc te,0.78,0.85,0.93,0.97,1432
+Q1081,Nhom 3: Dieu kien cheo,0.9,0.77,0.96,0.83,3757
+Q1082,Nhom 5: Da bac dao tao,0.84,0.9,0.99,0.78,3282
+Q1083,Nhom 5: Da bac dao tao,0.86,0.68,0.81,0.8,1364
+Q1084,Nhom 1: Co ban,0.92,0.68,0.87,0.91,1104
+Q1085,Nhom 3: Dieu kien cheo,0.98,0.89,0.82,0.92,1160
+Q1086,Nhom 3: Dieu kien cheo,0.89,0.82,0.86,0.98,2710
+Q1087,Nhom 3: Dieu kien cheo,0.87,0.96,0.87,0.98,2314
+Q1088,Nhom 1: Co ban,0.92,0.88,0.82,0.93,2422
+Q1089,Nhom 1: Co ban,0.85,0.88,0.86,0.95,1595
+Q1090,Nhom 3: Dieu kien cheo,0.77,0.7,0.9,0.81,1682
+Q1091,Nhom 5: Da bac dao tao,0.82,0.69,0.81,0.76,2611
+Q1092,Nhom 3: Dieu kien cheo,0.97,0.78,0.94,0.83,4326
+Q1093,Nhom 1: Co ban,0.74,0.75,0.88,0.89,1732
+Q1094,Nhom 5: Da bac dao tao,0.73,0.91,0.81,0.97,3873
+Q1095,Nhom 2: Ngon ngu thuc te,0.74,0.79,0.91,0.89,1457
+Q1096,Nhom 1: Co ban,0.73,0.67,0.86,0.87,3635
+Q1097,Nhom 2: Ngon ngu thuc te,0.87,0.78,0.89,0.94,1243
+Q1098,Nhom 2: Ngon ngu thuc te,0.73,0.77,0.92,0.76,980
+Q1099,Nhom 1: Co ban,0.89,0.77,0.9,0.82,2329
+Q1100,Nhom 3: Dieu kien cheo,0.78,0.74,0.9,0.85,2627
+Q1101,Nhom 2: Ngon ngu thuc te,0.75,0.68,0.81,0.79,2316
+Q1102,Nhom 4: Ngoai pham vi,0.75,0.93,0.86,0.83,3389
+Q1103,Nhom 5: Da bac dao tao,0.98,0.86,0.89,0.9,2390
+Q1104,Nhom 3: Dieu kien cheo,0.97,0.7,0.9,0.93,4111
+Q1105,Nhom 3: Dieu kien cheo,0.74,0.72,0.82,0.77,1278
+Q1106,Nhom 3: Dieu kien cheo,0.83,0.97,0.84,0.9,3179
+Q1107,Nhom 5: Da bac dao tao,0.73,0.83,0.8,0.81,2530
+Q1108,Nhom 1: Co ban,0.72,0.9,0.81,0.93,933
+Q1109,Nhom 5: Da bac dao tao,0.88,0.98,0.9,0.91,1974
+Q1110,Nhom 2: Ngon ngu thuc te,0.92,0.97,0.93,0.8,2598
+Q1111,Nhom 5: Da bac dao tao,0.98,0.98,0.91,0.8,3775
+Q1112,Nhom 2: Ngon ngu thuc te,0.96,0.77,0.86,0.79,2206
+Q1113,Nhom 1: Co ban,0.97,0.73,0.91,0.84,950
+Q1114,Nhom 1: Co ban,0.79,0.77,0.87,0.85,1518
+Q1115,Nhom 4: Ngoai pham vi,0.86,0.72,0.85,0.88,3188
+Q1116,Nhom 1: Co ban,0.77,0.81,0.93,0.95,3917
+Q1117,Nhom 5: Da bac dao tao,0.71,0.75,0.91,0.96,1120
+Q1118,Nhom 4: Ngoai pham vi,0.74,0.69,0.95,0.93,2306
+Q1119,Nhom 1: Co ban,0.82,0.69,0.96,0.8,1180
+Q1120,Nhom 3: Dieu kien cheo,0.98,0.89,0.84,0.88,2452
+Q1121,Nhom 4: Ngoai pham vi,0.87,0.72,0.82,0.87,3999
+Q1122,Nhom 5: Da bac dao tao,0.88,0.89,0.97,0.77,2678
+Q1123,Nhom 4: Ngoai pham vi,0.92,0.78,0.82,0.76,3924
+Q1124,Nhom 3: Dieu kien cheo,0.8,0.82,0.84,0.79,3298
+Q1125,Nhom 2: Ngon ngu thuc te,0.8,0.91,0.86,0.82,2962
+Q1126,Nhom 5: Da bac dao tao,0.8,0.83,0.83,0.79,997
+Q1127,Nhom 2: Ngon ngu thuc te,0.95,0.9,0.91,0.95,959
+Q1128,Nhom 2: Ngon ngu thuc te,0.73,0.69,0.91,0.91,2583
+Q1129,Nhom 1: Co ban,0.98,0.74,0.96,0.8,2846
+Q1130,Nhom 5: Da bac dao tao,0.93,0.81,0.92,0.79,3534
+Q1131,Nhom 5: Da bac dao tao,0.81,0.89,0.82,0.84,2951
+Q1132,Nhom 1: Co ban,0.96,0.8,0.97,0.83,1151
+Q1133,Nhom 3: Dieu kien cheo,0.73,0.76,0.84,0.9,2289
+Q1134,Nhom 5: Da bac dao tao,0.78,0.8,0.82,0.94,3046
+Q1135,Nhom 5: Da bac dao tao,0.74,0.83,0.95,0.81,2992
+Q1136,Nhom 2: Ngon ngu thuc te,0.82,0.73,0.85,0.84,1883
+Q1137,Nhom 4: Ngoai pham vi,0.75,0.7,0.82,0.86,3542
+Q1138,Nhom 4: Ngoai pham vi,0.75,0.86,0.9,0.89,1024
+Q1139,Nhom 5: Da bac dao tao,0.86,0.86,0.84,0.93,3914
+Q1140,Nhom 4: Ngoai pham vi,0.88,0.83,0.89,0.83,1485
+Q1141,Nhom 2: Ngon ngu thuc te,0.77,0.73,0.89,0.95,1466
+Q1142,Nhom 5: Da bac dao tao,0.71,0.68,0.81,0.77,820
+Q1143,Nhom 3: Dieu kien cheo,0.74,0.67,0.96,0.88,972
+Q1144,Nhom 5: Da bac dao tao,0.76,0.91,0.97,0.95,883
+Q1145,Nhom 2: Ngon ngu thuc te,0.79,0.98,0.82,0.88,1570
+Q1146,Nhom 3: Dieu kien cheo,0.9,0.75,0.97,0.85,1530
+Q1147,Nhom 4: Ngoai pham vi,0.8,0.96,0.85,0.94,1561
+Q1148,Nhom 1: Co ban,0.94,0.84,0.94,0.87,4196
+Q1149,Nhom 4: Ngoai pham vi,0.73,0.66,0.9,0.85,2208
+Q1150,Nhom 4: Ngoai pham vi,0.93,0.89,0.92,0.8,4442
+Q1151,Nhom 4: Ngoai pham vi,0.82,0.82,0.92,0.98,3645
+Q1152,Nhom 1: Co ban,0.88,0.84,0.91,0.77,1563
+Q1153,Nhom 2: Ngon ngu thuc te,0.96,0.86,0.91,0.92,1281
+Q1154,Nhom 2: Ngon ngu thuc te,0.94,0.98,0.97,0.98,2919
+Q1155,Nhom 1: Co ban,0.97,0.74,0.94,0.81,3256
+Q1156,Nhom 5: Da bac dao tao,0.99,0.73,0.97,0.88,1079
+Q1157,Nhom 4: Ngoai pham vi,0.87,0.91,0.89,0.78,1684
+Q1158,Nhom 1: Co ban,0.89,0.88,0.81,0.94,4225
+Q1159,Nhom 4: Ngoai pham vi,0.77,0.79,0.92,0.92,2982
+Q1160,Nhom 3: Dieu kien cheo,0.96,0.89,0.92,0.85,3114
+Q1161,Nhom 5: Da bac dao tao,0.73,0.83,0.94,0.79,2900
+Q1162,Nhom 4: Ngoai pham vi,0.8,0.76,0.81,0.96,3509
+Q1163,Nhom 2: Ngon ngu thuc te,0.96,0.77,0.8,0.8,3684
+Q1164,Nhom 4: Ngoai pham vi,0.75,0.81,0.86,0.96,823
+Q1165,Nhom 5: Da bac dao tao,0.73,0.84,0.98,0.79,1150
+Q1166,Nhom 2: Ngon ngu thuc te,0.81,0.9,0.82,0.81,3365
+Q1167,Nhom 3: Dieu kien cheo,0.83,0.9,0.92,0.94,3372
+Q1168,Nhom 2: Ngon ngu thuc te,0.79,0.73,0.91,0.89,2842
+Q1169,Nhom 2: Ngon ngu thuc te,0.82,0.71,0.84,0.88,3723
+Q1170,Nhom 4: Ngoai pham vi,0.76,0.85,0.92,0.83,1179
+Q1171,Nhom 4: Ngoai pham vi,0.82,0.83,0.97,0.86,2546
+Q1172,Nhom 2: Ngon ngu thuc te,0.76,0.91,0.94,0.95,3071
+Q1173,Nhom 4: Ngoai pham vi,0.72,0.67,0.87,0.93,1612
+Q1174,Nhom 1: Co ban,0.91,0.68,0.89,0.81,4414
+Q1175,Nhom 5: Da bac dao tao,0.83,0.8,0.95,0.93,3794
+Q1176,Nhom 1: Co ban,0.82,0.75,0.87,0.89,2549
+Q1177,Nhom 5: Da bac dao tao,0.87,0.78,0.81,0.84,3539
+Q1178,Nhom 4: Ngoai pham vi,0.94,0.85,0.92,0.98,1648
+Q1179,Nhom 3: Dieu kien cheo,0.87,0.87,0.85,0.94,2223
+Q1180,Nhom 1: Co ban,0.94,0.74,0.85,0.79,3711
+Q1181,Nhom 3: Dieu kien cheo,0.91,0.76,0.87,0.87,1940
+Q1182,Nhom 1: Co ban,0.95,0.7,0.97,0.91,2216
+Q1183,Nhom 2: Ngon ngu thuc te,0.75,0.74,0.8,0.92,4309
+Q1184,Nhom 2: Ngon ngu thuc te,0.98,0.91,0.81,0.87,4342
+Q1185,Nhom 1: Co ban,0.93,0.7,0.86,0.81,3734
+Q1186,Nhom 4: Ngoai pham vi,0.75,0.84,0.95,0.86,1500
+Q1187,Nhom 5: Da bac dao tao,0.95,0.78,0.82,0.83,2387
+Q1188,Nhom 5: Da bac dao tao,0.76,0.72,0.89,0.98,2059
+Q1189,Nhom 1: Co ban,0.83,0.85,0.93,0.91,1854
+Q1190,Nhom 1: Co ban,0.77,0.85,0.85,0.88,1335
+Q1191,Nhom 5: Da bac dao tao,0.9,0.73,0.95,0.9,3392
+Q1192,Nhom 1: Co ban,0.98,0.88,0.85,0.81,2399
+Q1193,Nhom 5: Da bac dao tao,0.76,0.84,0.81,0.77,3796
+Q1194,Nhom 2: Ngon ngu thuc te,0.94,0.68,0.97,0.9,4451
+Q1195,Nhom 5: Da bac dao tao,0.86,0.72,0.92,0.84,4106
+Q1196,Nhom 2: Ngon ngu thuc te,0.84,0.9,0.94,0.95,2740
+Q1197,Nhom 3: Dieu kien cheo,0.93,0.9,0.82,0.81,1738
+Q1198,Nhom 1: Co ban,0.82,0.67,0.81,0.77,3762
+Q1199,Nhom 3: Dieu kien cheo,0.88,0.66,0.91,0.96,2617
+Q1200,Nhom 4: Ngoai pham vi,0.76,0.68,0.84,0.86,1455

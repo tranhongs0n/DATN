@@ -5,5 +5,13 @@ Thumbs.db
 venv/
 chroma_db/
 __pycache__/
+**/__pycache__/
 *.zip
 *.msi
+.agents/
+code/chroma_db/
+code/logs/
+code/.env
+.env
+**/venv/
+**/.env
