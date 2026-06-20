@@ -9,8 +9,8 @@ project:
     text_color: "#202124"
 
 models:
-  llm: "gemini-3-flash-preview"
-  embedding: "models/gemini-embedding-2"
+  llm: "gemini-3.1-flash-lite"
+  embedding: "models/text-embedding-004"
 
 scraper:
   base_url: "https://ts.tlu.edu.vn"
