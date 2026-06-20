@@ -42,3 +42,45 @@ class ZaloAPI:
         except Exception as e:
             logger.error(f"Failed to send Zalo message: {e}")
             return False
+
+    def send_interactive_message(self, user_id: str, text: str, buttons: list) -> bool:
+        if not self.access_token:
+            logger.warning("ZALO_ACCESS_TOKEN is not set. Cannot send message.")
+            return False
+
+        headers = {
+            "access_token": self.access_token,
+            "Content-Type": "application/json"
+        }
+        
+        payload = {
+            "recipient": {
+                "user_id": user_id
+            },
+            "message": {
+                "attachment": {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "promotion",
+                        "elements": [
+                            { "type": "text", "content": text }
+                        ],
+                        "buttons": buttons
+                    }
+                }
+            }
+        }
+        
+        try:
+            response = requests.post(self.base_url, headers=headers, json=payload)
+            response.raise_for_status()
+            data = response.json()
+            if data.get("error") == 0:
+                logger.info(f"Successfully sent Zalo interactive message to {user_id}")
+                return True
+            else:
+                logger.error(f"Zalo API error (interactive): {data.get('message')} (Code: {data.get('error')})")
+                return False
+        except Exception as e:
+            logger.error(f"Failed to send Zalo interactive message: {e}")
+            return False

@@ -24,7 +24,7 @@ class IndexingService:
         choices = []
         for f in files:
             basename = os.path.basename(f)
-            status = "✅ Indexed" if basename in indexed_files else "⏳ Pending"
+            status = "Indexed" if basename in indexed_files else "Pending"
             file_data.append([basename, status, f])
             choices.append(basename)
             
@@ -32,7 +32,7 @@ class IndexingService:
         local_basenames = {os.path.basename(f) for f in files}
         for idx_file in indexed_files:
             if idx_file not in local_basenames:
-                file_data.append([idx_file, "⚠️ Missing Local", "N/A"])
+                file_data.append([idx_file, "Missing Local", "N/A"])
                 
         return file_data, choices
 

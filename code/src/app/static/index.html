@@ -11,6 +11,23 @@
 </head>
 <body>
     <div class="app-container">
+        <!-- Login Modal -->
+        <div id="login-modal" class="modal-overlay active">
+            <div class="modal-content glass-panel" style="max-width: 400px; margin: 100px auto; padding: 2rem;">
+                <h2 style="text-align: center; margin-bottom: 1.5rem;"><i class="fa-solid fa-lock"></i> Admin Login</h2>
+                <form id="login-form">
+                    <div style="margin-bottom: 1rem;">
+                        <input type="text" id="login-username" placeholder="Username" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-color); color: var(--text-color);">
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <input type="password" id="login-password" placeholder="Password" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-color); color: var(--text-color);">
+                    </div>
+                    <button type="submit" class="btn primary" style="width: 100%;">Login</button>
+                    <div id="login-error" class="status-msg error" style="display: none; margin-top: 1rem;"></div>
+                </form>
+            </div>
+        </div>
+        
         <nav class="sidebar">
             <div class="logo">
                 <i class="fa-solid fa-graduation-cap"></i>
@@ -47,9 +64,12 @@
             
             <!-- Admin View -->
             <section id="admin-view" class="view">
-                <header class="view-header">
-                    <h1>Admin Dashboard</h1>
-                    <p>Manage knowledge base and indexing</p>
+                <header class="view-header" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h1>Admin Dashboard</h1>
+                        <p>Manage knowledge base and indexing</p>
+                    </div>
+                    <button id="logout-btn" class="btn secondary"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
                 </header>
                 <div class="admin-grid">
                     <div class="card stats-card glass-panel">
@@ -73,8 +93,9 @@
 
                     <div class="card scrape-card glass-panel">
                         <h2><i class="fa-solid fa-spider"></i> Web Scraping (TLU Portal)</h2>
-                        <div class="actions">
-                            <button id="scrape-btn" class="btn secondary"><i class="fa-solid fa-cloud-download"></i> Scrape All Categories</button>
+                        <div class="actions" style="display: flex; gap: 1rem; align-items: center;">
+                            <input type="number" id="scrape-limit" value="5" min="1" max="100" style="padding: 0.5rem; width: 80px; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-color); color: var(--text-color);" title="Number of latest articles to crawl per category">
+                            <button id="scrape-btn" class="btn secondary"><i class="fa-solid fa-cloud-download"></i> Scrape Latest Files</button>
                         </div>
                         <div id="scrape-status" class="status-msg"></div>
                     </div>
@@ -113,6 +134,79 @@
                                 </thead>
                                 <tbody>
                                     <!-- Unsupported files loaded via JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card conversations-card glass-panel" style="grid-column: 1 / -1; display: flex; gap: 1rem; min-height: 400px;">
+                        <!-- Left Side: User List -->
+                        <div style="flex: 1; border-right: 1px solid var(--border); padding-right: 1rem; display: flex; flex-direction: column;">
+                            <h2 style="margin-bottom: 1rem;"><i class="fa-brands fa-whatsapp"></i> Zalo Conversations</h2>
+                            <div id="conversation-list" style="overflow-y: auto; flex: 1;">
+                                <!-- List populated by JS -->
+                            </div>
+                        </div>
+                        
+                        <!-- Right Side: Chat Window -->
+                        <div style="flex: 2; display: flex; flex-direction: column; padding-left: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <h2 id="current-zalo-user" style="color: var(--primary); margin: 0;">Select a user</h2>
+                                <button id="block-user-btn" class="btn error small" style="display: none; background: var(--error); color: white;"><i class="fa-solid fa-ban"></i> Block User</button>
+                            </div>
+                            <div id="zalo-chat-box" class="chat-box" style="flex: 1; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 1rem; padding: 1rem; background: var(--bg-color); height: 300px;">
+                                <!-- Chat history populated by JS -->
+                            </div>
+                            <form id="zalo-reply-form" style="display: flex; gap: 1rem;">
+                                <input type="text" id="zalo-reply-input" placeholder="Type a manual reply..." required disabled style="flex: 1; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-color); color: var(--text-color);">
+                                <button type="submit" id="zalo-reply-btn" class="btn primary" disabled><i class="fa-solid fa-paper-plane"></i> Send</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card users-card glass-panel" style="grid-column: 1 / -1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <h2 style="margin-bottom: 0;"><i class="fa-solid fa-users"></i> User Management</h2>
+                        </div>
+                        <div class="table-container">
+                            <table id="users-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Username</th>
+                                        <th>Role</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Users loaded via JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <form id="create-user-form" style="display: flex; gap: 1rem; margin-top: 1rem;">
+                            <input type="text" id="new-username" placeholder="New Username" required style="flex: 1; padding: 0.5rem; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-color); color: var(--text-color);">
+                            <input type="password" id="new-password" placeholder="Password" required style="flex: 1; padding: 0.5rem; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-color); color: var(--text-color);">
+                            <button type="submit" class="btn primary"><i class="fa-solid fa-plus"></i> Add Admin</button>
+                        </form>
+                        <div id="user-status" class="status-msg"></div>
+                    </div>
+                    <div class="card blocked-users-card glass-panel" style="grid-column: 1 / -1; margin-top: 1rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <h2 style="margin-bottom: 0;"><i class="fa-solid fa-user-slash"></i> Blocked Zalo Users</h2>
+                        </div>
+                        <div class="table-container">
+                            <table id="blocked-table">
+                                <thead>
+                                    <tr>
+                                        <th>Zalo User ID</th>
+                                        <th>Date Blocked</th>
+                                        <th>Reason</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Blocked users loaded via JS -->
                                 </tbody>
                             </table>
                         </div>

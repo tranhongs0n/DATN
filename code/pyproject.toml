@@ -22,7 +22,9 @@ dependencies = [
     "python-multipart",
     "python-docx",
     "pydantic-settings",
-    "pyyaml"
+    "pyyaml",
+    "bcrypt",
+    "rank_bm25"
 ]
 
 [build-system]
