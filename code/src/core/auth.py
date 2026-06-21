@@ -3,6 +3,7 @@ import bcrypt
 import secrets
 import os
 import time
+import logging
 from src.config.settings import settings
 
 DB_PATH = settings.DATA_DIR / "auth.db"
@@ -32,11 +33,19 @@ def init_db():
         )
     ''')
     
-    # Create default admin if not exists
     cursor.execute("SELECT id FROM users WHERE username = 'admin'")
     if not cursor.fetchone():
+        # Seed initial admin. Use ADMIN_PASSWORD from env; if unset, generate a
+        # random one and log it ONCE — never ship a guessable default like admin/admin.
+        admin_pw = settings.ADMIN_PASSWORD
+        if not admin_pw:
+            admin_pw = secrets.token_urlsafe(12)
+            logging.getLogger("DATN-Auth").warning(
+                "No ADMIN_PASSWORD set. Generated initial admin password: %s "
+                "(set ADMIN_PASSWORD in .env and/or change it after first login)", admin_pw
+            )
         cursor.execute("INSERT INTO users (username, password_hash, role) VALUES (?, ?, ?)",
-                       ('admin', hash_password('admin'), 'admin'))
+                       ('admin', hash_password(admin_pw), 'admin'))
     conn.commit()
     conn.close()
 
@@ -53,7 +62,6 @@ def authenticate_user(username, password):
 
 def create_session(user_id):
     token = secrets.token_hex(32)
-    # 24 hours expiry
     expires_at = time.time() + 24 * 3600
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
@@ -83,7 +91,6 @@ def logout_session(token):
     conn.commit()
     conn.close()
 
-# CRUD operations
 def get_all_users():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
@@ -113,5 +120,19 @@ def delete_user(user_id):
     conn.commit()
     conn.close()
     
-# Initialize on module load
-init_db()
+def update_user(user_id, username=None, password=None):
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    try:
+        if username and password:
+            cursor.execute("UPDATE users SET username = ?, password_hash = ? WHERE id = ?", (username, hash_password(password), user_id))
+        elif username:
+            cursor.execute("UPDATE users SET username = ? WHERE id = ?", (username, user_id))
+        elif password:
+            cursor.execute("UPDATE users SET password_hash = ? WHERE id = ?", (hash_password(password), user_id))
+        conn.commit()
+        return True
+    except sqlite3.IntegrityError:
+        return False
+    finally:
+        conn.close()

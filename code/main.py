@@ -14,8 +14,9 @@ logger = setup_logger("DATN-Main")
 
 def run_ui(args):
     import uvicorn
-    logger.info(f"Starting FastAPI UI on port {args.port}...")
-    uvicorn.run("src.app.api:app", host="0.0.0.0", port=args.port, reload=True)
+    port = getattr(args, 'port', 8000)
+    logger.info(f"Starting FastAPI UI on port {port}...")
+    uvicorn.run("src.app.api:app", host="0.0.0.0", port=port, reload=True)
 
 def run_scrape(args):
     logger.info("Starting Scraper...")
@@ -57,7 +58,7 @@ def main():
 
     # UI Command
     ui_parser = subparsers.add_parser("ui", help="Launch the Modern FastAPI Chat & Admin UI")
-    ui_parser.add_argument("--port", type=int, default=7860, help="Port to run the UI on")
+    ui_parser.add_argument("--port", type=int, default=8000, help="Port to run the UI on")
 
     # Scrape Command
     scrape_parser = subparsers.add_parser("scrape", help="Run the web scraper")

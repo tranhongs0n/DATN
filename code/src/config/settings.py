@@ -6,7 +6,6 @@ from typing import List, Dict, Any, Optional
 from pydantic import BaseModel, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-# Base directory
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 logger = logging.getLogger(__name__)
 
@@ -41,21 +40,20 @@ class ScraperConfig(BaseModel):
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=str(BASE_DIR / ".env"), env_file_encoding='utf-8', extra='ignore')
     
-    # Secrets from .env
     GOOGLE_API_KEY: str = ""
     ZALO_ACCESS_TOKEN: str = ""
+    ZALO_APP_SECRET: str = ""
+    ADMIN_PASSWORD: str = ""
+    ALLOWED_ORIGINS: str = ""
     
-    # Configuration objects (will be populated from YAML)
     PROJECT: ProjectConfig = Field(default=None)
     MODELS: ModelConfig = Field(default=None)
     SCRAPER: ScraperConfig = Field(default=None)
     PROMPTS: Dict[str, Any] = Field(default_factory=dict)
 
     def __init__(self, **kwargs):
-        # Load YAML files before initialization to satisfy Pydantic validation
         yaml_data = self._read_yaml_configs()
         
-        # Merge YAML data into kwargs if not already present
         if "PROJECT" not in kwargs and "project" in yaml_data:
             kwargs["PROJECT"] = yaml_data["project"]
         if "MODELS" not in kwargs and "models" in yaml_data:
@@ -92,7 +90,6 @@ class Settings(BaseSettings):
 
     @property
     def CATEGORIES(self) -> List[Dict[str, Any]]:
-        # Convert Pydantic models to dict for backward compatibility
         return [cat.model_dump() for cat in self.SCRAPER.categories]
 
     @property

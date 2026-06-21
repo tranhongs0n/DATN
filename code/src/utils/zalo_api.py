@@ -1,4 +1,6 @@
 import os
+import hashlib
+import hmac
 import requests
 import logging
 from src.config.settings import settings
@@ -8,7 +10,31 @@ logger = logging.getLogger(__name__)
 class ZaloAPI:
     def __init__(self):
         self.access_token = settings.ZALO_ACCESS_TOKEN
+        self.app_secret = settings.ZALO_APP_SECRET
         self.base_url = "https://openapi.zalo.me/v2.0/oa/message"
+
+    def verify_signature(self, app_id: str, raw_body: str, timestamp: str, signature: str) -> bool:
+        """Verify Zalo webhook signature.
+
+        Zalo signs each webhook with: mac = sha256(appId + data + timestamp + OASecretKey),
+        sent in the `X-ZEvent-Signature` header as "mac=<hex>".
+        Returns True if no app_secret is configured (verification disabled in dev),
+        but logs a warning so this is never silently relied upon in prod.
+        """
+        if not self.app_secret:
+            logger.warning("ZALO_APP_SECRET not set — webhook signature NOT verified. Set it in production.")
+            return True
+        if not signature:
+            logger.warning("Zalo webhook missing X-ZEvent-Signature header.")
+            return False
+        received = signature[len("mac="):] if signature.startswith("mac=") else signature
+        expected = hashlib.sha256(
+            f"{app_id}{raw_body}{timestamp}{self.app_secret}".encode("utf-8")
+        ).hexdigest()
+        if not hmac.compare_digest(received, expected):
+            logger.warning("Zalo webhook signature mismatch — rejecting request.")
+            return False
+        return True
 
     def send_text_message(self, user_id: str, message: str) -> bool:
         if not self.access_token:
