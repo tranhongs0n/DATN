@@ -5,15 +5,20 @@ echo Starting TLU Admission RAG Services...
 cd /d "%~dp0"
 
 :: Start the Webhook Forwarder in a new terminal window
-if exist "tools\webhook_forwarder.py" (
+if exist "code\tools\webhook_forwarder.py" (
     echo Starting Smee Webhook Forwarder...
-    start "Zalo Webhook Forwarder" python tools\webhook_forwarder.py
+    start "Zalo Bot Webhook Forwarder" python code\tools\webhook_forwarder.py
 ) else (
-    echo Warning: tools\webhook_forwarder.py not found. Skipping webhook forwarder.
+    echo Warning: code\tools\webhook_forwarder.py not found. Skipping webhook forwarder.
 )
 
 :: Start the Main API Server in the current window
 echo Starting FastAPI Server...
+echo ========================================================
+echo UI is available at: http://localhost:8000
+echo Admin is available at: http://localhost:8000/admin
+echo ========================================================
+cd code
 python main.py
 
 echo.

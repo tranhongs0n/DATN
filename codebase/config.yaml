@@ -1,0 +1,29 @@
+project:
+  name: "DATN - Tuyển sinh TLU RAG"
+  data_dir: "data"
+  chroma_path: "chroma_db"
+  ui:
+    theme: "soft" # "default", "soft", "monochrome", "glass"
+    primary_color: "#1a73e8" # TLU Blue
+    background_color: "#ffffff"
+    text_color: "#202124"
+
+models:
+  llm: "gemini-3.1-flash-lite"
+  embedding: "models/gemini-embedding-2"
+
+scraper:
+  base_url: "https://ts.tlu.edu.vn"
+  list_api: "https://ts.tlu.edu.vn/DesktopModules/CmsView/api/NewsContent/listnew"
+  detail_api: "https://ts.tlu.edu.vn/DesktopModules/CmsView/api/NewsContent/getbyid"
+  extensions: [".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx"]
+  categories:
+    - name: "DaiHoc"
+      cat_id: 536
+      module_id: 1506
+    - name: "ThacSi"
+      cat_id: 955
+      module_id: 1508
+    - name: "TienSi"
+      cat_id: 1004
+      module_id: 1535

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLU Admission RAG - Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css?v=21">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/components.js?v=4"></script>
+</head>
+<body>
+    <div class="app-container">
+
+        <div id="login-modal" class="modal-overlay active">
+            <div class="modal-content glass-panel modal-dialog">
+                <h2 class="text-center mb-3"><i class="fa-solid fa-lock"></i> Đăng nhập Quản trị</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="text" id="login-username" placeholder="Tên đăng nhập" required class="form-control">
+                    </div>
+                    <div class="form-group last">
+                        <input type="password" id="login-password" placeholder="Mật khẩu" required class="form-control">
+                    </div>
+                    <button type="submit" class="btn primary w-100">Đăng nhập</button>
+                    <div id="login-error" class="status-msg error mt-2 d-none"></div>
+                </form>
+            </div>
+        </div>
+        
+
+
+        <div id="user-modal" class="modal-overlay">
+            <div class="modal-content glass-panel modal-dialog">
+                <h2 id="user-modal-title" class="text-center mb-3"><i class="fa-solid fa-user"></i> Thêm/Sửa người dùng</h2>
+                <form id="user-modal-form">
+                    <input type="hidden" id="user-modal-id">
+                    <div class="form-group">
+                        <input type="text" id="user-modal-username" placeholder="Tên đăng nhập" required class="form-control">
+                    </div>
+                    <div class="form-group last">
+                        <input type="password" id="user-modal-password" placeholder="Mật khẩu (để trống nếu không đổi)" class="form-control">
+                    </div>
+                    <div class="flex-gap-2">
+                        <button type="button" id="cancel-user-btn" class="btn secondary flex-1">Hủy</button>
+                        <button type="submit" class="btn primary flex-1">Lưu</button>
+                    </div>
+                    <div id="user-modal-error" class="status-msg error mt-2 d-none"></div>
+                </form>
+            </div>
+        </div>
+        
+        <app-sidebar></app-sidebar>
+        
+        <main class="main-content">
+
+            <section id="admin-view" class="view">
+                <header class="view-header flex-between">
+                    <div>
+                        <h1>Bảng điều khiển</h1>
+                        <p>Quản lý Cơ sở tri thức (CSTT) và Index</p>
+                    </div>
+                    <button id="logout-btn" class="btn secondary"><i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất</button>
+                </header>
+                
+                <div class="admin-tabs">
+                    <button class="tab-btn active" data-tab="tab-dashboard">Tổng quan</button>
+                    <button class="tab-btn" data-tab="tab-files">Tệp tin</button>
+                    <button class="tab-btn" data-tab="tab-users">Người dùng</button>
+                </div>
+                <div id="tab-dashboard" class="tab-pane active">
+                    <div class="admin-grid">
+                    <div class="card stats-card glass-panel">
+                        <h2><i class="fa-solid fa-chart-pie"></i> Thống kê Dữ liệu</h2>
+                        <div id="stats-content" class="stats-content">
+                            Loading stats...
+                        </div>
+                    </div>
+                    
+                    <!-- Moved actions to Files tab -->
+
+                    <div class="card scrape-card glass-panel">
+                        <h2><i class="fa-solid fa-spider"></i> Web Scraping (TLU Portal)</h2>
+                        <p class="text-secondary fs-sm mb-2">Tự động tải các thông báo/tin tức tuyển sinh mới nhất từ website TLU về làm dữ liệu cho AI.</p>
+                        <div class="mb-2">
+                            <p id="last-crawl-info" class="fs-md mb-1"><i class="fa-solid fa-circle-notch fa-spin"></i> Đang kiểm tra dữ liệu mới...</p>
+                        </div>
+                        <div class="actions flex-between">
+                            <button id="scrape-btn" class="btn secondary d-none"><i class="fa-solid fa-cloud-download"></i> Tải dữ liệu</button>
+                        </div>
+                        <div id="scrape-status" class="status-msg"></div>
+                    </div>
+                    
+                                        </div>
+                </div>
+                <div id="tab-files" class="tab-pane">
+                    <div class="card files-card glass-panel">
+                        <div class="flex-between mb-3">
+                            <h2 class="mb-0"><i class="fa-solid fa-folder-open"></i> Danh sách tệp</h2>
+                            <div class="actions" style="margin-top: 0;">
+                                <button id="rebuild-btn" class="btn primary"><i class="fa-solid fa-rotate"></i> Xây dựng lại Index</button>
+                                <div class="upload-section" style="display: inline-block;">
+                                    <label for="file-upload" class="btn secondary mb-0"><i class="fa-solid fa-file-arrow-up"></i> Tải lên & Index</label>
+                                    <input type="file" id="file-upload" multiple class="d-none" accept=".pdf,.docx,.png,.jpg,.jpeg,.bmp,.gif,.webp">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="action-status" class="status-msg"></div>
+                        <div class="table-container">
+                            <table id="files-table" class="has-actions">
+                                <thead>
+                                    <tr>
+                                        <th>Tên Tệp</th>
+                                        <th>Trạng thái</th>
+                                        <th>Đường dẫn</th>
+                                        <th>Hành động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="card files-card glass-panel">
+                        <div class="flex-between mb-3">
+                            <h2 class="mb-0"><i class="fa-solid fa-file-invoice"></i> Tệp cũ & OCR Hình ảnh</h2>
+                            <button id="bulk-convert-btn" class="btn primary small"><i class="fa-solid fa-wand-magic-sparkles"></i> Chuyển đổi Hàng loạt</button>
+                        </div>
+                        <div class="table-container">
+                            <table id="unsupported-table" class="has-actions">
+                                <thead>
+                                    <tr>
+                                        <th>Tên Tệp</th>
+                                        <th>Loại</th>
+                                        <th>Hành động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                                    </div>
+                <div id="tab-users" class="tab-pane">
+                    <div class="card users-card glass-panel grid-full">
+                        <div class="flex-between mb-3">
+                            <h2 class="mb-0"><i class="fa-solid fa-users"></i> Quản lý Người dùng</h2>
+                            <button id="add-user-btn" class="btn primary small"><i class="fa-solid fa-plus"></i> Thêm người dùng</button>
+                        </div>
+                        <div class="table-container">
+                            <table id="users-table" class="has-actions">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Username</th>
+                                        <th>Vai trò</th>
+                                        <th>Hành động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="user-status" class="status-msg"></div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="/js/admin/main.js?v=4"></script>
+
+
+    <template id="stats-template">
+        <div class="table-container">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="fw-500"><i class="fa-solid fa-file-lines icon-md"></i> Tổng số Tài liệu</td>
+                        <td class="stat-number doc-count text-right fw-bold fs-lg">0</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-500"><i class="fa-solid fa-cubes icon-md"></i> Tổng số Text Chunks</td>
+                        <td class="stat-number chunk-count text-right fw-bold fs-lg">0</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-500"><i class="fa-solid fa-microchip icon-md"></i> Embedding Model</td>
+                        <td class="stat-number embedding-model text-right fw-bold text-secondary"></td>
+                    </tr>
+                    <tr>
+                        <td class="fw-500"><i class="fa-solid fa-brain icon-md"></i> LLM Model</td>
+                        <td class="stat-number llm-model text-right fw-bold text-secondary"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </template>
+
+    <template id="file-row-template">
+        <tr>
+            <td class="file-name"></td>
+            <td><span class="file-status"></span></td>
+            <td class="file-path text-secondary fs-sm"></td>
+            <td class="file-actions">
+                <button class="btn small primary index-btn"><i class="fa-solid fa-plus"></i> Index</button>
+                <button class="btn small error delete-btn" style="background-color: var(--error); color: white; border: none;"><i class="fa-solid fa-trash"></i> Xóa</button>
+            </td>
+        </tr>
+    </template>
+
+    <template id="unsupported-file-row-template">
+        <tr>
+            <td class="file-name"></td>
+            <td><span class="badge unsupported file-extension"></span></td>
+            <td class="file-actions">
+                <button class="btn small secondary convert-btn"><i class="fa-solid fa-wand-magic-sparkles"></i> Chuyển đổi</button>
+                <button class="btn small error delete-btn" style="background-color: var(--error); color: white; border: none;"><i class="fa-solid fa-trash"></i> Xóa</button>
+            </td>
+        </tr>
+    </template>
+
+    <template id="user-row-template">
+        <tr>
+            <td class="user-stt"></td>
+            <td class="user-username"></td>
+            <td><span class="badge user-role"></span></td>
+            <td class="user-actions">
+                <button class="btn small primary edit-user-btn"><i class="fa-solid fa-pen"></i> Sửa</button>
+                <button class="btn small secondary delete-user-btn"><i class="fa-solid fa-trash"></i> Xóa</button>
+            </td>
+        </tr>
+    </template>
+
+
+</body>
+</html>

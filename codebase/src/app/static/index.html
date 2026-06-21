@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLU Admission RAG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css?v=21">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+    <script src="/js/components.js?v=4"></script>
+</head>
+<body>
+    <div class="app-container">
+        <app-sidebar></app-sidebar>
+        
+        <main class="main-content">
+
+            <section id="chat-view" class="view active">
+                <header class="view-header">
+                    <h1>Trợ lý Tuyển sinh TLU</h1>
+                    <p>Hỏi đáp thông tin tuyển sinh Đại học Thủy Lợi</p>
+                </header>
+                <div class="chat-container">
+                    <div id="chat-box" class="chat-box">
+                        <div class="message assistant">
+                            <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                            <div class="content">Xin chào! Tôi có thể giúp gì cho bạn về tuyển sinh Đại học Thủy Lợi?</div>
+                        </div>
+                    </div>
+                    <div class="input-area">
+                        <form id="chat-form">
+                            <input type="text" id="chat-input" placeholder="Nhập tin nhắn của bạn..." autocomplete="off" required>
+                            <button type="submit" id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script type="module" src="/js/chat/main.js?v=2"></script>
+</body>
+</html>

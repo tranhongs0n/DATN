@@ -1,0 +1,58 @@
+from fastapi import APIRouter, Request, HTTPException
+from fastapi.concurrency import run_in_threadpool
+import json
+
+from src.core.chat_service import chat_response
+from src.core import chat_db
+from src.app.dependencies import zalo_bot, logger, check_rate_limit
+
+router = APIRouter(tags=["zalo_bot"])
+
+
+def _process_message(chat_id: str, text: str):
+    try:
+        check_rate_limit(f"zalobot_{chat_id}")
+    except Exception:
+        logger.warning(f"Rate limit exceeded for Zalo Bot chat {chat_id}")
+        return
+
+    chat_db.log_message(chat_id, "user", text)
+
+    history_records = chat_db.get_chat_history(chat_id)[:-1][-6:]
+    history = [{"role": r["role"], "content": r["content"]} for r in history_records]
+
+    final_response = ""
+    for current_text in chat_response(text, history):
+        final_response = current_text
+
+    chat_db.log_message(chat_id, "assistant", final_response)
+    logger.info(f"Sending Zalo Bot response to {chat_id}: {final_response[:100]}...")
+    zalo_bot.send_message(chat_id, final_response)
+
+
+@router.post("/zalo/bot/webhook")
+async def zalo_bot_webhook(req: Request):
+    try:
+        if not zalo_bot.verify_secret(req.headers.get("X-Bot-Api-Secret-Token", "")):
+            raise HTTPException(status_code=401, detail="Invalid webhook secret")
+
+        raw_body = (await req.body()).decode("utf-8")
+        data = json.loads(raw_body) if raw_body else {}
+
+        result = data.get("result", {})
+        event_name = result.get("event_name")
+        logger.info(f"Zalo Bot webhook received event: {event_name}")
+
+        if event_name == "message.text.received":
+            message = result.get("message", {})
+            chat_id = message.get("chat", {}).get("id") or message.get("from", {}).get("id")
+            text = message.get("text", "")
+            if chat_id and text:
+                await run_in_threadpool(_process_message, chat_id, text)
+
+        return {"ok": True}
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error in Zalo Bot Webhook: {e}")
+        return {"ok": False, "error": str(e)}
