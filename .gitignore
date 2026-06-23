@@ -15,3 +15,8 @@ code/.env
 .env
 **/venv/
 **/.env
+thesis/DocOutput/
+codebase/scratch_test.py
+codebase/test_abbreviations.json
+codebase/test_history.py
+codebase/test_output.txt
