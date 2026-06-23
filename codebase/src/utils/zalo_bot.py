@@ -49,3 +49,26 @@ class ZaloBot:
                 logger.error(f"Failed to send Zalo Bot message: {e}")
                 ok = False
         return ok
+
+    def get_updates(self, offset: int = None, timeout: int = 30) -> list:
+        if not self.token:
+            logger.warning("ZALO_BOT_TOKEN is not set. Cannot get updates.")
+            return []
+            
+        url = f"{self.base_url}/bot{self.token}/getUpdates"
+        params = {"timeout": timeout}
+        if offset is not None:
+            params["offset"] = offset
+            
+        try:
+            response = requests.post(url, json=params, timeout=timeout + 5)
+            response.raise_for_status()
+            data = response.json()
+            if data.get("ok"):
+                return data.get("result", [])
+            else:
+                logger.error(f"Zalo Bot getUpdates error: {data}")
+        except Exception as e:
+            logger.error(f"Failed to fetch updates: {e}")
+            
+        return []

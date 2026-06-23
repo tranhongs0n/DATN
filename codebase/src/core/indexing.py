@@ -1,5 +1,7 @@
 import os
 import logging
+import unicodedata
+import re
 from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, DirectoryLoader
 from src.config.settings import settings
 from src.core.vector_db import VectorDBManager
@@ -50,11 +52,30 @@ class IndexingService:
                 
             try:
                 if f_path.lower().endswith(".pdf"):
-                    docs.extend(PyPDFLoader(f_path).load())
+                    from docling.document_converter import DocumentConverter
+                    from langchain_core.documents import Document
+                    converter = DocumentConverter()
+                    result = converter.convert(f_path)
+                    md_text = result.document.export_to_markdown()
+                    docs.append(Document(page_content=md_text, metadata={"source": f_path}))
                 elif f_path.lower().endswith(".docx"):
                     docs.extend(Docx2txtLoader(f_path).load())
+                elif f_path.lower().endswith(".txt"):
+                    with open(f_path, "r", encoding="utf-8") as f:
+                        text = f.read()
+                    from langchain_core.documents import Document
+                    docs.append(Document(page_content=text, metadata={"source": f_path}))
             except Exception as e:
                 logger.error(f"Error loading file {f_path}: {e}")
+                
+        # BƯỚC TIỀN XỬ LÝ DỮ LIỆU (PREPROCESSING)
+        for doc in docs:
+            # 1. Chuẩn hóa Unicode tiếng Việt về NFC (dựng sẵn) để search BM25 & Semantic chính xác hơn
+            text = unicodedata.normalize("NFC", doc.page_content)
+            # 2. Xóa khoảng trắng, tab, dấu xuống dòng liên tiếp thừa thãi
+            text = re.sub(r'\s+', ' ', text)
+            doc.page_content = text.strip()
+            
         return docs
 
     def get_full_path_map(self):

@@ -29,6 +29,13 @@ def init_db():
     except sqlite3.OperationalError:
         pass
         
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS abbreviations (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            short_form TEXT UNIQUE NOT NULL,
+            full_form TEXT NOT NULL
+        )
+    ''')
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_messages_user_id ON messages (user_id)")
     conn.commit()
     conn.close()
@@ -66,3 +73,34 @@ def rate_message(message_id: int, rating: int):
     conn.commit()
     conn.close()
 
+def get_all_abbreviations():
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, short_form, full_form FROM abbreviations")
+    rows = cursor.fetchall()
+    conn.close()
+    return [{"id": r[0], "short_form": r[1], "full_form": r[2]} for r in rows]
+
+def add_abbreviation(short_form: str, full_form: str):
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    try:
+        cursor.execute("INSERT INTO abbreviations (short_form, full_form) VALUES (?, ?)", (short_form.lower(), full_form))
+        conn.commit()
+    except sqlite3.IntegrityError:
+        pass
+    conn.close()
+
+def update_abbreviation(abbr_id: int, short_form: str, full_form: str):
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("UPDATE abbreviations SET short_form = ?, full_form = ? WHERE id = ?", (short_form.lower(), full_form, abbr_id))
+    conn.commit()
+    conn.close()
+
+def delete_abbreviation(abbr_id: int):
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM abbreviations WHERE id = ?", (abbr_id,))
+    conn.commit()
+    conn.close()

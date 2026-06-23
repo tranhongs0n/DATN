@@ -2,6 +2,8 @@ import { setupAuth } from './auth.js';
 import { setupDashboard } from './dashboard.js';
 import { setupUsers } from './users.js';
 import { setupScrape } from './scrape.js';
+import { setupAbbreviations } from './abbreviations.js';
+import { setupTester } from './tester.js?v=4';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Tab logic
@@ -23,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setupDashboard();
     setupUsers();
     setupScrape();
+    setupAbbreviations();
+    setupTester();
     
     // Auth must be last since it checks token and loads data
     setupAuth();

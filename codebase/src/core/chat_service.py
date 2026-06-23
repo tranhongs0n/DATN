@@ -12,6 +12,27 @@ engine = MultimodalEngine()
 db_manager = VectorDBManager()
 semantic_cache = SemanticCache(similarity_threshold=0.96)
 
+from src.core import chat_db
+
+ABBREVIATIONS = {}
+
+def reload_abbreviations():
+    global ABBREVIATIONS
+    try:
+        abbrs = chat_db.get_all_abbreviations()
+        ABBREVIATIONS = {a["short_form"]: a["full_form"] for a in abbrs}
+    except Exception as e:
+        logger.error(f"Error loading abbreviations: {e}")
+
+# Load ngay khi khởi động module
+reload_abbreviations()
+
+def expand_abbreviations(text: str) -> str:
+    import re
+    words = re.split(r'(\W+)', text)
+    expanded = [ABBREVIATIONS.get(w.lower(), w) for w in words]
+    return "".join(expanded)
+
 NO_ANSWER_MARKER = "Xin lỗi, tôi không thể tìm thấy"
 HANDOVER_MARKERS = (NO_ANSWER_MARKER, "Vui lòng đợi")
 
@@ -19,7 +40,7 @@ HANDOVER_MARKERS = (NO_ANSWER_MARKER, "Vui lòng đợi")
 def response_needs_human(text: str) -> bool:
     return any(m in text for m in HANDOVER_MARKERS)
 
-def chat_response(message, history):
+def chat_response(message, history, is_zalo=False):
     """
     Core RAG + Gemini chat response logic.
     """
@@ -33,14 +54,8 @@ def chat_response(message, history):
         return str(m)
         
     message = extract_text(message)
+    message = expand_abbreviations(message)
     
-    greetings = ["chào", "hi", "hello", "xin chào", "hey", "chao"]
-    is_greeting = message.lower().strip() in greetings
-    
-    if is_greeting or len(message.strip()) < 10:
-        yield "Chào bạn! Tôi là Trợ lý Tuyển sinh của Trường Đại học Thủy lợi. Tôi có thể giúp gì cho bạn hôm nay?"
-        return
-        
     query_emb = None
     if not history:
         query_emb = semantic_cache.embed(message)
@@ -49,31 +64,54 @@ def chat_response(message, history):
             yield cached_answer
             return
 
-    yield '🔍 Đang tra cứu tài liệu<span class="searching-dots"><span>.</span><span>.</span><span>.</span></span>'
+    if not is_zalo:
+        yield '🔍 Đang tra cứu tài liệu<span class="searching-dots"><span>.</span><span>.</span><span>.</span></span>'
     
     history_context = ""
     if history:
-        parts = []
-        for msg in history:
-            role = msg.get("role", "")
-            content = extract_text(msg.get("content", ""))
-            if role == "user":
-                parts.append(f"Human: {content}")
-            elif role == "assistant":
-                parts.append(f"AI: {content}")
-        history_context = "\n".join(parts)
+        try:
+            from langchain.memory import ConversationBufferMemory
+            memory = ConversationBufferMemory()
+            for msg in history:
+                role = msg.get("role", "")
+                content = extract_text(msg.get("content", ""))
+                if role == "user":
+                    memory.chat_memory.add_user_message(content)
+                elif role == "assistant":
+                    memory.chat_memory.add_ai_message(content)
+            history_context = memory.buffer
+        except ImportError:
+            parts = []
+            for msg in history:
+                role = msg.get("role", "")
+                content = extract_text(msg.get("content", ""))
+                if role == "user":
+                    parts.append(f"Human: {content}")
+                elif role == "assistant":
+                    parts.append(f"AI: {content}")
+            history_context = "\n".join(parts)
     
     db = db_manager.get_db()
     bm25 = db_manager.get_bm25_retriever()
     context = ""
     chatbot_prompts = settings.PROMPTS.get("chatbot", {})
     
+    # Query Expansion: ghép câu hỏi hiện tại với câu hỏi trước đó để giữ context khi search Vector DB
+    search_query = message
+    if history:
+        for msg in reversed(history):
+            if msg.get("role") == "user":
+                last_human = extract_text(msg.get("content", ""))
+                if last_human.strip().lower() != message.strip().lower():
+                    search_query = f"{last_human} {message}"
+                break
+    
     if db:
         chroma_retriever = db.as_retriever(search_kwargs={"k": 3})
         if bm25:
             bm25.k = 3
-            docs_bm25 = bm25.invoke(message)
-            docs_chroma = chroma_retriever.invoke(message)
+            docs_bm25 = bm25.invoke(search_query)
+            docs_chroma = chroma_retriever.invoke(search_query)
             
             doc_scores = {}
             for rank, doc in enumerate(docs_bm25):
@@ -85,7 +123,7 @@ def chat_response(message, history):
             docs = [all_docs[content] for content, _ in sorted(doc_scores.items(), key=lambda x: x[1], reverse=True)]
             docs = docs[:4]
         else:
-            docs = chroma_retriever.invoke(message)
+            docs = chroma_retriever.invoke(search_query)
             
         prefix = chatbot_prompts.get("context_prefix", "Thông tin tham khảo:")
         
@@ -105,8 +143,15 @@ def chat_response(message, history):
         context = f"Lịch sử hội thoại:\n{history_context}\n{context}"
         
     template = chatbot_prompts.get("query_template", "{context}\n\n{message}")
-    template += "\n\nHƯỚNG DẪN QUAN TRỌNG 1: Nếu câu hỏi thiếu ngữ cảnh cụ thể (ví dụ: hỏi điểm chuẩn/học phí nhưng không nói rõ NGÀNH HỌC hoặc NĂM HỌC nào), hãy lịch sự hỏi lại người dùng để họ bổ sung thông tin thay vì đoán bừa."
-    template += "\n\nHƯỚNG DẪN QUAN TRỌNG 2: Nếu bạn tìm thấy câu trả lời, bạn BẮT BUỘC phải trích dẫn tên tệp tài liệu ở cuối (VD: Nguồn tham khảo: De_an_tuyen_sinh_2024.pdf) dựa trên thông tin [Nguồn: ...] được cung cấp."
+    template += "\n\nHƯỚNG DẪN QUAN TRỌNG 1: LUÔN sử dụng 'Lịch sử hội thoại' để xác định Chủ đề/Ngành học/Năm học nếu câu hỏi hiện tại bị thiếu. NẾU KHÔNG TÌM THẤY THÔNG TIN TRONG TÀI LIỆU, hãy trả lời rõ: 'Hệ thống chưa có thông tin <Chủ đề lấy từ Lịch sử>'. TUYỆT ĐỐI KHÔNG yêu cầu người dùng cung cấp lại ngành học nếu nó đã có trong Lịch sử."
+    if not is_zalo:
+        template += "\n\nHƯỚNG DẪN QUAN TRỌNG 2: Nếu bạn tìm thấy câu trả lời, bạn BẮT BUỘC phải trích dẫn tên tệp tài liệu ở cuối (VD: Nguồn tham khảo: De_an_tuyen_sinh_2024.pdf) dựa trên thông tin [Nguồn: ...] được cung cấp."
+    template += "\n\nHƯỚNG DẪN QUAN TRỌNG 3: Khi trả lời về Điểm chuẩn, Học phí, hoặc Chỉ tiêu, BẮT BUỘC phải nói rõ là CỦA NĂM NÀO (dựa theo tiêu đề tệp hoặc nội dung). Nếu tài liệu không có năm, phải ghi chú: 'Tài liệu không ghi rõ năm áp dụng'."
+    template += "\n\nHƯỚNG DẪN QUAN TRỌNG 4: TUYỆT ĐỐI KHÔNG trộn lẫn thông tin giữa các Bậc đào tạo (Đại học, Thạc sĩ, Tiến sĩ/Nghiên cứu sinh). Nếu câu hỏi không ghi rõ hệ nào, BẮT BUỘC ưu tiên trả lời thông tin hệ ĐẠI HỌC (chính quy) lên đầu tiên, sau đó mới liệt kê riêng biệt các hệ khác nếu có."
+    
+    if is_zalo:
+        template += "\n\nHƯỚNG DẪN QUAN TRỌNG 5: TRẢ LỜI CHO ZALO. TUYỆT ĐỐI KHÔNG SỬ DỤNG ĐỊNH DẠNG MARKDOWN (không dùng in đậm **, in nghiêng *, danh sách # hay -, hay code block). KHÔNG BAO GIỜ thêm 'Nguồn tham khảo' ở cuối câu trả lời. Chỉ viết chữ text thuần tuý, dùng gạch ngang hoặc số để liệt kê."
+        
     prompt = template.format(context=context, message=message)
     
     try:

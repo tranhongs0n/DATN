@@ -1,6 +1,7 @@
 import { loadStats, loadFiles, loadUnsupportedFiles } from './dashboard.js';
 import { loadUsers } from './users.js';
 import { checkScrapeStatus } from './scrape.js';
+import { loadAbbreviations } from './abbreviations.js';
 
 let isLoading = false;
 export async function loadAdminData() {
@@ -12,7 +13,8 @@ export async function loadAdminData() {
             loadFiles(),
             loadUnsupportedFiles(),
             loadUsers(),
-            checkScrapeStatus()
+            checkScrapeStatus(),
+            loadAbbreviations()
         ]);
     } catch (e) {
         console.error("Error loading admin data:", e);

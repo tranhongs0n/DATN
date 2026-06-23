@@ -22,7 +22,7 @@ def _process_message(chat_id: str, text: str):
     history = [{"role": r["role"], "content": r["content"]} for r in history_records]
 
     final_response = ""
-    for current_text in chat_response(text, history):
+    for current_text in chat_response(text, history, is_zalo=True):
         final_response = current_text
 
     chat_db.log_message(chat_id, "assistant", final_response)
@@ -39,14 +39,15 @@ async def zalo_bot_webhook(req: Request):
         raw_body = (await req.body()).decode("utf-8")
         data = json.loads(raw_body) if raw_body else {}
 
-        result = data.get("result", {})
-        event_name = result.get("event_name")
+        # Zalo Bot webhook payload thường nằm ở root, không có bọc trong 'result'
+        event_name = data.get("event_name")
+        message_data = data.get("message", {})
+        
         logger.info(f"Zalo Bot webhook received event: {event_name}")
 
         if event_name == "message.text.received":
-            message = result.get("message", {})
-            chat_id = message.get("chat", {}).get("id") or message.get("from", {}).get("id")
-            text = message.get("text", "")
+            chat_id = message_data.get("chat", {}).get("id") or message_data.get("from", {}).get("id")
+            text = message_data.get("text", "")
             if chat_id and text:
                 await run_in_threadpool(_process_message, chat_id, text)
 

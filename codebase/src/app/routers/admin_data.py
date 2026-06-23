@@ -200,3 +200,103 @@ def export_documents(current_user: dict = Depends(get_current_user)):
     response = StreamingResponse(iter([output.getvalue()]), media_type="text/csv")
     response.headers["Content-Disposition"] = "attachment; filename=document_export.csv"
     return response
+
+class AbbreviationRequest(BaseModel):
+    short_form: str
+    full_form: str
+
+@router.get("/abbreviations")
+def get_abbreviations(current_user: dict = Depends(get_current_user)):
+    return {"abbreviations": chat_db.get_all_abbreviations()}
+
+@router.post("/abbreviations")
+def create_abbreviation(req: AbbreviationRequest, current_user: dict = Depends(get_current_user)):
+    from src.core.chat_service import reload_abbreviations
+    chat_db.add_abbreviation(req.short_form, req.full_form)
+    reload_abbreviations()
+    return {"status": "success", "message": "Thêm từ viết tắt thành công."}
+
+@router.put("/abbreviations/{abbr_id}")
+def update_abbreviation_api(abbr_id: int, req: AbbreviationRequest, current_user: dict = Depends(get_current_user)):
+    from src.core.chat_service import reload_abbreviations
+    chat_db.update_abbreviation(abbr_id, req.short_form, req.full_form)
+    reload_abbreviations()
+    return {"status": "success", "message": "Cập nhật từ viết tắt thành công."}
+
+@router.delete("/abbreviations/{abbr_id}")
+def delete_abbreviation_api(abbr_id: int, current_user: dict = Depends(get_current_user)):
+    from src.core.chat_service import reload_abbreviations
+    chat_db.delete_abbreviation(abbr_id)
+    reload_abbreviations()
+    return {"status": "success", "message": "Xóa từ viết tắt thành công."}
+
+@router.post("/abbreviations/import")
+def import_abbreviations(data: dict, current_user: dict = Depends(get_current_user)):
+    from src.core.chat_service import reload_abbreviations
+    try:
+        count = 0
+        for k, v in data.items():
+            if not isinstance(k, str) or not isinstance(v, str): continue
+            chat_db.add_abbreviation(k, v)
+            count += 1
+        reload_abbreviations()
+        return {"status": "success", "message": f"Import thành công {count} từ viết tắt."}
+    except Exception as e:
+        return {"status": "error", "message": f"Lỗi xử lý dữ liệu: {str(e)}"}
+
+@router.get("/test_retrieval")
+async def test_retrieval(query: str, current_user: str = Depends(get_current_user)):
+    from src.core.vector_db import VectorDBManager
+    db_manager = VectorDBManager()
+    chroma_db = db_manager.get_db()
+    bm25 = db_manager.get_bm25_retriever()
+    
+    if not chroma_db:
+        return {"results": []}
+        
+    try:
+        chroma_retriever = chroma_db.as_retriever(search_kwargs={"k": 4})
+        
+        if bm25:
+            bm25.k = 3
+            docs_bm25 = bm25.invoke(query)
+            docs_chroma = chroma_retriever.invoke(query)
+            
+            doc_scores = {}
+            for rank, doc in enumerate(docs_bm25):
+                doc_scores[doc.page_content] = doc_scores.get(doc.page_content, 0) + 0.4 / (rank + 60)
+            for rank, doc in enumerate(docs_chroma):
+                doc_scores[doc.page_content] = doc_scores.get(doc.page_content, 0) + 0.6 / (rank + 60)
+                
+            all_docs = {doc.page_content: doc for doc in docs_bm25 + docs_chroma}
+            sorted_items = sorted(doc_scores.items(), key=lambda x: x[1], reverse=True)
+            
+            results = []
+            for content, score in sorted_items[:5]:
+                doc = all_docs[content]
+                import os
+                source = os.path.basename(doc.metadata.get("source", "Không rõ")) if doc.metadata else "Không rõ"
+                results.append({
+                    "content": content,
+                    "source": source,
+                    "score": score
+                })
+            return {"results": results}
+        else:
+            docs = chroma_retriever.invoke(query)
+            results = []
+            for doc in docs:
+                import os
+                source = os.path.basename(doc.metadata.get("source", "Không rõ")) if doc.metadata else "Không rõ"
+                results.append({
+                    "content": doc.page_content,
+                    "source": source,
+                    "score": 1.0
+                })
+            return {"results": results}
+            
+    except Exception as e:
+        import logging
+        logging.error(f"Error in test_retrieval: {e}")
+        return {"results": []}
+

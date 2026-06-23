@@ -52,6 +52,10 @@ def run_build_db(args):
     db_manager.build_from_documents(docs, append=args.append)
     logger.info("Vector DB build complete.")
 
+def run_polling(args):
+    from src.utils.zalo_polling import start_polling
+    start_polling()
+
 def main():
     parser = argparse.ArgumentParser(description="DATN - Tuyển sinh TLU RAG CLI")
     subparsers = parser.add_subparsers(dest="command", help="Commands")
@@ -70,6 +74,8 @@ def main():
     db_parser.add_argument("--limit", type=int, help="Limit number of documents to index")
     db_parser.add_argument("--append", action="store_true", help="Append to existing database instead of rebuilding")
 
+    polling_parser = subparsers.add_parser("polling", help="Run Zalo Bot via Long Polling mode")
+
     args = parser.parse_args()
     
     if args.command == "ui":
@@ -78,6 +84,8 @@ def main():
         run_scrape(args)
     elif args.command == "build-db":
         run_build_db(args)
+    elif args.command == "polling":
+        run_polling(args)
     elif not args.command:
         run_ui(args)
     else:

@@ -5,7 +5,7 @@ from src.config.settings import settings
 
 logger = logging.getLogger(__name__)
 
-SUPPORTED_DOC_EXTENSIONS = ('.pdf', '.docx')
+SUPPORTED_DOC_EXTENSIONS = ('.pdf', '.docx', '.txt')
 SUPPORTED_ASSET_EXTENSIONS = ('.png', '.jpg', '.jpeg', '.bmp', '.gif', '.webp')
 
 class DocumentLoader:

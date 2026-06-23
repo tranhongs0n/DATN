@@ -14,21 +14,31 @@ zalo_bot = ZaloBot()
 loader = DocumentLoader()
 indexing_service = IndexingService(db_manager, loader)
 
-RATE_LIMIT_WINDOW = 60
-RATE_LIMIT_MAX_REQUESTS = 10
-request_counts = defaultdict(list)
+import time
+
+class TokenBucket:
+    def __init__(self, rate, capacity):
+        self.tokens = capacity
+        self.capacity = capacity
+        self.rate = rate
+        self.last_update = time.time()
+        
+    def consume(self, tokens_needed):
+        now = time.time()
+        self.tokens = min(self.capacity, self.tokens + (now - self.last_update) * self.rate)
+        self.last_update = now
+        if self.tokens >= tokens_needed:
+            self.tokens -= tokens_needed
+            return True
+        return False
+
+# Cấu hình Token-Bucket: phục hồi 1 token mỗi 6 giây, sức chứa tối đa 10 token
+rate_limiters = defaultdict(lambda: TokenBucket(rate=1/6.0, capacity=10))
 
 def check_rate_limit(client_id: str):
-    now = time.time()
-    requests = [req_time for req_time in request_counts[client_id] if now - req_time < RATE_LIMIT_WINDOW]
-    if len(requests) >= RATE_LIMIT_MAX_REQUESTS:
-        request_counts[client_id] = requests
+    bucket = rate_limiters[client_id]
+    if not bucket.consume(1):
         raise HTTPException(status_code=429, detail="Rate limit exceeded. Try again later.")
-    requests.append(now)
-    request_counts[client_id] = requests
-    if len(request_counts) > 10000:
-        for k in [k for k, v in request_counts.items() if not v]:
-            del request_counts[k]
 
 async def get_current_user(authorization: str = Header(None)):
     if not authorization or not authorization.startswith("Bearer "):

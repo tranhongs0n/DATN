@@ -50,6 +50,45 @@
             </div>
         </div>
         
+        <div id="abbr-modal" class="modal-overlay">
+            <div class="modal-content glass-panel modal-dialog">
+                <h2 id="abbr-modal-title" class="text-center mb-3"><i class="fa-solid fa-book"></i> Thêm/Sửa từ viết tắt</h2>
+                <form id="abbr-modal-form">
+                    <input type="hidden" id="abbr-modal-id">
+                    <div class="form-group">
+                        <input type="text" id="abbr-modal-short" placeholder="Từ viết tắt (VD: cntt)" required class="form-control">
+                    </div>
+                    <div class="form-group last">
+                        <input type="text" id="abbr-modal-full" placeholder="Từ đầy đủ (VD: Công nghệ thông tin)" required class="form-control">
+                    </div>
+                    <div class="flex-gap-2">
+                        <button type="button" id="cancel-abbr-btn" class="btn secondary flex-1">Hủy</button>
+                        <button type="submit" class="btn primary flex-1">Lưu</button>
+                    </div>
+                    <div id="abbr-modal-error" class="status-msg error mt-2 d-none"></div>
+                </form>
+            </div>
+        </div>
+
+        <div id="import-abbr-modal" class="modal-overlay">
+            <div class="modal-content glass-panel modal-dialog" style="max-width: 600px;">
+                <h2 class="text-center mb-3"><i class="fa-solid fa-file-code"></i> Import Từ viết tắt (JSON)</h2>
+                <div class="text-right mb-2">
+                    <button type="button" id="load-sample-json-btn" class="btn small secondary"><i class="fa-solid fa-code"></i> Tải mẫu JSON</button>
+                </div>
+                <form id="import-abbr-form">
+                    <div class="form-group last">
+                        <textarea id="import-abbr-json" rows="10" placeholder='Nhập chuỗi JSON. Ví dụ:\n{\n  "cntt": "Công nghệ thông tin",\n  "httt": "Hệ thống thông tin"\n}' required class="form-control" style="font-family: monospace;"></textarea>
+                    </div>
+                    <div class="flex-gap-2">
+                        <button type="button" id="cancel-import-abbr-btn" class="btn secondary flex-1">Hủy</button>
+                        <button type="submit" class="btn primary flex-1">Import</button>
+                    </div>
+                    <div id="import-abbr-error" class="status-msg error mt-2 d-none"></div>
+                </form>
+            </div>
+        </div>
+
         <app-sidebar></app-sidebar>
         
         <main class="main-content">
@@ -67,6 +106,8 @@
                     <button class="tab-btn active" data-tab="tab-dashboard">Tổng quan</button>
                     <button class="tab-btn" data-tab="tab-files">Tệp tin</button>
                     <button class="tab-btn" data-tab="tab-users">Người dùng</button>
+                    <button class="tab-btn" data-tab="tab-abbreviations">Từ viết tắt</button>
+                    <button class="tab-btn" data-tab="tab-tester">Tiền xử lý (Query Test)</button>
                 </div>
                 <div id="tab-dashboard" class="tab-pane active">
                     <div class="admin-grid">
@@ -101,7 +142,7 @@
                                 <button id="rebuild-btn" class="btn primary"><i class="fa-solid fa-rotate"></i> Xây dựng lại Index</button>
                                 <div class="upload-section" style="display: inline-block;">
                                     <label for="file-upload" class="btn secondary mb-0"><i class="fa-solid fa-file-arrow-up"></i> Tải lên & Index</label>
-                                    <input type="file" id="file-upload" multiple class="d-none" accept=".pdf,.docx,.png,.jpg,.jpeg,.bmp,.gif,.webp">
+                                    <input type="file" id="file-upload" multiple class="d-none" accept=".pdf,.docx,.txt,.png,.jpg,.jpeg,.bmp,.gif,.webp">
                                 </div>
                             </div>
                         </div>
@@ -170,11 +211,58 @@
                         <div id="user-status" class="status-msg"></div>
                     </div>
                 </div>
+                
+                <div id="tab-abbreviations" class="tab-pane">
+                    <div class="card users-card glass-panel grid-full">
+                        <div class="flex-between mb-3">
+                            <h2 class="mb-0"><i class="fa-solid fa-book"></i> Quản lý Từ viết tắt</h2>
+                            <div class="actions" style="margin-top: 0;">
+                                <button id="open-import-abbr-btn" class="btn secondary"><i class="fa-solid fa-file-code"></i> Import JSON</button>
+                                <button id="add-abbr-btn" class="btn primary"><i class="fa-solid fa-plus"></i> Thêm từ</button>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <table id="abbr-table" class="has-actions">
+                                <thead>
+                                    <tr>
+                                        <th>Từ viết tắt (Ngắn)</th>
+                                        <th>Từ đầy đủ</th>
+                                        <th>Hành động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="abbr-status" class="status-msg"></div>
+                    </div>
+                </div>
+                
+                <div id="tab-tester" class="tab-pane">
+                    <div class="card glass-panel grid-full">
+                        <div class="flex-between mb-3">
+                            <h2 class="mb-0"><i class="fa-solid fa-vial"></i> Retrieval Tester (Chẩn đoán Tìm kiếm)</h2>
+                        </div>
+                        <p class="text-secondary fs-sm mb-3">Nhập từ khóa để xem hệ thống Vector DB & BM25 sẽ lôi ra những đoạn văn bản (chunks) nào trước khi đưa cho LLM.</p>
+                        
+                        <div class="form-group flex-gap-2">
+                            <input type="text" id="tester-query" class="form-control flex-1" placeholder="Nhập câu hỏi hoặc từ khóa (vd: điểm chuẩn CNTT)">
+                            <button id="tester-search-btn" class="btn primary"><i class="fa-solid fa-search"></i> Test Search</button>
+                        </div>
+                        
+                        <div id="tester-status" class="status-msg mt-2"></div>
+                        
+                        <div id="tester-results" class="mt-4" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <!-- Results will be injected here -->
+                        </div>
+                    </div>
+                </div>
+                
                 </div>
             </section>
         </main>
     </div>
-    <script type="module" src="/js/admin/main.js?v=4"></script>
+    <script type="module" src="/js/admin/main.js?v=7"></script>
 
 
     <template id="stats-template">
@@ -237,6 +325,16 @@
         </tr>
     </template>
 
+    <template id="abbr-row-template">
+        <tr>
+            <td class="abbr-short fw-bold text-primary"></td>
+            <td class="abbr-full"></td>
+            <td class="abbr-actions">
+                <button class="btn small primary edit-abbr-btn"><i class="fa-solid fa-pen"></i> Sửa</button>
+                <button class="btn small secondary delete-abbr-btn"><i class="fa-solid fa-trash"></i> Xóa</button>
+            </td>
+        </tr>
+    </template>
 
 </body>
 </html>

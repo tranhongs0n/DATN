@@ -72,7 +72,7 @@ Mô-đun hỏi đáp RAG vận hành toàn trình từ khâu tiếp nhận câu 
 
 Tại lớp giao tiếp lõi, API Google Gemini hoạt động với cấu hình nhiệt độ bằng không nhằm cung cấp kết quả tất định, loại trừ hiện tượng sinh chuỗi thông tin ảo. Quá trình kết xuất nội dung kết hợp thuật toán thử lại tự động khi nhận mã lỗi quá tải băng thông 429 từ máy chủ cung cấp dịch vụ, đảm bảo tính ổn định trong giờ cao điểm.
 
-Hàm phản hồi điều phối logic hệ thống trả lời Zalo. Để lọc các tin nhắn đơn giản, luồng dữ liệu đi qua mô hình phân loại ý định kết hợp bộ lọc biểu thức chính quy. Cơ chế này nhận diện nhanh chóng các câu chào hỏi xã giao để điều hướng sang kịch bản tĩnh định sẵn, lược bỏ khâu truy vấn vector tài nguyên lớn. Đối với câu hỏi nghiệp vụ, hệ thống tra cứu ChromaDB để trích xuất giới hạn 3 đoạn tài liệu có độ tương quan cao nhất.
+Hàm phản hồi điều phối logic hệ thống trả lời Zalo. Mọi tin nhắn từ người dùng đều được đưa thẳng vào hệ thống để truy xuất văn cảnh và sinh phản hồi tự nhiên qua mô hình ngôn ngữ lớn (LLM). Đối với câu hỏi nghiệp vụ, hệ thống tra cứu ChromaDB để trích xuất giới hạn 3 đoạn tài liệu có độ tương quan cao nhất.
 
 Bộ nhớ hội thoại `ConversationBufferMemory` của LangChain tích hợp lịch sử truy vấn, duy trì mạch tư vấn xuyên suốt. Bằng cách nối khung chỉ thị, nội dung truy xuất, lịch sử bộ nhớ và câu hỏi thực tại, ứng dụng gửi tệp ngữ cảnh hoàn chỉnh đến mô hình ngôn ngữ và trả chuỗi phản hồi trực tiếp về thiết bị đầu cuối.
 
@@ -88,7 +88,6 @@ sequenceDiagram
 
     User->>Zalo: Gửi tin nhắn
     Zalo->>API: Webhook sự kiện
-    API->>API: Phân loại ý định (Intent Classifier)
     API->>Mem: Truy xuất lịch sử hội thoại
     API->>DB: Truy vấn Vector (k=3)
     DB-->>API: Trả về Top 3 tài liệu
