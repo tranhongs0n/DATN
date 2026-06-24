@@ -1170,7 +1170,10 @@ def process_content_file(
 
         if stripped.startswith("- ") or stripped.startswith("* "):
             bullet_text = stripped[2:]
-            add_formatted_paragraph(doc, bullet_text, "List Paragraph")
+            try:
+                add_formatted_paragraph(doc, bullet_text, "List Bullet")
+            except KeyError:
+                add_formatted_paragraph(doc, "• " + bullet_text, "List Paragraph")
             i += 1
             continue
 

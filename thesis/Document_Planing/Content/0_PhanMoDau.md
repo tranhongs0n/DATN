@@ -10,7 +10,7 @@ Kỹ thuật Sinh văn bản Tăng cường Truy xuất (Lewis và cộng sự, 
 
 ## 2. Mục tiêu nghiên cứu
 
-Nghiên cứu kiến trúc hệ thống RAG, bao gồm các phương pháp phân mảnh văn bản, tối ưu hóa quá trình nhúng dữ liệu và truy xuất trên cơ sở dữ liệu vector. Đề tài tập trung đánh giá mức độ tương thích của các mô hình nhúng và LLM đối với ngôn ngữ tiếng Việt trong lĩnh vực giáo dục.
+Nghiên cứu kiến trúc hệ thống RAG, bao gồm các phương pháp phân mảnh văn bản, tối ưu hóa quá trình nhúng dữ liệu và truy xuất trên Vector Database. Đề tài tập trung đánh giá mức độ tương thích của các mô hình nhúng và LLM đối với ngôn ngữ tiếng Việt trong lĩnh vực giáo dục.
 
 Xây dựng hệ thống trợ lý ảo hoạt động trên nền tảng Zalo, hỗ trợ giải đáp thông tin tuyển sinh ở các bậc đại học, thạc sĩ và tiến sĩ. Hệ thống cần khả năng phân loại ý định người dùng và truy xuất chính xác nguồn dữ liệu nội bộ.
 
@@ -24,7 +24,7 @@ Phạm vi dữ liệu bao gồm 86 tệp tài liệu nguyên thủy (38 tệp đ
 
 ## 4. Phương pháp nghiên cứu
 
-Nghiên cứu tài liệu học thuật về trí tuệ nhân tạo và hệ thống truy xuất thông tin để xác định thiết kế kiến trúc chuẩn cho toàn bộ quy trình RAG.
+Nghiên cứu tài liệu học thuật về AI và hệ thống truy xuất thông tin để xác định thiết kế kiến trúc chuẩn cho toàn bộ quy trình RAG.
 
 Nghiên cứu thực nghiệm được thực hiện để đo lường độ trễ, độ chính xác của các chiến lược phân đoạn văn bản và thuật toán so khớp vector. Kết quả này định hướng lựa chọn cấu hình siêu tham số tối ưu.
 

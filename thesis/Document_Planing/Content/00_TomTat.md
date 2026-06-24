@@ -2,7 +2,7 @@
 **Sinh viên:** Trần Hồng Sơn (61TH1)
 **GVHD:** TS. Lý Anh Tuấn
 
-Đề tài tập trung thiết kế và phát triển hệ thống trợ lý ảo hỗ trợ công tác tư vấn tuyển sinh tại Trường Đại học Thủy Lợi, hướng tới mục tiêu tự động hóa việc giải đáp thông tin đa phân luồng. Triển khai cơ chế phân tách và lập chỉ mục đa luồng, hỗ trợ chuyển đổi linh hoạt các định dạng văn bản (PDF, DOCX) thành cơ sở dữ liệu vector. Hệ thống truy xuất nhanh chóng các điều khoản quy định giáo dục mà không phá vỡ cấu trúc ngữ nghĩa gốc.
+Đề tài tập trung thiết kế và phát triển hệ thống trợ lý ảo hỗ trợ công tác tư vấn tuyển sinh tại Trường Đại học Thủy Lợi, hướng tới mục tiêu tự động hóa việc giải đáp thông tin đa phân luồng. Triển khai cơ chế phân tách và lập chỉ mục đa luồng, hỗ trợ chuyển đổi linh hoạt các định dạng văn bản (PDF, DOCX) thành Vector Database. Hệ thống truy xuất nhanh chóng các điều khoản quy định giáo dục mà không phá vỡ cấu trúc ngữ nghĩa gốc.
 
 Mô hình thiết kế khung chỉ thị cá nhân hóa trên lõi Google Gemini, bắt buộc mạng nơ-ron trả lời dựa trên tài liệu cung cấp. Hệ thống giải quyết tốt bài toán lọc câu hỏi ngoài phạm vi nghiệp vụ giáo dục nhằm ngăn chặn hiện tượng cung cấp thông tin sai lệch ngoài dữ liệu gốc của nhà trường.
 
