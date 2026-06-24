@@ -1,0 +1,1392 @@
+[   0] TBL
+[   2] P  style=Normal | TRƯỜNG ĐẠI HỌC THỦY LỢI
+[   5] P  style=Normal | HỌ VÀ TÊN: HOÀNG THÁI DUY
+[   8] P  style=Normal | XÂY DỰNG HỆ THỐNG TRỢ LÝ ẢO HƯỚNG NGHIỆP CHO SINH VIÊN NGÀNH CNTT ĐẠI HỌC THỦY LỢI DỰA TRÊN RAG
+[  10] P  style=Cover | ĐỒ ÁN TỐT NGHIỆP/khóa luận tốt nghiệp
+[  17] P  style=Normal | HÀ NỘI, NĂM 2025
+[  18] TBL
+[  19] P  style=Normal | TRƯỜNG ĐẠI HỌC THỦY LỢI
+[  22] P  style=Normal | HOÀNG THÁI DUY
+[  25] P  style=Normal | XÂY DỰNG HỆ THỐNG TRỢ LÝ ẢO HƯỚNG NGHIỆP
+[  26] P  style=Normal | CHO SINH VIÊN NGÀNH CNTT ĐẠI HỌC THỦY LỢI
+[  27] P  style=Normal | DỰA TRÊN RAG
+[  31] TBL
+[  33] P  style=Normal | Mã số:            7480201
+[  35] P  style=Normal | NGƯỜI HƯỚNG DẪN: TS. Nguyễn Văn Nam
+[  41] P  style=Normal | HÀ NỘI, NĂM 2025
+[  42] TBL
+[  45] P  style=Normal | Họ tên sinh viên: Hoàng Thái Duy		Hệ đào tạo: Đại học chính quy
+[  46] P  style=Normal | Lớp: 61TH2	 					Ngành: Công nghệ thông tin
+[  47] P  style=Normal | Khoa: Công nghệ thông tin
+[  48] P  style=Normal | 1- TÊN ĐỀ TÀI:
+[  49] P  style=Normal | XÂY DỰNG HỆ THỐNG TRỢ LÝ ẢO HƯỚNG NGHIỆP CHO SINH VIÊN NGÀNH CNTT ĐẠI HỌC THỦY LỢI DỰA TRÊN RAG
+[  50] P  style=Normal | 2- CÁC TÀI LIỆU
+[  51] P  style=List Paragraph | OpenAI, “ChatGPT and GPT-4 technical report,” OpenAI Research, [Trực tuyến]. Có tại: https://openai.
+       -> Numbering: numId=3, ilvl=0
+[  52] P  style=List Paragraph | BAAI Research, “bge-m3: Multilingual Embedding Model,” HuggingFace, [Trực tuyến].Có tại: https://hug
+       -> Numbering: numId=3, ilvl=0
+[  53] P  style=List Paragraph | LangChain Team, “LangChain Documentation,” LangChain AI, [Trực tuyến]. Có tại: https://docs.langchai
+       -> Numbering: numId=3, ilvl=0
+[  54] P  style=List Paragraph | ChromaDB, “Chroma: The AI-native vector database,” Chroma Official Docs, [Trực tuyến]. Có tại: https
+       -> Numbering: numId=3, ilvl=0
+[  55] P  style=List Paragraph | Discord API Documentation, “Building Chatbots with discord.py,” Discord Developers, [Trực tuyến]. Có
+       -> Numbering: numId=3, ilvl=0
+[  56] P  style=List Paragraph | Fullstack.edu.vn, “Lộ trình học lập trình cho người mới,” [Trực tuyến]. Có tại: https://fullstack.ed
+       -> Numbering: numId=3, ilvl=0
+[  61] P  style=Normal | 3 - NỘI DUNG CÁC PHẦN THUYẾT MINH VÀ TÍNH TOÁN:
+[  62] TBL
+[  64] P  style=Normal | 4. GIÁO VIÊN HƯỚNG DẪN TỪNG PHẦN
+[  65] TBL
+[  67] P  style=Normal | 5. NGÀY GIAO NHIỆM VỤ ĐỒ ÁN TỐT NGHIỆP
+[  68] P  style=Normal | Ngày ............  tháng .........  năm 2025
+[  69] TBL
+[  73] P  style=Normal | TS. Nguyễn Văn Nam
+[  75] P  style=Normal | Nhiệm vụ Đồ án tốt nghiệp đã được Hội đồng thi tốt nghiệp của Khoa thông qua
+[  76] P  style=Normal | Ngày. . . . .tháng. . . . .năm 2025	                                                       Chủ tịch 
+[  77] P  style=Normal | (Ký và ghi rõ Họ tên)
+[  82] P  style=Normal | Sinh viên đã hoàn thành và nộp bản Đồ án tốt nghiệp cho Hội đồng thi ngày...  tháng... năm 2025.
+[  83] P  style=Normal | Sinh viên làm Đồ án tốt nghiệp
+[  84] P  style=Normal | (Ký và ghi rõ Họ tên)
+[  88] TBL
+[  89] P  style=Normal | TÊN ĐỀ TÀI: Xây dựng hệ thống trợ lý ảo hướng nghiệp cho sinh viên ngành CNTT Đại học Thủy Lợi dựa t
+[  90] P  style=Normal | Sinh viên thực hiện:	   Hoàng Thái Duy
+[  91] P  style=Normal | Lớp:			   61TH2
+[  92] P  style=Normal | Mã sinh viên: 1951060657
+[  93] P  style=Normal | Số điện thoại: 0339882230
+[  94] P  style=Normal | Email: 1951060657@e.tlu.edu.vn
+[  95] P  style=Normal | Giáo viên hướng dẫn: TS. Nguyễn Văn Nam
+[  96] P  style=Normal | Thời gian thực hiện: … tuần:   từ ngày: 31/03/2025  đến ngày: 30/06/2025
+[  98] P  style=Heading 2 | TÓM TẮT ĐỀ TÀI
+[  99] P  style=Heading 3 | 1. Bối cảnh của đề tài
+[ 100] P  style=Heading 4 | a. Thực trạng hướng nghiệp cho sinh viên đại học
+[ 101] P  style=Normal | Hướng nghiệp là một yếu tố quan trọng giúp sinh viên định hình con đường sự nghiệp sau khi tốt nghiệ
+[ 102] P  style=Normal | Thiếu thông tin toàn diện: Sinh viên khó tiếp cận thông tin chi tiết về các ngành nghề, yêu cầu kỹ n
+       -> Numbering: numId=5, ilvl=0
+[ 103] P  style=Normal | Hạn chế trong tư vấn cá nhân hóa: Các buổi tư vấn hướng nghiệp thường mang tính đại trà, không đáp ứ
+       -> Numbering: numId=5, ilvl=0
+[ 104] P  style=Normal | Thiếu hỗ trợ liên tục: Sinh viên chỉ nhận được tư vấn trong các sự kiện cụ thể (ngày hội việc làm, h
+       -> Numbering: numId=5, ilvl=0
+[ 105] P  style=Normal | Khó khăn trong tự đánh giá: Nhiều sinh viên không biết cách kết nối điểm mạnh, điểm yếu của bản thân
+       -> Numbering: numId=5, ilvl=0
+[ 106] P  style=Heading 4 | b. Sự phát triển của công nghệ AI
+[ 107] P  style=Normal | Công nghệ Retrieval-Augmented Generation (RAG), với khả năng truy xuất thông tin từ nguồn dữ liệu đá
+[ 108] P  style=Heading 4 | c. Nhu cầu thực tế tại Việt Nam
+[ 109] P  style=Normal | Tại Việt Nam, tỷ lệ sinh viên ra trường thất nghiệp hoặc làm việc không đúng ngành học vẫn ở mức cao
+[ 111] P  style=Normal | CÁC MỤC TIÊU CHÍNH
+[ 112] P  style=Normal | Phát triển một hệ thống trợ lý ảo hướng nghiệp cho sinh viên dựa trên RAG nhằm:
+[ 113] P  style=Normal | Cung cấp thông tin chính xác, cập nhật về các ngành nghề, yêu cầu kỹ năng, và cơ hội việc làm dựa tr
+       -> Numbering: numId=6, ilvl=0
+[ 114] P  style=Normal | Hỗ trợ sinh viên 24/7 trong việc khám phá lựa chọn nghề nghiệp, lập kế hoạch phát triển kỹ năng và t
+       -> Numbering: numId=6, ilvl=0
+[ 115] P  style=Normal | Cá nhân hóa gợi ý hướng nghiệp dựa trên hồ sơ học tập, sở thích, và mục tiêu cá nhân của sinh viên.
+       -> Numbering: numId=6, ilvl=0
+[ 116] P  style=Normal | Tăng cường khả năng tự định hướng nghề nghiệp và kết nối sinh viên với các nguồn lực hỗ trợ (cựu sin
+       -> Numbering: numId=6, ilvl=0
+[ 121] P  style=Normal | NỘI DUNG CHÍNH
+[ 123] P  style=Heading 4 | a. Thu thập và xử lý dữ liệu
+[ 124] P  style=Normal | Nguồn dữ liệu:
+       -> Numbering: numId=8, ilvl=0
+[ 125] P  style=Normal | Thông tin ngành học của trường (mô tả ngành, kỹ năng đào tạo, triển vọng nghề nghiệp).
+       -> Numbering: numId=8, ilvl=1
+[ 126] P  style=Normal | Dữ liệu từ cựu sinh viên (ngành nghề sau tốt nghiệp, vị trí công việc, mức lương trung bình).
+       -> Numbering: numId=8, ilvl=1
+[ 127] P  style=Normal | Báo cáo thị trường lao động (xu hướng ngành nghề, kỹ năng hot, nhu cầu tuyển dụng) từ các nguồn như 
+       -> Numbering: numId=8, ilvl=1
+[ 128] P  style=Normal | Hồ sơ sinh viên (ngành học, điểm số, kỹ năng, sở thích cá nhân).
+       -> Numbering: numId=8, ilvl=1
+[ 129] P  style=Normal | Xử lý dữ liệu:
+       -> Numbering: numId=8, ilvl=0
+[ 130] P  style=Normal | Chuẩn hóa thông tin thành định dạng có cấu trúc (JSON, CSV) để dễ truy xuất.
+       -> Numbering: numId=8, ilvl=1
+[ 131] P  style=Normal | Sử dụng kỹ thuật nhúng (embedding) để biểu diễn dữ liệu nghề nghiệp và truy vấn dưới dạng vector.
+       -> Numbering: numId=8, ilvl=1
+[ 132] P  style=Heading 4 | b. Xây dựng hệ thống RAG
+[ 133] P  style=Normal | Thành phần Retrieval (Truy xuất):
+       -> Numbering: numId=10, ilvl=0
+[ 134] P  style=Normal | Sử dụng mô hình nhúng (như BERT, Sentence-Transformers) để chuyển đổi câu hỏi của sinh viên và dữ li
+       -> Numbering: numId=10, ilvl=1
+[ 135] P  style=Normal | Triển khai công cụ tìm kiếm nhanh (như FAISS) để truy xuất thông tin liên quan từ cơ sở dữ liệu.
+       -> Numbering: numId=10, ilvl=1
+[ 136] P  style=Normal | Thành phần Generation (Sinh nội dung):
+       -> Numbering: numId=10, ilvl=0
+[ 137] P  style=Normal | Sử dụng mô hình ngôn ngữ lớn (LLM) như LLaMA hoặc GPT, được tinh chỉnh để sinh ra câu trả lời tự nhi
+       -> Numbering: numId=10, ilvl=1
+[ 138] P  style=Normal | Ví dụ: Khi sinh viên hỏi "Ngành CNTT làm gì sau khi ra trường?", hệ thống trả lời: "Ngành CNTT có th
+       -> Numbering: numId=10, ilvl=1
+[ 139] P  style=Heading 4 | c. Tích hợp tính năng cá nhân hóa
+[ 140] P  style=Normal | Thu thập thông tin từ sinh viên (qua câu hỏi hoặc khảo sát ngắn: ngành học, sở thích, kỹ năng hiện c
+       -> Numbering: numId=11, ilvl=0
+[ 141] P  style=Normal | Dựa trên dữ liệu này, hệ thống:
+       -> Numbering: numId=11, ilvl=0
+[ 142] P  style=Normal | Đánh giá sự phù hợp (ví dụ: "Với sở thích sáng tạo và ngành Marketing, bạn có thể thử sức với Digita
+       -> Numbering: numId=11, ilvl=1
+[ 143] P  style=Normal | Gợi ý lộ trình phát triển (ví dụ: "Để làm Data Analyst, bạn nên học thêm Python và tham gia khóa học
+       -> Numbering: numId=11, ilvl=1
+[ 144] P  style=Normal | Kết nối với cơ hội (ví dụ: "Có 3 công ty đang tuyển thực tập sinh ngành X, bạn muốn xem chi tiết khô
+       -> Numbering: numId=11, ilvl=1
+[ 145] P  style=Heading 4 | d. Phát triển giao diện và triển khai
+[ 146] P  style=Normal | Giao diện:
+       -> Numbering: numId=7, ilvl=0
+[ 147] P  style=Normal | Chatbot tích hợp trên website trường, ứng dụng di động hoặc nền tảng nhắn tin như Zalo.
+       -> Numbering: numId=7, ilvl=1
+[ 148] P  style=Normal | Hỗ trợ nhập liệu bằng văn bản hoặc giọng nói, hiển thị lộ trình nghề nghiệp dưới dạng sơ đồ hoặc dan
+       -> Numbering: numId=7, ilvl=1
+[ 149] P  style=Normal | Triển khai:
+       -> Numbering: numId=7, ilvl=0
+[ 150] P  style=Normal | Sử dụng framework như Flask/Django cho backend.
+       -> Numbering: numId=7, ilvl=1
+[ 151] P  style=Normal | Kết nối với dữ liệu từ trung tâm việc làm của trường hoặc các trang tuyển dụng qua API.
+       -> Numbering: numId=7, ilvl=1
+[ 152] P  style=Heading 4 | e. Kiểm thử và cải tiến
+[ 153] P  style=Normal | Kiểm tra độ chính xác của gợi ý nghề nghiệp bằng cách sử dụng tập câu hỏi mẫu từ sinh viên.
+       -> Numbering: numId=9, ilvl=0
+[ 154] P  style=Normal | Thu thập phản hồi (đánh giá mức độ hữu ích, sự phù hợp) để tinh chỉnh mô hình và cải thiện chất lượn
+       -> Numbering: numId=9, ilvl=0
+[ 157] P  style=Normal | KẾT QUẢ DỰ KIẾN
+[ 158] P  style=Normal | Một trợ lý ảo hướng nghiệp hoạt động 24/7, có khả năng:
+[ 159] P  style=Normal | Trả lời thắc mắc về nghề nghiệp (ví dụ: "Ngành Kế toán có triển vọng không?", "Làm sao để trở thành 
+       -> Numbering: numId=12, ilvl=0
+[ 160] P  style=Normal | Đưa ra gợi ý ngành nghề phù hợp (ví dụ: "Dựa trên ngành CNTT và sở thích lập trình, bạn phù hợp với 
+       -> Numbering: numId=12, ilvl=0
+[ 161] P  style=Normal | Đề xuất lộ trình phát triển kỹ năng (ví dụ: "Học thêm khóa UX/UI Design trong 3 tháng để tăng cơ hội
+       -> Numbering: numId=12, ilvl=0
+[ 162] P  style=Normal | Kết nối với cơ hội thực tập/việc làm (ví dụ: "Công ty X đang tuyển vị trí Y, bạn có muốn ứng tuyển?"
+       -> Numbering: numId=12, ilvl=0
+[ 168] P  style=Normal | TIẾN ĐỘ THỰC HIỆN
+[ 170] TBL
+[ 176] P  style=Normal | GÁY BÌA ĐỒ ÁN TỐT NGHIỆP, KHÓA LUẬN TỐT NGHIỆP
+[ 178] P  style=Normal | LỜI CAM ĐOAN
+[ 179] P  style=Normal | Em xin cam đoan đây là Đồ án tốt nghiệp của em. Các kết quả, nội dung trong Đồ án tốt nghiệp này là 
+[ 181] P  style=Normal | Sinh viên thực hiện
+[ 185] P  style=Normal | Hoàng Thái Duy
+[ 187] P  style=Normal | LỜI CẢM ƠN
+[ 188] P  style=Normal | Trước tiên, em xin bày tỏ lòng biết ơn sâu sắc tới toàn thể thầy cô trong Khoa Công nghệ Thông tin –
+[ 189] P  style=Normal | Em đặc biệt tri ân Thầy TS. Nguyễn Văn Nam, người đã tận tâm hướng dẫn, luôn đồng hành, góp ý và địn
+[ 190] P  style=Normal | Em cũng xin gửi lời cảm ơn tới các anh chị khóa trên và các bạn đồng môn đã luôn sẵn lòng hỗ trợ, ch
+[ 191] P  style=Normal | Do còn hạn chế về kinh nghiệm thực tế cũng như kiến thức chuyên sâu, đồ án của em không tránh khỏi n
+[ 192] P  style=Normal | Một lần nữa, em xin chân thành cảm ơn!
+[ 198] P  style=Heading 1 | MỤC LỤC ẢNH
+[ 199] P  style=toc 1 | Hình 1-1 Trợ lý ảo	2
+       -> Fields: [' TOC \\h \\z \\t "Hình,1" ', ' PAGEREF _Toc202651151 \\h ']
+[ 200] P  style=toc 1 | Hình 1-2 Tư vấn khách hàng	4
+       -> Fields: [' PAGEREF _Toc202651152 \\h ']
+[ 201] P  style=toc 1 | Hình 1-3 Phản hồi của chatbot Vietnam Airlines dựa trên học máy	6
+       -> Fields: [' PAGEREF _Toc202651153 \\h ']
+[ 202] P  style=toc 1 | Hình 1-4 Kiến trúc tổng quát của mô hình RAG trong trợ lý ảo	7
+       -> Fields: [' PAGEREF _Toc202651154 \\h ']
+[ 203] P  style=toc 1 | Hình 1-5	16
+       -> Fields: [' PAGEREF _Toc202651155 \\h ']
+[ 204] P  style=toc 1 | Hình 1-6	16
+       -> Fields: [' PAGEREF _Toc202651156 \\h ']
+[ 205] P  style=toc 1 | Hình 1-7	17
+       -> Fields: [' PAGEREF _Toc202651157 \\h ']
+[ 206] P  style=toc 1 | Hình 2-1 Sơ đồ mô tả pipeline xử lý	33
+       -> Fields: [' PAGEREF _Toc202651158 \\h ']
+[ 207] P  style=toc 1 | Hình 2-2 Sơ đồ use case minh họa	34
+       -> Fields: [' PAGEREF _Toc202651159 \\h ']
+[ 208] P  style=toc 1 | Hình 2-3 Sơ đồ kiến trúc hệ thống	42
+       -> Fields: [' PAGEREF _Toc202651160 \\h ']
+[ 209] P  style=toc 1 | Hình 2-4 Luồng tổng quát	44
+       -> Fields: [' PAGEREF _Toc202651161 \\h ']
+[ 210] P  style=toc 1 | Hình 2-5 Luồng trình tự logic	45
+       -> Fields: [' PAGEREF _Toc202651162 \\h ']
+[ 211] P  style=toc 1 | Hình 3-1	53
+       -> Fields: [' PAGEREF _Toc202651163 \\h ']
+[ 212] P  style=toc 1 | Hình 3-2	53
+       -> Fields: [' PAGEREF _Toc202651164 \\h ']
+[ 213] P  style=toc 1 | Hình 3-3	53
+       -> Fields: [' PAGEREF _Toc202651165 \\h ']
+[ 214] P  style=toc 1 | Hình 3-4	53
+       -> Fields: [' PAGEREF _Toc202651166 \\h ']
+[ 215] P  style=toc 1 | Hình 3-5	53
+       -> Fields: [' PAGEREF _Toc202651167 \\h ']
+[ 216] P  style=toc 1 | Hình 3-6	54
+       -> Fields: [' PAGEREF _Toc202651168 \\h ']
+[ 217] P  style=toc 1 | Hình 3-7	55
+       -> Fields: [' PAGEREF _Toc202651169 \\h ']
+[ 218] P  style=toc 1 | Hình 3-8	55
+       -> Fields: [' PAGEREF _Toc202651170 \\h ']
+[ 219] P  style=toc 1 | Hình 3-9	56
+       -> Fields: [' PAGEREF _Toc202651171 \\h ']
+[ 220] P  style=toc 1 | Hình 3-10	57
+       -> Fields: [' PAGEREF _Toc202651172 \\h ']
+[ 221] P  style=toc 1 | Hình 3-11	58
+       -> Fields: [' PAGEREF _Toc202651173 \\h ']
+[ 222] P  style=toc 1 | Hình 3-12	59
+       -> Fields: [' PAGEREF _Toc202651174 \\h ']
+[ 223] P  style=toc 1 | Hình 3-13	59
+       -> Fields: [' PAGEREF _Toc202651175 \\h ']
+[ 224] P  style=toc 1 | Hình 3-14	59
+       -> Fields: [' PAGEREF _Toc202651176 \\h ']
+[ 225] P  style=toc 1 | Hình 3-15	60
+       -> Fields: [' PAGEREF _Toc202651177 \\h ']
+[ 226] P  style=toc 1 | Hình 3-16	60
+       -> Fields: [' PAGEREF _Toc202651178 \\h ']
+[ 227] P  style=toc 1 | Hình 3-17	60
+       -> Fields: [' PAGEREF _Toc202651179 \\h ']
+[ 228] P  style=toc 1 | Hình 3-18	60
+       -> Fields: [' PAGEREF _Toc202651180 \\h ']
+[ 229] P  style=toc 1 | Hình 3-19	60
+       -> Fields: [' PAGEREF _Toc202651181 \\h ']
+[ 230] P  style=toc 1 | Hình 3-20	61
+       -> Fields: [' PAGEREF _Toc202651182 \\h ']
+[ 231] P  style=toc 1 | Hình 3-21	61
+       -> Fields: [' PAGEREF _Toc202651183 \\h ']
+[ 232] P  style=toc 1 | Hình 3-22	61
+       -> Fields: [' PAGEREF _Toc202651184 \\h ']
+[ 233] P  style=toc 1 | Hình 3-23	61
+       -> Fields: [' PAGEREF _Toc202651185 \\h ']
+[ 234] P  style=toc 1 | Hình 3-24	61
+       -> Fields: [' PAGEREF _Toc202651186 \\h ']
+[ 236] P  style=Heading 1 | MỤC LỤC BẢNG BIỂU
+[ 237] P  style=toc 1 | Bảng 1-1 Mô hình LLM phổ biến	14
+       -> Fields: [' TOC \\h \\z \\t "Bảng,1" ', ' PAGEREF _Toc202703635 \\h ']
+[ 238] P  style=toc 1 | Bảng 1-2 Thành phần chính trong hệ thống	21
+       -> Fields: [' PAGEREF _Toc202703636 \\h ']
+[ 239] P  style=toc 1 | Bảng 2-1 Yêu cầu chức năng	27
+       -> Fields: [' PAGEREF _Toc202703637 \\h ']
+[ 240] P  style=toc 1 | Bảng 2-2 Yêu cầu phi chức năng	29
+       -> Fields: [' PAGEREF _Toc202703638 \\h ']
+[ 241] P  style=toc 1 | Bảng 2-3 Các chức năng	31
+       -> Fields: [' PAGEREF _Toc202703639 \\h ']
+[ 242] P  style=toc 1 | Bảng 2-4 Use Case hệ thống	34
+       -> Fields: [' PAGEREF _Toc202703640 \\h ']
+[ 243] P  style=toc 1 | Bảng 2-5 Nhóm dữ liệu chính	36
+       -> Fields: [' PAGEREF _Toc202703641 \\h ']
+[ 244] P  style=toc 1 | Bảng 2-6 Cấu trúc dữ liệu lưu trữ trong vector store	40
+       -> Fields: [' PAGEREF _Toc202703642 \\h ']
+[ 245] P  style=toc 1 | Bảng 2-7 Các thành phần chính trong hệ thống	41
+       -> Fields: [' PAGEREF _Toc202703643 \\h ']
+[ 246] P  style=toc 1 | Bảng 2-8 Mô hình phân lớp kiến trúc	43
+       -> Fields: [' PAGEREF _Toc202703644 \\h ']
+[ 247] P  style=toc 1 | Bảng 2-9 Ưu điểm	45
+       -> Fields: [' PAGEREF _Toc202703645 \\h ']
+[ 248] P  style=toc 1 | Bảng 2-10 Hạn chế	46
+       -> Fields: [' PAGEREF _Toc202703646 \\h ']
+[ 249] P  style=toc 1 | Bảng 3-1 Các thư viện hỗ trợ khác	49
+       -> Fields: [' PAGEREF _Toc202703647 \\h ']
+[ 250] P  style=toc 1 | Bảng 3-2 Cấu trúc lưu trữ trong ChromaDB	50
+       -> Fields: [' PAGEREF _Toc202703648 \\h ']
+[ 251] P  style=toc 1 | Bảng 3-3 Lý do chọn ChromaDB	50
+       -> Fields: [' PAGEREF _Toc202703649 \\h ']
+[ 252] P  style=toc 1 | Bảng 3-4 Hệ điều hành và phần mềm phát triển	51
+       -> Fields: [' PAGEREF _Toc202703650 \\h ']
+[ 253] P  style=toc 1 | Bảng 3-5 Nền tảng giao tiếp và thử nghiệm	51
+       -> Fields: [' PAGEREF _Toc202703651 \\h ']
+[ 254] P  style=toc 1 | Bảng 3-6 Tài nguyên phần cứng	52
+       -> Fields: [' PAGEREF _Toc202703652 \\h ']
+[ 255] P  style=toc 1 | Bảng 3-7 Dịch vụ bên ngoài sử dụng	52
+       -> Fields: [' PAGEREF _Toc202703653 \\h ']
+[ 256] P  style=toc 1 | Bảng 3-8 Tóm tắt các tính năng đặc biệt	62
+       -> Fields: [' PAGEREF _Toc202703654 \\h ']
+[ 257] P  style=toc 1 | Bảng 3-9 Mục tiêu kiểm thử	62
+       -> Fields: [' PAGEREF _Toc202703655 \\h ']
+[ 258] P  style=toc 1 | Bảng 3-10 Tình huống kiểm thử tiêu biểu	62
+       -> Fields: [' PAGEREF _Toc202703656 \\h ']
+[ 259] P  style=toc 1 | Bảng 3-11 Kết quả kiểm thử ban đầu	63
+       -> Fields: [' PAGEREF _Toc202703657 \\h ']
+[ 260] P  style=toc 1 | Bảng 3-12 Chỉ số đánh giá	63
+       -> Fields: [' PAGEREF _Toc202703658 \\h ']
+[ 261] P  style=toc 1 | Bảng 3-13 Giới hạn còn tồn tại	64
+       -> Fields: [' PAGEREF _Toc202703659 \\h ']
+[ 262] P  style=toc 1 | Bảng A. Danh sách câu hỏi và phản hồi minh họa từ hệ thống trợ lý ảo	68
+       -> Fields: [' PAGEREF _Toc202703660 \\h ']
+[ 265] P  style=Heading 1 | DANH MỤC CÁC TỪ VIẾT TẮT VÀ GIẢI THÍCH THUẬT NGỮ
+[ 267] TBL
+[ 268] P  style=Heading 1 | PHẦN MỞ ĐẦU
+[ 269] P  style=List Paragraph | Lí do chọn đề tài
+       -> Numbering: numId=1, ilvl=1
+[ 270] P  style=Normal | Trong bối cảnh xã hội ngày càng phát triển, thị trường lao động ngành Công nghệ thông tin (CNTT) trở
+[ 271] P  style=Normal | Trong khi đó, sự phát triển mạnh mẽ của trí tuệ nhân tạo (AI), đặc biệt là các mô hình ngôn ngữ lớn 
+[ 272] P  style=Normal | Vì những lý do trên, em đã chọn thực hiện đề tài:
+[ 273] P  style=Normal | "Xây dựng hệ thống trợ lý ảo hướng nghiệp cho sinh viên ngành CNTT trường Đại học Thủy Lợi dựa trên 
+[ 274] P  style=Normal | với mong muốn mang lại một giải pháp công nghệ giúp sinh viên tiếp cận thông tin nghề nghiệp hiệu qu
+[ 275] P  style=List Paragraph | Mục đích đồ án
+       -> Numbering: numId=1, ilvl=1
+[ 276] P  style=Normal (Web) | Mục tiêu chính của đồ án là xây dựng một hệ thống trợ lý ảo hướng nghiệp thông minh, có khả năng hỗ 
+[ 277] P  style=Normal (Web) | Cụ thể, đồ án hướng đến các mục tiêu sau:
+[ 278] P  style=Normal (Web) | Ứng dụng công nghệ AI hiện đại vào thực tiễn giáo dục: Triển khai mô hình kết hợp giữa truy xuất tri
+       -> Numbering: numId=15, ilvl=0
+[ 279] P  style=Normal (Web) | Xây dựng một hệ thống cá nhân hóa theo hồ sơ sinh viên: Hệ thống có khả năng sử dụng thông tin đầu v
+       -> Numbering: numId=15, ilvl=0
+[ 280] P  style=Normal (Web) | Tạo cầu nối giữa sinh viên – nhà trường – doanh nghiệp: Hệ thống khai thác dữ liệu từ chương trình đ
+       -> Numbering: numId=15, ilvl=0
+[ 281] P  style=Normal (Web) | Nâng cao khả năng tự định hướng học tập và phát triển kỹ năng: Hệ thống sẽ gợi ý các lộ trình học tậ
+       -> Numbering: numId=15, ilvl=0
+[ 282] P  style=Normal (Web) | Tăng cường tính tương tác và hỗ trợ liên tục: Thay vì chỉ tư vấn theo đợt hay theo sự kiện, hệ thống
+       -> Numbering: numId=15, ilvl=0
+[ 283] P  style=Normal (Web) | Với những mục tiêu nêu trên, đồ án không chỉ giúp người học có định hướng rõ ràng hơn mà còn góp phầ
+[ 285] P  style=List Paragraph | Phạm vi đồ án
+       -> Numbering: numId=1, ilvl=1
+[ 286] P  style=Normal (Web) | Hệ thống tập trung triển khai thử nghiệm cho đối tượng là sinh viên ngành Công nghệ thông tin – Trườ
+[ 287] P  style=Normal (Web) | Dữ liệu đầu vào gồm: chương trình đào tạo CNTT 2022, thông tin tuyển dụng từ doanh nghiệp, kỹ năng n
+[ 288] P  style=Normal (Web) | Hệ thống sử dụng công nghệ:
+[ 289] P  style=Normal (Web) | Truy xuất ngữ nghĩa: SentenceTransformer + FAISS
+       -> Numbering: numId=16, ilvl=0
+[ 290] P  style=Normal (Web) | Sinh nội dung: GPT-based model (OpenAI)
+       -> Numbering: numId=16, ilvl=0
+[ 291] P  style=Normal (Web) | Giao diện tương tác: Chatbot tích hợp trên nền tảng Discord
+       -> Numbering: numId=16, ilvl=0
+[ 292] P  style=Normal (Web) | Đề tài không tập trung phát triển giao diện web phức tạp, mà chú trọng vào xử lý dữ liệu và sinh phả
+[ 293] P  style=List Paragraph | Đặc tả yêu cầu
+       -> Numbering: numId=1, ilvl=1
+[ 294] P  style=Heading 2 | 4.1. Yêu cầu chức năng:
+[ 295] P  style=Normal | Hệ thống có khả năng tiếp nhận thông tin từ người dùng (sinh viên CNTT) dưới dạng câu hỏi hoặc yêu c
+       -> Numbering: numId=17, ilvl=0
+[ 296] P  style=Normal | Thực hiện truy xuất thông tin có liên quan từ cơ sở dữ liệu hướng nghiệp (CV công ty, chương trình đ
+       -> Numbering: numId=17, ilvl=0
+[ 297] P  style=Normal | Sinh phản hồi hướng nghiệp tự nhiên và chính xác thông qua mô hình ngôn ngữ lớn (LLM).
+       -> Numbering: numId=17, ilvl=0
+[ 298] P  style=Normal | Gợi ý lộ trình phát triển kỹ năng, đề xuất nghề nghiệp phù hợp với hồ sơ sinh viên.
+       -> Numbering: numId=17, ilvl=0
+[ 299] P  style=Normal | Giao tiếp thông qua giao diện chatbot trên nền tảng Discord.
+       -> Numbering: numId=17, ilvl=0
+[ 300] P  style=Heading 2 | 4.2. Yêu cầu phi chức năng:
+[ 301] P  style=Normal | Hệ thống phản hồi trong thời gian ngắn (dưới 5 giây).
+       -> Numbering: numId=18, ilvl=0
+[ 302] P  style=Normal | Dễ sử dụng, thân thiện với người dùng.
+       -> Numbering: numId=18, ilvl=0
+[ 303] P  style=Normal | Dễ dàng mở rộng cơ sở dữ liệu hướng nghiệp.
+       -> Numbering: numId=18, ilvl=0
+[ 304] P  style=Normal | Bảo mật thông tin cá nhân người dùng.
+       -> Numbering: numId=18, ilvl=0
+[ 305] P  style=List Paragraph | Cấu trúc của đồ án tốt nghiệp
+       -> Numbering: numId=1, ilvl=1
+[ 306] P  style=Normal (Web) | Nội dung đồ án được chia thành các chương như sau:
+[ 307] P  style=Normal (Web) | Chương 1: Tổng quan và cơ sở lý thuyết
+Trình bày tổng quan về vấn đề hướng nghiệp sinh viên, công ng
+       -> Numbering: numId=19, ilvl=0
+[ 308] P  style=Normal (Web) | Chương 2: Phân tích và thiết kế hệ thống
+Phân tích yêu cầu người dùng, kiến trúc hệ thống, mô hình x
+       -> Numbering: numId=19, ilvl=0
+[ 309] P  style=Normal (Web) | Chương 3: Triển khai, kết quả và đánh giá
+Trình bày quy trình hiện thực hệ thống, kết quả đầu ra, gi
+       -> Numbering: numId=19, ilvl=0
+[ 310] P  style=Normal (Web) | Kết luận và hướng phát triển
+Tổng kết các kết quả đạt được, những hạn chế còn tồn tại và đề xuất hướ
+       -> Numbering: numId=19, ilvl=0
+[ 312] P  style=Heading 1 | PHẦN NỘI DUNG
+[ 313] P  style=Normal | CHƯƠNG 1: TỔNG QUAN VÀ CƠ SỞ LÝ THUYẾT
+[ 314] P  style=Normal (Web) | Tổng quan về trợ lý ảo
+       -> Numbering: numId=20, ilvl=1
+[ 315] P  style=Normal (Web) | 1.1.1   Khái niệm và ứng dụng thực tiễn của trợ lý ảo
+[ 316] P  style=Normal (Web) | Trợ lý ảo (Virtual Assistant) là một hệ thống phần mềm thông minh có khả năng tương tác với con ngườ
+[ 317] P  style=Normal (Web) | Trợ lý ảo thường hoạt động trên nhiều nền tảng như điện thoại thông minh, máy tính cá nhân, thiết bị
+[ 319] P  style=Hình | Hình -1 Trợ lý ảo
+[ 320] P  style=Normal (Web) | Trong những năm gần đây, với sự phát triển vượt bậc của trí tuệ nhân tạo, trợ lý ảo ngày càng trở nê
+[ 321] P  style=Normal (Web) | Trong thương mại điện tử: Trợ lý ảo được dùng để tư vấn sản phẩm, hỗ trợ đặt hàng, giải đáp chính sá
+       -> Numbering: numId=21, ilvl=0
+[ 322] P  style=Normal (Web) | Trong chăm sóc khách hàng: Các doanh nghiệp tích hợp chatbot AI để trả lời câu hỏi 24/7, giảm tải ch
+       -> Numbering: numId=21, ilvl=0
+[ 323] P  style=Normal (Web) | Trong giáo dục: Trợ lý ảo hỗ trợ học tập, gợi ý lộ trình học, giải thích kiến thức, tổ chức tài liệu
+       -> Numbering: numId=21, ilvl=0
+[ 324] P  style=Normal (Web) | Trong hành chính – văn phòng: Trợ lý ảo được dùng để sắp xếp lịch họp, nhắc nhở công việc, gửi email
+       -> Numbering: numId=21, ilvl=0
+[ 325] P  style=Normal (Web) | Tại Việt Nam, ứng dụng trợ lý ảo đang dần phát triển trong các lĩnh vực tài chính – ngân hàng (trợ l
+[ 326] P  style=Normal (Web) | 1.1.2   Các mô hình trợ lý ảo hiện nay
+[ 327] P  style=Normal (Web) | Hiện nay, trên thị trường và trong nghiên cứu khoa học, trợ lý ảo được phát triển theo nhiều mô hình
+[ 328] P  style=Normal (Web) | a. Trợ lý ảo theo kịch bản cố định (Rule-based)
+[ 329] P  style=Normal (Web) | Đây là mô hình trợ lý ảo đơn giản nhất, hoạt động theo tập hợp các quy tắc và kịch bản đã được lập t
+[ 330] P  style=Normal (Web) | Ưu điểm:
+[ 331] P  style=Normal (Web) | Dễ thiết kế và triển khai.
+       -> Numbering: numId=22, ilvl=0
+[ 332] P  style=Normal (Web) | Có thể kiểm soát chính xác nội dung phản hồi.
+       -> Numbering: numId=22, ilvl=0
+[ 333] P  style=Normal (Web) | Đáp ứng tốt các bài toán đơn giản, ít biến động.
+       -> Numbering: numId=22, ilvl=0
+[ 334] P  style=Normal (Web) | Nhược điểm:
+[ 335] P  style=Normal (Web) | Không xử lý được các câu hỏi vượt ra ngoài kịch bản.
+       -> Numbering: numId=23, ilvl=0
+[ 336] P  style=Normal (Web) | Không hiểu được ngữ cảnh hội thoại phức tạp.
+       -> Numbering: numId=23, ilvl=0
+[ 337] P  style=Normal (Web) | Không thể cá nhân hóa phản hồi theo từng người dùng.
+       -> Numbering: numId=23, ilvl=0
+[ 338] P  style=Normal (Web) | Mô hình này phù hợp với các ứng dụng trả lời câu hỏi thường gặp (FAQ), hoặc các chatbot cố định tron
+[ 339] P  style=Normal (Web) | Ví dụ:
+Chatbot của ngân hàng BIDV tích hợp trên Zalo là điển hình cho mô hình rule-based hiện đại. K
+[ 340] P  style=Normal (Web) | Nếu đã có SmartBanking: hiện hướng dẫn mở tài khoản chọn số/chọn tên.
+       -> Numbering: numId=26, ilvl=0
+[ 341] P  style=Normal (Web) | Nếu chưa đăng ký: gợi ý tải app và đăng ký từ đầu.
+       -> Numbering: numId=26, ilvl=0
+[ 342] P  style=Normal (Web) | Trường hợp đặc biệt: gợi ý ra quầy hoặc dùng CRM.
+       -> Numbering: numId=26, ilvl=0
+[ 343] P  style=Normal (Web) | Mặc dù có phân nhánh logic, đây vẫn là chatbot rule-based vì toàn bộ kịch bản phản hồi được lập trìn
+[ 344] P  style=Hình | Hình 1-2 Tư vấn khách hàng
+[ 345] P  style=Normal (Web) | b. Trợ lý ảo dựa trên học máy (Machine Learning-based)
+[ 346] P  style=Normal (Web) | Mô hình này sử dụng các kỹ thuật học máy và học sâu để hiểu ngôn ngữ tự nhiên, phân loại ý định ngườ
+[ 347] P  style=Normal (Web) | Ưu điểm:
+[ 348] P  style=Normal (Web) | Hiểu được ngữ cảnh và ý định của người dùng.
+       -> Numbering: numId=24, ilvl=0
+[ 349] P  style=Normal (Web) | Có khả năng mở rộng và học từ dữ liệu mới.
+       -> Numbering: numId=24, ilvl=0
+[ 350] P  style=Normal (Web) | Phản hồi linh hoạt, đa dạng và phù hợp hơn so với rule-based.
+       -> Numbering: numId=24, ilvl=0
+[ 351] P  style=Normal (Web) | Nhược điểm:
+[ 352] P  style=Normal (Web) | Cần lượng dữ liệu huấn luyện lớn.
+       -> Numbering: numId=25, ilvl=0
+[ 353] P  style=Normal (Web) | Việc huấn luyện và tinh chỉnh mô hình phức tạp.
+       -> Numbering: numId=25, ilvl=0
+[ 354] P  style=Normal (Web) | Khó kiểm soát phản hồi sai lệch (hallucination) nếu không kiểm tra kỹ.
+       -> Numbering: numId=25, ilvl=0
+[ 355] P  style=Normal (Web) | Mô hình này đã và đang được áp dụng trong nhiều nền tảng trợ lý học tập, chatbot hỗ trợ khách hàng h
+[ 356] P  style=Normal (Web) | Ví dụ:
+Chatbot hỗ trợ khách hàng của Vietnam Airlines tích hợp trên website là một ví dụ điển hình c
+[ 357] P  style=Normal (Web) | “Hành lý xách tay được mang bao nhiêu kg?”
+[ 358] P  style=Normal (Web) | Hệ thống sẽ không phản hồi theo mẫu cố định mà tiến hành phân loại câu hỏi vào nhóm “thông tin hành 
+[ 360] P  style=Hình | Hình 1-3 Phản hồi của chatbot Vietnam Airlines dựa trên học máy
+[ 361] P  style=Normal (Web) | Bot trong ví dụ trên có thể hiểu được ngữ cảnh, phân nhánh phản hồi theo hạng vé, và giải thích chi 
+[ 362] P  style=Normal (Web) | c. Trợ lý ảo tích hợp mô hình RAG (Retrieval-Augmented Generation)
+[ 363] P  style=Normal (Web) | Mô hình RAG (Retrieval-Augmented Generation) là một trong những hướng tiếp cận tiên tiến nhất hiện n
+[ 364] P  style=Normal (Web) | RAG kết hợp hai thành phần chính:
+[ 365] P  style=Normal (Web) | Truy xuất (Retrieval): Truy vấn các đoạn văn bản liên quan từ cơ sở tri thức được lưu trữ dưới dạng 
+       -> Numbering: numId=27, ilvl=0
+[ 366] P  style=Normal (Web) | Sinh ngôn ngữ (Generation): Sử dụng mô hình ngôn ngữ lớn (LLM) như GPT, LLaMA hoặc Claude để sinh ph
+       -> Numbering: numId=27, ilvl=0
+[ 367] P  style=Normal (Web) | Khác với các mô hình LLM truyền thống (chỉ dựa trên kiến thức đã học trước), RAG cho phép hệ thống c
+[ 368] P  style=Normal (Web) | Cơ chế hoạt động tổng quát của mô hình RAG như sau:
+[ 369] P  style=Normal (Web) | Người dùng gửi câu hỏi đến hệ thống chatbot.
+       -> Numbering: numId=28, ilvl=0
+[ 370] P  style=Normal (Web) | Chatbot mã hóa truy vấn và gửi tới bộ truy xuất để tìm kiếm các đoạn văn bản liên quan.
+       -> Numbering: numId=28, ilvl=0
+[ 371] P  style=Normal (Web) | Các đoạn dữ liệu được lấy từ cơ sở tri thức nội bộ hoặc dữ liệu trực tuyến.
+       -> Numbering: numId=28, ilvl=0
+[ 372] P  style=Normal (Web) | Thông tin này được chuyển cho mô hình LLM để sinh phản hồi theo ngữ cảnh.
+       -> Numbering: numId=28, ilvl=0
+[ 373] P  style=Normal (Web) | Câu trả lời cuối cùng được gửi lại cho người dùng thông qua chatbot.
+       -> Numbering: numId=28, ilvl=0
+[ 375] P  style=Hình | Hình 1-4 Kiến trúc tổng quát của mô hình RAG trong trợ lý ảo
+[ 376] P  style=Normal (Web) | Ưu điểm vượt trội của RAG:
+[ 377] P  style=Normal (Web) | Truy xuất tri thức động, dễ cập nhật từ dữ liệu mới.
+       -> Numbering: numId=29, ilvl=0
+[ 378] P  style=Normal (Web) | Tối ưu khả năng trả lời đúng ngữ cảnh, có căn cứ rõ ràng.
+       -> Numbering: numId=29, ilvl=0
+[ 379] P  style=Normal (Web) | Giảm sai sót và tăng tính cá nhân hóa khi tích hợp với hồ sơ người dùng.
+       -> Numbering: numId=29, ilvl=0
+[ 380] P  style=Normal (Web) | Ví dụ thực tế:
+Các hệ thống như Microsoft Copilot hoặc ChatGPT kết hợp plugin & cơ sở tri thức riêng
+[ 381] P  style=Normal (Web) | Các công nghệ nền tảng
+       -> Numbering: numId=20, ilvl=1
+[ 382] P  style=Normal (Web) | Trong quá trình xây dựng hệ thống trợ lý ảo hướng nghiệp thông minh, nhiều công nghệ hiện đại đã đượ
+[ 383] P  style=Normal (Web) | 1.2.1 Trí tuệ nhân tạo (Artificial Intelligence – AI)
+[ 384] P  style=Normal (Web) | Trí tuệ nhân tạo (Artificial Intelligence – AI) là một lĩnh vực quan trọng của khoa học máy tính, tậ
+[ 385] P  style=Normal (Web) | AI ngày nay đã phát triển từ các thuật toán đơn giản như cây quyết định (decision tree) hay hồi quy 
+[ 386] P  style=Normal (Web) | Trong giáo dục, AI được ứng dụng để:
+[ 387] P  style=Normal (Web) | Cá nhân hóa quá trình học tập: Phân tích hành vi học tập của từng học sinh để đề xuất nội dung phù h
+       -> Numbering: numId=30, ilvl=0
+[ 388] P  style=Normal (Web) | Tự động hóa đánh giá: AI có thể chấm điểm bài trắc nghiệm, bài luận và thậm chí đánh giá phát biểu n
+       -> Numbering: numId=30, ilvl=0
+[ 389] P  style=Normal (Web) | Phát hiện gian lận thi cử: Qua phân tích hình ảnh, chuyển động và hành vi bất thường.
+       -> Numbering: numId=30, ilvl=0
+[ 390] P  style=Normal (Web) | Xây dựng trợ lý học tập và hướng nghiệp thông minh: Đây chính là phạm vi áp dụng trong đề tài này.
+       -> Numbering: numId=30, ilvl=0
+[ 391] P  style=Normal (Web) | Trong bối cảnh đề tài "Xây dựng hệ thống trợ lý ảo hướng nghiệp cho sinh viên ngành CNTT", AI đóng v
+[ 392] P  style=Normal (Web) | Ngoài ra, AI còn giúp tự động cập nhật tri thức từ các nguồn dữ liệu ngoài như cổng thông tin tuyển 
+[ 393] P  style=Normal (Web) | Tóm lại, AI không chỉ là công nghệ nền tảng, mà còn là chất keo liên kết toàn bộ các thành phần tron
+[ 394] P  style=Normal (Web) | 1.2.2 Xử lý ngôn ngữ tự nhiên (Natural Language Processing – NLP)
+[ 395] P  style=Normal (Web) | Xử lý ngôn ngữ tự nhiên (Natural Language Processing – NLP) là một nhánh quan trọng của Trí tuệ nhân
+[ 396] P  style=Normal (Web) | Ngôn ngữ tự nhiên là phương tiện giao tiếp phổ biến nhất của con người, nhưng đồng thời cũng là dạng
+[ 397] P  style=Normal (Web) | a) Các bước xử lý NLP cơ bản
+[ 398] P  style=Normal (Web) | Một hệ thống NLP thường thực hiện các bước xử lý sau:
+[ 399] P  style=Normal (Web) | Tiền xử lý văn bản (Text Preprocessing):
+       -> Numbering: numId=31, ilvl=0
+[ 400] P  style=Normal (Web) | Tách câu (sentence segmentation), tách từ (tokenization), chuẩn hóa chữ hoa/thường, loại bỏ dấu câu,
+       -> Numbering: numId=31, ilvl=1
+[ 401] P  style=Normal (Web) | Giúp chuẩn hóa dữ liệu văn bản đầu vào trước khi phân tích.
+       -> Numbering: numId=31, ilvl=1
+[ 402] P  style=Normal (Web) | Phân tích cú pháp (Syntactic Analysis):
+       -> Numbering: numId=31, ilvl=0
+[ 403] P  style=Normal (Web) | Gán nhãn từ loại (POS tagging), phân tích cấu trúc ngữ pháp, xác định mối quan hệ giữa các từ trong 
+       -> Numbering: numId=31, ilvl=1
+[ 404] P  style=Normal (Web) | Phân tích ngữ nghĩa (Semantic Analysis):
+       -> Numbering: numId=31, ilvl=0
+[ 405] P  style=Normal (Web) | Xác định ý nghĩa câu, nhận dạng thực thể (Named Entity Recognition – NER), phân tích cảm xúc, trích 
+       -> Numbering: numId=31, ilvl=1
+[ 406] P  style=Normal (Web) | Hiểu ý định và sinh phản hồi (Intent Detection & Response Generation):
+       -> Numbering: numId=31, ilvl=0
+[ 407] P  style=Normal (Web) | Phân loại câu hỏi, xác định mục đích người dùng, sau đó sinh phản hồi ngôn ngữ tự nhiên.
+       -> Numbering: numId=31, ilvl=1
+[ 408] P  style=Normal (Web) | b) NLP trong hệ thống trợ lý ảo hướng nghiệp
+[ 409] P  style=Normal (Web) | Trong đề tài “Xây dựng trợ lý ảo hướng nghiệp cho sinh viên ngành CNTT”, NLP đóng vai trò quan trọng
+[ 410] P  style=Normal (Web) | Hiểu đúng ngữ nghĩa truy vấn: Ví dụ, sinh viên hỏi: “Làm thế nào để trở thành Backend Developer?”, h
+       -> Numbering: numId=32, ilvl=0
+[ 411] P  style=Normal (Web) | Trích xuất thông tin từ hồ sơ sinh viên: NLP giúp phân tích CV, sở thích, điểm mạnh/điểm yếu mô tả t
+       -> Numbering: numId=32, ilvl=0
+[ 412] P  style=Normal (Web) | Tạo phản hồi mạch lạc, tự nhiên: Khi sử dụng LLM để sinh văn bản, NLP đảm bảo rằng phản hồi không ch
+       -> Numbering: numId=32, ilvl=0
+[ 414] P  style=Normal (Web) | c) Công nghệ NLP hiện đại
+[ 415] P  style=Normal (Web) | Hiện nay, NLP không chỉ dừng ở các thuật toán truyền thống như Naïve Bayes hay TF-IDF, mà đã phát tr
+[ 416] P  style=Normal (Web) | BERT (Bidirectional Encoder Representations from Transformers): Hiểu ngữ cảnh 2 chiều.
+       -> Numbering: numId=33, ilvl=0
+[ 417] P  style=Normal (Web) | RoBERTa, XLNet, ALBERT: Tăng hiệu năng so với BERT.
+       -> Numbering: numId=33, ilvl=0
+[ 418] P  style=Normal (Web) | GPT, T5, BART: Sinh ngôn ngữ tự nhiên theo ngữ cảnh dài, hỗ trợ hội thoại liên tục.
+       -> Numbering: numId=33, ilvl=0
+[ 419] P  style=Normal (Web) | Nhờ sự phát triển của NLP, hệ thống trợ lý ảo có thể tiến gần hơn đến khả năng giao tiếp giống người
+[ 420] P  style=Normal (Web) | 1.2.3 Học máy và học sâu (Machine Learning – Deep Learning)
+[ 421] P  style=Normal (Web) | Học máy (Machine Learning – ML) là một lĩnh vực con của trí tuệ nhân tạo, tập trung vào việc xây dựn
+[ 422] P  style=Normal (Web) | Trong các hệ thống trợ lý ảo hiện đại, ML và DL đóng vai trò cực kỳ quan trọng để:
+[ 423] P  style=Normal (Web) | Nhận diện và phân loại ý định người dùng.
+       -> Numbering: numId=34, ilvl=0
+[ 424] P  style=Normal (Web) | Trích xuất thực thể có ý nghĩa trong câu hỏi.
+       -> Numbering: numId=34, ilvl=0
+[ 425] P  style=Normal (Web) | Sinh phản hồi ngôn ngữ tự nhiên theo ngữ cảnh.
+       -> Numbering: numId=34, ilvl=0
+[ 426] P  style=Normal (Web) | Cá nhân hóa nội dung gợi ý dựa trên hành vi và hồ sơ người dùng.
+       -> Numbering: numId=34, ilvl=0
+[ 427] P  style=Normal (Web) | a) Cơ sở lý thuyết học máy
+[ 428] P  style=Normal (Web) | Học máy truyền thống thường được chia thành ba nhóm chính:
+[ 429] P  style=Normal (Web) | Học có giám sát (Supervised Learning): Mô hình học từ dữ liệu đã được gán nhãn, ví dụ: phân loại ý đ
+       -> Numbering: numId=35, ilvl=0
+[ 430] P  style=Normal (Web) | Học không giám sát (Unsupervised Learning): Tìm cấu trúc ẩn trong dữ liệu chưa có nhãn, ví dụ: nhóm 
+       -> Numbering: numId=35, ilvl=0
+[ 431] P  style=Normal (Web) | Học tăng cường (Reinforcement Learning): Mô hình học thông qua tương tác với môi trường và nhận phần
+       -> Numbering: numId=35, ilvl=0
+[ 432] P  style=Normal (Web) | Một số thuật toán ML phổ biến: Decision Trees, K-Nearest Neighbors (KNN), Naïve Bayes, Support Vecto
+[ 433] P  style=Normal (Web) | b) Học sâu trong xử lý ngôn ngữ
+[ 434] P  style=Normal (Web) | Học sâu sử dụng các mạng nơ-ron nhiều lớp, đặc biệt là các kiến trúc tiên tiến như:
+[ 435] P  style=Normal (Web) | RNN (Recurrent Neural Network): Xử lý dữ liệu tuần tự như văn bản, âm thanh.
+       -> Numbering: numId=36, ilvl=0
+[ 436] P  style=Normal (Web) | LSTM (Long Short-Term Memory): Cải tiến từ RNN, xử lý tốt hơn với ngữ cảnh dài.
+       -> Numbering: numId=36, ilvl=0
+[ 437] P  style=Normal (Web) | Transformer: Kiến trúc tiên phong (xuất hiện từ 2017) thay thế RNN/LSTM, xử lý song song, là nền tản
+       -> Numbering: numId=36, ilvl=0
+[ 438] P  style=Normal (Web) | Trong các mô hình LLM như GPT-3.5, GPT-4, Claude, LLaMA,... học sâu là công nghệ nền tảng. Các mô hì
+[ 439] P  style=Normal (Web) | c) Ứng dụng vào hệ thống trợ lý hướng nghiệp
+[ 440] P  style=Normal (Web) | Trong đề tài “Xây dựng hệ thống trợ lý ảo hướng nghiệp cho sinh viên ngành CNTT”, học máy và học sâu
+[ 441] P  style=Normal (Web) | Phân loại ý định người dùng: Phân biệt các truy vấn như "tôi nên học gì để làm frontend", "tư vấn ng
+       -> Numbering: numId=37, ilvl=0
+[ 442] P  style=Normal (Web) | Trích xuất dữ liệu từ văn bản tự do: Xử lý thông tin sinh viên nhập vào như CV, sở thích, mục tiêu n
+       -> Numbering: numId=37, ilvl=0
+[ 443] P  style=Normal (Web) | Gợi ý lộ trình học tập: Dựa vào mô hình dự đoán kết hợp hồ sơ sinh viên, hệ thống có thể tư vấn rằng
+       -> Numbering: numId=37, ilvl=0
+[ 444] P  style=Normal (Web) | Sinh phản hồi ngôn ngữ tự nhiên: Deep learning kết hợp với LLM cho phép sinh ra câu trả lời mạch lạc
+       -> Numbering: numId=37, ilvl=0
+[ 445] P  style=Normal (Web) | Nhờ sức mạnh của học máy và học sâu, hệ thống trợ lý ảo không chỉ dừng ở việc “trả lời câu hỏi” mà c
+[ 446] P  style=Normal (Web) | 1.2.4 Mô hình ngôn ngữ lớn (Large Language Models – LLM)
+[ 447] P  style=Normal (Web) | Mô hình ngôn ngữ lớn (Large Language Models – LLM) là những mô hình học sâu có quy mô hàng trăm triệ
+[ 448] P  style=Normal (Web) | Một mô hình LLM điển hình như GPT-4 có thể thực hiện được hàng loạt tác vụ ngôn ngữ như: dịch ngôn n
+[ 449] P  style=Normal (Web) | a) Cơ chế hoạt động của LLM
+[ 450] P  style=Normal (Web) | Các LLM như GPT (Generative Pre-trained Transformer) hoạt động dựa trên kiến trúc Transformer – một 
+[ 451] P  style=Normal (Web) | Sau khi được huấn luyện với hàng trăm tỷ từ, mô hình có khả năng:
+[ 452] P  style=Normal (Web) | Nắm bắt cấu trúc câu, văn phong, phong cách viết.
+       -> Numbering: numId=38, ilvl=0
+[ 453] P  style=Normal (Web) | Hiểu được ngữ cảnh hội thoại kéo dài.
+       -> Numbering: numId=38, ilvl=0
+[ 454] P  style=Normal (Web) | Trả lời linh hoạt, sáng tạo, gần như không theo khuôn mẫu cứng nhắc.
+       -> Numbering: numId=38, ilvl=0
+[ 455] P  style=Normal (Web) | b) Một số mô hình LLM phổ biến
+[ 456] P  style=Bảng | Bảng -1 Mô hình LLM phổ biến
+[ 457] TBL
+[ 459] P  style=Normal (Web) | c) Vai trò của LLM trong hệ thống trợ lý hướng nghiệp
+[ 460] P  style=Normal (Web) | Trong đề tài “Xây dựng hệ thống trợ lý ảo hướng nghiệp”, LLM đóng vai trò như “bộ não ngôn ngữ” của 
+[ 461] P  style=Normal (Web) | Phân tích ngữ nghĩa truy vấn sinh viên: Hiểu đúng nội dung câu hỏi của sinh viên như: “Em học trung 
+       -> Numbering: numId=39, ilvl=0
+[ 462] P  style=Normal (Web) | Tạo phản hồi ngôn ngữ tự nhiên: Dựa trên dữ liệu truy xuất, LLM có thể sinh ra phản hồi dài, chi tiế
+       -> Numbering: numId=39, ilvl=0
+[ 463] P  style=Normal (Web) | Hội thoại nhiều lượt (multi-turn dialog): LLM ghi nhớ các lượt hội thoại trước để giữ ngữ cảnh khi s
+       -> Numbering: numId=39, ilvl=0
+[ 464] P  style=Normal (Web) | Nhờ sự kết hợp giữa LLM và các kỹ thuật truy xuất tri thức như trong mô hình RAG, hệ thống không chỉ
+[ 465] P  style=Normal (Web) | 1.2.5 Biểu diễn vector (Vector Embedding) và cơ sở dữ liệu vector
+[ 466] P  style=Normal (Web) | 1. Mục đích của vector embedding
+[ 467] P  style=Normal (Web) | Biểu diễn vector (hay còn gọi là embedding) là kỹ thuật chuyển đổi văn bản từ dạng chuỗi ngôn ngữ tự
+[ 468] P  style=Normal (Web) | 2. Mô hình embedding sử dụng: BAAI/bge-m3
+[ 469] P  style=Normal (Web) | Trong đồ án này, hệ thống sử dụng mô hình BAAI/bge-m3 – một mô hình embedding đa ngôn ngữ được huấn 
+[ 470] P  style=Normal (Web) | Mô hình được tích hợp thông qua thư viện sentence-transformers, cho phép encode hàng loạt đoạn văn b
+[ 472] P  style=Hình | Hình 1-5
+[ 473] P  style=Normal (Web) | 3. Cơ sở dữ liệu vector: ChromaDB
+[ 474] P  style=Normal (Web) | Sau khi mã hóa, toàn bộ các vector embedding được lưu vào ChromaDB – một cơ sở dữ liệu vector tối ưu
+[ 475] P  style=Normal (Web) | Hệ thống sử dụng PersistentClient để khởi tạo CSDL, và collection.add() để lưu các vector kèm văn bả
+[ 477] P  style=Hình | Hình 1-6
+[ 478] P  style=Normal (Web) | 4. Truy vấn ngữ nghĩa
+[ 479] P  style=Normal (Web) | Khi sinh viên đặt câu hỏi, hệ thống sẽ:
+[ 480] P  style=Normal (Web) | Nhúng câu hỏi thành vector
+       -> Numbering: numId=93, ilvl=0
+[ 481] P  style=Normal (Web) | So sánh với vector trong CSDL
+       -> Numbering: numId=93, ilvl=0
+[ 482] P  style=Normal (Web) | Trả về các đoạn văn bản phù hợp nhất về mặt ngữ nghĩa
+       -> Numbering: numId=93, ilvl=0
+[ 484] P  style=Hình | Hình 1-7
+[ 485] P  style=Normal (Web) | 1.2.6 Mô hình RAG (Retrieval-Augmented Generation)
+[ 486] P  style=Normal (Web) | Retrieval-Augmented Generation (RAG) là mô hình kết hợp giữa hai kỹ thuật: truy xuất ngữ nghĩa (retr
+[ 487] P  style=Normal (Web) | Khác với các mô hình LLM truyền thống chỉ dựa vào kiến thức đã huấn luyện, RAG có khả năng “truy xuấ
+[ 488] P  style=Normal (Web) | Vai trò kết nối các công nghệ nền tảng
+[ 489] P  style=Normal (Web) | RAG đóng vai trò là trục tích hợp toàn bộ hệ thống công nghệ trong đề tài:
+[ 490] P  style=Normal (Web) | Từ NLP: để hiểu câu hỏi của sinh viên, trích xuất ngữ nghĩa.
+       -> Numbering: numId=43, ilvl=0
+[ 491] P  style=Normal (Web) | Từ Vector Embedding & Vector Store: để truy xuất dữ liệu sát ngữ cảnh.
+       -> Numbering: numId=43, ilvl=0
+[ 492] P  style=Normal (Web) | Từ LLM: để sinh câu trả lời tự nhiên, logic, mạch lạc.
+       -> Numbering: numId=43, ilvl=0
+[ 493] P  style=Normal (Web) | Từ AI & học máy: để cá nhân hóa phản hồi theo từng hồ sơ sinh viên.
+       -> Numbering: numId=43, ilvl=0
+[ 494] P  style=Normal (Web) | Nhờ đó, hệ thống trợ lý ảo không chỉ trả lời chính xác mà còn phản hồi phù hợp với năng lực, mục tiê
+[ 496] P  style=Normal (Web) | 1.3 Kiến trúc hệ thống trợ lý ảo hướng nghiệp dựa trên mô hình RAG
+[ 497] P  style=Normal (Web) | Trong đề tài này, hệ thống trợ lý ảo hướng nghiệp được xây dựng với mục tiêu hỗ trợ sinh viên ngành 
+[ 498] P  style=Normal (Web) | 1.3.1. Mô hình tổng thể
+[ 499] P  style=Normal (Web) | Kiến trúc tổng thể của hệ thống được tổ chức theo mô hình nhiều lớp, bao gồm:
+[ 500] P  style=Normal (Web) | Tầng giao tiếp người dùng (Chatbot UI).
+       -> Numbering: numId=44, ilvl=0
+[ 501] P  style=Normal (Web) | Tầng xử lý truy vấn (NLP và Embedding).
+       -> Numbering: numId=44, ilvl=0
+[ 502] P  style=Normal (Web) | Tầng truy xuất thông tin từ Vector Store.
+       -> Numbering: numId=44, ilvl=0
+[ 503] P  style=Normal (Web) | Tầng sinh phản hồi bằng mô hình ngôn ngữ lớn.
+       -> Numbering: numId=44, ilvl=0
+[ 504] P  style=Normal (Web) | Tầng lưu trữ tri thức (văn bản hướng nghiệp, kỹ năng nghề, mô tả công việc...).
+       -> Numbering: numId=44, ilvl=0
+[ 505] P  style=Normal (Web) | Hệ thống được triển khai sử dụng các công cụ mã nguồn mở như Python, LangChain và ChromaDB.
+[ 506] P  style=Normal (Web) | a) Lớp giao tiếp người dùng (Discord Bot Integration)
+[ 507] P  style=Normal (Web) | Hệ thống sử dụng Discord bot làm giao diện trò chuyện chính với sinh viên. Đây là một lựa chọn tối ư
+[ 508] P  style=Normal (Web) | Sinh viên có thể gửi câu hỏi tại kênh Discord được cấp quyền. Bot tiếp nhận truy vấn, xử lý và phản 
+[ 509] P  style=Normal (Web) | b) Lớp xử lý ngôn ngữ (NLP Processing)
+[ 510] P  style=Normal (Web) | Ngay sau khi sinh viên nhập câu hỏi, hệ thống sử dụng các kỹ thuật xử lý ngôn ngữ tự nhiên để phân t
+[ 511] P  style=Normal (Web) | Ví dụ:
+[ 512] P  style=Normal (Web) | Câu hỏi “Ngành AI cần học gì?” → Ý định: tư vấn kỹ năng nghề nghiệp → Từ khóa chính: “AI”, “kỹ năng”
+       -> Numbering: numId=46, ilvl=0
+[ 513] P  style=Normal (Web) | c) Lớp embedding và truy xuất tri thức (Retriever)
+[ 514] P  style=Normal (Web) | Câu hỏi sau khi được chuẩn hóa sẽ được đưa vào mô hình nhúng (embedding) để mã hóa thành vector số c
+[ 515] P  style=Normal (Web) | Việc truy xuất không chỉ dựa trên trùng từ, mà dựa vào mức độ tương đồng ngữ nghĩa (semantic similar
+[ 516] P  style=Normal (Web) | d) Lớp sinh ngôn ngữ (Generator – LLM)
+[ 517] P  style=Normal (Web) | Các đoạn văn bản được truy xuất ở bước trước sẽ được đưa vào mô hình ngôn ngữ lớn (GPT-4 hoặc tương 
+[ 518] P  style=Normal (Web) | Phản hồi được sinh ra có thể dài ngắn tùy theo truy vấn và có thể tiếp tục dựa trên lịch sử hội thoạ
+[ 519] P  style=Normal (Web) | e) Lớp dữ liệu nền (Corpus & Vector Store)
+[ 520] P  style=Normal (Web) | Đây là lớp lưu trữ tri thức – gồm các tài liệu chuyên ngành như: mô tả nghề nghiệp, kỹ năng cần thiế
+[ 521] P  style=Normal (Web) | 1.3.2 Luồng hoạt động hệ thống
+[ 522] P  style=Normal (Web) | Quy trình xử lý chính của hệ thống như sau:
+[ 523] P  style=Normal (Web) | Sinh viên nhập câu hỏi tự nhiên thông qua giao diện trò chuyện, ví dụ:
+       -> Numbering: numId=45, ilvl=0
+[ 524] P  style=Normal (Web) | “Em muốn theo lập trình web thì nên bắt đầu từ đâu?”,
+“Ngành AI cần học những gì?”
+[ 525] P  style=Normal (Web) | Xử lý ngôn ngữ tự nhiên (NLP):
+Câu hỏi được xử lý để phân tích từ khóa, xác định mục đích câu hỏi (h
+       -> Numbering: numId=45, ilvl=0
+[ 526] P  style=Normal (Web) | Mã hóa truy vấn thành vector:
+Sử dụng mô hình embedding (như text-embedding-3-small) để chuyển câu h
+       -> Numbering: numId=45, ilvl=0
+[ 527] P  style=Normal (Web) | Truy xuất tri thức từ Vector Store:
+Vector embedding được dùng để tìm các đoạn văn bản có nội dung t
+       -> Numbering: numId=45, ilvl=0
+[ 528] P  style=Normal (Web) | Sinh phản hồi bằng mô hình ngôn ngữ lớn (LLM):
+Các đoạn văn bản liên quan được chuyển vào GPT-4 hoặc
+       -> Numbering: numId=45, ilvl=0
+[ 529] P  style=Normal (Web) | Gửi phản hồi đến người dùng:
+Hệ thống trả lại câu trả lời thông qua chatbot, cho phép sinh viên tiếp
+       -> Numbering: numId=45, ilvl=0
+[ 530] P  style=Normal (Web) | 1.3.3 Thành phần chính trong hệ thống
+[ 531] P  style=Normal (Web) | Hệ thống trợ lý ảo hướng nghiệp được xây dựng từ nhiều thành phần công nghệ kết hợp với nhau theo ki
+[ 532] P  style=Bảng | Bảng 1-2 Thành phần chính trong hệ thống
+[ 533] TBL
+[ 535] P  style=Normal (Web) | 1.3.4 Đặc điểm nổi bật của kiến trúc
+[ 536] P  style=Normal (Web) | Kiến trúc hệ thống trợ lý ảo hướng nghiệp được thiết kế với định hướng đơn giản, linh hoạt, dễ mở rộ
+[ 537] P  style=Normal (Web) | a) Không cần huấn luyện mô hình từ đầu
+[ 538] P  style=Normal (Web) | Hệ thống sử dụng mô hình ngôn ngữ lớn (LLM) đã được huấn luyện sẵn (như GPT-4, Claude), do đó không 
+[ 539] P  style=Normal (Web) | b) Truy xuất thông tin theo ngữ nghĩa
+[ 540] P  style=Normal (Web) | Khác với các hệ thống chatbot dựa trên từ khóa (keyword-based), kiến trúc RAG giúp hệ thống có khả n
+[ 541] P  style=Normal (Web) | Ví dụ: “Em nên học gì để làm lập trình backend?” sẽ truy xuất đúng các tài liệu về “Backend Develope
+[ 542] P  style=Normal (Web) | c) Sinh phản hồi tự nhiên, có ngữ cảnh
+[ 543] P  style=Normal (Web) | Phần sinh phản hồi sử dụng mô hình LLM có khả năng tổng hợp, diễn đạt, và tổ chức nội dung mạch lạc 
+[ 544] P  style=Normal (Web) | d) Tận dụng Discord làm nền tảng giao tiếp
+[ 545] P  style=Normal (Web) | Thay vì xây dựng giao diện người dùng riêng, hệ thống tích hợp trực tiếp với Discord – một nền tảng 
+[ 546] P  style=Normal (Web) | e) Cấu trúc module – dễ mở rộng
+[ 547] P  style=Normal (Web) | Các thành phần của hệ thống được thiết kế rời rạc (modular), cho phép dễ dàng thay đổi hoặc nâng cấp
+[ 548] P  style=Normal (Web) | Có thể thay GPT-4 bằng Claude hoặc LLaMA.
+       -> Numbering: numId=47, ilvl=0
+[ 549] P  style=Normal (Web) | Có thể thay ChromaDB bằng FAISS hoặc Pinecone.
+       -> Numbering: numId=47, ilvl=0
+[ 550] P  style=Normal (Web) | Có thể tích hợp thêm hệ phân tích hồ sơ sinh viên ở các phiên bản sau.
+       -> Numbering: numId=47, ilvl=0
+[ 551] P  style=Normal (Web) | f) Phù hợp với mục tiêu hướng nghiệp cá nhân hóa
+[ 552] P  style=Normal (Web) | Mặc dù chưa tích hợp phân tích hồ sơ đầu vào, hệ thống đã có khả năng trả lời linh hoạt theo truy vấ
+[ 553] P  style=Normal (Web) | Những đặc điểm trên cho thấy hệ thống không chỉ mang tính khả thi trong kỹ thuật, mà còn có tiềm năn
+[ 554] P  style=Normal (Web) | 1.4 Các công nghệ nền tảng
+[ 555] P  style=Normal (Web) | Hệ thống trợ lý ảo hướng nghiệp được xây dựng dựa trên nhiều công nghệ hiện đại trong lĩnh vực trí t
+[ 556] P  style=Normal (Web) | 1.4.1. Trí tuệ nhân tạo (Artificial Intelligence - AI)
+[ 557] P  style=Normal (Web) | AI là nền tảng cốt lõi cho hệ thống trợ lý ảo. Thông qua AI, máy có thể hiểu câu hỏi người dùng, tru
+[ 558] P  style=Normal (Web) | 1.4.2. Xử lý ngôn ngữ tự nhiên (Natural Language Processing – NLP)
+[ 559] P  style=Normal (Web) | NLP cho phép hệ thống hiểu và xử lý ngôn ngữ tiếng Việt. Các tác vụ bao gồm: phân tích câu hỏi, phát
+[ 560] P  style=Normal (Web) | 1.4.3. Mô hình ngôn ngữ lớn (Large Language Models – LLM)
+[ 561] P  style=Normal (Web) | GPT-4 được sử dụng làm mô hình sinh phản hồi chính cho hệ thống. LLM giúp hiểu ngữ cảnh truy vấn và 
+[ 562] P  style=Normal (Web) | 1.4.4. Mô hình nhúng ngữ nghĩa (BAAI/bge-m3)
+[ 563] P  style=Normal (Web) | Hệ thống sử dụng mô hình BAAI/bge-m3, được tích hợp thông qua thư viện sentence-transformers, để nhú
+[ 564] P  style=Normal (Web) | 1.4.5. Cơ sở dữ liệu vector ChromaDB
+[ 565] P  style=Normal (Web) | Các vector embedding sau khi sinh ra được lưu trữ và truy vấn bằng ChromaDB. Đây là vector database 
+[ 566] P  style=Normal (Web) | 1.4.6. Tách và phân tích nội dung văn bản (unstructured)
+[ 567] P  style=Normal (Web) | Thư viện unstructured được dùng để xử lý và phân tích các tài liệu đầu vào ở định dạng .docx, .pdf, 
+[ 570] P  style=Normal (Web) | 1.4.7. Nền tảng giao tiếp Discord + Python
+[ 571] P  style=Normal (Web) | Toàn bộ hệ thống trợ lý ảo được triển khai bằng ngôn ngữ Python, tích hợp với Discord thông qua thư 
+[ 575] P  style=Normal | CHƯƠNG 2 : PHÂN TÍCH THIẾT KẾ HỆ THỐNG
+[ 576] P  style=List Paragraph | Mô tả bài toán
+       -> Numbering: numId=2, ilvl=0
+[ 577] P  style=Normal | Trong bối cảnh chuyển đổi số mạnh mẽ hiện nay, sinh viên ngành Công nghệ thông tin (CNTT) có rất nhi
+[ 578] P  style=Normal | Tại Trường Đại học Thủy Lợi, Khoa Công nghệ Thông tin đã triển khai một số hoạt động hướng nghiệp nh
+[ 579] P  style=Normal | Vì vậy, bài toán đặt ra là: Làm thế nào để xây dựng một hệ thống trợ lý ảo có khả năng tư vấn hướng 
+[ 580] P  style=Normal | Hệ thống cần cho phép sinh viên:
+[ 581] P  style=Normal | Gửi câu hỏi bằng ngôn ngữ tự nhiên (tiếng Việt) như:
+“Ngành AI cần học gì?”, “Lập trình nhúng cần kỹ
+       -> Numbering: numId=48, ilvl=0
+[ 582] P  style=Normal | Nhận được phản hồi chính xác, có ngữ cảnh, gần gũi và dễ hiểu.
+       -> Numbering: numId=48, ilvl=0
+[ 583] P  style=Normal | Có thể tiếp tục trao đổi theo dạng hội thoại nhiều lượt để làm rõ các vấn đề liên quan.
+       -> Numbering: numId=48, ilvl=0
+[ 584] P  style=Normal | Đối tượng sử dụng chính của hệ thống là:
+[ 585] P  style=Normal | Sinh viên ngành CNTT, đặc biệt là sinh viên năm 2–4 đang trong quá trình lựa chọn chuyên ngành, chuẩ
+       -> Numbering: numId=49, ilvl=0
+[ 586] P  style=Normal | Giảng viên / cố vấn học tập, có thể sử dụng hệ thống như một công cụ hỗ trợ nhanh trong quá trình tư
+       -> Numbering: numId=49, ilvl=0
+[ 587] P  style=Normal | Để giải quyết bài toán trên, đề tài đề xuất xây dựng một hệ thống trợ lý ảo tích hợp mô hình Retriev
+[ 588] P  style=Normal | Thông qua kiến trúc này, hệ thống có thể:
+[ 589] P  style=Normal | Hiểu câu hỏi bằng tiếng Việt qua xử lý ngôn ngữ tự nhiên.
+       -> Numbering: numId=50, ilvl=0
+[ 590] P  style=Normal | Truy xuất thông tin theo ngữ nghĩa từ tập dữ liệu hướng nghiệp (mô tả nghề, lộ trình kỹ năng,...).
+       -> Numbering: numId=50, ilvl=0
+[ 591] P  style=Normal | Sinh phản hồi thân thiện, rõ ràng, sát với ngữ cảnh sinh viên hỏi.
+       -> Numbering: numId=50, ilvl=0
+[ 592] P  style=Normal | Đây là một hướng tiếp cận hiện đại, tiết kiệm chi phí triển khai, có khả năng mở rộng, đồng thời man
+[ 594] P  style=List Paragraph | Phân tích yêu cầu hệ thống
+       -> Numbering: numId=2, ilvl=0
+[ 595] P  style=List Paragraph | 2.2.1 Yêu cầu chức năng
+[ 596] P  style=Bullet | Hệ thống trợ lý ảo hướng nghiệp được xây dựng với mục tiêu hỗ trợ sinh viên ngành Công nghệ thông ti
+[ 597] P  style=Bullet | Các yêu cầu chức năng được liệt kê trong bảng dưới đây:
+[ 598] P  style=Bảng | Bảng 2-1 Yêu cầu chức năng
+[ 599] TBL
+[ 601] P  style=Caption | Các chức năng trên được tổ chức thành chuỗi xử lý theo pipeline RAG, đồng thời đảm bảo tính tương tá
+[ 602] P  style=Caption | 2.2.2 Yêu cầu phi chức năng
+[ 603] P  style=Normal | Bên cạnh các yêu cầu chức năng, hệ thống cần đáp ứng một số yêu cầu phi chức năng (non-functional re
+[ 605] P  style=Bảng | Bảng 2-2 Yêu cầu phi chức năng
+[ 606] TBL
+[ 608] P  style=Normal | Những yêu cầu phi chức năng trên đảm bảo hệ thống không chỉ đúng kỹ thuật, mà còn thân thiện – dễ dù
+[ 609] P  style=Heading 2 | 2.3 Mô hình hoạt động của hệ thống
+[ 611] P  style=Normal | Hệ thống trợ lý ảo hướng nghiệp được thiết kế để hỗ trợ sinh viên tương tác tự nhiên bằng tiếng Việt
+[ 612] P  style=Heading 3 | 2.3.1 Mô hình người dùng và chức năng
+[ 614] P  style=Normal | Hệ thống trợ lý ảo hướng nghiệp được thiết kế với một nhóm người dùng chính là sinh viên ngành Công 
+[ 615] P  style=Normal | Đối tượng người dùng chính: Sinh viên CNTT
+[ 616] P  style=Normal | Mô tả: Là sinh viên năm 2 đến năm 4 ngành Công nghệ thông tin, có nhu cầu tìm hiểu về định hướng ngh
+       -> Numbering: numId=51, ilvl=0
+[ 617] P  style=Normal | Đặc điểm hành vi:
+       -> Numbering: numId=51, ilvl=0
+[ 618] P  style=Normal | Có kiến thức cơ bản về ngành.
+       -> Numbering: numId=51, ilvl=1
+[ 619] P  style=Normal | Quan tâm đến thị trường việc làm, kỹ năng thực hành.
+       -> Numbering: numId=51, ilvl=1
+[ 620] P  style=Normal | Mong muốn phản hồi nhanh, rõ ràng, dễ hiểu.
+       -> Numbering: numId=51, ilvl=1
+[ 621] P  style=Normal | Các chức năng chính mà sinh viên có thể thực hiện:
+[ 623] P  style=Bảng | Bảng 2-3 Các chức năng
+[ 624] TBL
+[ 626] P  style=Normal | Giao tiếp qua Discord
+[ 627] P  style=Normal | Việc sử dụng Discord làm giao diện người dùng mang lại nhiều lợi ích:
+[ 628] P  style=Normal | Không yêu cầu xây dựng frontend riêng.
+       -> Numbering: numId=52, ilvl=0
+[ 629] P  style=Normal | Được sinh viên sử dụng quen thuộc, dễ truy cập.
+       -> Numbering: numId=52, ilvl=0
+[ 630] P  style=Normal | Hỗ trợ hội thoại dạng channel hoặc riêng tư.
+       -> Numbering: numId=52, ilvl=0
+[ 631] P  style=Normal | Có thể mở rộng thêm phân quyền, log phiên, và thống kê nếu cần.
+       -> Numbering: numId=52, ilvl=0
+[ 632] P  style=Normal | Trong phiên bản hiện tại, hệ thống chỉ có một tác nhân người dùng chính là sinh viên. Các nhóm khác 
+[ 633] P  style=Heading 3 | 2.3.2 Mô tả luồng hoạt động tổng quát
+[ 634] P  style=Normal | Hệ thống trợ lý ảo hướng nghiệp được thiết kế theo kiến trúc pipeline, bao gồm các bước xử lý liên t
+[ 635] P  style=Normal | Quy trình xử lý tổng quát gồm các bước sau:
+[ 636] P  style=Normal | Gửi câu hỏi từ người dùng
+Sinh viên nhập câu hỏi bằng tiếng Việt thông qua chatbot Discord, dạng tự 
+       -> Numbering: numId=53, ilvl=0
+[ 637] P  style=Normal | “Ngành lập trình nhúng cần kỹ năng gì?”
+       -> Numbering: numId=53, ilvl=1
+[ 638] P  style=Normal | “Em muốn theo hướng AI thì nên học gì trước?”
+       -> Numbering: numId=53, ilvl=1
+[ 639] P  style=Normal | “Tester có cần học lập trình không?”
+       -> Numbering: numId=53, ilvl=1
+[ 640] P  style=Normal | Tiền xử lý truy vấn (NLP)
+Câu hỏi được xử lý thông qua pipeline NLP để:
+       -> Numbering: numId=53, ilvl=0
+[ 641] P  style=Normal | Chuẩn hóa văn bản (lowercase, bỏ dấu câu,… nếu cần).
+       -> Numbering: numId=53, ilvl=1
+[ 642] P  style=Normal | Nhận diện mục đích truy vấn (intent).
+       -> Numbering: numId=53, ilvl=1
+[ 643] P  style=Normal | Trích xuất các thực thể liên quan như tên nghề nghiệp, kỹ năng, ngôn ngữ lập trình.
+       -> Numbering: numId=53, ilvl=1
+[ 644] P  style=Normal | Mã hóa truy vấn thành vector ngữ nghĩa (Embedding)
+Hệ thống sử dụng API embedding (ví dụ: text-embed
+       -> Numbering: numId=53, ilvl=0
+[ 645] P  style=Normal | Truy xuất tri thức từ cơ sở dữ liệu vector (ChromaDB)
+Vector vừa tạo được dùng để tìm kiếm các đoạn 
+       -> Numbering: numId=53, ilvl=0
+[ 646] P  style=Normal | Sinh phản hồi bằng mô hình ngôn ngữ lớn (LLM)
+Các đoạn văn bản truy xuất được đưa vào mô hình GPT-4 
+       -> Numbering: numId=53, ilvl=0
+[ 647] P  style=Normal | Trả phản hồi về cho sinh viên qua Discord
+Bot trên Discord gửi phản hồi trở lại ngay trong channel h
+       -> Numbering: numId=53, ilvl=0
+[ 648] P  style=Normal | Duy trì ngữ cảnh hội thoại
+Trong cùng một phiên hội thoại, hệ thống lưu lại lịch sử trao đổi để đảm 
+       -> Numbering: numId=53, ilvl=0
+[ 650] P  style=Hình | Hình 2-1 Sơ đồ mô tả pipeline xử lý
+[ 651] P  style=Heading 3 | 2.3.3 Sơ đồ Use Case hệ thống
+[ 652] P  style=Normal | Để mô tả các tương tác giữa người dùng và hệ thống một cách trực quan, sơ đồ use case được sử dụng n
+[ 653] P  style=Normal | Các use case chính gồm:
+[ 654] P  style=Bảng | Bảng -4 Use Case hệ thống
+[ 655] TBL
+[ 658] P  style=Hình | Hình 2-2 Sơ đồ use case minh họa
+[ 660] P  style=Normal | Sơ đồ use case ở đây được đơn giản hóa vì hệ thống chỉ có một actor duy nhất, chưa phân quyền hoặc c
+[ 661] P  style=Heading 2 | 2.4 Thiết kế dữ liệu đầu vào (Corpus)
+[ 662] P  style=Heading 3 | 2.4.1 Đặc điểm của corpus
+[ 663] P  style=Normal | Corpus (tập dữ liệu tri thức) là thành phần cốt lõi trong hệ thống trợ lý ảo hướng nghiệp sử dụng mô
+[ 664] P  style=Normal | Một số đặc điểm chính của corpus trong hệ thống:
+[ 665] P  style=Normal | Dạng dữ liệu:
+Văn bản thuần (plain text), được xử lý từ các nguồn như tài liệu tuyển dụng, mô tả ngh
+       -> Numbering: numId=54, ilvl=0
+[ 666] P  style=Normal | Ngôn ngữ:
+Toàn bộ dữ liệu được viết bằng tiếng Việt, đảm bảo khả năng hiểu và phản hồi tốt nhất với 
+       -> Numbering: numId=54, ilvl=0
+[ 667] P  style=Normal | Độ dài và cấu trúc:
+Dữ liệu được chia nhỏ (chunk) theo đoạn ngữ nghĩa. Mỗi chunk phản ánh một nội du
+       -> Numbering: numId=54, ilvl=0
+[ 668] P  style=Normal | Tính ngữ nghĩa cao:
+Dữ liệu không được tổ chức theo từ khóa đơn thuần, mà theo ngữ cảnh và ý nghĩa n
+       -> Numbering: numId=54, ilvl=0
+[ 669] P  style=Normal | Tính đa dạng nội dung:
+Corpus bao phủ nhiều loại thông tin khác nhau trong lĩnh vực CNTT, bao gồm:
+       -> Numbering: numId=54, ilvl=0
+[ 670] P  style=Normal | Mô tả công việc.
+       -> Numbering: numId=54, ilvl=1
+[ 671] P  style=Normal | Kỹ năng nghề.
+       -> Numbering: numId=54, ilvl=1
+[ 672] P  style=Normal | Lộ trình học tập.
+       -> Numbering: numId=54, ilvl=1
+[ 673] P  style=Normal | Công cụ/phần mềm phổ biến.
+       -> Numbering: numId=54, ilvl=1
+[ 674] P  style=Normal | Câu hỏi – đáp mẫu từ sinh viên.
+       -> Numbering: numId=54, ilvl=1
+[ 675] P  style=Normal | Khả năng mở rộng:
+Có thể dễ dàng bổ sung hoặc thay thế các phần nội dung mới. Mỗi lần cập nhật, hệ t
+       -> Numbering: numId=54, ilvl=0
+[ 676] P  style=Normal | Không chứa dữ liệu nhạy cảm:
+Tập dữ liệu không chứa thông tin cá nhân, không yêu cầu dữ liệu riêng t
+       -> Numbering: numId=54, ilvl=0
+[ 677] P  style=Heading 3 | 2.4.2 Nguồn dữ liệu được sử dụng
+[ 678] P  style=Normal | Corpus tri thức được xây dựng từ nhiều nguồn dữ liệu đáng tin cậy, phù hợp với mục tiêu hướng nghiệp
+[ 679] P  style=Normal | Các nhóm nguồn dữ liệu chính gồm:
+[ 680] P  style=Bảng | Bảng 2-5 Nhóm dữ liệu chính
+[ 681] TBL
+[ 683] P  style=Normal | Tiêu chí khi lựa chọn dữ liệu:
+[ 684] P  style=Normal | Độ tin cậy cao (ưu tiên từ chuyên gia, doanh nghiệp thật).
+       -> Numbering: numId=55, ilvl=0
+[ 685] P  style=Normal | Tính cập nhật (dựa trên yêu cầu tuyển dụng mới, công nghệ hiện hành).
+       -> Numbering: numId=55, ilvl=0
+[ 686] P  style=Normal | Tính đa dạng (bao phủ nhiều mảng trong ngành CNTT: AI, web, kiểm thử, sản phẩm...).
+       -> Numbering: numId=55, ilvl=0
+[ 687] P  style=Normal | Tính học thuật và phổ thông hài hòa (không quá hàn lâm, cũng không quá đơn giản).
+       -> Numbering: numId=55, ilvl=0
+[ 688] P  style=Normal | Nhờ sử dụng các nguồn dữ liệu thực tế và có tính giáo dục, corpus giúp phản hồi của hệ thống vừa sát
+[ 689] P  style=Heading 3 | 2.4.3 Quá trình xây dựng corpus
+[ 690] P  style=Normal | Quá trình xây dựng corpus tri thức đóng vai trò then chốt trong việc đảm bảo độ chính xác, hiệu quả 
+[ 691] P  style=Normal | Bước 1: Tổng hợp dữ liệu
+[ 692] P  style=Normal | Tiến hành thu thập tài liệu từ các nguồn đáng tin cậy như:
+[ 693] P  style=Normal | Tài liệu nội bộ của khoa CNTT – Đại học Thủy Lợi.
+       -> Numbering: numId=56, ilvl=0
+[ 694] P  style=Normal | Bài đăng tuyển dụng thật từ các công ty công nghệ (TopCV, ITviec, VietnamWorks).
+       -> Numbering: numId=56, ilvl=0
+[ 695] P  style=Normal | Các website roadmap học CNTT (roadmap.sh, Fullstack.edu.vn).
+       -> Numbering: numId=56, ilvl=0
+[ 696] P  style=Normal | Câu hỏi phổ biến từ sinh viên tại hội thảo, fanpage, group ngành nghề.
+       -> Numbering: numId=56, ilvl=0
+[ 697] P  style=Normal | Mục tiêu của bước này là đảm bảo độ phủ về ngành nghề, kỹ năng, và vai trò nghề nghiệp trong ngành C
+[ 698] P  style=Normal | Bước 2: Làm sạch và chuẩn hóa dữ liệu
+[ 699] P  style=Normal | Loại bỏ các phần thừa như quảng cáo, liên kết, ký hiệu đặc biệt.
+       -> Numbering: numId=57, ilvl=0
+[ 700] P  style=Normal | Chuyển văn bản về định dạng thuần (.txt hoặc .md).
+       -> Numbering: numId=57, ilvl=0
+[ 701] P  style=Normal | Kiểm tra lỗi chính tả, cú pháp, ngữ pháp cơ bản để phù hợp với mô hình xử lý tiếng Việt.
+       -> Numbering: numId=57, ilvl=0
+[ 702] P  style=Normal | Kết quả là một bộ dữ liệu văn bản sạch, dễ phân tích và chuyển đổi về vector sau này.
+[ 703] P  style=Normal | Bước 3: Chia đoạn văn bản (Chunking)
+[ 704] P  style=Normal | Chia nhỏ nội dung thành các đoạn văn bản độc lập có ngữ nghĩa rõ ràng (100–300 từ/đoạn).
+       -> Numbering: numId=58, ilvl=0
+[ 705] P  style=Normal | Mỗi đoạn phản ánh duy nhất một chủ đề (ví dụ: mô tả vị trí Backend Developer, lộ trình học AI, kỹ nă
+       -> Numbering: numId=58, ilvl=0
+[ 706] P  style=Normal | Chunking giúp mô hình RAG dễ dàng truy xuất đoạn liên quan nhất đến truy vấn người dùng.
+[ 707] P  style=Normal | Bước 4: Gắn nhãn thông tin (Metadata Tagging)
+[ 708] P  style=Normal | Gắn các thông tin đi kèm mỗi đoạn như:
+       -> Numbering: numId=59, ilvl=0
+[ 709] P  style=Normal | type: Loại nội dung (mô tả nghề, kỹ năng, roadmap,…).
+       -> Numbering: numId=59, ilvl=1
+[ 710] P  style=Normal | field: Lĩnh vực (Web, AI, An toàn thông tin,…).
+       -> Numbering: numId=59, ilvl=1
+[ 711] P  style=Normal | source: Nguồn gốc tài liệu.
+       -> Numbering: numId=59, ilvl=1
+[ 712] P  style=Normal | tags: Từ khóa chính (Java, Docker, Backend,...).
+       -> Numbering: numId=59, ilvl=1
+[ 713] P  style=Normal | Việc gắn nhãn giúp lọc nhanh trong vector store và cho phép phân tích nội dung theo nhóm ngành nghề.
+[ 714] P  style=Normal | Bước 5: Mã hóa và lưu trữ (Embedding + Vector Storage)
+[ 715] P  style=Bullet | Sử dụng mô hình BAAI/bge-m3 thông qua thư viện sentence-transformers để mã hóa từng đoạn văn bản thà
+[ 716] P  style=Bullet | Toàn bộ vector và metadata được lưu trữ vào ChromaDB – một cơ sở dữ liệu vector mã nguồn mở, hỗ trợ 
+[ 717] P  style=Normal | Đây là bước cuối cùng trong quy trình xử lý dữ liệu, giúp hệ thống có khả năng truy xuất thông tin h
+[ 718] P  style=Normal | Quy trình tổng quát:
+[ 719] P  style=Normal | Thu thập dữ liệu → Làm sạch → Chia đoạn → Gắn nhãn → Mã hóa bằng bge-m3 → Lưu trữ vào ChromaDB
+[ 720] P  style=Normal | Với quy trình này, kho tri thức đầu vào không chỉ được chuẩn hóa và có cấu trúc rõ ràng, mà còn mang
+[ 721] P  style=Heading 3 | 2.4.4 Cấu trúc dữ liệu lưu trữ trong vector store
+[ 722] P  style=Normal | Sau khi các đoạn văn bản trong corpus được xử lý và mã hóa thành vector ngữ nghĩa, hệ thống sẽ lưu t
+[ 723] P  style=Normal | Việc thiết kế cấu trúc lưu trữ trong vector store cần đảm bảo các yếu tố: dễ truy xuất, phân loại rõ
+[ 724] P  style=Normal | Cấu trúc mỗi bản ghi trong vector store bao gồm:
+[ 726] P  style=Bảng | Bảng 2-6 Cấu trúc dữ liệu lưu trữ trong vector store
+[ 727] TBL
+[ 728] P  style=Normal | Trong đó:
+[ 729] P  style=Normal | embedding là vector số được tạo ra từ mô hình BAAI/bge-m3 thông qua thư viện sentence-transformers.
+       -> Numbering: numId=61, ilvl=0
+[ 730] P  style=Normal | Các metadata (type, field, tags, source) giúp hỗ trợ lọc và phân tích nâng cao.
+       -> Numbering: numId=61, ilvl=0
+[ 731] P  style=Normal | Vai trò của cấu trúc này:
+[ 732] P  style=Normal | Tìm kiếm nhanh và chính xác: Nhờ embedding + metadata, hệ thống truy xuất đúng nội dung liên quan ng
+       -> Numbering: numId=62, ilvl=0
+[ 733] P  style=Normal | Phân loại dễ dàng: Có thể lọc theo ngành (Web, AI…), loại nội dung (lộ trình, kỹ năng…).
+       -> Numbering: numId=62, ilvl=0
+[ 734] P  style=Normal | Truy vết nguồn: Giúp phản hồi của hệ thống có thể trích dẫn nguồn nếu cần.
+       -> Numbering: numId=62, ilvl=0
+[ 735] P  style=Normal | Khả năng mở rộng: Có thể thêm trường mới như level, updated_at,… khi mở rộng chức năng hệ thống.
+       -> Numbering: numId=62, ilvl=0
+[ 736] P  style=Normal | Việc tổ chức dữ liệu như trên giúp đảm bảo hiệu quả truy xuất và tính ngữ nghĩa cao – yếu tố then ch
+[ 737] P  style=Heading 2 | 2.5 Thiết kế kiến trúc logic của hệ thống
+[ 738] P  style=Normal | Hệ thống trợ lý ảo hướng nghiệp được thiết kế theo kiến trúc module, tích hợp nhiều thành phần công 
+[ 739] P  style=Heading 3 | 2.5.1 Các thành phần chính trong hệ thống
+[ 740] P  style=Bảng | Bảng 2-7 Các thành phần chính trong hệ thống
+[ 741] TBL
+[ 743] P  style=Heading 3 | 2.5.2 Luồng xử lý logic
+[ 744] P  style=Normal | Sinh viên gửi câu hỏi qua Discord bot.
+       -> Numbering: numId=63, ilvl=0
+[ 745] P  style=Normal | Câu hỏi được tiền xử lý và mã hóa thành vector.
+       -> Numbering: numId=63, ilvl=0
+[ 746] P  style=Normal | Vector được gửi tới ChromaDB để truy xuất các đoạn tri thức liên quan.
+       -> Numbering: numId=63, ilvl=0
+[ 747] P  style=Normal | Các đoạn văn bản được đưa vào GPT-4 để sinh ra câu trả lời.
+       -> Numbering: numId=63, ilvl=0
+[ 748] P  style=Normal | Discord bot nhận phản hồi và gửi lại sinh viên.
+       -> Numbering: numId=63, ilvl=0
+[ 749] P  style=Normal | LangChain giữ vai trò kết nối, lưu ngữ cảnh hội thoại, điều phối các bước.
+       -> Numbering: numId=63, ilvl=0
+[ 750] P  style=Heading 3 | 2.5.3 Sơ đồ kiến trúc hệ thống
+[ 752] P  style=Hình | Hình 2-3 Sơ đồ kiến trúc hệ thống
+[ 754] P  style=Normal | Hoặc có thể biểu diễn bằng sơ đồ tầng:
+[ 755] P  style=Normal | Tầng giao tiếp: Discord Bot
+       -> Numbering: numId=64, ilvl=0
+[ 756] P  style=Normal | Tầng xử lý truy vấn: NLP + Embedding
+       -> Numbering: numId=64, ilvl=0
+[ 757] P  style=Normal | Tầng truy xuất tri thức: Vector DB (ChromaDB)
+       -> Numbering: numId=64, ilvl=0
+[ 758] P  style=Normal | Tầng sinh phản hồi: GPT-4 / LLM
+       -> Numbering: numId=64, ilvl=0
+[ 759] P  style=Normal | Tầng điều phối: LangChain
+       -> Numbering: numId=64, ilvl=0
+[ 760] P  style=Heading 3 | 2.5.4 Mô hình phân lớp kiến trúc
+[ 761] P  style=Bảng | Bảng 2-8 Mô hình phân lớp kiến trúc
+[ 762] TBL
+[ 764] P  style=Normal | Kiến trúc hệ thống phản ánh đầy đủ logic của mô hình RAG, từ nhận truy vấn đến sinh phản hồi, đảm bả
+[ 765] P  style=Heading 2 | 2.6 Mô hình hóa xử lý truy vấn
+[ 766] P  style=Normal | Để mô tả chi tiết cách dữ liệu và truy vấn di chuyển qua các thành phần trong hệ thống, mô hình hóa 
+[ 767] P  style=Heading 3 | 2.6.1 Biểu đồ luồng xử lý (Data Flow Diagram – DFD)
+[ 768] P  style=Normal | Sơ đồ luồng dữ liệu mức cao (level 0) dưới đây mô tả toàn bộ hệ thống ở dạng tổng quát:
+[ 769] P  style=Normal | Các thực thể chính:
+[ 770] P  style=Normal | Sinh viên: Người gửi truy vấn.
+       -> Numbering: numId=65, ilvl=0
+[ 771] P  style=Normal | Discord Bot: Giao diện nhận/gửi truy vấn.
+       -> Numbering: numId=65, ilvl=0
+[ 772] P  style=Normal | Xử lý truy vấn: NLP + Embedding.
+       -> Numbering: numId=65, ilvl=0
+[ 773] P  style=Normal | Vector DB (ChromaDB): Lưu trữ & truy xuất tri thức.
+       -> Numbering: numId=65, ilvl=0
+[ 774] P  style=Normal | LLM (GPT-4): Sinh phản hồi.
+       -> Numbering: numId=65, ilvl=0
+[ 775] P  style=Normal | Module điều phối (LangChain): Điều hướng xử lý.
+       -> Numbering: numId=65, ilvl=0
+[ 776] P  style=Normal | Luồng tổng quát:
+[ 778] P  style=Hình | Hình 2-4 Luồng tổng quát
+[ 779] P  style=Heading 3 | 2.6.2 Biểu đồ trình tự (Sequence Diagram)
+[ 780] P  style=Normal | Thành phần chính:
+[ 781] P  style=Normal | User
+       -> Numbering: numId=66, ilvl=0
+[ 782] P  style=Normal | Discord Bot
+       -> Numbering: numId=66, ilvl=0
+[ 783] P  style=Normal | LangChain Orchestrator
+       -> Numbering: numId=66, ilvl=0
+[ 784] P  style=Normal | NLP + Embedding
+       -> Numbering: numId=66, ilvl=0
+[ 785] P  style=Normal | ChromaDB (Vector Store)
+       -> Numbering: numId=66, ilvl=0
+[ 786] P  style=Normal | GPT-4 (LLM)
+       -> Numbering: numId=66, ilvl=0
+[ 787] P  style=Normal | Luồng trình tự logic:
+[ 789] P  style=Hình | Hình 2-5 Luồng trình tự logic
+[ 790] P  style=Heading 2 | 2.7 Đánh giá sơ bộ thiết kế
+[ 791] P  style=Normal | Sau quá trình phân tích và thiết kế, hệ thống trợ lý ảo hướng nghiệp cho sinh viên ngành Công nghệ t
+[ 792] P  style=Heading 3 | 2.7.1 Ưu điểm:
+[ 793] P  style=Bảng | Bảng 2-9 Ưu điểm
+[ 794] TBL
+[ 796] P  style=Heading 3 | 2.7.2 Hạn chế:
+[ 797] P  style=Bảng | Bảng 2-10 Hạn chế
+[ 798] TBL
+[ 800] P  style=Heading 3 | 2.7.3 Khả năng mở rộng trong tương lai
+[ 801] P  style=Normal | Tích hợp thêm nền tảng giao tiếp khác như Zalo OA, Web chat.
+       -> Numbering: numId=67, ilvl=0
+[ 802] P  style=Normal | Tùy chỉnh nội dung theo hồ sơ cá nhân nếu sinh viên đăng nhập.
+       -> Numbering: numId=67, ilvl=0
+[ 803] P  style=Normal | Tự động thống kê, phân tích xu hướng hỏi – đáp phục vụ cải tiến chương trình đào tạo.
+       -> Numbering: numId=67, ilvl=0
+[ 804] P  style=Normal | Kết nối với hệ thống hướng nghiệp của doanh nghiệp, mở rộng dữ liệu tuyển dụng thật.
+       -> Numbering: numId=67, ilvl=0
+[ 805] P  style=Normal | Tích hợp dashboard quản lý corpus & log hội thoại cho giảng viên.
+       -> Numbering: numId=67, ilvl=0
+[ 808] P  style=Normal | CHƯƠNG 3 TRIỂN KHAI, KẾT QUẢ VÀ ĐÁNH GIÁ
+[ 809] P  style=Heading 2 | 3.1 Ngôn ngữ lập trình và công nghệ sử dụng
+[ 810] P  style=Normal | Hệ thống trợ lý ảo hướng nghiệp được triển khai dựa trên các công nghệ hiện đại, thân thiện với nhà 
+[ 811] P  style=Heading 3 | 3.1.1 Ngôn ngữ lập trình chính
+[ 812] P  style=Normal | Ngôn ngữ lập trình được sử dụng để xây dựng toàn bộ hệ thống là Python. Đây là một ngôn ngữ bậc cao,
+[ 813] P  style=Normal | Xử lý ngôn ngữ tự nhiên (NLP).
+       -> Numbering: numId=68, ilvl=0
+[ 814] P  style=Normal | Tích hợp mô hình ngôn ngữ lớn (LLM).
+       -> Numbering: numId=68, ilvl=0
+[ 815] P  style=Normal | Xây dựng hệ thống AI hỗ trợ hội thoại.
+       -> Numbering: numId=68, ilvl=0
+[ 816] P  style=Normal | Truy vấn cơ sở dữ liệu vector.
+       -> Numbering: numId=68, ilvl=0
+[ 817] P  style=Normal | Giao tiếp qua API và phát triển bot tự động.
+       -> Numbering: numId=68, ilvl=0
+[ 818] P  style=Normal | Một số ưu điểm chính của Python trong đề tài này:
+[ 819] P  style=Normal | Có sẵn thư viện chuyên sâu cho NLP và AI như: transformers, langchain, openai, chromadb, v.v.
+       -> Numbering: numId=69, ilvl=0
+[ 820] P  style=Normal | Tương thích tốt với các API từ OpenAI, Cohere, Mistral.
+       -> Numbering: numId=69, ilvl=0
+[ 821] P  style=Normal | Dễ triển khai trên môi trường máy tính cá nhân hoặc cloud.
+       -> Numbering: numId=69, ilvl=0
+[ 822] P  style=Normal | Có hỗ trợ tốt cho Discord thông qua thư viện discord.py.
+       -> Numbering: numId=69, ilvl=0
+[ 823] P  style=Normal | Với đặc điểm ngôn ngữ động, cú pháp đơn giản và khả năng mở rộng cao, Python giúp quá trình lập trìn
+[ 824] P  style=Heading 3 | 3.1.2 Thư viện và framework sử dụng
+[ 825] P  style=Normal | Hệ thống được xây dựng dựa trên nhiều thư viện và framework mã nguồn mở, hỗ trợ mạnh mẽ cho quá trìn
+[ 826] P  style=Normal | 1. LangChain
+[ 827] P  style=Normal | Vai trò: Điều phối toàn bộ pipeline theo mô hình RAG (Retrieval-Augmented Generation).
+       -> Numbering: numId=70, ilvl=0
+[ 828] P  style=Normal | Tính năng nổi bật:
+       -> Numbering: numId=70, ilvl=0
+[ 829] P  style=Normal | Kết nối nhiều công cụ AI như embedding, vector DB, LLM.
+       -> Numbering: numId=70, ilvl=1
+[ 830] P  style=Normal | Hỗ trợ quản lý context, session và memory.
+       -> Numbering: numId=70, ilvl=1
+[ 831] P  style=Normal | Có thể tích hợp agent (nếu mở rộng sau này).
+       -> Numbering: numId=70, ilvl=1
+[ 832] P  style=Normal | 2. ChromaDB
+[ 833] P  style=Normal | Vai trò: Cơ sở dữ liệu vector lưu trữ tri thức sau khi nhúng.
+       -> Numbering: numId=71, ilvl=0
+[ 834] P  style=Normal | Tính năng nổi bật:
+       -> Numbering: numId=71, ilvl=0
+[ 835] P  style=Normal | Hỗ trợ tìm kiếm ngữ nghĩa dựa trên độ tương đồng cosine.
+       -> Numbering: numId=71, ilvl=1
+[ 836] P  style=Normal | Tích hợp tốt với LangChain.
+       -> Numbering: numId=71, ilvl=1
+[ 837] P  style=Normal | Có thể cập nhật động, không cần tái huấn luyện.
+       -> Numbering: numId=71, ilvl=1
+[ 838] P  style=Normal | 3. OpenAI API
+[ 839] P  style=Normal | Vai trò:
+       -> Numbering: numId=72, ilvl=0
+[ 840] P  style=Normal | Tạo embedding cho các đoạn văn bản (text-embedding-3-small).
+       -> Numbering: numId=72, ilvl=1
+[ 841] P  style=Normal | Sinh phản hồi ngôn ngữ tự nhiên qua GPT-3.5 hoặc GPT-4.
+       -> Numbering: numId=72, ilvl=1
+[ 842] P  style=Normal | Ưu điểm:
+       -> Numbering: numId=72, ilvl=0
+[ 843] P  style=Normal | Độ chính xác cao, phản hồi mượt.
+       -> Numbering: numId=72, ilvl=1
+[ 844] P  style=Normal | Có SDK Python dễ tích hợp.
+       -> Numbering: numId=72, ilvl=1
+[ 845] P  style=Normal | 4. discord.py
+[ 846] P  style=Normal | Vai trò: Giao tiếp với người dùng qua nền tảng Discord.
+       -> Numbering: numId=73, ilvl=0
+[ 847] P  style=Normal | Chức năng đã sử dụng:
+       -> Numbering: numId=73, ilvl=0
+[ 848] P  style=Normal | Lắng nghe tin nhắn người dùng.
+       -> Numbering: numId=73, ilvl=1
+[ 849] P  style=Normal | Gửi phản hồi từ hệ thống.
+       -> Numbering: numId=73, ilvl=1
+[ 850] P  style=Normal | Xử lý message theo luồng hội thoại.
+       -> Numbering: numId=73, ilvl=1
+[ 851] P  style=Normal | 5. Các thư viện hỗ trợ khác
+[ 853] P  style=Bảng | Bảng -1 Các thư viện hỗ trợ khác
+[ 854] TBL
+[ 856] P  style=Normal | Sự kết hợp giữa LangChain, ChromaDB và các API từ OpenAI tạo nên một hệ thống hội thoại thông minh, 
+[ 857] P  style=Heading 3 | 3.1.3 Cơ sở dữ liệu
+[ 858] P  style=Normal | Khác với các hệ thống truyền thống sử dụng cơ sở dữ liệu quan hệ như MySQL hoặc MongoDB để lưu trữ t
+[ 859] P  style=Normal | ChromaDB – Vector Database
+[ 860] P  style=Normal | ChromaDB là một cơ sở dữ liệu mã nguồn mở, được thiết kế riêng để lưu trữ và tìm kiếm các vector nhú
+[ 861] P  style=Normal | Lưu trữ các đoạn văn bản (chunk) đã được nhúng thành vector thông qua mô hình embedding.
+       -> Numbering: numId=74, ilvl=0
+[ 862] P  style=Normal | Thực hiện truy vấn ngữ nghĩa bằng cách đo độ tương đồng (cosine similarity) giữa câu hỏi người dùng 
+       -> Numbering: numId=74, ilvl=0
+[ 863] P  style=Normal | Kèm theo metadata như: ngành nghề, loại nội dung, kỹ năng liên quan, giúp hệ thống tổ chức và lọc dữ
+       -> Numbering: numId=74, ilvl=0
+[ 864] P  style=Normal | Cấu trúc lưu trữ trong ChromaDB
+[ 865] P  style=Normal (Web) | Mỗi bản ghi trong cơ sở dữ liệu vector gồm các trường:
+[ 867] P  style=Bảng | Bảng 3-2 Cấu trúc lưu trữ trong ChromaDB
+[ 868] TBL
+[ 869] P  style=Normal (Web) | Lý do chọn ChromaDB
+[ 870] P  style=Bảng | Bảng 3-3 Lý do chọn ChromaDB
+[ 871] TBL
+[ 872] P  style=Normal (Web) | Với đặc thù hệ thống cần xử lý và truy xuất ngữ nghĩa, ChromaDB là lựa chọn phù hợp và hiệu quả, giú
+[ 873] P  style=Heading 3 | 3.1.4. Mô hình AI / LLM sử dụng
+[ 874] P  style=Normal (Web) | Hệ thống trợ lý ảo hướng nghiệp được xây dựng dựa trên sự kết hợp giữa các mô hình AI tiên tiến, bao
+[ 875] P  style=Normal (Web) | Mô hình nhúng ngữ nghĩa (Embedding model):
+       -> Numbering: numId=94, ilvl=0
+[ 876] P  style=Normal (Web) | Hệ thống sử dụng BAAI/bge-m3, một mô hình embedding đa ngôn ngữ do Viện Trí tuệ Nhân tạo Bắc Kinh (B
+[ 878] P  style=Normal (Web) | Mô hình ngôn ngữ lớn (Large Language Model – LLM):
+       -> Numbering: numId=94, ilvl=0
+[ 879] P  style=Normal (Web) | Hệ thống sử dụng các mô hình LLM mạnh như GPT-4, Claude, hoặc tương đương, có khả năng sinh phản hồi
+[ 880] P  style=Normal (Web) | Mô hình embedding và mô hình LLM kết hợp tạo thành kiến trúc RAG (Retrieval-Augmented Generation), đ
+[ 881] P  style=Normal (Web) | Truy xuất nội dung liên quan sát nghĩa.
+       -> Numbering: numId=95, ilvl=0
+[ 882] P  style=Normal (Web) | Sinh phản hồi tự nhiên, đúng ngữ cảnh.
+       -> Numbering: numId=95, ilvl=0
+[ 883] P  style=Normal (Web) | Giảm hiện tượng “tưởng tượng” (hallucination) của LLM.
+       -> Numbering: numId=95, ilvl=0
+[ 884] P  style=Normal (Web) | Tăng tính cập nhật và cá nhân hóa cho từng sinh viên.
+       -> Numbering: numId=95, ilvl=0
+[ 885] P  style=Heading 3 | 3.1.5 Môi trường triển khai
+[ 886] P  style=Normal | Hệ thống trợ lý ảo hướng nghiệp được triển khai trong môi trường đơn giản, sử dụng máy cá nhân kết h
+[ 887] P  style=Normal | Hệ điều hành và phần mềm phát triển
+[ 888] P  style=Bảng | Bảng 3-4 Hệ điều hành và phần mềm phát triển
+[ 889] TBL
+[ 891] P  style=Normal | Nền tảng giao tiếp và thử nghiệm
+[ 892] P  style=Bảng | Bảng 3-5 Nền tảng giao tiếp và thử nghiệm
+[ 893] TBL
+[ 895] P  style=Normal | Tài nguyên phần cứng (local)
+[ 896] P  style=Bảng | Bảng 3-6 Tài nguyên phần cứng
+[ 897] TBL
+[ 899] P  style=Normal | Dịch vụ bên ngoài sử dụng (Cloud/API)
+[ 900] P  style=Bảng | Bảng 3-7 Dịch vụ bên ngoài sử dụng
+[ 901] TBL
+[ 903] P  style=Normal | Trong giai đoạn thử nghiệm, hệ thống có thể chạy toàn bộ trên máy cá nhân. Với quy mô lớn hơn, có th
+[ 904] P  style=Heading 2 | 3.2 Quy trình triển khai hệ thống:
+[ 905] P  style=Heading 3 | 3.2.1 Chuẩn bị môi trường và cài đặt thư viện
+[ 906] P  style=Normal | Hệ thống được triển khai trong môi trường lập trình Python sử dụng conda để quản lý môi trường ảo và
+[ 907] P  style=Normal | Toàn bộ hệ thống được phát triển trên máy tính cá nhân chạy Windows, với môi trường ảo conda có tên 
+[ 908] P  style=Normal | Các bước chuẩn bị môi trường:
+[ 909] P  style=Normal | Tạo môi trường ảo conda có tên DATN:
+       -> Numbering: numId=77, ilvl=0
+[ 910] P  style=Normal | Mở Command Prompt hoặc PowerShell, di chuyển tới thư mục dự án và chạy lệnh:
+[ 912] P  style=Hình | Hình 3-1
+[ 913] P  style=List Paragraph | Kích hoạt môi trường ảo:
+       -> Numbering: numId=77, ilvl=0
+[ 915] P  style=Hình | Hình 3-2
+[ 916] P  style=Normal | Khi kích hoạt thành công, dòng lệnh sẽ hiển thị dạng:
+[ 918] P  style=Hình | Hình 3-3
+[ 919] P  style=List Paragraph | Cài đặt các thư viện cần thiết bằng pip:
+       -> Numbering: numId=77, ilvl=0
+[ 921] P  style=Hình | Hình 3-4
+[ 922] P  style=List Paragraph | Tạo file .env chứa khóa API và token bot:
+       -> Numbering: numId=77, ilvl=0
+[ 924] P  style=Hình | Hình 3-5
+[ 925] P  style=List Paragraph | Kiểm tra kết nối với OpenAI và Discord:
+       -> Numbering: numId=77, ilvl=0
+[ 926] P  style=Normal (Web) |   Gọi thử API từ openai để chắc chắn key hoạt động.
+[ 927] P  style=Normal (Web) |  Kiểm tra bot Discord đã khởi động đúng và vào server cần thiết.
+[ 928] P  style=Normal (Web) | Ghi chú:
+[ 929] P  style=Normal (Web) | Conda cho phép tách môi trường hoàn toàn khỏi hệ điều hành, tránh xung đột thư viện.
+       -> Numbering: numId=78, ilvl=0
+[ 930] P  style=Normal (Web) | Có thể kết hợp cả conda và pip để linh hoạt cài đặt gói.
+       -> Numbering: numId=78, ilvl=0
+[ 931] P  style=Normal (Web) | Trong trường hợp có GPU, bạn có thể tích hợp thêm pytorch hoặc transformers nếu mở rộng về inference
+       -> Numbering: numId=78, ilvl=0
+[ 932] P  style=Normal (Web) | Kết luận: Môi trường conda giúp đảm bảo hệ thống chạy ổn định, quản lý gọn gàng các thư viện, đặc bi
+[ 933] P  style=Heading 3 | 3.2.2 Xây dựng corpus và nhúng dữ liệu
+[ 934] P  style=Normal | 1. Mục đích
+[ 935] P  style=Normal | Đầu tiên, hệ thống sử dụng thư viện unstructured để tự động phân tích và tách nội dung văn bản từ cá
+[ 936] P  style=Normal | 2. Xử lý đầu vào văn bản
+[ 937] P  style=Normal | Đầu tiên, hệ thống sử dụng thư viện unstructured để tự động phân tích và tách nội dung văn bản từ cá
+[ 939] P  style=Hình | Hình 3-6
+[ 941] P  style=Normal | 3. Mô hình embedding sử dụng
+[ 942] P  style=Normal | Hệ thống sử dụng mô hình BAAI/bge-m3 từ thư viện sentence-transformers để mã hóa các đoạn văn bản th
+[ 944] P  style=Hình | Hình 3-7
+[ 945] P  style=Normal | 4. Lưu trữ dữ liệu embedding vào ChromaDB
+[ 946] P  style=Normal | Vector và nội dung gốc được lưu trữ trong cơ sở dữ liệu vector ChromaDB. Hệ thống khởi tạo client Ch
+[ 948] P  style=Hình | Hình 3-8
+[ 949] P  style=Normal | Việc lưu trữ vector vào ChromaDB cho phép thực hiện truy vấn ngữ nghĩa sau này một cách hiệu quả, đả
+[ 950] P  style=Normal | 5. Kết quả đầu ra
+[ 951] P  style=Normal | Sau quá trình xử lý, hệ thống thu được:
+[ 952] P  style=Normal | Kho tri thức chứa hàng trăm đoạn văn bản hướng nghiệp đã được nhúng.
+       -> Numbering: numId=92, ilvl=0
+[ 953] P  style=Normal | Một collection trong ChromaDB mang tên "text_embeddings", sẵn sàng để truy vấn bằng embedding vector
+       -> Numbering: numId=92, ilvl=0
+[ 954] P  style=Normal | Dữ liệu trung gian lưu tại thư mục Output/chroma_db.
+       -> Numbering: numId=92, ilvl=0
+[ 955] P  style=Heading 3 | 3.2.3 Truy xuất tri thức từ ChromaDB bằng Search_chroma.py
+[ 956] P  style=Normal | Sau khi toàn bộ dữ liệu hướng nghiệp được chuẩn hóa và nhúng thành vector (trình bày ở mục 3.2.2), h
+[ 957] P  style=Normal | Trong tệp này, hệ thống thực hiện các bước:
+[ 958] P  style=Normal | Tải dữ liệu từ thư mục đầu vào, xử lý các định dạng phổ biến như .docx và .pdf.
+       -> Numbering: numId=91, ilvl=0
+[ 959] P  style=Normal | Sử dụng thư viện unstructured để phân tích tài liệu thành các đoạn nội dung (chunk).
+       -> Numbering: numId=91, ilvl=0
+[ 960] P  style=Normal | Dùng mô hình BAAI/bge-m3 để nhúng các đoạn văn bản thành vector.
+       -> Numbering: numId=91, ilvl=0
+[ 961] P  style=Normal | Lưu toàn bộ vector và nội dung gốc vào cơ sở dữ liệu vector ChromaDB để phục vụ truy vấn về sau.
+       -> Numbering: numId=91, ilvl=0
+[ 962] P  style=Normal | Trong giai đoạn truy vấn, hệ thống nhận câu hỏi từ người dùng, nhúng câu hỏi đó thành vector rồi tìm
+[ 964] P  style=Hình | Hình 3-9
+[ 965] P  style=Normal | Kết quả của quá trình truy xuất sẽ bao gồm các đoạn văn bản có liên quan cao nhất đến truy vấn, cùng
+[ 966] P  style=Normal | Tách riêng quy trình truy xuất ngữ nghĩa trong Search_chroma.py không chỉ giúp hệ thống dễ bảo trì, 
+[ 967] P  style=Heading 3 | 3.2.4 Kết nối mô hình AI (GPT)
+[ 968] P  style=Normal | Sau khi hệ thống truy xuất được các đoạn văn bản liên quan từ vector store, bước tiếp theo là sinh p
+[ 969] P  style=Normal | 1. Lý do sử dụng GPT (LLM)
+[ 970] P  style=Normal | GPT là một trong những mô hình LLM mạnh nhất hiện nay, có khả năng:
+       -> Numbering: numId=81, ilvl=0
+[ 971] P  style=Normal | Hiểu truy vấn ngữ cảnh bằng tiếng Việt
+       -> Numbering: numId=81, ilvl=1
+[ 972] P  style=Normal | Tổng hợp nội dung từ các đoạn truy xuất được
+       -> Numbering: numId=81, ilvl=1
+[ 973] P  style=Normal | Sinh phản hồi thân thiện, rõ ràng như người thật
+       -> Numbering: numId=81, ilvl=1
+[ 974] P  style=Normal | Hệ thống sử dụng GPT theo mô hình RAG, tức là không để GPT “tự nghĩ”, mà luôn cung cấp ngữ liệu liên
+       -> Numbering: numId=81, ilvl=0
+[ 975] P  style=Normal | 2. Quy trình tích hợp GPT
+[ 976] P  style=Normal | Người dùng gửi câu hỏi → bot nhận câu hỏi
+       -> Numbering: numId=82, ilvl=0
+[ 977] P  style=Normal | Hệ thống truy xuất các đoạn văn bản có ngữ nghĩa gần với truy vấn từ ChromaDB
+       -> Numbering: numId=82, ilvl=0
+[ 978] P  style=Normal | Các đoạn văn + truy vấn được đưa vào GPT để sinh phản hồi
+       -> Numbering: numId=82, ilvl=0
+[ 979] P  style=Normal | 3. Cách gọi GPT bằng OpenAI API
+[ 981] P  style=Hình | Hình 3-10
+[ 982] P  style=Normal | Trong đoạn này:
+[ 983] P  style=Normal | retrieved_docs: là danh sách chuỗi văn bản đã truy xuất từ ChromaDB.
+       -> Numbering: numId=85, ilvl=0
+[ 984] P  style=Normal | query: là câu hỏi gốc từ người dùng.
+       -> Numbering: numId=85, ilvl=0
+[ 985] P  style=Normal | Prompt được ghép thủ công để cung cấp thông tin đầu vào cho GPT, không sử dụng LangChain.
+       -> Numbering: numId=85, ilvl=0
+[ 986] P  style=Normal | 4. Giao tiếp với GPT thông qua LangChain
+[ 987] P  style=Normal | Hệ thống sử dụng LangChain để tổ chức pipeline xử lý, bao gồm:
+[ 988] P  style=Normal | Gọi model GPT
+       -> Numbering: numId=83, ilvl=0
+[ 989] P  style=Normal | Tự động định dạng prompt
+       -> Numbering: numId=83, ilvl=0
+[ 990] P  style=Normal | Quản lý ngữ cảnh hội thoại (nếu có nhiều lượt)
+       -> Numbering: numId=83, ilvl=0
+[ 991] P  style=Normal | Ví dụ tích hợp:
+[ 993] P  style=Hình | Hình 3-11
+[ 994] P  style=Normal | 5. Cấu trúc phản hồi sinh ra
+[ 995] P  style=Normal | Phản hồi từ GPT được thiết kế để:
+[ 996] P  style=Normal | Gọi đúng tên ngành nghề / kỹ năng liên quan
+       -> Numbering: numId=84, ilvl=0
+[ 997] P  style=Normal | Trình bày logic, thân thiện, gần gũi với sinh viên
+       -> Numbering: numId=84, ilvl=0
+[ 998] P  style=Normal | Có thể đề xuất thêm từ khóa để sinh viên tra cứu
+       -> Numbering: numId=84, ilvl=0
+[ 999] P  style=Normal | Ví dụ:
+[1000] P  style=Normal | "Nếu bạn muốn theo nghề kiểm thử phần mềm (QA), bạn nên bắt đầu với kiến thức về vòng đời phát triển
+[1001] P  style=Normal | Tóm lại: GPT đóng vai trò sinh nội dung chính cho hệ thống, đảm bảo rằng sinh viên nhận được phản hồ
+[1002] P  style=Heading 3 | 3.2.5 Tích hợp với Discord Bot
+[1003] P  style=Normal | Hệ thống trợ lý ảo được thiết kế để giao tiếp với người dùng thông qua nền tảng Discord, nhờ đó sinh
+[1004] P  style=Normal | 1. Khởi tạo bot và đăng nhập hệ thống
+[1005] P  style=Normal | Hệ thống sử dụng thư viện discord.py để khởi tạo một bot và lắng nghe sự kiện trong máy chủ Discord.
+[1007] P  style=Hình | Hình 3-12
+[1009] P  style=Hình | Hình 3-13
+[1010] P  style=Normal | 2. Duy trì lịch sử hội thoại (Session-based)
+[1011] P  style=Normal | Điểm nổi bật trong hệ thống là khả năng duy trì ngữ cảnh nhiều lượt hội thoại cho từng sinh viên, bằ
+[1013] P  style=Hình | Hình 3-14
+[1014] P  style=Normal | Lịch sử được lưu vào biến user_data và hỗ trợ khôi phục sau mỗi lần restart thông qua:
+[1016] P  style=Hình | Hình 3-15
+[1017] P  style=Normal | Dữ liệu hội thoại được lưu trong file user_data.json:
+[1019] P  style=Hình | Hình 3-16
+[1020] P  style=Normal | 3. Xử lý truy vấn và phản hồi
+[1021] P  style=Normal | Toàn bộ pipeline sử dụng mô hình RAG, được triển khai bằng LangChain, và sử dụng hàm rag_chain.invok
+[1023] P  style=Hình | Hình 3-17
+[1024] P  style=Normal | Sau đó bot sẽ trích nội dung từ GPT-4 và gửi lại phản hồi:
+[1026] P  style=Hình | Hình 3-18
+[1027] P  style=Normal | 4. Cấu trúc prompt có lịch sử hội thoại
+[1028] P  style=Normal | Hệ thống không chỉ dựa vào câu hỏi hiện tại mà còn kết hợp ngữ cảnh trò chuyện trước đó, cụ thể tron
+[1030] P  style=Hình | Hình 3-19
+[1031] P  style=Normal | Điều này giúp sinh viên có thể tiếp tục hỏi mở rộng như:
+[1033] P  style=Hình | Hình 3-20
+[1034] P  style=Normal | 5. Thông báo chào sinh viên mới
+[1035] P  style=Normal | Bot có cơ chế gửi lời chào đặc biệt nếu là lượt trò chuyện đầu tiên:
+[1037] P  style=Hình | Hình 3-21
+[1038] P  style=Normal | Điều này tạo cảm giác thân thiện, cá nhân hóa.
+[1040] P  style=Hình | Hình 3-22
+[1041] P  style=Normal | 6. Xử lý lỗi và phản hồi thân thiện
+[1042] P  style=Normal | Nếu có lỗi trong quá trình sinh phản hồi, bot sẽ báo lỗi nhẹ nhàng và lưu lại dữ liệu:
+[1044] P  style=Hình | Hình 3-23
+[1046] P  style=Hình | Hình 3-24
+[1047] P  style=Normal | Tóm tắt các tính năng đặc biệt:
+[1048] P  style=Bảng | Bảng 3-8 Tóm tắt các tính năng đặc biệt
+[1049] TBL
+[1051] P  style=Heading 3 | 3.2.6 Kiểm thử thử nghiệm nội bộ
+[1052] P  style=Normal | Sau khi triển khai hoàn chỉnh hệ thống trợ lý ảo hướng nghiệp tích hợp Discord Bot, em thực hiện đã 
+[1053] P  style=Normal | 1. Mục tiêu kiểm thử
+[1054] P  style=Bảng | Bảng 3-9 Mục tiêu kiểm thử
+[1055] TBL
+[1057] P  style=Normal | 2. Tình huống kiểm thử tiêu biểu
+[1058] P  style=Bảng | Bảng 3-10 Tình huống kiểm thử tiêu biểu
+[1059] TBL
+[1061] P  style=Normal | 3. Kết quả kiểm thử ban đầu
+[1062] P  style=Bảng | Bảng 3-11 Kết quả kiểm thử ban đầu
+[1063] TBL
+[1064] P  style=Normal | Ghi chú:
+[1065] P  style=Normal | Độ chính xác (%) = (Số câu trả lời Đúng / Số câu hỏi) × 100%.
+       -> Numbering: numId=86, ilvl=0
+[1066] P  style=Normal | Phân loại câu hỏi dựa trên giả định từ nội dung luận án và các tệp dữ liệu liên quan (CTDT ngành CNT
+       -> Numbering: numId=86, ilvl=0
+[1067] P  style=Normal | Câu trả lời “Gần đúng” là những câu trả lời cung cấp thông tin liên quan nhưng thiếu chi tiết hoặc k
+       -> Numbering: numId=86, ilvl=0
+[1068] P  style=Normal | 4. Nhận xét
+[1069] P  style=Normal | Hệ thống hoạt động ổn định, phản hồi thân thiện và đúng mục tiêu hướng nghiệp. Việc tích hợp pipelin
+[1070] P  style=Heading 3 | 3.2.7 Chỉ số đánh giá
+[1071] P  style=Bảng | Bảng 3-12 Chỉ số đánh giá
+[1072] TBL
+[1074] P  style=Heading 3 | 3.2.8 Phân tích kết quả
+[1075] P  style=Normal | Dựa trên quá trình kiểm thử và các chỉ số đo đánh giá, có thể đưa ra một số phân tích cụ thể về hiệu
+[1076] P  style=Normal | 1. Hiệu quả truy vấn theo nhóm nội dung
+[1077] P  style=Normal | Hệ thống cho thấy khả năng phản hồi chính xác rất cao với các câu hỏi mang tính thông tin định hướng
+[1078] P  style=Normal | Ngành nghề phù hợp
+       -> Numbering: numId=87, ilvl=0
+[1079] P  style=Normal | Lộ trình kỹ năng
+       -> Numbering: numId=87, ilvl=0
+[1080] P  style=Normal | Mức lương và thị trường việc làm
+       -> Numbering: numId=87, ilvl=0
+[1081] P  style=Normal | Ở những nhóm câu hỏi này, độ chính xác trung bình đạt trên 90%, chứng tỏ hệ thống đã truy xuất và kế
+[1082] P  style=Normal | 2. Điểm mạnh nổi bật
+[1083] P  style=Normal | Khả năng hiểu ngữ cảnh nhiều lượt: nhờ cơ chế lưu session (session_key), hệ thống có thể ghi nhớ lịc
+       -> Numbering: numId=88, ilvl=0
+[1084] P  style=Normal | Tính tự nhiên trong phản hồi: nhờ sử dụng GPT-4, phản hồi có phong cách giao tiếp thân thiện, phù hợ
+       -> Numbering: numId=88, ilvl=0
+[1085] P  style=Normal | Thời gian phản hồi nhanh và ổn định, trung bình chỉ 1–4 giây, đảm bảo trải nghiệm thời gian thực.
+       -> Numbering: numId=88, ilvl=0
+[1086] P  style=Normal | 3. Giới hạn còn tồn tại
+[1087] P  style=Bảng | Bảng 3-13 Giới hạn còn tồn tại
+[1088] TBL
+[1091] P  style=Normal | 4. Tổng kết
+[1092] P  style=Normal | Hệ thống đã chứng minh hiệu quả tốt trong việc tư vấn hướng nghiệp tự động, với:
+[1093] P  style=Normal | Độ chính xác trung bình: 92%
+       -> Numbering: numId=89, ilvl=0
+[1094] P  style=Normal | Ngôn ngữ rõ ràng, dễ hiểu: 95%
+       -> Numbering: numId=89, ilvl=0
+[1095] P  style=Normal | Tính linh hoạt, dễ bảo trì, có thể mở rộng: 100%
+       -> Numbering: numId=89, ilvl=0
+[1096] P  style=Normal | Đây là tiền đề vững chắc để tiếp tục phát triển phiên bản mở rộng với giao diện web, cá nhân hóa sâu
+[1098] P  style=Heading 1 | PHẦN KẾT LUẬN
+[1099] P  style=Normal | Đề tài “XÂY DỰNG HỆ THỐNG TRỢ LÝ ẢO HƯỚNG NGHIỆP CHO SINH VIÊN NGÀNH CNTT ĐẠI HỌC THỦY LỢI DỰA TRÊN 
+[1100] P  style=Normal | Hệ thống được triển khai dưới dạng chatbot trên nền tảng Discord – một môi trường quen thuộc với sin
+[1101] P  style=Normal | Bên cạnh những kết quả đã đạt được, đồ án vẫn còn một số hạn chế như chưa tích hợp hồ sơ cá nhân sin
+[1102] P  style=Normal | Từ những gì đã triển khai, đồ án cho thấy tiềm năng ứng dụng mạnh mẽ của trí tuệ nhân tạo vào lĩnh v
+[1104] P  style=Heading 1 | TÀI LIỆU THAM KHẢO
+[1106] P  style=List Paragraph | OpenAI, “ChatGPT and GPT-4 technical report,” OpenAI Research, [Trực tuyến]. Có tại: https://openai.
+       -> Numbering: numId=90, ilvl=0
+[1107] P  style=List Paragraph | BAAI Research, “bge-m3: Multilingual Embedding Model,” HuggingFace, [Trực tuyến].Có tại: https://hug
+       -> Numbering: numId=90, ilvl=0
+[1108] P  style=List Paragraph | LangChain Team, “LangChain Documentation,” LangChain AI, [Trực tuyến]. Có tại: https://docs.langchai
+       -> Numbering: numId=90, ilvl=0
+[1109] P  style=List Paragraph | ChromaDB, “Chroma: The AI-native vector database,” Chroma Official Docs, [Trực tuyến]. Có tại: https
+       -> Numbering: numId=90, ilvl=0
+[1110] P  style=List Paragraph | Discord API Documentation, “Building Chatbots with discord.py,” Discord Developers, [Trực tuyến]. Có
+       -> Numbering: numId=90, ilvl=0
+[1111] P  style=List Paragraph | Fullstack.edu.vn, “Lộ trình học lập trình cho người mới,” [Trực tuyến]. Có tại: https://fullstack.ed
+       -> Numbering: numId=90, ilvl=0
+[1114] P  style=Heading 1 | PHỤ LỤC
+[1115] P  style=Heading 2 | A. Một số câu hỏi và kết quả phản hồi minh họa
+[1116] P  style=Normal | Bảng dưới đây liệt kê 20 câu hỏi thường gặp của sinh viên ngành Công nghệ Thông tin Trường Đại học T
+[1117] P  style=Bảng | Bảng A. Danh sách câu hỏi và phản hồi minh họa từ hệ thống trợ lý ảo
+[1118] TBL

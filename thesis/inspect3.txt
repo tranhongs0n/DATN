@@ -1,0 +1,98 @@
+0: Hình 3-3	53
+1: Hình 3-4	53
+2: Hình 3-5	53
+3: Hình 3-6	54
+4: Hình 3-7	55
+5: Hình 3-8	55
+6: Hình 3-9	56
+7: Hình 3-10	57
+8: Hình 3-11	58
+9: Hình 3-12	59
+10: Hình 3-13	59
+11: Hình 3-14	59
+12: Hình 3-15	60
+13: Hình 3-16	60
+14: Hình 3-17	60
+15: Hình 3-18	60
+16: Hình 3-19	60
+17: Hình 3-20	61
+18: Hình 3-21	61
+19: Hình 3-22	61
+20: Hình 3-23	61
+21: Hình 3-24	61
+23: MỤC LỤC BẢNG BIỂU
+24: Bảng 1-1 Mô hình LLM phổ biến	14
+25: Bảng 1-2 Thành phần chính trong hệ thống	21
+26: Bảng 2-1 Yêu cầu chức năng	27
+27: Bảng 2-2 Yêu cầu phi chức năng	29
+28: Bảng 2-3 Các chức năng	31
+29: Bảng 2-4 Use Case hệ thống	34
+30: Bảng 2-5 Nhóm dữ liệu chính	36
+31: Bảng 2-6 Cấu trúc dữ liệu lưu trữ trong vector store	40
+32: Bảng 2-7 Các thành phần chính trong hệ thống	41
+33: Bảng 2-8 Mô hình phân lớp kiến trúc	43
+34: Bảng 2-9 Ưu điểm	45
+35: Bảng 2-10 Hạn chế	46
+36: Bảng 3-1 Các thư viện hỗ trợ khác	49
+37: Bảng 3-2 Cấu trúc lưu trữ trong ChromaDB	50
+38: Bảng 3-3 Lý do chọn ChromaDB	50
+39: Bảng 3-4 Hệ điều hành và phần mềm phát triển	51
+40: Bảng 3-5 Nền tảng giao tiếp và thử nghiệm	51
+41: Bảng 3-6 Tài nguyên phần cứng	52
+42: Bảng 3-7 Dịch vụ bên ngoài sử dụng	52
+43: Bảng 3-8 Tóm tắt các tính năng đặc biệt	62
+44: Bảng 3-9 Mục tiêu kiểm thử	62
+45: Bảng 3-10 Tình huống kiểm thử tiêu biểu	62
+46: Bảng 3-11 Kết quả kiểm thử ban đầu	63
+47: Bảng 3-12 Chỉ số đánh giá	63
+48: Bảng 3-13 Giới hạn còn tồn tại	64
+49: Bảng A. Danh sách câu hỏi và phản hồi minh họa từ hệ thống trợ lý ảo	68
+52: DANH MỤC CÁC TỪ VIẾT TẮT VÀ GIẢI THÍCH THUẬT NGỮ
+54: PHẦN MỞ ĐẦU
+55: Lí do chọn đề tài
+56: Trong bối cảnh xã hội ngày càng phát triển, thị trường lao động ngành Công nghệ 
+57: Trong khi đó, sự phát triển mạnh mẽ của trí tuệ nhân tạo (AI), đặc biệt là các m
+58: Vì những lý do trên, em đã chọn thực hiện đề tài:
+59: "Xây dựng hệ thống trợ lý ảo hướng nghiệp cho sinh viên ngành CNTT trường Đại họ
+60: với mong muốn mang lại một giải pháp công nghệ giúp sinh viên tiếp cận thông tin
+61: Mục đích đồ án
+62: Mục tiêu chính của đồ án là xây dựng một hệ thống trợ lý ảo hướng nghiệp thông m
+63: Cụ thể, đồ án hướng đến các mục tiêu sau:
+64: Ứng dụng công nghệ AI hiện đại vào thực tiễn giáo dục: Triển khai mô hình kết hợ
+65: Xây dựng một hệ thống cá nhân hóa theo hồ sơ sinh viên: Hệ thống có khả năng sử 
+66: Tạo cầu nối giữa sinh viên – nhà trường – doanh nghiệp: Hệ thống khai thác dữ li
+67: Nâng cao khả năng tự định hướng học tập và phát triển kỹ năng: Hệ thống sẽ gợi ý
+68: Tăng cường tính tương tác và hỗ trợ liên tục: Thay vì chỉ tư vấn theo đợt hay th
+69: Với những mục tiêu nêu trên, đồ án không chỉ giúp người học có định hướng rõ ràn
+71: Phạm vi đồ án
+72: Hệ thống tập trung triển khai thử nghiệm cho đối tượng là sinh viên ngành Công n
+73: Dữ liệu đầu vào gồm: chương trình đào tạo CNTT 2022, thông tin tuyển dụng từ doa
+74: Hệ thống sử dụng công nghệ:
+75: Truy xuất ngữ nghĩa: SentenceTransformer + FAISS
+76: Sinh nội dung: GPT-based model (OpenAI)
+77: Giao diện tương tác: Chatbot tích hợp trên nền tảng Discord
+78: Đề tài không tập trung phát triển giao diện web phức tạp, mà chú trọng vào xử lý
+79: Đặc tả yêu cầu
+80: 4.1. Yêu cầu chức năng:
+81: Hệ thống có khả năng tiếp nhận thông tin từ người dùng (sinh viên CNTT) dưới dạn
+82: Thực hiện truy xuất thông tin có liên quan từ cơ sở dữ liệu hướng nghiệp (CV côn
+83: Sinh phản hồi hướng nghiệp tự nhiên và chính xác thông qua mô hình ngôn ngữ lớn 
+84: Gợi ý lộ trình phát triển kỹ năng, đề xuất nghề nghiệp phù hợp với hồ sơ sinh vi
+85: Giao tiếp thông qua giao diện chatbot trên nền tảng Discord.
+86: 4.2. Yêu cầu phi chức năng:
+87: Hệ thống phản hồi trong thời gian ngắn (dưới 5 giây).
+88: Dễ sử dụng, thân thiện với người dùng.
+89: Dễ dàng mở rộng cơ sở dữ liệu hướng nghiệp.
+90: Bảo mật thông tin cá nhân người dùng.
+91: Cấu trúc của đồ án tốt nghiệp
+92: Nội dung đồ án được chia thành các chương như sau:
+93: Chương 1: Tổng quan và cơ sở lý thuyết
+Trình bày tổng quan về vấn đề hướng nghiệ
+94: Chương 2: Phân tích và thiết kế hệ thống
+Phân tích yêu cầu người dùng, kiến trúc
+95: Chương 3: Triển khai, kết quả và đánh giá
+Trình bày quy trình hiện thực hệ thống
+96: Kết luận và hướng phát triển
+Tổng kết các kết quả đạt được, những hạn chế còn tồ
+98: PHẦN NỘI DUNG
+99: CHƯƠNG 1: TỔNG QUAN VÀ CƠ SỞ LÝ THUYẾT

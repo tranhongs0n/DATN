@@ -2,7 +2,7 @@
 
 ## 3.1. Thiết lập môi trường phát triển
 
-Dự án được phân chia thành các mô-đun độc lập nhằm tối ưu hóa quá trình quản trị và bảo trì mã nguồn. Cấu trúc thư mục ngăn cách rõ ràng giữa tầng cấu hình, nghiệp vụ cốt lõi và giao diện quản trị.
+Dự án được phân chia thành các phân hệ độc lập nhằm tối ưu hóa quá trình quản trị và bảo trì mã nguồn. Cấu trúc thư mục ngăn cách rõ ràng giữa tầng cấu hình, nghiệp vụ cốt lõi và giao diện quản trị.
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffffff', 'primaryBorderColor': '#000000', 'primaryTextColor': '#000000', 'lineColor': '#000000', 'background': '#ffffff'}}}%%
@@ -16,97 +16,83 @@ graph TD
     B --> H[core]
     B --> I[utils]
     F --> J[api.py]
-    F --> K[static]
+    F --> K[routers]
     G --> L[settings.py]
-    H --> M[chat_service.py]
+    H --> M[auth.py]
     H --> N[vector_db.py]
-    H --> O[indexing.py]
-    H --> P[multimodal.py]
     I --> Q[scraper.py]
-    I --> R[document_loader.py]
 ```
 *Hình 3.1: Sơ đồ cấu trúc thư mục dự án*
 
-Kiến trúc phần mềm sử dụng khối công nghệ lõi bao gồm FastAPI làm máy chủ điều phối luồng mạng, LangChain thiết lập đường ống xử lý RAG và ChromaDB đóng vai trò cơ sở dữ liệu vector. Hệ thống được phát triển theo mô hình nguyên khối phân hệ. Thiết kế phân tách rõ ràng giữa tầng giao diện, tầng logic RAG và tầng kết nối cơ sở dữ liệu giúp mã nguồn dễ dàng mở rộng. Quản trị viên có thể thay thế mô hình ngôn ngữ khác chỉ bằng cách cấu hình lại tệp môi trường mà không cần can thiệp vào logic truy xuất.
+Kiến trúc phần mềm sử dụng khối công nghệ lõi bao gồm FastAPI làm máy chủ điều phối luồng mạng, LangChain thiết lập đường ống xử lý thông tin và cơ sở dữ liệu vector đóng vai trò kho lưu trữ. Việc phát triển theo mô hình nguyên khối phân hệ giúp quản trị viên có thể thay thế mô hình ngôn ngữ khác chỉ bằng cách cấu hình lại tệp môi trường mà không cần can thiệp vào thuật toán truy xuất.
 
-## 3.2. Triển khai mô-đun thu thập dữ liệu
+## 3.2. Triển khai phân hệ quản trị người dùng
 
-Mô-đun thu thập dữ liệu tự động tích hợp các cơ chế cào thông tin từ cổng thông tin điện tử và trích xuất dữ liệu từ các định dạng tệp khác nhau.
+Trong quá trình xây dựng hệ thống, an toàn thông tin và bảo mật phân quyền là yếu tố bắt buộc đối với một hệ thống cấp trường. Đồ án đã phát triển một phân hệ quản trị tài khoản chuyên biệt, độc lập hoàn toàn với luồng tương tác của trợ lý ảo trên ứng dụng nhắn tin.
 
-Lớp `TLUAdmissionScraper` kết nối với API nội bộ của nhà trường để tải danh sách thông báo theo từng bậc đào tạo. Thuật toán phân tích cấu trúc HTML bằng `BeautifulSoup` nhằm loại bỏ mã thừa và tìm kiếm các liên kết tải tệp. Để tối ưu hóa hiệu suất dựa trên giới hạn băng thông mạng cục bộ và tài nguyên CPU, hệ thống được cấu hình xử lý đồng thời tối đa 5 luồng tải bằng `ThreadPoolExecutor`. Cơ chế đánh dấu lịch sử quét lưu trữ mã định danh của bài viết đã xử lý, đảm bảo hệ thống chỉ tải và phân tích dữ liệu thuộc các bài báo hoàn toàn mới ở lần quét tiếp theo.
+### 3.2.1. Cơ chế xác thực và mã hóa
+Hệ thống sử dụng cơ sở dữ liệu nội bộ để lưu trữ thông tin. Mật khẩu người dùng không bao giờ được lưu dưới dạng văn bản thô. Hàm băm mật khẩu áp dụng thư viện chuẩn với cơ chế sinh chuỗi ngẫu nhiên phụ trợ tự động. Quá trình đối chiếu mật khẩu đảm bảo chống lại các cuộc tấn công vét cạn và tấn công bằng bảng băm tính trước.
 
-Hệ thống nhận diện phần mở rộng của từng tệp tải về để gọi trình xử lý tương ứng. Lớp `PyPDFLoader` phân tích tệp PDF, trong khi `Docx2txtLoader` trích xuất nội dung từ tệp DOCX nhằm bảo toàn cấu trúc văn bản hành chính. 
+Hệ thống sử dụng cơ chế xác thực mã thông báo chuẩn JWT không lưu trạng thái thay vì sử dụng phiên truyền thống. Khi cán bộ đăng nhập thành công qua cổng xác thực, hệ thống khởi tạo một chuỗi mã chứa định danh người dùng và thời gian hết hạn là 24 giờ. Mọi yêu cầu thao tác dữ liệu từ bảng điều khiển web lên máy chủ đều phải đính kèm chuỗi mã này. Lớp trung gian chịu trách nhiệm giải mã và xác thực quyền hạn trước khi cho phép hàm logic thực thi.
 
-Đối với dữ liệu ảnh chứa bảng biểu phức tạp, việc bóc tách thông thường sẽ làm vỡ định dạng hàng cột. Giải pháp kỹ thuật được áp dụng là một đường ống ba bước: sử dụng thư viện OpenCV phát hiện viền bảng, cắt vùng ảnh chứa văn bản, sau đó chuyển giao cho mô hình nhận dạng quang học OCR. Hệ thống tiếp tục sử dụng thuật toán dò tìm tọa độ pixel của các ô chữ, sắp xếp theo trục tọa độ không gian và ánh xạ thành chuỗi ký tự phân cách bằng dấu gạch đứng của cú pháp Markdown. Dữ liệu đầu ra sau đó được hệ thống nạp lại vào luồng xử lý tĩnh nội bộ.
+### 3.2.2. Quản lý vòng đời tài khoản và lưu vết
+Phân hệ cung cấp bộ giao thức kết nối hoàn chỉnh để quản trị viên cấp cao có thể khởi tạo, cập nhật, xóa và truy xuất danh sách nhân sự. Hệ thống tích hợp logic ràng buộc chặn quản trị viên tự xóa chính tài khoản đang đăng nhập của mình để tránh gây lỗi mất quyền kiểm soát toàn cục.
 
-## 3.3. Triển khai mô-đun xử lý và lưu trữ vector
+Mọi hành động nhạy cảm như thêm mới tài khoản, đổi mật khẩu hay xóa quyền truy cập đều được hệ thống tự động lưu vết qua công cụ ghi nhật ký tích hợp sẵn. Điều này giúp minh bạch hóa trách nhiệm và dễ dàng truy vết khi có sự cố thay đổi dữ liệu.
 
-Hệ thống mã hóa kế thừa giao thức chuẩn của LangChain, kết hợp cơ chế phân lô động. Thuật toán Token-Bucket được cấu hình ở tầng luồng mạng để giới hạn tốc độ truy xuất, tuân thủ chặt chẽ định mức truy vấn đám mây bằng cách theo dõi số lượng "token" còn lại trước mỗi đợt gọi API.
+## 3.3. Triển khai phân hệ tự động thu thập dữ liệu
 
-```python
-# Đoạn mã giả thuật toán Token-Bucket giới hạn luồng mạng
-class TokenBucket:
-    def __init__(self, rate, capacity):
-        self.tokens = capacity
-        self.capacity = capacity
-        self.rate = rate # Tốc độ hồi phục token/giây
-        self.last_update = time.time()
-        
-    def consume(self, tokens_needed):
-        now = time.time()
-        self.tokens = min(self.capacity, self.tokens + (now - self.last_update) * self.rate)
-        self.last_update = now
-        if self.tokens >= tokens_needed:
-            self.tokens -= tokens_needed
-            return True
-        return False
-```
+Một trong những thách thức lớn nhất của hệ thống hỏi đáp là việc duy trì sự cập nhật của cơ sở tri thức. Thay vì ép buộc cán bộ tuyển sinh phải tự tải về từng văn bản thông báo trên trang web của trường rồi tải ngược lên hệ thống, đồ án đã phát triển phân hệ cào dữ liệu tự động đóng vai trò như một công cụ tự động hóa quy trình nghiệp vụ.
 
-Hệ thống tự động chuyển đổi thuộc tính nhiệm vụ tương ứng: thiết lập tham số `retrieval_document` để lập chỉ mục và `retrieval_query` cho câu hỏi. Các ngoại lệ dữ liệu như mảnh văn bản rỗng được xử lý trước để ngăn chặn lỗi đồng loạt.
+### 3.3.1. Kiến trúc luồng thu thập dữ liệu
+Công cụ thu thập được lập trình để quét mã nguồn của cổng thông tin tuyển sinh. Nó bóc tách các bài viết thông báo mới nhất theo từng danh mục định sẵn. Hệ thống duy trì tệp trạng thái để ghi nhớ mốc thời gian cào dữ liệu gần nhất. Khi kích hoạt thông qua cổng lệnh kiểm tra, hệ thống tiến hành đối chiếu và chỉ tải về những thông báo chưa từng xuất hiện.
 
-Cơ sở dữ liệu ChromaDB cục bộ sử dụng lớp `RecursiveCharacterTextSplitter` phân rã văn bản theo ngưỡng 1000 ký tự với độ chồng lấn 200 ký tự. Để giải quyết xung đột khi cập nhật quy định mới, cơ chế ghi đè thông minh tra cứu siêu dữ liệu của tài liệu đích, chủ động xóa bỏ các vector thuộc phiên bản quy chế cũ trước khi nhúng dữ liệu mới vào kho. Lớp `IndexingService` đóng vai trò quản lý chu trình này, đồng bộ trạng thái giữa thư mục lưu trữ tĩnh và kho vector.
+### 3.3.2. Xử lý đa luồng và tạo tài liệu động
+Để tăng tốc độ quét hàng trăm bài viết, hệ thống sử dụng cơ chế xử lý đa luồng. Việc chạy song song giúp tải các tệp đính kèm như PDF hoặc DOCX cùng một lúc thông qua thư viện kết nối mạng.
 
-## 3.4. Triển khai mô-đun hỏi đáp RAG
+Điểm đột phá kỹ thuật nằm ở cơ chế chuyển đổi nội dung web sang định dạng cấu trúc. Nếu bài viết tuyển sinh không có tệp đính kèm mà chỉ có văn bản trực tiếp trên web, hệ thống sẽ dùng công cụ bóc tách để trích xuất văn bản thuần túy và bỏ qua mã rác. Sau đó, hệ thống dùng thư viện xử lý tài liệu để tự động tạo ra một tệp Word mới với tiêu đề chính là tên bài viết, chứa toàn bộ nội dung của bài viết, rồi đẩy tệp này vào luồng tiền xử lý của cơ sở dữ liệu vector. Nhờ đó, máy chủ có thể đọc hiểu cả các thông báo văn bản ngắn trên web.
 
-Mô-đun hỏi đáp RAG vận hành toàn trình từ khâu tiếp nhận câu hỏi đến sinh phản hồi trực tiếp. 
+## 3.4. Triển khai phân hệ quản trị kho tri thức và dữ liệu vector
 
-Tại lớp giao tiếp lõi, API Google Gemini hoạt động với cấu hình nhiệt độ bằng không nhằm cung cấp kết quả tất định, loại trừ hiện tượng sinh chuỗi thông tin ảo. Quá trình kết xuất nội dung kết hợp thuật toán thử lại tự động khi nhận mã lỗi quá tải băng thông 429 từ máy chủ cung cấp dịch vụ, đảm bảo tính ổn định trong giờ cao điểm.
+Luồng nghiệp vụ xử lý dữ liệu của đề tài không dừng lại ở việc thiết lập cơ sở dữ liệu vector, mà bao hàm toàn bộ quy trình kiểm soát trạng thái tệp gốc thông qua mô đun quản lý dữ liệu.
 
-Hàm phản hồi điều phối logic hệ thống trả lời Zalo. Mọi tin nhắn từ người dùng đều được đưa thẳng vào hệ thống để truy xuất văn cảnh và sinh phản hồi tự nhiên qua mô hình ngôn ngữ lớn (LLM). Đối với câu hỏi nghiệp vụ, hệ thống tra cứu ChromaDB để trích xuất giới hạn 3 đoạn tài liệu có độ tương quan cao nhất.
+### 3.4.1. Cơ chế xóa và ghi đè thông minh
+Trong bối cảnh văn bản hành chính, một quy chế của năm nay có thể sẽ thay thế hoàn toàn bản quy chế năm trước. Nếu cả hai văn bản cùng tồn tại trong kho lưu trữ, mô hình trí tuệ nhân tạo sẽ gặp tình trạng xung đột tri thức. Giao thức xóa tệp giải quyết triệt để bài toán này thông qua luồng xóa đồng bộ. Quy trình bắt đầu bằng việc nhận lệnh xóa từ giao diện web, tiến hành xóa tệp vật lý tương ứng trên máy chủ, và kết nối trực tiếp với cơ sở dữ liệu vector để thanh lọc toàn bộ các điểm dữ liệu thuộc về tệp đó. Cơ chế xóa triệt để này đảm bảo dữ liệu máy học và dữ liệu vật lý luôn đồng nhất.
 
-Bộ nhớ hội thoại `ConversationBufferMemory` của LangChain tích hợp lịch sử truy vấn, duy trì mạch tư vấn xuyên suốt. Bằng cách nối khung chỉ thị, nội dung truy xuất, lịch sử bộ nhớ và câu hỏi thực tại, ứng dụng gửi tệp ngữ cảnh hoàn chỉnh đến mô hình ngôn ngữ và trả chuỗi phản hồi trực tiếp về thiết bị đầu cuối.
+### 3.4.2. Thống kê và xử lý tệp rác
+Cổng thống kê cung cấp cái nhìn toàn cảnh về bộ não nhân tạo, bao gồm tổng số lượng tài liệu vật lý đã tải lên và tổng số mảnh văn bản đã được phân rã thành công. Hệ thống hỗ trợ đường dẫn chuyên dò tìm các tệp không nằm trong danh sách định dạng chuẩn, giúp dọn dẹp không gian lưu trữ rác và các quá trình nhận dạng văn bản thất bại.
 
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffffff', 'primaryBorderColor': '#000000', 'primaryTextColor': '#000000', 'lineColor': '#000000', 'background': '#ffffff'}}}%%
-sequenceDiagram
-    actor User as Người dùng
-    participant Zalo as Zalo Bot
-    participant API as FastAPI Server
-    participant DB as ChromaDB
-    participant Mem as Bộ nhớ
-    participant LLM as Google Gemini
+## 3.5. Triển khai cơ chế tối ưu hóa hệ thống
 
-    User->>Zalo: Gửi tin nhắn
-    Zalo->>API: Webhook sự kiện
-    API->>Mem: Truy xuất lịch sử hội thoại
-    API->>DB: Truy vấn Vector (k=3)
-    DB-->>API: Trả về Top 3 tài liệu
-    API->>API: Tổng hợp Prompt
-    API->>LLM: Gửi Prompt
-    LLM-->>API: Phản hồi luồng (Server-Sent Events)
-    API-->>Zalo: Trả tin nhắn
-    Zalo-->>User: Hiển thị kết quả
-```
-*Hình 3.2: Biểu đồ tuần tự luồng hỏi đáp RAG*
+Để đảm bảo khả năng chịu tải và tốc độ phản hồi trong mùa cao điểm tuyển sinh, hệ thống tích hợp ba cơ chế tối ưu hóa cấp độ kiến trúc.
 
-## 3.5. Triển khai API Backend (FastAPI)
+### 3.5.1. Cơ chế bộ nhớ đệm ngữ nghĩa
+Đây là một điểm sáng nhằm giảm thiểu chi phí dịch vụ và triệt tiêu độ trễ mạng. Thay vì gọi dịch vụ trí tuệ nhân tạo liên tục cho cùng một câu hỏi, hệ thống xây dựng một bảng nhớ đệm ngữ nghĩa cục bộ. 
 
-FastAPI đóng vai trò cầu nối điều khiển luồng giao tiếp mạng thông qua thiết kế RESTful.
+Khi người dùng hỏi một câu, câu hỏi được nhúng thành vector. Nếu sau đó có người khác hỏi một câu tương tự về mặt ngữ nghĩa, hệ thống không tốn tài nguyên truy xuất lại toàn bộ kho tri thức. Mã nguồn trích xuất các mảng vector từ bảng nhớ đệm, chuyển thành ma trận và sử dụng phép toán đại số tuyến tính để đo lường độ tương đồng. Nếu điểm số đạt ngưỡng khắt khe, hệ thống trả thẳng kết quả cũ từ máy chủ cục bộ với độ trễ siêu thấp. Vòng đời của bộ nhớ đệm được thiết lập là 30 ngày.
 
-Tuyến dịch vụ cốt lõi truyền luồng dữ liệu định dạng kết nối dòng sự kiện liên tục, mang lại hiệu ứng đối thoại thời gian thực. Các tuyến API quản trị bao gồm trích xuất thông số vận hành, liệt kê tệp tĩnh, và xử lý nhúng dữ liệu thủ công. Hệ thống hỗ trợ xử lý luồng Webhook để đồng bộ với ứng dụng Zalo, kết hợp với Middleware CORS để chấp nhận kết nối đa miền. Bảng điều khiển HTML và tập lệnh trình duyệt được phục vụ thông qua công cụ phát tệp tĩnh tích hợp sẵn.
+### 3.5.2. Kiến trúc đa phương thức và cơ chế chống quá tải
+Khi ứng dụng nhận hàng ngàn tin nhắn, việc gọi dịch vụ có thể bị từ chối do chạm mốc giới hạn tài nguyên. Lớp động cơ đa phương thức được bọc bởi thuật toán bẫy lỗi tự động nhận diện tình trạng từ chối dịch vụ. Khi bị từ chối, luồng xử lý không làm treo máy chủ mà sẽ đi vào trạng thái chờ và thực hiện thử lại tối đa 3 lần. Nhờ đó, hệ thống giữ được tính kiên cường cực cao. Mô đun này sử dụng công cụ kết nối mới nhất để tải tệp vật lý trực tiếp lên đám mây, theo dõi vòng đời tệp từ khi xử lý đến khi hoàn tất, và tự động dọn dẹp không gian sau khi thao tác xong.
 
-## 3.6. Triển khai giao diện Web Admin
+### 3.5.3. Cơ chế dự phòng thu thập tin nhắn
+Ứng dụng tương tác thường hoạt động qua cơ chế đẩy thông báo trực tiếp. Khi hệ thống bảo trì hoặc chạy trong môi trường không có địa chỉ mạng tĩnh, cơ chế này sẽ vô tác dụng. Đồ án xử lý vấn đề này bằng việc cung cấp một tiến trình nền thực hiện cơ chế chờ kết nối dài hạn. Hàm cập nhật liên tục giữ kết nối mạng đến máy chủ trung gian, kiểm soát con trỏ để đảm bảo không bỏ sót bất kỳ tin nhắn nào của thí sinh, tạo thành lưới an toàn hoàn hảo.
 
-Bảng điều khiển Web Admin cung cấp nền tảng quản trị trực quan. 
+## 3.6. Triển khai giao diện lập trình ứng dụng
 
-Danh sách tài liệu quản lý tập trung phản ánh trạng thái từng tệp bằng mã màu tiêu chuẩn. Giao diện hỗ trợ quản trị viên tải tệp bằng thao tác kéo thả và giám sát quá trình mã hóa vector. Các khối lệnh chức năng hỗ trợ quét dữ liệu tự động từ nguồn bên ngoài, gọi mô hình xử lý hình ảnh, và tái lập chỉ mục cục bộ. Hệ thống bảng tóm tắt số liệu hoạt động hỗ trợ đánh giá tổng quan dung lượng tri thức RAG và phân loại tình trạng hệ thống.
+Hệ thống máy chủ đóng vai trò cầu nối điều khiển luồng giao tiếp mạng thông qua thiết kế chuẩn hóa. Tuyến dịch vụ cốt lõi truyền luồng dữ liệu theo định dạng dòng sự kiện liên tục, mang lại hiệu ứng đối thoại thời gian thực giúp giảm độ trễ hiển thị xuống mức thấp nhất. 
+
+Hệ thống hỗ trợ xử lý luồng nhận thông báo để đồng bộ với hạ tầng máy chủ của ứng dụng nhắn tin, kết hợp với cơ chế chia sẻ tài nguyên chéo nguồn gốc để chấp nhận kết nối đa miền từ bảng điều khiển web. Bảng điều khiển và tập lệnh trình duyệt được phục vụ thông qua công cụ phát tệp tĩnh tích hợp sẵn.
+
+## 3.7. Triển khai giao diện quản trị và ứng dụng người dùng
+
+Người dùng tương tác thông qua nền tảng nhắn tin Zalo. Việc triển khai trực tiếp trên ứng dụng nhắn tin nội bộ loại bỏ rào cản tải phần mềm, giúp quá trình tra cứu thông tin diễn ra mượt mà từ thiết bị di động cá nhân.
+
+[ CHÈN ẢNH ZALO BOT HOẠT ĐỘNG THỰC TẾ VÀO ĐÂY ]
+
+*Hình 3.2: Hệ thống trợ lý ảo đang tư vấn trực tiếp trên nền tảng ứng dụng tin nhắn*
+
+Bảng điều khiển web cung cấp nền tảng quản trị trực quan. Danh sách tài liệu quản lý tập trung phản ánh trạng thái từng tệp bằng mã màu tiêu chuẩn. Giao diện hỗ trợ quản trị viên tải tệp bằng thao tác kéo thả và giám sát quá trình mã hóa vector, kích hoạt bộ cào dữ liệu tự động, và thống kê chỉ số máy chủ.
+
+[ CHÈN ẢNH WEB ADMIN DASHBOARD HOẠT ĐỘNG THỰC TẾ VÀO ĐÂY ]
+
+*Hình 3.3: Giao diện quản trị tri thức trên bảng điều khiển web*

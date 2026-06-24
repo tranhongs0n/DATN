@@ -1,0 +1,61 @@
+0: TÓM TẮT ĐỀ TÀI
+1: 1. Bối cảnh của đề tài
+2: a. Thực trạng hướng nghiệp cho sinh viên đại học
+3: Hướng nghiệp là một yếu tố quan trọng giúp sinh viên định hình con đường sự nghiệp sau khi tốt nghiệp. Tuy nhiên, tại các trường đại học, hoạt động hướng nghiệp hiện nay thường gặp các vấn đề sau:
+4: Thiếu thông tin toàn diện: Sinh viên khó tiếp cận thông tin chi tiết về các ngành nghề, yêu cầu kỹ năng, cơ hội việc làm, hoặc xu hướng thị trường lao động do dữ liệu phân tán và không được cập nhật thường xuyên.
+5: Hạn chế trong tư vấn cá nhân hóa: Các buổi tư vấn hướng nghiệp thường mang tính đại trà, không đáp ứng được nhu cầu riêng của từng sinh viên (ví dụ: dựa trên ngành học, sở thích, hoặc kỹ năng cá nhân).
+6: Thiếu hỗ trợ liên tục: Sinh viên chỉ nhận được tư vấn trong các sự kiện cụ thể (ngày hội việc làm, hội thảo), trong khi họ cần hướng dẫn thường xuyên để lập kế hoạch dài hạn.
+7: Khó khăn trong tự đánh giá: Nhiều sinh viên không biết cách kết nối điểm mạnh, điểm yếu của bản thân với các lựa chọn nghề nghiệp phù hợp.
+8: b. Sự phát triển của công nghệ AI
+9: Công nghệ Retrieval-Augmented Generation (RAG), với khả năng truy xuất thông tin từ nguồn dữ liệu đáng tin cậy và sinh nội dung tự nhiên, đang được ứng dụng trong các hệ thống tư vấn thông minh. Trong lĩnh vực hướng nghiệp, RAG có thể kết hợp dữ liệu từ trường đại học (ngành học, kỹ năng đào tạo) và thông tin thị trường lao động để cung cấp gợi ý chính xác, cá nhân hóa. Điều này giúp sinh viên tiếp cận hướng nghiệp một cách hiệu quả và khoa học hơn.
+10: c. Nhu cầu thực tế tại Việt Nam
+11: Tại Việt Nam, tỷ lệ sinh viên ra trường thất nghiệp hoặc làm việc không đúng ngành học vẫn ở mức cao, một phần do thiếu định hướng nghề nghiệp từ sớm. Các trường đại học ngày càng nhận thức được tầm quan trọng của hướng nghiệp, nhưng nguồn lực tư vấn còn hạn chế. Một hệ thống trợ lý ảo dựa trên RAG có thể đáp ứng nhu cầu này, hỗ trợ sinh viên 24/7 và giúp nhà trường nâng cao chất lượng đào tạo gắn với thực tiễn.
+13: CÁC MỤC TIÊU CHÍNH
+14: Phát triển một hệ thống trợ lý ảo hướng nghiệp cho sinh viên dựa trên RAG nhằm:
+15: Cung cấp thông tin chính xác, cập nhật về các ngành nghề, yêu cầu kỹ năng, và cơ hội việc làm dựa trên dữ liệu nội bộ trường và thị trường lao động.
+16: Hỗ trợ sinh viên 24/7 trong việc khám phá lựa chọn nghề nghiệp, lập kế hoạch phát triển kỹ năng và tìm kiếm cơ hội thực tập/việc làm.
+17: Cá nhân hóa gợi ý hướng nghiệp dựa trên hồ sơ học tập, sở thích, và mục tiêu cá nhân của sinh viên.
+18: Tăng cường khả năng tự định hướng nghề nghiệp và kết nối sinh viên với các nguồn lực hỗ trợ (cựu sinh viên, doanh nghiệp).
+23: NỘI DUNG CHÍNH
+25: a. Thu thập và xử lý dữ liệu
+26: Nguồn dữ liệu:
+27: Thông tin ngành học của trường (mô tả ngành, kỹ năng đào tạo, triển vọng nghề nghiệp).
+28: Dữ liệu từ cựu sinh viên (ngành nghề sau tốt nghiệp, vị trí công việc, mức lương trung bình).
+29: Báo cáo thị trường lao động (xu hướng ngành nghề, kỹ năng hot, nhu cầu tuyển dụng) từ các nguồn như VietnamWorks, TopCV, hoặc Bộ Lao động.
+30: Hồ sơ sinh viên (ngành học, điểm số, kỹ năng, sở thích cá nhân).
+31: Xử lý dữ liệu:
+32: Chuẩn hóa thông tin thành định dạng có cấu trúc (JSON, CSV) để dễ truy xuất.
+33: Sử dụng kỹ thuật nhúng (embedding) để biểu diễn dữ liệu nghề nghiệp và truy vấn dưới dạng vector.
+34: b. Xây dựng hệ thống RAG
+35: Thành phần Retrieval (Truy xuất):
+36: Sử dụng mô hình nhúng (như BERT, Sentence-Transformers) để chuyển đổi câu hỏi của sinh viên và dữ liệu hướng nghiệp thành vector.
+37: Triển khai công cụ tìm kiếm nhanh (như FAISS) để truy xuất thông tin liên quan từ cơ sở dữ liệu.
+38: Thành phần Generation (Sinh nội dung):
+39: Sử dụng mô hình ngôn ngữ lớn (LLM) như LLaMA hoặc GPT, được tinh chỉnh để sinh ra câu trả lời tự nhiên, dễ hiểu và phù hợp với ngữ cảnh hướng nghiệp.
+40: Ví dụ: Khi sinh viên hỏi "Ngành CNTT làm gì sau khi ra trường?", hệ thống trả lời: "Ngành CNTT có thể làm lập trình viên, kỹ sư dữ liệu, hoặc chuyên viên an ninh mạng. Hiện nay, lập trình viên có mức lương trung bình 15-25 triệu/tháng, yêu cầu kỹ năng lập trình Python hoặc Java."
+41: c. Tích hợp tính năng cá nhân hóa
+42: Thu thập thông tin từ sinh viên (qua câu hỏi hoặc khảo sát ngắn: ngành học, sở thích, kỹ năng hiện có, mục tiêu nghề nghiệp).
+43: Dựa trên dữ liệu này, hệ thống:
+44: Đánh giá sự phù hợp (ví dụ: "Với sở thích sáng tạo và ngành Marketing, bạn có thể thử sức với Digital Marketing").
+45: Gợi ý lộ trình phát triển (ví dụ: "Để làm Data Analyst, bạn nên học thêm Python và tham gia khóa học về phân tích dữ liệu").
+46: Kết nối với cơ hội (ví dụ: "Có 3 công ty đang tuyển thực tập sinh ngành X, bạn muốn xem chi tiết không?").
+47: d. Phát triển giao diện và triển khai
+48: Giao diện:
+49: Chatbot tích hợp trên website trường, ứng dụng di động hoặc nền tảng nhắn tin như Zalo.
+50: Hỗ trợ nhập liệu bằng văn bản hoặc giọng nói, hiển thị lộ trình nghề nghiệp dưới dạng sơ đồ hoặc danh sách.
+51: Triển khai:
+52: Sử dụng framework như Flask/Django cho backend.
+53: Kết nối với dữ liệu từ trung tâm việc làm của trường hoặc các trang tuyển dụng qua API.
+54: e. Kiểm thử và cải tiến
+55: Kiểm tra độ chính xác của gợi ý nghề nghiệp bằng cách sử dụng tập câu hỏi mẫu từ sinh viên.
+56: Thu thập phản hồi (đánh giá mức độ hữu ích, sự phù hợp) để tinh chỉnh mô hình và cải thiện chất lượng tư vấn.
+59: KẾT QUẢ DỰ KIẾN
+60: Một trợ lý ảo hướng nghiệp hoạt động 24/7, có khả năng:
+61: Trả lời thắc mắc về nghề nghiệp (ví dụ: "Ngành Kế toán có triển vọng không?", "Làm sao để trở thành kỹ sư AI?").
+62: Đưa ra gợi ý ngành nghề phù hợp (ví dụ: "Dựa trên ngành CNTT và sở thích lập trình, bạn phù hợp với vai trò Full-stack Developer").
+63: Đề xuất lộ trình phát triển kỹ năng (ví dụ: "Học thêm khóa UX/UI Design trong 3 tháng để tăng cơ hội làm Product Designer").
+64: Kết nối với cơ hội thực tập/việc làm (ví dụ: "Công ty X đang tuyển vị trí Y, bạn có muốn ứng tuyển?").
+70: TIẾN ĐỘ THỰC HIỆN
+77: GÁY BÌA ĐỒ ÁN TỐT NGHIỆP, KHÓA LUẬN TỐT NGHIỆP
+79: LỜI CAM ĐOAN
+80: Em xin cam đoan đây là Đồ án tốt nghiệp của em. Các kết quả, nội dung trong Đồ án tốt nghiệp này là trung thực, không sao chép từ bất kỳ nguồn nào vào dưới bất kì hình thức nào. Việc tham khảo tài liệu trong bài được được ghi rõ trong phần tài liệu tham khảo theo quy định của nhà trường.

@@ -1,0 +1,12 @@
+1: NGƯỜI HƯỚNG DẪN: TS. Nguyễn Văn Nam
+7: HÀ NỘI, NĂM 2025
+10: Họ tên sinh viên: Hoàng Thái Duy		Hệ đào tạo: Đại học chính quy
+11: Lớp: 61TH2	 					Ngành: Công nghệ thông tin
+12: Khoa: Công nghệ thông tin
+13: 1- TÊN ĐỀ TÀI:
+14: XÂY DỰNG HỆ THỐNG TRỢ LÝ ẢO HƯỚNG NGHIỆP CHO SINH VIÊN NGÀNH CNTT ĐẠI HỌC THỦY LỢI DỰA TRÊN RAG 
+15: 2- CÁC TÀI LIỆU
+16: OpenAI, “ChatGPT and GPT-4 technical report,” OpenAI Research, [Trực tuyến]. Có tại: https://openai.com/gpt-4. 
+17: BAAI Research, “bge-m3: Multilingual Embedding Model,” HuggingFace, [Trực tuyến].Có tại: https://huggingface.co/BAAI/bge-m3.https://viblo.asia/p/phan-tich-thiet-ke-he-thong-thong-tin-su-dung-bieu-do-uml-phan-1-PjxMe6yNG4YL
+18: LangChain Team, “LangChain Documentation,” LangChain AI, [Trực tuyến]. Có tại: https://docs.langchain.com.
+19: ChromaDB, “Chroma: The AI-native vector database,” Chroma Official Docs, [Trực tuyến]. Có tại: https://www.trychroma.com

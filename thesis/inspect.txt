@@ -1,0 +1,128 @@
+0: TRƯỜNG ĐẠI HỌC THỦY LỢI
+3: HỌ VÀ TÊN: HOÀNG THÁI DUY
+6: XÂY DỰNG HỆ THỐNG TRỢ LÝ ẢO HƯỚNG NGHIỆP CHO SINH VIÊN NGÀNH CNTT ĐẠI HỌC THỦY L
+8: ĐỒ ÁN TỐT NGHIỆP/khóa luận tốt nghiệp
+15: HÀ NỘI, NĂM 2025
+16: TRƯỜNG ĐẠI HỌC THỦY LỢI
+19: HOÀNG THÁI DUY
+22: XÂY DỰNG HỆ THỐNG TRỢ LÝ ẢO HƯỚNG NGHIỆP 
+23: CHO SINH VIÊN NGÀNH CNTT ĐẠI HỌC THỦY LỢI 
+24: DỰA TRÊN RAG
+29: 			     Mã số:            7480201
+31: NGƯỜI HƯỚNG DẪN: TS. Nguyễn Văn Nam
+37: HÀ NỘI, NĂM 2025
+40: Họ tên sinh viên: Hoàng Thái Duy		Hệ đào tạo: Đại học chính quy
+41: Lớp: 61TH2	 					Ngành: Công nghệ thông tin
+42: Khoa: Công nghệ thông tin
+43: 1- TÊN ĐỀ TÀI:
+44: XÂY DỰNG HỆ THỐNG TRỢ LÝ ẢO HƯỚNG NGHIỆP CHO SINH VIÊN NGÀNH CNTT ĐẠI HỌC THỦY L
+45: 2- CÁC TÀI LIỆU
+46: OpenAI, “ChatGPT and GPT-4 technical report,” OpenAI Research, [Trực tuyến]. Có 
+47: BAAI Research, “bge-m3: Multilingual Embedding Model,” HuggingFace, [Trực tuyến]
+48: LangChain Team, “LangChain Documentation,” LangChain AI, [Trực tuyến]. Có tại: h
+49: ChromaDB, “Chroma: The AI-native vector database,” Chroma Official Docs, [Trực t
+50: Discord API Documentation, “Building Chatbots with discord.py,” Discord Develope
+51: Fullstack.edu.vn, “Lộ trình học lập trình cho người mới,” [Trực tuyến]. Có tại: 
+56: 3 - NỘI DUNG CÁC PHẦN THUYẾT MINH VÀ TÍNH TOÁN:
+58: 4. GIÁO VIÊN HƯỚNG DẪN TỪNG PHẦN
+60: 5. NGÀY GIAO NHIỆM VỤ ĐỒ ÁN TỐT NGHIỆP
+61:  Ngày ............  tháng .........  năm 2025
+65: 							                         TS. Nguyễn Văn Nam
+67: Nhiệm vụ Đồ án tốt nghiệp đã được Hội đồng thi tốt nghiệp của Khoa thông qua
+68:                                            Ngày. . . . .tháng. . . . .năm 2025	 
+69: 								         (Ký và ghi rõ Họ tên)
+74: Sinh viên đã hoàn thành và nộp bản Đồ án tốt nghiệp cho Hội đồng thi ngày...  th
+75: 						                   Sinh viên làm Đồ án tốt nghiệp
+76: 							                   (Ký và ghi rõ Họ tên)
+80: TÊN ĐỀ TÀI: Xây dựng hệ thống trợ lý ảo hướng nghiệp cho sinh viên ngành CNTT Đạ
+81: Sinh viên thực hiện:	   Hoàng Thái Duy
+82: Lớp:			   61TH2
+83: Mã sinh viên: 1951060657
+84: Số điện thoại: 0339882230
+85: Email: 1951060657@e.tlu.edu.vn
+86: Giáo viên hướng dẫn: TS. Nguyễn Văn Nam
+87: Thời gian thực hiện: … tuần:   từ ngày: 31/03/2025  đến ngày: 30/06/2025
+89: TÓM TẮT ĐỀ TÀI
+90: 1. Bối cảnh của đề tài
+91: a. Thực trạng hướng nghiệp cho sinh viên đại học
+92: Hướng nghiệp là một yếu tố quan trọng giúp sinh viên định hình con đường sự nghi
+93: Thiếu thông tin toàn diện: Sinh viên khó tiếp cận thông tin chi tiết về các ngàn
+94: Hạn chế trong tư vấn cá nhân hóa: Các buổi tư vấn hướng nghiệp thường mang tính 
+95: Thiếu hỗ trợ liên tục: Sinh viên chỉ nhận được tư vấn trong các sự kiện cụ thể (
+96: Khó khăn trong tự đánh giá: Nhiều sinh viên không biết cách kết nối điểm mạnh, đ
+97: b. Sự phát triển của công nghệ AI
+98: Công nghệ Retrieval-Augmented Generation (RAG), với khả năng truy xuất thông tin
+99: c. Nhu cầu thực tế tại Việt Nam
+100: Tại Việt Nam, tỷ lệ sinh viên ra trường thất nghiệp hoặc làm việc không đúng ngà
+102: CÁC MỤC TIÊU CHÍNH
+103: Phát triển một hệ thống trợ lý ảo hướng nghiệp cho sinh viên dựa trên RAG nhằm:
+104: Cung cấp thông tin chính xác, cập nhật về các ngành nghề, yêu cầu kỹ năng, và cơ
+105: Hỗ trợ sinh viên 24/7 trong việc khám phá lựa chọn nghề nghiệp, lập kế hoạch phá
+106: Cá nhân hóa gợi ý hướng nghiệp dựa trên hồ sơ học tập, sở thích, và mục tiêu cá 
+107: Tăng cường khả năng tự định hướng nghề nghiệp và kết nối sinh viên với các nguồn
+112: NỘI DUNG CHÍNH
+114: a. Thu thập và xử lý dữ liệu
+115: Nguồn dữ liệu:
+116: Thông tin ngành học của trường (mô tả ngành, kỹ năng đào tạo, triển vọng nghề ng
+117: Dữ liệu từ cựu sinh viên (ngành nghề sau tốt nghiệp, vị trí công việc, mức lương
+118: Báo cáo thị trường lao động (xu hướng ngành nghề, kỹ năng hot, nhu cầu tuyển dụn
+119: Hồ sơ sinh viên (ngành học, điểm số, kỹ năng, sở thích cá nhân).
+120: Xử lý dữ liệu:
+121: Chuẩn hóa thông tin thành định dạng có cấu trúc (JSON, CSV) để dễ truy xuất.
+122: Sử dụng kỹ thuật nhúng (embedding) để biểu diễn dữ liệu nghề nghiệp và truy vấn 
+123: b. Xây dựng hệ thống RAG
+124: Thành phần Retrieval (Truy xuất):
+125: Sử dụng mô hình nhúng (như BERT, Sentence-Transformers) để chuyển đổi câu hỏi củ
+126: Triển khai công cụ tìm kiếm nhanh (như FAISS) để truy xuất thông tin liên quan t
+127: Thành phần Generation (Sinh nội dung):
+128: Sử dụng mô hình ngôn ngữ lớn (LLM) như LLaMA hoặc GPT, được tinh chỉnh để sinh r
+129: Ví dụ: Khi sinh viên hỏi "Ngành CNTT làm gì sau khi ra trường?", hệ thống trả lờ
+130: c. Tích hợp tính năng cá nhân hóa
+131: Thu thập thông tin từ sinh viên (qua câu hỏi hoặc khảo sát ngắn: ngành học, sở t
+132: Dựa trên dữ liệu này, hệ thống:
+133: Đánh giá sự phù hợp (ví dụ: "Với sở thích sáng tạo và ngành Marketing, bạn có th
+134: Gợi ý lộ trình phát triển (ví dụ: "Để làm Data Analyst, bạn nên học thêm Python 
+135: Kết nối với cơ hội (ví dụ: "Có 3 công ty đang tuyển thực tập sinh ngành X, bạn m
+136: d. Phát triển giao diện và triển khai
+137: Giao diện:
+138: Chatbot tích hợp trên website trường, ứng dụng di động hoặc nền tảng nhắn tin nh
+139: Hỗ trợ nhập liệu bằng văn bản hoặc giọng nói, hiển thị lộ trình nghề nghiệp dưới
+140: Triển khai:
+141: Sử dụng framework như Flask/Django cho backend.
+142: Kết nối với dữ liệu từ trung tâm việc làm của trường hoặc các trang tuyển dụng q
+143: e. Kiểm thử và cải tiến
+144: Kiểm tra độ chính xác của gợi ý nghề nghiệp bằng cách sử dụng tập câu hỏi mẫu từ
+145: Thu thập phản hồi (đánh giá mức độ hữu ích, sự phù hợp) để tinh chỉnh mô hình và
+148: KẾT QUẢ DỰ KIẾN
+149: Một trợ lý ảo hướng nghiệp hoạt động 24/7, có khả năng:
+150: Trả lời thắc mắc về nghề nghiệp (ví dụ: "Ngành Kế toán có triển vọng không?", "L
+151: Đưa ra gợi ý ngành nghề phù hợp (ví dụ: "Dựa trên ngành CNTT và sở thích lập trì
+152: Đề xuất lộ trình phát triển kỹ năng (ví dụ: "Học thêm khóa UX/UI Design trong 3 
+153: Kết nối với cơ hội thực tập/việc làm (ví dụ: "Công ty X đang tuyển vị trí Y, bạn
+159: TIẾN ĐỘ THỰC HIỆN
+166: GÁY BÌA ĐỒ ÁN TỐT NGHIỆP, KHÓA LUẬN TỐT NGHIỆP
+168: LỜI CAM ĐOAN
+169: Em xin cam đoan đây là Đồ án tốt nghiệp của em. Các kết quả, nội dung trong Đồ á
+171: Sinh viên thực hiện
+175: Hoàng Thái Duy
+177: LỜI CẢM ƠN
+178: Trước tiên, em xin bày tỏ lòng biết ơn sâu sắc tới toàn thể thầy cô trong Khoa C
+179: Em đặc biệt tri ân Thầy TS. Nguyễn Văn Nam, người đã tận tâm hướng dẫn, luôn đồn
+180: Em cũng xin gửi lời cảm ơn tới các anh chị khóa trên và các bạn đồng môn đã luôn
+181: Do còn hạn chế về kinh nghiệm thực tế cũng như kiến thức chuyên sâu, đồ án của e
+182: Một lần nữa, em xin chân thành cảm ơn!
+185: MỤC LỤC ẢNH
+186: Hình 1-1 Trợ lý ảo	2
+187: Hình 1-2 Tư vấn khách hàng	4
+188: Hình 1-3 Phản hồi của chatbot Vietnam Airlines dựa trên học máy	6
+189: Hình 1-4 Kiến trúc tổng quát của mô hình RAG trong trợ lý ảo	7
+190: Hình 1-5	16
+191: Hình 1-6	16
+192: Hình 1-7	17
+193: Hình 2-1 Sơ đồ mô tả pipeline xử lý	33
+194: Hình 2-2 Sơ đồ use case minh họa	34
+195: Hình 2-3 Sơ đồ kiến trúc hệ thống	42
+196: Hình 2-4 Luồng tổng quát	44
+197: Hình 2-5 Luồng trình tự logic	45
+198: Hình 3-1	53
+199: Hình 3-2	53
