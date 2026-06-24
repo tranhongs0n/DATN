@@ -27,6 +27,7 @@
 | **Context Recall** | Độ bao phủ ngữ cảnh | Đánh giá khả năng hệ thống truy xuất đầy đủ tất cả các thông tin cần thiết để giải quyết trọn vẹn truy vấn. |
 | **Decision Tree** | Cây quyết định | Cấu trúc thuật toán rẽ nhánh dùng trong các hệ thống dựa trên quy tắc tĩnh. |
 | **Faithfulness** | Độ trung thành | Đánh giá mức độ câu trả lời bám sát nguồn tài liệu gốc, không tự bịa đặt hay suy diễn sai lệch. |
+| **Fixed-size Chunking** | Phân rã theo kích thước cố định | Chiến lược cắt tài liệu thành các khối có số lượng ký tự bằng nhau. |
 | **Hallucination** | Ảo giác | Hiện tượng LLM tự sinh ra thông tin sai lệch, không có cơ sở thực tế nhưng được trình bày một cách thuyết phục. |
 | **Intent Classification** | Phân loại ý định | Quá trình nhận diện và phân nhóm các phát ngôn của người dùng vào từng mục tiêu giao tiếp cụ thể. |
 | **Intent** | Ý định | Mục tiêu hoặc nhu cầu giao tiếp cốt lõi ẩn sau mỗi câu hỏi của người dùng. |
@@ -35,8 +36,10 @@
 | **Prompt Engineering** | Kỹ thuật định hướng mô hình | Phương pháp tinh chỉnh và thiết kế câu lệnh đầu vào để tối ưu hóa và điều khiển hành vi của LLM. |
 | **Query Rewriting** | Viết lại câu hỏi | Kỹ thuật cấu trúc lại ngữ nghĩa truy vấn nhằm duy trì độ chuẩn xác khi tìm kiếm trong cơ sở dữ liệu. |
 | **Query Template** | Khung mẫu truy vấn | Cấu trúc định dạng sẵn dùng để kết hợp thông tin truy xuất và câu hỏi thành một truy vấn thống nhất. |
+| **Recursive Chunking** | Phân rã đệ quy | Chiến lược cắt tài liệu đệ quy theo các phân cách đoạn văn, câu, từ để giữ lại tối đa ngữ cảnh. |
 | **Reranking** | Xếp hạng lại | Kỹ thuật đánh giá và sắp xếp lại thứ tự ưu tiên của các tài liệu nhằm tăng cường độ chuẩn xác. |
 | **Self-Attention** | Cơ chế tự chú ý | Kỹ thuật giúp mạng nơ-ron đánh giá sự liên quan của tất cả các từ trong cùng một câu để nắm bắt ngữ cảnh. |
+| **Semantic Chunking** | Phân rã theo ngữ nghĩa | Chiến lược cắt tài liệu dựa trên phân tích cấu trúc ngữ nghĩa hoặc dấu hiệu tiêu đề. |
 | **System Instruction** | Chỉ thị hệ thống | Những quy tắc cốt lõi được thiết lập ngầm để quy định vai trò, ngữ điệu và ranh giới hoạt động của mô hình. |
 | **Two-stage retrieval** | Truy xuất hai giai đoạn | Kiến trúc tìm kiếm kết hợp thu hẹp phạm vi ở giai đoạn đầu và xếp hạng lại tài liệu ở giai đoạn sau. |
 | **Utterance** | Câu phát ngôn | Đơn vị hội thoại hoàn chỉnh hoặc chuỗi văn bản đầu vào do người dùng cung cấp. |

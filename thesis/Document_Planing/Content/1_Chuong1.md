@@ -47,9 +47,9 @@ Kiến trúc tổng quát vận hành qua hai pha chính: pha lập chỉ mục 
 Phân mảnh là bước tiền xử lý mang tính quyết định đến độ chính xác của RAG. Nếu mảnh quá lớn, vector sinh ra sẽ bị loãng ngữ nghĩa, chứa nhiều thông tin nhiễu khiến truy xuất không tập trung. Nếu mảnh quá nhỏ, văn bản bị cắt vụn, mất đi bối cảnh khiến mô hình không đủ cơ sở để lập luận. 
 
 Một số chiến lược phân mảnh phổ biến được xem xét trong nghiên cứu:
-- Phân rã theo kích thước cố định (Fixed-size Chunking) tiến hành cắt tài liệu thành các khối có số ký tự bằng nhau. Phương pháp này nhanh, dễ triển khai nhưng làm gãy đôi các câu hoặc đoạn văn, phá vỡ cấu trúc ngữ nghĩa ngữ pháp.
-- Phân rã đệ quy (Recursive Chunking) cố gắng giữ lại trọn vẹn đoạn văn và câu thông qua việc kiểm tra các ký tự phân tách. Thuật toán cắt theo đoạn văn trước, nếu đoạn văn vẫn dài hơn giới hạn, thuật toán sẽ đệ quy cắt theo câu, rồi cắt theo khoảng trắng. Phương pháp này cân bằng giữa hiệu suất và việc duy trì tính toàn vẹn của ngữ cảnh.
-- Phân rã theo ngữ nghĩa (Semantic Chunking) ứng dụng các công cụ nhận diện cấu trúc tiêu đề để cô lập từng nội dung. Nhờ đó, thông tin của điểm khoản 1 và điểm khoản 2 không bị trộn lẫn vào nhau một cách cơ học.
+- Phân rã theo kích thước cố định tiến hành cắt tài liệu thành các khối có số lượng ký tự bằng nhau. Phương pháp này nhanh, dễ triển khai nhưng làm gãy đôi các câu hoặc đoạn văn, phá vỡ cấu trúc ngữ nghĩa ngữ pháp.
+- Phân rã đệ quy cố gắng giữ lại trọn vẹn đoạn văn và câu thông qua việc kiểm tra các ký tự phân tách. Thuật toán cắt theo đoạn văn trước, nếu đoạn văn vẫn dài hơn giới hạn, thuật toán sẽ đệ quy cắt theo câu, rồi cắt theo khoảng trắng. Phương pháp này cân bằng giữa hiệu suất và việc duy trì tính toàn vẹn của ngữ cảnh.
+- Phân rã theo ngữ nghĩa ứng dụng các công cụ nhận diện cấu trúc tiêu đề để cô lập từng nội dung. Nhờ đó, thông tin của điểm khoản 1 và điểm khoản 2 không bị trộn lẫn vào nhau một cách cơ học.
 
 Bảng dưới đây so sánh RAG với các phương pháp tối ưu LLM phổ biến:
 
