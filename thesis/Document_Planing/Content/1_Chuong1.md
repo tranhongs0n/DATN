@@ -2,9 +2,9 @@
 
 ## 1.1. Tổng quan về trợ lý ảo và bài toán hỏi đáp tự động
 
-Trong giai đoạn đầu ứng dụng thương mại, hệ thống trợ lý ảo chủ yếu hoạt động dựa trên kịch bản cứng. Kỹ sư phải xây dựng thủ công các cây quyết định phức tạp, định nghĩa từng nhánh hội thoại tương ứng với lựa chọn của người dùng. Mặc dù kiến trúc này dễ kiểm soát và đảm bảo tính chính xác tuyệt đối trong giới hạn kịch bản, nó bộc lộ điểm yếu ở tính tĩnh tại. Hệ thống rơi vào bế tắc hoặc lặp vòng khi người dùng diễn đạt câu hỏi vượt ngoài luồng hoặc sử dụng từ lóng, biến thể ngôn ngữ mà lập trình viên chưa dự liệu trước.
+Trong giai đoạn đầu ứng dụng thương mại, hệ thống trợ lý ảo chủ yếu hoạt động dựa trên kịch bản cứng. Kỹ sư phải xây dựng thủ công các cây quyết định phức tạp, định nghĩa từng nhánh hội thoại tương ứng với lựa chọn của người dùng. Mặc dù kiến trúc này dễ kiểm soát và đảm bảo tính chính xác tuyệt đối trong giới hạn kịch bản, kiến trúc này bộc lộ điểm yếu ở tính tĩnh tại. Hệ thống rơi vào bế tắc hoặc lặp vòng khi người dùng diễn đạt câu hỏi vượt ngoài luồng hoặc sử dụng từ lóng, biến thể ngôn ngữ mà lập trình viên chưa dự liệu trước.
 
-Xử lý ngôn ngữ tự nhiên truyền thống cải thiện một phần tình trạng này thông qua cơ chế phân loại ý định và nhận diện thực thể. Các hệ thống như Dialogflow hay Rasa cho phép gán nhãn hàng ngàn câu mẫu để huấn luyện mô hình học máy nhận biết ý định người dùng. Giới hạn cốt lõi vẫn tồn tại khi chatbot không tự hiểu ngôn ngữ, nó chỉ so khớp xác suất văn bản đầu vào với các nhãn đã định nghĩa, và quan trọng nhất, nó không có khả năng tự động sinh ra một câu trả lời mới mẻ. Phản hồi cuối cùng vẫn là những chuỗi văn bản tĩnh được soạn sẵn.
+Xử lý ngôn ngữ tự nhiên truyền thống cải thiện một phần tình trạng này thông qua cơ chế phân loại ý định và nhận diện thực thể. Các hệ thống như Dialogflow hay Rasa cho phép gán nhãn hàng ngàn câu mẫu để huấn luyện mô hình học máy nhận biết ý định người dùng. Giới hạn cốt lõi vẫn tồn tại khi chatbot không tự hiểu ngôn ngữ, mô hình chỉ so khớp xác suất văn bản đầu vào với các nhãn đã định nghĩa, và quan trọng nhất, hệ thống không có khả năng tự động sinh ra một câu trả lời mới mẻ. Phản hồi cuối cùng vẫn là những chuỗi văn bản tĩnh được soạn sẵn.
 
 Sự bùng nổ của các LLM đánh dấu sự chuyển mình từ so khớp mẫu sang hiểu và sinh ngôn ngữ. Bài toán xử lý hội thoại chuyển sang một giai đoạn mới nhờ khả năng phân tích ngữ cảnh dài, suy luận logic cơ bản và sinh ngôn ngữ tự nhiên như con người.
 
@@ -24,14 +24,14 @@ Thay vì xử lý từng từ một theo thứ tự, cơ chế tự chú ý tín
 
 ### 1.2.2. Vòng đời huấn luyện của LLM
 Để trở thành một trợ lý ảo thực thụ, một LLM phải trải qua ba giai đoạn huấn luyện cốt lõi:
-- Tiền huấn luyện diễn ra khi mô hình được nạp một lượng dữ liệu khổng lồ từ Internet, Wikipedia, sách, báo. Mục tiêu của nó ở giai đoạn này chỉ đơn giản là dự đoán từ tiếp theo. Nhờ vậy, mô hình học được ngữ pháp, từ vựng và một lượng kiến thức tổng quát khổng lồ của nhân loại.
-- Tinh chỉnh theo chỉ thị sử dụng khối lượng lớn dữ liệu hỏi đáp chất lượng cao do con người viết ra để dạy mô hình cách tương tác. Nó học cách phản hồi lại một câu lệnh thay vì chỉ viết tiếp văn bản một cách vô định.
+- Tiền huấn luyện diễn ra khi mô hình được nạp một lượng dữ liệu khổng lồ từ Internet, Wikipedia, sách, báo. Mục tiêu của mô hình ở giai đoạn này chỉ đơn giản là dự đoán từ tiếp theo. Nhờ vậy, mô hình học được ngữ pháp, từ vựng và một lượng kiến thức tổng quát khổng lồ của nhân loại.
+- Tinh chỉnh theo chỉ thị sử dụng khối lượng lớn dữ liệu hỏi đáp chất lượng cao do con người viết ra để dạy mô hình cách tương tác. Mô hình học cách phản hồi lại một câu lệnh thay vì chỉ viết tiếp văn bản một cách vô định.
 - Học tăng cường từ phản hồi con người sử dụng thuật toán tối ưu hóa để thưởng hoặc phạt mô hình dựa trên thang điểm đánh giá của người dán nhãn. Giai đoạn này định hình hành vi an toàn, đảm bảo mô hình ưu tiên tính hữu ích, không thiên kiến và từ chối các yêu cầu vi phạm chính sách.
 
 ### 1.2.3. Hạn chế của LLM trong hệ thống tri thức đóng
 Khi ứng dụng LLM nguyên bản vào hệ thống tuyển sinh, bài toán đối mặt với ba rào cản kỹ thuật lớn:
-- Hiện tượng ảo giác là rủi ro nguy hiểm nhất. Bản chất của LLM là thống kê xác suất, nó không có khái niệm biết hay không biết. Khi được hỏi về điểm chuẩn ngành Công nghệ thông tin của trường năm nay, nếu chưa từng thấy dữ liệu này, nó sẽ sinh ra một con số ngẫu nhiên vì cấu trúc đó hợp lý về mặt ngữ pháp, dù thông tin đó là hoàn toàn bịa đặt.
-- Khuyết thiếu tri thức nội bộ khiến kiến thức của mô hình bị đóng băng tại thời điểm nó hoàn tất huấn luyện. Nó không thể biết các thông báo xét tuyển bổ sung vừa được ban hành. Việc tinh chỉnh lại toàn bộ mạng nơ-ron hàng trăm tỷ tham số mỗi khi có một thông báo mới là bất khả thi về mặt tài chính và thời gian.
+- Hiện tượng ảo giác là rủi ro nguy hiểm nhất. Bản chất của LLM là thống kê xác suất, LLM không có khái niệm biết hay không biết. Khi được hỏi về điểm chuẩn ngành Công nghệ thông tin của trường năm nay, nếu chưa từng thấy dữ liệu này, mô hình sẽ sinh ra một con số ngẫu nhiên vì cấu trúc đó hợp lý về mặt ngữ pháp, dù thông tin đó là hoàn toàn bịa đặt.
+- Khuyết thiếu tri thức nội bộ khiến kiến thức của mô hình bị đóng băng tại thời điểm quá trình huấn luyện hoàn tất. Mô hình không thể biết các thông báo xét tuyển bổ sung vừa được ban hành. Việc tinh chỉnh lại toàn bộ mạng nơ-ron hàng trăm tỷ tham số mỗi khi có một thông báo mới là bất khả thi về mặt tài chính và thời gian.
 - Giới hạn cửa sổ ngữ cảnh quy định số lượng từ tối đa mô hình có thể xử lý trong một lần gọi. Nếu nạp trực tiếp toàn bộ 86 tệp quy chế vào phần lệnh của mỗi lượt hỏi, bộ nhớ ngữ cảnh sẽ bị tràn. Ngay cả với các mô hình hiện đại hỗ trợ cửa sổ lớn, việc nạp quá nhiều văn bản rác sẽ gây nhiễu chú ý và đẩy chi phí lên mức không thể chi trả, kèm theo độ trễ xử lý tính bằng hàng chục giây.
 
 ## 1.3. Kỹ thuật sinh văn bản tăng cường truy xuất
@@ -48,7 +48,7 @@ Phân mảnh là bước tiền xử lý mang tính quyết định đến độ
 
 Một số chiến lược phân mảnh phổ biến được xem xét trong nghiên cứu:
 - Phân rã theo kích thước cố định (Fixed-size Chunking) tiến hành cắt tài liệu thành các khối có số ký tự bằng nhau. Phương pháp này nhanh, dễ triển khai nhưng làm gãy đôi các câu hoặc đoạn văn, phá vỡ cấu trúc ngữ nghĩa ngữ pháp.
-- Phân rã đệ quy (Recursive Chunking) cố gắng giữ lại trọn vẹn đoạn văn và câu thông qua việc kiểm tra các ký tự phân tách. Thuật toán cắt theo đoạn văn trước, nếu đoạn văn vẫn dài hơn giới hạn, nó sẽ đệ quy cắt theo câu, rồi cắt theo khoảng trắng. Phương pháp này cân bằng giữa hiệu suất và việc duy trì tính toàn vẹn của ngữ cảnh.
+- Phân rã đệ quy (Recursive Chunking) cố gắng giữ lại trọn vẹn đoạn văn và câu thông qua việc kiểm tra các ký tự phân tách. Thuật toán cắt theo đoạn văn trước, nếu đoạn văn vẫn dài hơn giới hạn, thuật toán sẽ đệ quy cắt theo câu, rồi cắt theo khoảng trắng. Phương pháp này cân bằng giữa hiệu suất và việc duy trì tính toàn vẹn của ngữ cảnh.
 - Phân rã theo ngữ nghĩa (Semantic Chunking) ứng dụng các công cụ nhận diện cấu trúc tiêu đề để cô lập từng nội dung. Nhờ đó, thông tin của điểm khoản 1 và điểm khoản 2 không bị trộn lẫn vào nhau một cách cơ học.
 
 Bảng dưới đây so sánh RAG với các phương pháp tối ưu LLM phổ biến:

@@ -81,7 +81,8 @@ def normalize_document_formatting(doc: Document) -> None:
         ('Caption', 12, False, True, WD_ALIGN_PARAGRAPH.CENTER, 6, 6, 1.0, False),
         ('Hình', 12, False, True, WD_ALIGN_PARAGRAPH.CENTER, 6, 6, 1.0, False),
         ('Bảng', 12, False, True, WD_ALIGN_PARAGRAPH.CENTER, 6, 6, 1.0, False),
-        ('List Paragraph', 13, False, False, WD_ALIGN_PARAGRAPH.LEFT, 0, 0, 1.5, False)
+        ('List Paragraph', 13, False, False, WD_ALIGN_PARAGRAPH.LEFT, 0, 0, 1.5, False),
+        ('Bullet', 13, False, False, WD_ALIGN_PARAGRAPH.LEFT, 0, 0, 1.5, False)
     ]
     
     for style_name, size, bold, italic, align, space_before, space_after, line_spacing, all_caps in style_specs:
@@ -1171,7 +1172,7 @@ def process_content_file(
         if stripped.startswith("- ") or stripped.startswith("* "):
             bullet_text = stripped[2:]
             try:
-                add_formatted_paragraph(doc, bullet_text, "List Bullet")
+                add_formatted_paragraph(doc, bullet_text, "Bullet")
             except KeyError:
                 add_formatted_paragraph(doc, "• " + bullet_text, "List Paragraph")
             i += 1
