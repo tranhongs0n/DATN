@@ -18,12 +18,15 @@ def insert_inline():
     start_elem = None
     end_elem = None
     
+    tail_elem = None
     for p in doc.paragraphs:
         text = p.text.upper()
         if "CHƯƠNG 1:" in text and start_elem is None:
             start_elem = p._element
         if "TÀI LIỆU THAM KHẢO" in text and end_elem is None:
             end_elem = p._element
+        if "--- PHẦN NỘI DUNG MỚI ĐƯỢC CHÈN VÀO" in text and tail_elem is None:
+            tail_elem = p._element
 
     if start_elem is None or end_elem is None:
         print("Lỗi: Không tìm thấy CHƯƠNG 1 hoặc TÀI LIỆU THAM KHẢO để thay thế!")
@@ -44,6 +47,18 @@ def insert_inline():
 
     for child in elements_to_delete:
         body.remove(child)
+
+    if tail_elem is not None:
+        tail_started = False
+        tail_elements = []
+        for child in body:
+            if child == tail_elem:
+                tail_started = True
+            if tail_started:
+                tail_elements.append(child)
+        for child in tail_elements:
+            body.remove(child)
+        print("Duplicated old tail chapters deleted.")
 
     print("Old chapters deleted.")
 
@@ -81,8 +96,14 @@ def insert_inline():
 
     # Save
     OUTPUT_DOC.parent.mkdir(parents=True, exist_ok=True)
-    doc.save(OUTPUT_DOC)
-    print(f"\nSUCCESS! File mới được lưu tại: {OUTPUT_DOC}")
+    try:
+        doc.save(OUTPUT_DOC)
+        print(f"\nSUCCESS! File mới được lưu tại: {OUTPUT_DOC}")
+    except PermissionError:
+        alt_path = OUTPUT_DOC.parent / "DATN_Report_Final_Inserted_temp.docx"
+        doc.save(alt_path)
+        print(f"\nWARNING: Khong the ghi de {OUTPUT_DOC.name} vi file dang mo trong Word.")
+        print(f"Da luu file tam thoi tai: {alt_path}")
 
 if __name__ == "__main__":
     insert_inline()
