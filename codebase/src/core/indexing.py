@@ -2,7 +2,7 @@ import os
 import logging
 import unicodedata
 import re
-from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, DirectoryLoader
+from langchain_community.document_loaders import Docx2txtLoader
 from src.config.settings import settings
 from src.core.vector_db import VectorDBManager
 from src.utils.document_loader import DocumentLoader
@@ -10,14 +10,12 @@ from src.utils.document_loader import DocumentLoader
 logger = logging.getLogger(__name__)
 
 class IndexingService:
-    """Service to handle document loading and indexing workflows."""
     
     def __init__(self, db_manager: VectorDBManager, loader: DocumentLoader):
         self.db_manager = db_manager
         self.loader = loader
 
     def get_file_status_list(self):
-        """Returns a list of files with their indexing status."""
         files = self.loader.get_available_files()
         indexed_files = self.db_manager.get_indexed_files()
         
@@ -37,13 +35,11 @@ class IndexingService:
         return file_data, choices
 
     def load_all_from_disk(self):
-        """Loads all supported documents from the data directory."""
         files = self.loader.get_available_files()
         logger.info(f"Loading {len(files)} documents for indexing...")
         return self.load_files_by_path(files)
 
     def load_files_by_path(self, file_paths):
-        """Loads specific documents given their file paths."""
         from src.utils.document_loader import SUPPORTED_DOC_EXTENSIONS
         docs = []
         for f_path in file_paths:
@@ -68,23 +64,18 @@ class IndexingService:
             except Exception as e:
                 logger.error(f"Error loading file {f_path}: {e}")
                 
-        # BƯỚC TIỀN XỬ LÝ DỮ LIỆU (PREPROCESSING)
         for doc in docs:
-            # 1. Chuẩn hóa Unicode tiếng Việt về NFC (dựng sẵn) để search BM25 & Semantic chính xác hơn
             text = unicodedata.normalize("NFC", doc.page_content)
-            # 2. Xóa khoảng trắng, tab, dấu xuống dòng liên tiếp thừa thãi
             text = re.sub(r'\s+', ' ', text)
             doc.page_content = text.strip()
             
         return docs
 
     def get_full_path_map(self):
-        """Returns a mapping of basenames to full file paths."""
         all_files = self.loader.get_available_files(include_assets=True)
         return {os.path.basename(f): f for f in all_files}
 
     def convert_unsupported_file(self, filename: str, engine: 'MultimodalEngine'):
-        """Converts an unsupported file to .docx using Gemini's multimodal power."""
         path_map = self.get_full_path_map()
         src_path = path_map.get(filename)
         

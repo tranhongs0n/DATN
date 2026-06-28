@@ -1,8 +1,7 @@
-import os
 import yaml
 import logging
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 from pydantic import BaseModel, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 

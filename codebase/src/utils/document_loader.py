@@ -11,7 +11,6 @@ SUPPORTED_ASSET_EXTENSIONS = ('.png', '.jpg', '.jpeg', '.bmp', '.gif', '.webp')
 class DocumentLoader:
     @staticmethod
     def get_available_files(include_assets=False) -> List[str]:
-        """Returns a list of all relevant files in the data directory."""
         files = []
         data_dir = settings.DATA_DIR
         

@@ -16,7 +16,7 @@ def run_ui(args):
     import uvicorn
     port = getattr(args, 'port', 8000)
     logger.info(f"Starting FastAPI UI on port {port}...")
-    uvicorn.run("src.app.api:app", host="0.0.0.0", port=port, reload=True)
+    uvicorn.run("src.app.api:app", host="0.0.0.0", port=port, reload=True, reload_dirs=["src"])
 
 def run_scrape(args):
     logger.info("Starting Scraper...")

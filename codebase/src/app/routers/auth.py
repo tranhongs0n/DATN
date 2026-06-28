@@ -9,6 +9,7 @@ class LoginRequest(BaseModel):
     username: str
     password: str
 
+@router.post("")
 @router.post("/login")
 async def login(req: LoginRequest):
     user_id = auth.authenticate_user(req.username, req.password)

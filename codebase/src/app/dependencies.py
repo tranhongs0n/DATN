@@ -32,7 +32,6 @@ class TokenBucket:
             return True
         return False
 
-# Cấu hình Token-Bucket: phục hồi 1 token mỗi 6 giây, sức chứa tối đa 10 token
 rate_limiters = defaultdict(lambda: TokenBucket(rate=1/6.0, capacity=10))
 
 def check_rate_limit(client_id: str):

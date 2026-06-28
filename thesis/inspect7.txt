@@ -1,6 +1,0 @@
-61:  Ngày ............  tháng .........  năm 2025
-68:                                            Ngày. . . . .tháng. . . . .năm 2025	                                                       Chủ tịch Hội đồng 	
-74: Sinh viên đã hoàn thành và nộp bản Đồ án tốt nghiệp cho Hội đồng thi ngày...  tháng... năm 2025.
-85: Email: 1951060657@e.tlu.edu.vn
-129: Ví dụ: Khi sinh viên hỏi "Ngành CNTT làm gì sau khi ra trường?", hệ thống trả lời: "Ngành CNTT có thể làm lập trình viên, kỹ sư dữ liệu, hoặc chuyên viên an ninh mạng. Hiện nay, lập trình viên có mức lương trung bình 15-25 triệu/tháng, yêu cầu kỹ năng lập trình Python hoặc Java."
-152: Đề xuất lộ trình phát triển kỹ năng (ví dụ: "Học thêm khóa UX/UI Design trong 3 tháng để tăng cơ hội làm Product Designer").

@@ -22,14 +22,23 @@ async def chat_endpoint(req: ChatRequest, request: Request):
     logger.info(f"Received chat request: {req.message[:100]}...")
     def event_generator():
         try:
+            import time
+            start_time = time.time()
+            final_response = ""
             for response_text in chat_response(req.message, req.history):
+                final_response = response_text
                 data = json.dumps({"text": response_text}, ensure_ascii=False)
                 yield f"data: {data}\n\n"
-            yield f"data: [DONE]\n\n"
+            
+            latency = (time.time() - start_time) * 1000
+            client_ip = request.client.host if request.client else "unknown"
+            chat_db.log_chat_interaction(client_ip, req.message, final_response, latency_ms=latency)
+            
+            yield "data: [DONE]\n\n"
         except Exception as e:
             error_data = json.dumps({"error": str(e)}, ensure_ascii=False)
             yield f"data: {error_data}\n\n"
-            yield f"data: [DONE]\n\n"
+            yield "data: [DONE]\n\n"
     
     return StreamingResponse(event_generator(), media_type="text/event-stream")
 

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, UploadFile, File, Form
+from fastapi import APIRouter, Depends, UploadFile, File
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from typing import List
@@ -274,7 +274,6 @@ async def test_retrieval(query: str, current_user: str = Depends(get_current_use
             results = []
             for content, score in sorted_items[:5]:
                 doc = all_docs[content]
-                import os
                 source = os.path.basename(doc.metadata.get("source", "Không rõ")) if doc.metadata else "Không rõ"
                 results.append({
                     "content": content,
@@ -286,7 +285,6 @@ async def test_retrieval(query: str, current_user: str = Depends(get_current_use
             docs = chroma_retriever.invoke(query)
             results = []
             for doc in docs:
-                import os
                 source = os.path.basename(doc.metadata.get("source", "Không rõ")) if doc.metadata else "Không rõ"
                 results.append({
                     "content": doc.page_content,
@@ -300,3 +298,23 @@ async def test_retrieval(query: str, current_user: str = Depends(get_current_use
         logging.error(f"Error in test_retrieval: {e}")
         return {"results": []}
 
+
+
+@router.post("/api/docs")
+def index_upload_docs_alias(files: List[UploadFile] = File(...), current_user: dict = Depends(get_current_user)):
+    return index_upload(files, current_user)
+
+@router.get("/api/logs")
+def get_logs_alias(current_user: dict = Depends(get_current_user)):
+    import sqlite3
+    from src.core.chat_db import DB_PATH
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT log_id, session_id, user_query, bot_response, latency_ms, timestamp FROM CHAT_LOG ORDER BY timestamp DESC LIMIT 50")
+        rows = cursor.fetchall()
+        logs = [{"log_id": r[0], "session_id": r[1], "user_query": r[2], "bot_response": r[3], "latency_ms": r[4], "timestamp": r[5]} for r in rows]
+    except Exception as e:
+        logs = []
+    conn.close()
+    return {"status": "success", "logs": logs}

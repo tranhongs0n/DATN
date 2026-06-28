@@ -16,20 +16,22 @@ def _process_message(chat_id: str, text: str):
         logger.warning(f"Rate limit exceeded for Zalo Bot chat {chat_id}")
         return
 
-    chat_db.log_message(chat_id, "user", text)
-
-    history_records = chat_db.get_chat_history(chat_id)[:-1][-6:]
+    history_records = chat_db.get_chat_history(chat_id)[-6:]
     history = [{"role": r["role"], "content": r["content"]} for r in history_records]
 
+    import time
+    start_time = time.time()
     final_response = ""
     for current_text in chat_response(text, history, is_zalo=True):
         final_response = current_text
+    latency = (time.time() - start_time) * 1000
 
-    chat_db.log_message(chat_id, "assistant", final_response)
+    chat_db.log_chat_interaction(chat_id, text, final_response, latency_ms=latency)
     logger.info(f"Sending Zalo Bot response to {chat_id}: {final_response[:100]}...")
     zalo_bot.send_message(chat_id, final_response)
 
 
+@router.post("/api/webhook")
 @router.post("/zalo/bot/webhook")
 async def zalo_bot_webhook(req: Request):
     try:
@@ -39,7 +41,6 @@ async def zalo_bot_webhook(req: Request):
         raw_body = (await req.body()).decode("utf-8")
         data = json.loads(raw_body) if raw_body else {}
 
-        # Zalo Bot webhook payload thường nằm ở root, không có bọc trong 'result'
         event_name = data.get("event_name")
         message_data = data.get("message", {})
         

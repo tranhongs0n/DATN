@@ -1,5 +1,4 @@
 import time
-import asyncio
 from src.utils.zalo_bot import ZaloBot
 from src.core.chat_service import chat_response
 from src.core import chat_db
@@ -10,7 +9,6 @@ zalo_bot = ZaloBot()
 
 def _process_message(chat_id: str, text: str):
     try:
-        # Giới hạn rate limit thủ công (nếu cần)
         chat_db.log_message(chat_id, "user", text)
         
         history_records = chat_db.get_chat_history(chat_id)[:-1][-6:]
@@ -48,7 +46,6 @@ def start_polling():
                 
                 if chat_id and text:
                     logger.info(f"Received message from {chat_id}: {text}")
-                    # Chạy process đồng bộ
                     _process_message(str(chat_id), text)
         except Exception as e:
             logger.error(f"Polling loop error: {e}")

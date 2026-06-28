@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from src.core import auth
-from src.app.dependencies import get_current_user, require_admin, logger
+from src.app.dependencies import require_admin, logger
 
 router = APIRouter(prefix="/api/admin/users", tags=["admin_users"])
 

@@ -1,8 +1,0 @@
-0: TÊN ĐỀ TÀI: Xây dựng hệ thống trợ lý ảo hướng nghiệp cho sinh viên ngành CNTT Đại học Thủy Lợi dựa trên RAG
-1: Sinh viên thực hiện:	   Hoàng Thái Duy
-2: Lớp:			   61TH2
-3: Mã sinh viên: 1951060657
-4: Số điện thoại: 0339882230
-5: Email: 1951060657@e.tlu.edu.vn
-6: Giáo viên hướng dẫn: TS. Nguyễn Văn Nam
-7: Thời gian thực hiện: … tuần:   từ ngày: 31/03/2025  đến ngày: 30/06/2025

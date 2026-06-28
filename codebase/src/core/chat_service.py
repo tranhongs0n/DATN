@@ -24,7 +24,6 @@ def reload_abbreviations():
     except Exception as e:
         logger.error(f"Error loading abbreviations: {e}")
 
-# Load ngay khi khởi động module
 reload_abbreviations()
 
 def expand_abbreviations(text: str) -> str:
@@ -41,9 +40,6 @@ def response_needs_human(text: str) -> bool:
     return any(m in text for m in HANDOVER_MARKERS)
 
 def chat_response(message, history, is_zalo=False):
-    """
-    Core RAG + Gemini chat response logic.
-    """
     def extract_text(m):
         if isinstance(m, str):
             return m
@@ -96,7 +92,6 @@ def chat_response(message, history, is_zalo=False):
     context = ""
     chatbot_prompts = settings.PROMPTS.get("chatbot", {})
     
-    # Query Expansion: ghép câu hỏi hiện tại với câu hỏi trước đó để giữ context khi search Vector DB
     search_query = message
     if history:
         for msg in reversed(history):
