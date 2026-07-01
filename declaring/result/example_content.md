@@ -1,0 +1,67 @@
+# Document: Mau Word_Huong_dan_SV_lam_ro_noi_dung_do_an_tot_nghiep_vi_du_da_dien.docx
+
+VÍ DỤ ĐÃ ĐIỀN: LÀM RÕ NỘI DUNG ĐỒ ÁN TỐT NGHIỆP
+
+Dựa trên đề tài mẫu: “Thiết kế hệ thống realtime monitoring hỗ trợ quản lý lớp học thực hành lập trình”
+
+Mục tiêu: minh họa cách SV trả lời cụ thể, có bằng chứng, không phóng đại và khai báo trung thực phần tự làm.
+
+### Table:
+
+| Sinh viên: | Nguyễn Văn A | Tên đề tài / hệ thống: | Thiết kế hệ thống realtime monitoring hỗ trợ quản lý lớp học thực hành lập trình |
+| MSSV: | 20A12345 | Đối tượng sử dụng: | Giảng viên, trợ giảng, quản trị phòng máy |
+| Lớp: | K65CNTT | Công nghệ chính: | Electron / Python / WebSocket / React / SQLite |
+| GVHD: | TS. Trần Văn B | Thời gian thực hiện: | 02/2026 - 06/2026 |
+| GVPB: | .................................... | Ngày nộp bản tự đánh giá: | 20/06/2026 |
+
+Ghi chú: Đây là ví dụ minh họa cho sinh viên tham khảo cách viết. Khi áp dụng cho đề tài thật, SV phải thay bằng dữ liệu, chức năng, bằng chứng và tỷ lệ tự làm của chính mình.
+
+### Table:
+
+| BƯỚC 1 | SV CẦN LÀM RÕ | CÂU TRẢ LỜI / MINH CHỨNG ĐÃ ĐIỀN | GV PHẢN BIỆN KIỂM TRA NHANH |
+| 1 NGỮ CẢNH & BÀI TOÁN Context | • Bài toán thực tế đang tồn tại là gì? • Ai gặp vấn đề này? Trong bối cảnh nào? • Hiện trạng đang được xử lý ra sao? • Nếu không giải quyết thì ảnh hưởng gì? • Phạm vi bài toán đến đâu? | • Trong các buổi thực hành lập trình, giảng viên thường phải theo dõi 30-40 máy sinh viên. Nhiều sinh viên mở tài liệu học tập, trình duyệt, mạng xã hội hoặc không chạy IDE đúng yêu cầu nhưng giảng viên khó phát hiện kịp thời. • Đối tượng gặp vấn đề là giảng viên phụ trách lớp thực hành, trợ giảng và cán bộ quản trị phòng máy. Bối cảnh sử dụng là phòng máy nội bộ, trong giờ học thực hành. • Hiện trạng chủ yếu là quan sát thủ công, hỏi trực tiếp hoặc kiểm tra từng máy khi có nghi ngờ. Cách này mất thời gian, thiếu dữ liệu sau buổi học và khó đánh giá công bằng mức độ tham gia. • Nếu không giải quyết, giảng viên khó nhắc nhở kịp thời, khó biết máy nào mất kết nối/mở ứng dụng không phù hợp, khó có minh chứng khi đánh giá ý thức học tập. • Phạm vi hệ thống: giám sát trạng thái phiên học trong mạng LAN phòng máy; không giám sát ngoài giờ học và không thu thập nội dung gõ phím hay dữ liệu cá nhân nhạy cảm. | GV kiểm tra nhanh: ☑ Hiểu đúng bài toán ☑ Đúng đối tượng sử dụng ☑ Có bối cảnh thực tế ☑ Phạm vi rõ ràng |
+
+### Table:
+
+| BƯỚC 2 | SV CẦN LÀM RÕ | CÂU TRẢ LỜI / MINH CHỨNG ĐÃ ĐIỀN | GV PHẢN BIỆN KIỂM TRA NHANH |
+| 2 VẤN ĐỀ CỐT LÕI Pain Point | • Vấn đề chính cần giải quyết là gì? • Nguyên nhân gốc rễ là gì? • Điểm bất cập của cách hiện tại? • Ảnh hưởng cụ thể: thời gian, chi phí, độ chính xác, trải nghiệm? • Vì sao vấn đề này đáng làm đồ án? | • Vấn đề cốt lõi là thiếu công cụ realtime để biết máy sinh viên đang sử dụng ứng dụng/website nào trong giờ học, máy nào mất kết nối, máy nào không hoạt động hoặc có hành vi ngoài phạm vi học tập. • Nguyên nhân là quy mô lớp thực hành đông, giảng viên không thể quan sát đồng thời nhiều màn hình, còn cách kiểm tra thủ công không tạo được dữ liệu lịch sử. • Bất cập của cách hiện tại: phát hiện chậm, dễ bỏ sót, không có log làm minh chứng, khó so sánh mức độ tập trung giữa các buổi hoặc giữa các nhóm. • Tác động cụ thể: giảm hiệu quả quản lý lớp, mất thời gian nhắc nhở, khó đánh giá quá trình, khó xác định nguyên nhân khi sinh viên báo lỗi hoặc không hoàn thành bài. • Vấn đề đáng làm đồ án vì có bối cảnh sử dụng rõ, có sản phẩm phần mềm triển khai được, có chỉ số đánh giá cụ thể và có giá trị thực tế cho giảng dạy thực hành. | GV kiểm tra nhanh: ☑ Nêu đúng vấn đề ☑ Có phân tích nguyên nhân ☑ Không mô tả chung chung ☑ Tác động rõ ràng |
+
+### Table:
+
+| BƯỚC 3 | SV CẦN LÀM RÕ | CÂU TRẢ LỜI / MINH CHỨNG ĐÃ ĐIỀN | GV PHẢN BIỆN KIỂM TRA NHANH |
+| 3 MỤC TIÊU Objective | • Hệ thống phải đạt được điều gì? • Các mục tiêu cụ thể nào đo được? • Chức năng cốt lõi cần hoàn thành là gì? • Tiêu chí nào dùng để đánh giá thành công? • Mục tiêu nào bắt buộc, mục tiêu nào mở rộng? | • Xây dựng hệ thống cho phép giảng viên theo dõi trạng thái máy sinh viên theo thời gian gần thực, gồm ứng dụng đang chạy, website truy cập, trạng thái kết nối và mức độ hoạt động. • Mục tiêu đo được: độ trễ cập nhật dưới 3 giây trong mạng LAN; tỷ lệ phát hiện truy cập website/ứng dụng không thuộc danh sách cho phép trên 95%; dashboard hiển thị tối thiểu 40 máy/phòng. • Chức năng cốt lõi: Student Agent gửi trạng thái máy; Server nhận và xử lý dữ liệu; Rule Engine đối chiếu danh sách cho phép; Dashboard hiển thị, cảnh báo và lưu lịch sử. • Tiêu chí thành công: hệ thống chạy ổn định trong buổi thực hành thử nghiệm; có log; có báo cáo sau phiên học; có so sánh trước/sau về thời gian phát hiện vi phạm. • Mục tiêu bắt buộc: thu thập trạng thái, cảnh báo, dashboard, log. Mục tiêu mở rộng: phân tích hành vi học tập nâng cao, hỗ trợ Linux/macOS, phát hiện bất thường bằng AI. | GV kiểm tra nhanh: ☑ Mục tiêu rõ ràng ☑ Đo lường được ☑ Có tiêu chí đánh giá ☑ Phù hợp phạm vi |
+
+### Table:
+
+| BƯỚC 4 | SV CẦN LÀM RÕ | CÂU TRẢ LỜI / MINH CHỨNG ĐÃ ĐIỀN | GV PHẢN BIỆN KIỂM TRA NHANH |
+| 4 RÀNG BUỘC Constraint | • Ràng buộc kỹ thuật là gì? • Ràng buộc dữ liệu, thiết bị, thời gian, nhân lực? • Yêu cầu bảo mật, pháp lý, vận hành? • Giới hạn nào khiến giải pháp phải thay đổi? • Những gì KHÔNG làm trong đồ án? | • Hệ thống chỉ hoạt động trong phòng máy Windows 10/11, mạng LAN nội bộ. Sinh viên không cần cấp quyền Admin cao nhất khi chạy agent ở chế độ người dùng. • Dữ liệu thu thập phục vụ giảng dạy gồm: tên tiến trình/ứng dụng, domain website, thời điểm, trạng thái kết nối, mã máy/lớp. Không thu thập nội dung gõ phím, nội dung chat, mật khẩu hoặc ảnh màn hình cá nhân. • Ràng buộc bảo mật: chỉ giảng viên và quản trị viên được xem dữ liệu; dữ liệu log lưu nội bộ; cần thông báo rõ phạm vi giám sát cho sinh viên trong buổi học. • Ràng buộc thời gian/nhân lực: triển khai trong 5 tháng, một sinh viên thực hiện, ưu tiên bản prototype ổn định thay vì quá nhiều chức năng mở rộng. • Những phần không làm: không giám sát ngoài phạm vi lớp học, không điều khiển máy sinh viên từ xa, không xử lý vi phạm thay giảng viên, không thay thế hệ thống LMS. | GV kiểm tra nhanh: ☑ Liệt kê đủ ràng buộc ☑ Hợp lý và khả thi ☑ Có giới hạn phạm vi ☑ Nêu rõ phần loại trừ |
+
+### Table:
+
+| BƯỚC 5 | SV CẦN LÀM RÕ | CÂU TRẢ LỜI / MINH CHỨNG ĐÃ ĐIỀN | GV PHẢN BIỆN KIỂM TRA NHANH |
+| 5 GIẢI PHÁP / CÁCH LÀM Method | • Giải pháp cốt lõi là gì? • Kiến trúc tổng thể hoặc quy trình xử lý ra sao? • Dữ liệu vào/ra là gì? • Công nghệ nào được dùng và vì sao chọn? • Phần nào do SV thực sự thiết kế, lập trình, tích hợp hay tối ưu? • Điểm mới hoặc khác biệt thực sự nằm ở đâu? | • Giải pháp gồm 3 khối chính: Student Agent chạy trên máy sinh viên, Backend Server xử lý dữ liệu realtime, Dashboard cho giảng viên quan sát và xuất báo cáo. • Luồng xử lý: Agent định kỳ lấy trạng thái phiên làm việc, gửi qua WebSocket tới server; server chuẩn hóa dữ liệu, đối chiếu Rule Engine với danh sách ứng dụng/website cho phép, sau đó phát cảnh báo và lưu log vào SQLite. • Dữ liệu vào: danh sách lớp, danh sách máy, danh sách ứng dụng/website hợp lệ, gói trạng thái từ agent. Dữ liệu ra: trạng thái từng máy, cảnh báo realtime, báo cáo phiên học, log lịch sử. • Công nghệ chọn: Electron/Python cho agent vì dễ đóng gói trên Windows; WebSocket vì cần cập nhật realtime; React cho dashboard vì thuận tiện hiển thị bảng/lọc; SQLite vì phù hợp prototype và dữ liệu nội bộ quy mô nhỏ. • Phần SV tự làm: thiết kế kiến trúc, viết agent thu thập trạng thái, thiết kế giao thức truyền dữ liệu, xây dựng Rule Engine, dashboard, chức năng lọc nhóm máy và xuất báo cáo. • Điểm khác biệt ở mức đồ án: tập trung vào bối cảnh lớp thực hành lập trình, kết hợp trạng thái ứng dụng/website, cảnh báo realtime và log phiên học để hỗ trợ đánh giá quá trình. | GV kiểm tra nhanh: ☑ Giải pháp phù hợp vấn đề ☑ Kiến trúc hợp lý ☑ Nói rõ phần SV làm ☑ Có điểm mới hoặc khác biệt |
+
+### Table:
+
+| BƯỚC 6 | SV CẦN LÀM RÕ | CÂU TRẢ LỜI / MINH CHỨNG ĐÃ ĐIỀN | GV PHẢN BIỆN KIỂM TRA NHANH |
+| 6 ĐÁNH GIÁ / KIỂM CHỨNG Evaluation | • Đánh giá bằng cách nào? • Dữ liệu/kịch bản thử nghiệm là gì? • Chỉ số đánh giá nào được dùng? • Kết quả đạt được ra sao? • Có so sánh trước/sau hoặc baseline không? • Minh chứng gồm số liệu, ảnh, video, log, biểu đồ nào? | • Đánh giá trên 32 máy trong 4 buổi thực hành mô phỏng. Mỗi buổi gồm các kịch bản: dùng IDE đúng yêu cầu, mở website học tập hợp lệ, mở Facebook/YouTube ngoài phạm vi, tắt agent, mất kết nối tạm thời. • Chỉ số đánh giá: độ trễ cập nhật trạng thái, tỷ lệ phát hiện truy cập không hợp lệ, tỷ lệ đồng bộ trạng thái đúng, số cảnh báo đúng/sai, mức độ ổn định của server trong phiên học. • Kết quả thử nghiệm: tỷ lệ phát hiện truy cập không hợp lệ đạt 96.4%; độ trễ cập nhật trung bình 2.3 giây; tỷ lệ đồng bộ trạng thái đúng 94.8%; hệ thống hoạt động ổn định 24/7 trong thời gian thử nghiệm. • So sánh trước/sau: trước khi dùng hệ thống, giảng viên cần kiểm tra thủ công từng máy; sau khi dùng hệ thống, dashboard cho biết máy nào cần chú ý trong cùng một màn hình. • Minh chứng kèm theo: ảnh chụp dashboard, video demo 3 phút, file log CSV của 4 buổi thử nghiệm, bảng so sánh độ trễ và tỷ lệ phát hiện theo từng kịch bản. | GV kiểm tra nhanh: ☑ Có phương pháp đánh giá ☑ Có chỉ số phù hợp ☑ Kết quả có bằng chứng ☑ Có so sánh đối chiếu |
+
+### Table:
+
+| BƯỚC 7 | SV CẦN LÀM RÕ | CÂU TRẢ LỜI / MINH CHỨNG ĐÃ ĐIỀN | GV PHẢN BIỆN KIỂM TRA NHANH |
+| 7 ĐÓNG GÓP & GIÁ TRỊ THỰC Impact | • Đồ án thực sự đóng góp gì? • Người dùng hoặc đơn vị hưởng lợi như thế nào? • Sản phẩm đã làm được đến mức nào? • Có thể triển khai, mở rộng hay chuyển giao không? • Hạn chế hiện tại là gì và hướng phát triển tiếp theo? | • Đồ án đóng góp một prototype chạy được cho bối cảnh quản lý lớp thực hành lập trình: theo dõi trạng thái máy, phát hiện truy cập không phù hợp, cảnh báo và lưu lịch sử phiên học. • Giá trị với giảng viên: giảm thời gian quan sát thủ công, phát hiện sớm sinh viên lệch khỏi nhiệm vụ học tập, tăng tính minh bạch khi đánh giá quá trình. • Sản phẩm đã đạt mức demo triển khai trong mạng LAN phòng máy với tối thiểu 32 máy thử nghiệm; có dashboard, cảnh báo, log và báo cáo sau phiên học. • Có thể mở rộng cho nhiều phòng máy hoặc nhiều môn học bằng cách cấu hình danh sách ứng dụng/website hợp lệ theo từng lớp. • Hạn chế: chưa hỗ trợ Linux/macOS, chưa tích hợp AI phát hiện mức độ tập trung, chưa có cơ chế mã hóa nâng cao cho log. Hướng phát triển: bổ sung phân tích hành vi học tập và phân quyền chi tiết hơn. | GV kiểm tra nhanh: ☑ Đóng góp rõ ràng ☑ Giá trị thực tế cụ thể ☑ Không phóng đại kết quả ☑ Nêu được hạn chế |
+
+### Table:
+
+| BƯỚC 8 | SV CẦN LÀM RÕ | CÂU TRẢ LỜI / MINH CHỨNG ĐÃ ĐIỀN | GV PHẢN BIỆN KIỂM TRA NHANH |
+| 8 TỰ ĐÁNH GIÁ & CAM KẾT Self-assessment | • Đề tài/thành phẩm tham khảo từ nguồn khác khoảng bao nhiêu %? • Phần nào kế thừa/tham khảo? • Phần nào SV thực sự tự làm? • Mức độ tự hiểu và làm chủ hệ thống khoảng bao nhiêu %? • Nếu làm theo nhóm/kế thừa mã nguồn có sẵn, phân việc cá nhân là gì? • SV có cam kết trung thực học thuật không? | • Tỷ lệ tham khảo/kế thừa ước tính: 35%. Tỷ lệ tự làm/đóng góp của SV: 65%. Mức độ tự hiểu và làm chủ hệ thống: khoảng 85%. • Phần tham khảo: cách sử dụng WebSocket, một số ví dụ đóng gói ứng dụng Electron, tài liệu về lấy danh sách tiến trình trên Windows và mẫu giao diện dashboard quản trị. • Phần tự làm: phân tích bài toán, thiết kế kiến trúc, viết agent thu thập dữ liệu, xây dựng giao thức gói tin, Rule Engine, cơ sở dữ liệu, dashboard theo dõi lớp, báo cáo thử nghiệm và demo. • Các đoạn mã tham khảo đều được ghi nguồn trong phụ lục; không sao chép nguyên hệ thống có sẵn. Những thư viện dùng lại được khai báo rõ trong README. • SV tự tin giải thích được luồng dữ liệu, cấu trúc module, cách phát hiện website/ứng dụng không hợp lệ, cách tính chỉ số đánh giá và giới hạn hiện tại của hệ thống. • SV cam kết nội dung trình bày là trung thực. Nếu GVPB phát hiện khai báo không đúng về phần tham khảo, tự làm hoặc mức độ hiểu, SV chấp nhận bổ sung, làm lại hoặc không đủ điều kiện bảo vệ theo quy định. | GV kiểm tra nhanh: ☑ Tự đánh giá rõ ràng ☑ Nêu được phần tự làm ☑ Nêu được phần kế thừa/tham khảo ☑ Mức độ hiểu phù hợp phần trình bày ☑ Có cam kết trung thực Lưu ý: nếu phát hiện khai báo không trung thực về phần tham khảo/tự làm/mức độ hiểu, SV có thể bị yêu cầu bổ sung, hoãn hoặc không đủ điều kiện bảo vệ. |
+
+TÓM TẮT VÍ DỤ ĐÃ ĐIỀN
+
+### Table:
+
+| ĐỒ ÁN THỰC SỰ ĐÓNG GÓP GÌ? | CHECKLIST NHANH CHO SV | ĐÁNH GIÁ TỔNG QUAN |
+| • Xây dựng được prototype realtime monitoring chạy trong phòng máy. • Hỗ trợ giảng viên theo dõi trạng thái học tập, phát hiện truy cập không hợp lệ và lưu minh chứng phục vụ quản lý lớp thực hành. • Đóng góp nằm ở việc biến nhu cầu quản lý lớp thành sản phẩm có dashboard, cảnh báo, log và đánh giá thử nghiệm. | • ☑ Trả lời đúng vấn đề cần giải quyết • ☑ Mô tả đúng phạm vi thực hiện • ☑ Có minh chứng cho kết quả • ☑ Mục tiêu và đánh giá khớp nhau • ☑ Không dùng từ hoa mỹ, chung chung • ☑ Khai báo trung thực: tham khảo 35%, tự làm 65%, tự hiểu 85% | • Điểm minh họa: 8.8 / 10 • Nhận xét: Bài toán rõ, giải pháp có sản phẩm chạy được, đánh giá có số liệu. Cần bổ sung so sánh với cách quản lý thủ công và làm rõ hơn phần bảo mật dữ liệu. • Kết luận minh họa: Đủ điều kiện bảo vệ sau khi hoàn thiện phụ lục minh chứng. |
+
+Gợi ý cho SV: viết ngắn gọn, cụ thể, có số liệu và minh chứng. Tập trung vào: làm gì – vì sao làm – làm như thế nào – kết quả ra sao – đóng góp thực sự là gì – tham khảo bao nhiêu – tự làm bao nhiêu.
+
